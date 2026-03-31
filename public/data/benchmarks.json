@@ -1,0 +1,100 @@
+{
+  "sources": [
+    {
+      "name": "APICS/ASCM Supply Chain Competency Model",
+      "url": "https://www.ascm.org"
+    },
+    {
+      "name": "Gartner 5-Stage Supply Chain Maturity Model"
+    },
+    {
+      "name": "Dreyfus Model of Skill Acquisition"
+    },
+    {
+      "name": "APQC Supply Chain Planning Benchmarks",
+      "url": "https://www.apqc.org"
+    },
+    {
+      "name": "McKinsey Supply Chain Risk Survey 2024"
+    },
+    {
+      "name": "Deloitte Manufacturing Outlook 2025"
+    },
+    {
+      "name": "ISM Supply Chain Capability Model",
+      "url": "https://www.ismworld.org"
+    }
+  ],
+  "nivel_distribution": {
+    "mature_org": {
+      "Novice": 0.075,
+      "Advanced Beginner": 0.175,
+      "Competent": 0.325,
+      "Proficient": 0.225,
+      "Expert": 0.075
+    },
+    "developing_org": {
+      "Novice": 0.35,
+      "Advanced Beginner": 0.275,
+      "Competent": 0.175,
+      "Proficient": 0.075,
+      "Expert": 0.02
+    },
+    "label_mature": "Organización madura (Gartner/Dreyfus)",
+    "label_developing": "Organización en desarrollo"
+  },
+  "profile_adherence": {
+    "best_in_class_min": 0.8,
+    "best_in_class_max": 0.85,
+    "good_min": 0.75,
+    "good_max": 0.8,
+    "developing_min": 0.55,
+    "developing_max": 0.65,
+    "thresholds": {
+      "strong_fit": 0.8,
+      "good_fit": 0.7,
+      "moderate_fit": 0.6,
+      "poor_fit": 0.0
+    },
+    "threshold_labels": {
+      "strong_fit": "Alto apego (>80%)",
+      "good_fit": "Buen apego (70-80%)",
+      "moderate_fit": "Apego moderado (60-70%)",
+      "poor_fit": "Bajo apego (<60%)"
+    }
+  },
+  "capability_categories": {
+    "Soft Skills / Liderazgo": [
+      "Empuje / Orientación a resultados",
+      "Colaboración",
+      "Resiliencia",
+      "Negociación",
+      "Planificación y organización"
+    ],
+    "Técnicas de Planning": [
+      "Gestión de inventarios",
+      "Estándares de logística inversa LCP y mantenimiento del inventario",
+      "Transportación y logística",
+      "Manufactura Esbelta",
+      "Técnicas de programación",
+      "Estándares VPO programación y nivel de servicio",
+      "Gestión de riesgos",
+      "Metodología S&OP",
+      "Metodología MPS/MRP",
+      "Pronóstico de la demanda",
+      "DDMRP",
+      "Control de la producción",
+      "Planeación de capacidad"
+    ],
+    "Herramientas / Datos": [
+      "Excel",
+      "Orientación a datos",
+      "SAP",
+      "Power BI",
+      "Sistemas de planeación"
+    ],
+    "Idiomas": [
+      "Inglés"
+    ]
+  }
+}

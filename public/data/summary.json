@@ -1,0 +1,302 @@
+{
+  "total_participantes": 231,
+  "total_assessments": 324,
+  "assessments_finalizados": 306,
+  "assessments_en_curso": 18,
+  "puntaje_promedio_global": 2.0153,
+  "apego_promedio_global": 0.8974,
+  "reviso_reporte_pct": 0.4167,
+  "bus": [
+    "CAC",
+    "COPE",
+    "Colombia",
+    "Ecuador",
+    "El Salvador",
+    "Guatemala",
+    "Honduras",
+    "México",
+    "Otros",
+    "Panama",
+    "Perú",
+    "República Dominicana",
+    "WH"
+  ],
+  "areas": [
+    "CONA",
+    "DP Estadistico",
+    "DP Operativo",
+    "DRP",
+    "Gerente de Planning BU",
+    "Logística Inversa",
+    "MRP Operativo",
+    "MRP Táctico",
+    "NPI Innovaciones",
+    "Programación de la Producción",
+    "Retpack",
+    "WSNP"
+  ],
+  "roles": [
+    "Especialista - CONA",
+    "Especialista - DP Operativo",
+    "Especialista - Logística inversa",
+    "Especialista - MRP Operativo",
+    "Especialista - MRP Táctico",
+    "Especialista - NPI",
+    "Especialista - Programación de la producción",
+    "Especialista - Retpack",
+    "Especialista - WSNP",
+    "Especialista DP Estadistico",
+    "Especialista DRP",
+    "Gerente - CONA",
+    "Gerente - DP Estadístico",
+    "Gerente - DRP",
+    "Gerente - Logística inversa",
+    "Gerente - MRP Operativo",
+    "Gerente - MRP Táctico",
+    "Gerente - Retpack",
+    "Gerente - WSNP",
+    "Gerente DP Operativo",
+    "Gerente de Planning BU"
+  ],
+  "capabilities": [
+    "Colaboración",
+    "Data Driven / Analítico",
+    "Empuje / Orientación a resultados",
+    "Estructuras complejas de datos",
+    "Estándar LCP para Planeación de la Demanda",
+    "Estándar LCP para despliegue de inventario",
+    "Estándares VPO programación y nivel de servicio",
+    "Estándares de MRP LCP",
+    "Estándares de S&OP LCP + SNP LCP",
+    "Estándares de logística inversa LCP y mantenimiento del inventario",
+    "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
+    "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+    "Excel",
+    "Finanzas",
+    "Finanzas empresariales",
+    "Gestión de Equipos",
+    "Gestión de interesados",
+    "Gestión de inventarios",
+    "Gestión de la cadena de suministro",
+    "Gestión de riesgos",
+    "Gestión por sistemas",
+    "Grit (resilencia + empuje)",
+    "Inglés",
+    "Manufactura Esbelta",
+    "Mejora continua",
+    "Mentalidad de crecimiento",
+    "Métodos estadísticos y de pronóstico",
+    "Negociación",
+    "Orientación a datos",
+    "Pensamiento Sistémico",
+    "Planeación Operativa de Supply Chain",
+    "Planeación y gestión de la producción",
+    "Planificación de aprovisionamiento",
+    "Planificación de capacidad",
+    "Planificación de la estrategia",
+    "Planificación y organización",
+    "Principios de manufactura",
+    "Programación con Optplan",
+    "Pronóstico colaborativo",
+    "Resiliencia",
+    "Resolución de problemas y causa raíz",
+    "Sensibilidad del mercado",
+    "Toma de decisiones",
+    "Transportación y logística",
+    "Técnicas de optimización",
+    "Técnicas de programación"
+  ],
+  "periodos": [
+    1,
+    2
+  ],
+  "años": [
+    2025,
+    2026
+  ],
+  "nivel_distribution": {
+    "Novice": 0.0392,
+    "Advanced Beginner": 0.1732,
+    "Competent": 0.5327,
+    "Proficient": 0.2092,
+    "Expert": 0.0458
+  },
+  "nivel_counts": {
+    "Novice": 12,
+    "Advanced Beginner": 53,
+    "Competent": 163,
+    "Proficient": 64,
+    "Expert": 14
+  },
+  "bu_summary": [
+    {
+      "bu": "Colombia",
+      "n": 58,
+      "puntaje_promedio": 2.1736,
+      "apego_promedio": 0.9656,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 8,
+        "Competent": 28,
+        "Proficient": 16,
+        "Expert": 6
+      }
+    },
+    {
+      "bu": "CAC",
+      "n": 14,
+      "puntaje_promedio": 2.1236,
+      "apego_promedio": 0.9538,
+      "niveles": {
+        "Novice": 1,
+        "Advanced Beginner": 0,
+        "Competent": 9,
+        "Proficient": 3,
+        "Expert": 1
+      }
+    },
+    {
+      "bu": "El Salvador",
+      "n": 9,
+      "puntaje_promedio": 2.0356,
+      "apego_promedio": 0.9432,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 3,
+        "Competent": 4,
+        "Proficient": 1,
+        "Expert": 1
+      }
+    },
+    {
+      "bu": "Honduras",
+      "n": 16,
+      "puntaje_promedio": 2.0119,
+      "apego_promedio": 0.9309,
+      "niveles": {
+        "Novice": 1,
+        "Advanced Beginner": 2,
+        "Competent": 10,
+        "Proficient": 2,
+        "Expert": 1
+      }
+    },
+    {
+      "bu": "República Dominicana",
+      "n": 7,
+      "puntaje_promedio": 2.0129,
+      "apego_promedio": 0.919,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 1,
+        "Competent": 5,
+        "Proficient": 1,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "Perú",
+      "n": 39,
+      "puntaje_promedio": 2.0579,
+      "apego_promedio": 0.9121,
+      "niveles": {
+        "Novice": 2,
+        "Advanced Beginner": 4,
+        "Competent": 24,
+        "Proficient": 5,
+        "Expert": 4
+      }
+    },
+    {
+      "bu": "WH",
+      "n": 13,
+      "puntaje_promedio": 1.9215,
+      "apego_promedio": 0.8967,
+      "niveles": {
+        "Novice": 1,
+        "Advanced Beginner": 2,
+        "Competent": 8,
+        "Proficient": 2,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "Otros",
+      "n": 10,
+      "puntaje_promedio": 1.95,
+      "apego_promedio": 0.8938,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 2,
+        "Competent": 7,
+        "Proficient": 1,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "Ecuador",
+      "n": 20,
+      "puntaje_promedio": 1.95,
+      "apego_promedio": 0.8654,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 6,
+        "Competent": 9,
+        "Proficient": 5,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "COPE",
+      "n": 5,
+      "puntaje_promedio": 2.058,
+      "apego_promedio": 0.8558,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 0,
+        "Competent": 5,
+        "Proficient": 0,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "México",
+      "n": 104,
+      "puntaje_promedio": 1.948,
+      "apego_promedio": 0.8535,
+      "niveles": {
+        "Novice": 6,
+        "Advanced Beginner": 22,
+        "Competent": 50,
+        "Proficient": 25,
+        "Expert": 1
+      }
+    },
+    {
+      "bu": "Guatemala",
+      "n": 7,
+      "puntaje_promedio": 1.8014,
+      "apego_promedio": 0.8153,
+      "niveles": {
+        "Novice": 1,
+        "Advanced Beginner": 1,
+        "Competent": 3,
+        "Proficient": 2,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "Panama",
+      "n": 4,
+      "puntaje_promedio": 1.76,
+      "apego_promedio": 0.803,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 2,
+        "Competent": 1,
+        "Proficient": 1,
+        "Expert": 0
+      }
+    }
+  ]
+}

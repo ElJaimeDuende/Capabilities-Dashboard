@@ -1,0 +1,2480 @@
+{
+  "capabilities": [
+    "Colaboración",
+    "Data Driven / Analítico",
+    "Empuje / Orientación a resultados",
+    "Estructuras complejas de datos",
+    "Estándar LCP para Planeación de la Demanda",
+    "Estándar LCP para despliegue de inventario",
+    "Estándares VPO programación y nivel de servicio",
+    "Estándares de MRP LCP",
+    "Estándares de S&OP LCP + SNP LCP",
+    "Estándares de logística inversa LCP y mantenimiento del inventario",
+    "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
+    "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+    "Excel",
+    "Finanzas",
+    "Finanzas empresariales",
+    "Gestión de Equipos",
+    "Gestión de interesados",
+    "Gestión de inventarios",
+    "Gestión de la cadena de suministro",
+    "Gestión de riesgos",
+    "Gestión por sistemas",
+    "Grit (resilencia + empuje)",
+    "Inglés",
+    "Manufactura Esbelta",
+    "Mejora continua",
+    "Mentalidad de crecimiento",
+    "Métodos estadísticos y de pronóstico",
+    "Negociación",
+    "Orientación a datos",
+    "Pensamiento Sistémico",
+    "Planeación Operativa de Supply Chain",
+    "Planeación y gestión de la producción",
+    "Planificación de aprovisionamiento",
+    "Planificación de capacidad",
+    "Planificación de la estrategia",
+    "Planificación y organización",
+    "Principios de manufactura",
+    "Programación con Optplan",
+    "Pronóstico colaborativo",
+    "Resiliencia",
+    "Resolución de problemas y causa raíz",
+    "Sensibilidad del mercado",
+    "Toma de decisiones",
+    "Transportación y logística",
+    "Técnicas de optimización",
+    "Técnicas de programación"
+  ],
+  "by_bu": [
+    {
+      "label": "CAC",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.0469,
+          "n": 13
+        },
+        "Data Driven / Analítico": {
+          "apego": 1.14,
+          "n": 1
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.7633,
+          "n": 3
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.0,
+          "n": 1
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.95,
+          "n": 2
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.7233,
+          "n": 3
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 1.1725,
+          "n": 4
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.0775,
+          "n": 2
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.25,
+          "n": 2
+        },
+        "Excel": {
+          "apego": 0.6751,
+          "n": 13
+        },
+        "Finanzas": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "Finanzas empresariales": {
+          "apego": 0.8112,
+          "n": 6
+        },
+        "Gestión de Equipos": {
+          "apego": 0.5308,
+          "n": 1
+        },
+        "Gestión de interesados": {
+          "apego": 0.9925,
+          "n": 8
+        },
+        "Gestión de inventarios": {
+          "apego": 1.0095,
+          "n": 13
+        },
+        "Gestión de la cadena de suministro": {
+          "apego": 1.0556,
+          "n": 1
+        },
+        "Gestión de riesgos": {
+          "apego": 1.235,
+          "n": 4
+        },
+        "Gestión por sistemas": {
+          "apego": 1.6385,
+          "n": 2
+        },
+        "Grit (resilencia + empuje)": {
+          "apego": 1.087,
+          "n": 1
+        },
+        "Inglés": {
+          "apego": 0.7721,
+          "n": 14
+        },
+        "Mejora continua": {
+          "apego": 1.1024,
+          "n": 8
+        },
+        "Mentalidad de crecimiento": {
+          "apego": 0.8409,
+          "n": 1
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.3333,
+          "n": 1
+        },
+        "Negociación": {
+          "apego": 0.9769,
+          "n": 9
+        },
+        "Orientación a datos": {
+          "apego": 0.7701,
+          "n": 13
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.153,
+          "n": 7
+        },
+        "Planeación Operativa de Supply Chain": {
+          "apego": 1.3043,
+          "n": 1
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.4167,
+          "n": 2
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.8,
+          "n": 3
+        },
+        "Planificación de capacidad": {
+          "apego": 1.23,
+          "n": 1
+        },
+        "Planificación de la estrategia": {
+          "apego": 1.3043,
+          "n": 1
+        },
+        "Planificación y organización": {
+          "apego": 1.0189,
+          "n": 3
+        },
+        "Pronóstico colaborativo": {
+          "apego": 0.525,
+          "n": 2
+        },
+        "Resiliencia": {
+          "apego": 1.0865,
+          "n": 5
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.1958,
+          "n": 6
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.275,
+          "n": 2
+        },
+        "Toma de decisiones": {
+          "apego": 1.0695,
+          "n": 4
+        },
+        "Transportación y logística": {
+          "apego": 1.3217,
+          "n": 3
+        },
+        "Técnicas de optimización": {
+          "apego": 0.88,
+          "n": 2
+        }
+      }
+    },
+    {
+      "label": "COPE",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9491,
+          "n": 5
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.8417,
+          "n": 2
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.45,
+          "n": 1
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.9838,
+          "n": 4
+        },
+        "Excel": {
+          "apego": 0.644,
+          "n": 5
+        },
+        "Gestión de inventarios": {
+          "apego": 0.742,
+          "n": 5
+        },
+        "Inglés": {
+          "apego": 0.5905,
+          "n": 5
+        },
+        "Mejora continua": {
+          "apego": 1.1947,
+          "n": 3
+        },
+        "Negociación": {
+          "apego": 0.9033,
+          "n": 5
+        },
+        "Orientación a datos": {
+          "apego": 0.699,
+          "n": 5
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.475,
+          "n": 2
+        },
+        "Planificación y organización": {
+          "apego": 0.98,
+          "n": 5
+        },
+        "Resiliencia": {
+          "apego": 1.0068,
+          "n": 5
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.075,
+          "n": 2
+        },
+        "Toma de decisiones": {
+          "apego": 0.7623,
+          "n": 3
+        },
+        "Transportación y logística": {
+          "apego": 0.9375,
+          "n": 2
+        }
+      }
+    },
+    {
+      "label": "Colombia",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9549,
+          "n": 58
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.9928,
+          "n": 31
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.3533,
+          "n": 5
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.9356,
+          "n": 9
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.8108,
+          "n": 12
+        },
+        "Estándares VPO programación y nivel de servicio": {
+          "apego": 0.9737,
+          "n": 12
+        },
+        "Estándares de MRP LCP": {
+          "apego": 1.0074,
+          "n": 11
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 1.5,
+          "n": 2
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario": {
+          "apego": 0.79,
+          "n": 6
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.1967,
+          "n": 3
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.0,
+          "n": 3
+        },
+        "Excel": {
+          "apego": 0.8355,
+          "n": 58
+        },
+        "Finanzas empresariales": {
+          "apego": 1.2019,
+          "n": 8
+        },
+        "Gestión de interesados": {
+          "apego": 0.9978,
+          "n": 26
+        },
+        "Gestión de inventarios": {
+          "apego": 0.8917,
+          "n": 58
+        },
+        "Gestión de riesgos": {
+          "apego": 1.4618,
+          "n": 14
+        },
+        "Gestión por sistemas": {
+          "apego": 1.5433,
+          "n": 5
+        },
+        "Inglés": {
+          "apego": 0.8507,
+          "n": 58
+        },
+        "Manufactura Esbelta": {
+          "apego": 1.7333,
+          "n": 12
+        },
+        "Mejora continua": {
+          "apego": 1.305,
+          "n": 16
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.9747,
+          "n": 5
+        },
+        "Negociación": {
+          "apego": 1.0321,
+          "n": 37
+        },
+        "Orientación a datos": {
+          "apego": 0.8389,
+          "n": 58
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.256,
+          "n": 5
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.5333,
+          "n": 2
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.9225,
+          "n": 4
+        },
+        "Planificación y organización": {
+          "apego": 0.9752,
+          "n": 29
+        },
+        "Principios de manufactura": {
+          "apego": 0.8579,
+          "n": 12
+        },
+        "Programación con Optplan": {
+          "apego": 0.61,
+          "n": 12
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.4972,
+          "n": 9
+        },
+        "Resiliencia": {
+          "apego": 0.9496,
+          "n": 44
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.105,
+          "n": 28
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.6694,
+          "n": 9
+        },
+        "Toma de decisiones": {
+          "apego": 1.2127,
+          "n": 9
+        },
+        "Transportación y logística": {
+          "apego": 0.9882,
+          "n": 25
+        },
+        "Técnicas de programación": {
+          "apego": 0.7678,
+          "n": 12
+        }
+      }
+    },
+    {
+      "label": "Ecuador",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.8352,
+          "n": 20
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.8882,
+          "n": 12
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.6,
+          "n": 4
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.7972,
+          "n": 6
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.565,
+          "n": 1
+        },
+        "Estándares VPO programación y nivel de servicio": {
+          "apego": 0.752,
+          "n": 4
+        },
+        "Estándares de MRP LCP": {
+          "apego": 1.069,
+          "n": 5
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario": {
+          "apego": 0.645,
+          "n": 1
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.305,
+          "n": 2
+        },
+        "Excel": {
+          "apego": 0.6972,
+          "n": 20
+        },
+        "Finanzas empresariales": {
+          "apego": 1.0755,
+          "n": 4
+        },
+        "Gestión de interesados": {
+          "apego": 0.9285,
+          "n": 11
+        },
+        "Gestión de inventarios": {
+          "apego": 0.9301,
+          "n": 20
+        },
+        "Gestión de riesgos": {
+          "apego": 1.0633,
+          "n": 5
+        },
+        "Gestión por sistemas": {
+          "apego": 1.0962,
+          "n": 2
+        },
+        "Inglés": {
+          "apego": 0.7466,
+          "n": 20
+        },
+        "Manufactura Esbelta": {
+          "apego": 1.7883,
+          "n": 4
+        },
+        "Mejora continua": {
+          "apego": 1.1147,
+          "n": 4
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.9375,
+          "n": 4
+        },
+        "Negociación": {
+          "apego": 1.0045,
+          "n": 10
+        },
+        "Orientación a datos": {
+          "apego": 0.6771,
+          "n": 20
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.0117,
+          "n": 3
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.7889,
+          "n": 3
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.9767,
+          "n": 1
+        },
+        "Planificación de capacidad": {
+          "apego": 1.35,
+          "n": 2
+        },
+        "Planificación y organización": {
+          "apego": 0.9164,
+          "n": 7
+        },
+        "Principios de manufactura": {
+          "apego": 0.9062,
+          "n": 4
+        },
+        "Programación con Optplan": {
+          "apego": 0.66,
+          "n": 4
+        },
+        "Pronóstico colaborativo": {
+          "apego": 0.35,
+          "n": 6
+        },
+        "Resiliencia": {
+          "apego": 1.0543,
+          "n": 11
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.2443,
+          "n": 7
+        },
+        "Sensibilidad del mercado": {
+          "apego": 0.8417,
+          "n": 6
+        },
+        "Transportación y logística": {
+          "apego": 0.8081,
+          "n": 8
+        },
+        "Técnicas de programación": {
+          "apego": 0.6358,
+          "n": 4
+        }
+      }
+    },
+    {
+      "label": "El Salvador",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.1752,
+          "n": 10
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.8858,
+          "n": 5
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.4,
+          "n": 2
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.96,
+          "n": 2
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.6125,
+          "n": 2
+        },
+        "Estándares VPO programación y nivel de servicio": {
+          "apego": 1.168,
+          "n": 2
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.0967,
+          "n": 3
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.25,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.578,
+          "n": 10
+        },
+        "Finanzas empresariales": {
+          "apego": 1.2183,
+          "n": 3
+        },
+        "Gestión de interesados": {
+          "apego": 1.064,
+          "n": 4
+        },
+        "Gestión de inventarios": {
+          "apego": 0.9268,
+          "n": 10
+        },
+        "Gestión de riesgos": {
+          "apego": 2.0333,
+          "n": 3
+        },
+        "Inglés": {
+          "apego": 0.7392,
+          "n": 10
+        },
+        "Manufactura Esbelta": {
+          "apego": 1.6,
+          "n": 2
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 1.07,
+          "n": 2
+        },
+        "Negociación": {
+          "apego": 0.931,
+          "n": 5
+        },
+        "Orientación a datos": {
+          "apego": 0.4945,
+          "n": 10
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.2,
+          "n": 3
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 0.925,
+          "n": 4
+        },
+        "Planificación y organización": {
+          "apego": 0.8625,
+          "n": 2
+        },
+        "Principios de manufactura": {
+          "apego": 0.775,
+          "n": 2
+        },
+        "Programación con Optplan": {
+          "apego": 0.36,
+          "n": 2
+        },
+        "Pronóstico colaborativo": {
+          "apego": 0.6,
+          "n": 2
+        },
+        "Resiliencia": {
+          "apego": 0.8587,
+          "n": 5
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.665,
+          "n": 6
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.05,
+          "n": 2
+        },
+        "Transportación y logística": {
+          "apego": 1.1125,
+          "n": 6
+        },
+        "Técnicas de optimización": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Técnicas de programación": {
+          "apego": 1.0583,
+          "n": 2
+        }
+      }
+    },
+    {
+      "label": "Guatemala",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9293,
+          "n": 6
+        },
+        "Data Driven / Analítico": {
+          "apego": 1.08,
+          "n": 1
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.7887,
+          "n": 6
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.4756,
+          "n": 3
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 1.2,
+          "n": 3
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.835,
+          "n": 2
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.87,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.7199,
+          "n": 6
+        },
+        "Finanzas": {
+          "apego": 1.2273,
+          "n": 1
+        },
+        "Gestión de Equipos": {
+          "apego": 0.9615,
+          "n": 1
+        },
+        "Gestión de interesados": {
+          "apego": 1.0095,
+          "n": 4
+        },
+        "Gestión de inventarios": {
+          "apego": 1.7339,
+          "n": 6
+        },
+        "Gestión de la cadena de suministro": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Gestión de riesgos": {
+          "apego": 1.085,
+          "n": 1
+        },
+        "Grit (resilencia + empuje)": {
+          "apego": 1.0435,
+          "n": 1
+        },
+        "Inglés": {
+          "apego": 0.9399,
+          "n": 7
+        },
+        "Mentalidad de crecimiento": {
+          "apego": 1.1273,
+          "n": 1
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.7083,
+          "n": 3
+        },
+        "Negociación": {
+          "apego": 1.1875,
+          "n": 2
+        },
+        "Orientación a datos": {
+          "apego": 0.6881,
+          "n": 6
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.2273,
+          "n": 1
+        },
+        "Planeación Operativa de Supply Chain": {
+          "apego": 1.1739,
+          "n": 1
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 0.95,
+          "n": 2
+        },
+        "Planificación de capacidad": {
+          "apego": 0.0,
+          "n": 1
+        },
+        "Planificación de la estrategia": {
+          "apego": 0.587,
+          "n": 1
+        },
+        "Planificación y organización": {
+          "apego": 0.76,
+          "n": 2
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.825,
+          "n": 3
+        },
+        "Resiliencia": {
+          "apego": 1.0088,
+          "n": 3
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 0.575,
+          "n": 2
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.5,
+          "n": 3
+        },
+        "Toma de decisiones": {
+          "apego": 1.1875,
+          "n": 1
+        },
+        "Transportación y logística": {
+          "apego": 1.0278,
+          "n": 3
+        },
+        "Técnicas de optimización": {
+          "apego": 1.0,
+          "n": 1
+        }
+      }
+    },
+    {
+      "label": "Honduras",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.1692,
+          "n": 15
+        },
+        "Data Driven / Analítico": {
+          "apego": 0.84,
+          "n": 1
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.863,
+          "n": 11
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.5333,
+          "n": 3
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.75,
+          "n": 3
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 1.055,
+          "n": 3
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.3967,
+          "n": 3
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.3275,
+          "n": 4
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.185,
+          "n": 2
+        },
+        "Excel": {
+          "apego": 0.7693,
+          "n": 15
+        },
+        "Finanzas": {
+          "apego": 0.6818,
+          "n": 1
+        },
+        "Finanzas empresariales": {
+          "apego": 1.35,
+          "n": 4
+        },
+        "Gestión de Equipos": {
+          "apego": 0.5654,
+          "n": 1
+        },
+        "Gestión de interesados": {
+          "apego": 0.9307,
+          "n": 4
+        },
+        "Gestión de inventarios": {
+          "apego": 0.9319,
+          "n": 15
+        },
+        "Gestión de la cadena de suministro": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Gestión de riesgos": {
+          "apego": 0.6675,
+          "n": 2
+        },
+        "Grit (resilencia + empuje)": {
+          "apego": 0.6522,
+          "n": 1
+        },
+        "Inglés": {
+          "apego": 0.7336,
+          "n": 16
+        },
+        "Mentalidad de crecimiento": {
+          "apego": 0.7545,
+          "n": 1
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.8472,
+          "n": 3
+        },
+        "Negociación": {
+          "apego": 1.0395,
+          "n": 10
+        },
+        "Orientación a datos": {
+          "apego": 0.6929,
+          "n": 15
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.2409,
+          "n": 5
+        },
+        "Planeación Operativa de Supply Chain": {
+          "apego": 0.6522,
+          "n": 1
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.2778,
+          "n": 6
+        },
+        "Planificación de la estrategia": {
+          "apego": 0.9783,
+          "n": 1
+        },
+        "Planificación y organización": {
+          "apego": 1.205,
+          "n": 6
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.7,
+          "n": 3
+        },
+        "Resiliencia": {
+          "apego": 0.8118,
+          "n": 8
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.3133,
+          "n": 12
+        },
+        "Sensibilidad del mercado": {
+          "apego": 0.75,
+          "n": 3
+        },
+        "Toma de decisiones": {
+          "apego": 0.875,
+          "n": 1
+        },
+        "Transportación y logística": {
+          "apego": 1.1229,
+          "n": 12
+        },
+        "Técnicas de optimización": {
+          "apego": 0.5,
+          "n": 2
+        }
+      }
+    },
+    {
+      "label": "México",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.8963,
+          "n": 104
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.9769,
+          "n": 64
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.2833,
+          "n": 6
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.7082,
+          "n": 11
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.7301,
+          "n": 35
+        },
+        "Estándares VPO programación y nivel de servicio": {
+          "apego": 0.8391,
+          "n": 9
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.936,
+          "n": 25
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 0.736,
+          "n": 5
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario": {
+          "apego": 0.6388,
+          "n": 4
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 0.788,
+          "n": 5
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.2878,
+          "n": 9
+        },
+        "Excel": {
+          "apego": 0.6572,
+          "n": 103
+        },
+        "Finanzas empresariales": {
+          "apego": 0.8907,
+          "n": 13
+        },
+        "Gestión de interesados": {
+          "apego": 0.9936,
+          "n": 28
+        },
+        "Gestión de inventarios": {
+          "apego": 0.7382,
+          "n": 103
+        },
+        "Gestión de riesgos": {
+          "apego": 1.1458,
+          "n": 16
+        },
+        "Gestión por sistemas": {
+          "apego": 1.1429,
+          "n": 4
+        },
+        "Inglés": {
+          "apego": 0.7134,
+          "n": 103
+        },
+        "Manufactura Esbelta": {
+          "apego": 1.7622,
+          "n": 9
+        },
+        "Mejora continua": {
+          "apego": 1.2563,
+          "n": 27
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.7286,
+          "n": 6
+        },
+        "Negociación": {
+          "apego": 0.9477,
+          "n": 73
+        },
+        "Orientación a datos": {
+          "apego": 0.7714,
+          "n": 103
+        },
+        "Pensamiento Sistémico": {
+          "apego": 0.9675,
+          "n": 10
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.3872,
+          "n": 13
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.75,
+          "n": 10
+        },
+        "Planificación de capacidad": {
+          "apego": 0.8488,
+          "n": 8
+        },
+        "Planificación y organización": {
+          "apego": 0.9392,
+          "n": 62
+        },
+        "Principios de manufactura": {
+          "apego": 0.8694,
+          "n": 9
+        },
+        "Programación con Optplan": {
+          "apego": 0.4667,
+          "n": 9
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.2806,
+          "n": 9
+        },
+        "Resiliencia": {
+          "apego": 0.9347,
+          "n": 82
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.0415,
+          "n": 59
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.0932,
+          "n": 11
+        },
+        "Toma de decisiones": {
+          "apego": 0.9324,
+          "n": 19
+        },
+        "Transportación y logística": {
+          "apego": 0.8569,
+          "n": 57
+        },
+        "Técnicas de optimización": {
+          "apego": 0.495,
+          "n": 10
+        },
+        "Técnicas de programación": {
+          "apego": 0.697,
+          "n": 9
+        }
+      }
+    },
+    {
+      "label": "Otros",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.0382,
+          "n": 10
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.6307,
+          "n": 5
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.2708,
+          "n": 4
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.99,
+          "n": 4
+        },
+        "Estándares de MRP LCP": {
+          "apego": 1.035,
+          "n": 2
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 0.6,
+          "n": 1
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.53,
+          "n": 10
+        },
+        "Finanzas empresariales": {
+          "apego": 0.5,
+          "n": 1
+        },
+        "Gestión de interesados": {
+          "apego": 1.0442,
+          "n": 6
+        },
+        "Gestión de inventarios": {
+          "apego": 1.2151,
+          "n": 9
+        },
+        "Gestión de riesgos": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Gestión por sistemas": {
+          "apego": 0.0,
+          "n": 1
+        },
+        "Inglés": {
+          "apego": 0.7469,
+          "n": 10
+        },
+        "Mejora continua": {
+          "apego": 0.7959,
+          "n": 5
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.7917,
+          "n": 4
+        },
+        "Negociación": {
+          "apego": 1.0024,
+          "n": 6
+        },
+        "Orientación a datos": {
+          "apego": 0.5994,
+          "n": 10
+        },
+        "Pensamiento Sistémico": {
+          "apego": 0.915,
+          "n": 2
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 2.8,
+          "n": 1
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.6089,
+          "n": 3
+        },
+        "Planificación de capacidad": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Planificación y organización": {
+          "apego": 1.15,
+          "n": 2
+        },
+        "Pronóstico colaborativo": {
+          "apego": 2.1375,
+          "n": 4
+        },
+        "Resiliencia": {
+          "apego": 1.2812,
+          "n": 4
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.15,
+          "n": 2
+        },
+        "Sensibilidad del mercado": {
+          "apego": 2.55,
+          "n": 4
+        },
+        "Toma de decisiones": {
+          "apego": 1.1217,
+          "n": 3
+        },
+        "Transportación y logística": {
+          "apego": 0.8,
+          "n": 1
+        }
+      }
+    },
+    {
+      "label": "Panama",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9083,
+          "n": 3
+        },
+        "Data Driven / Analítico": {
+          "apego": 0.54,
+          "n": 1
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.9433,
+          "n": 2
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.4,
+          "n": 2
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.795,
+          "n": 2
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 0.19,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.63,
+          "n": 3
+        },
+        "Finanzas": {
+          "apego": 1.6364,
+          "n": 1
+        },
+        "Finanzas empresariales": {
+          "apego": 0.9,
+          "n": 1
+        },
+        "Gestión de Equipos": {
+          "apego": 0.6423,
+          "n": 1
+        },
+        "Gestión de interesados": {
+          "apego": 0.8832,
+          "n": 4
+        },
+        "Gestión de inventarios": {
+          "apego": 1.2667,
+          "n": 3
+        },
+        "Gestión de la cadena de suministro": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Grit (resilencia + empuje)": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Inglés": {
+          "apego": 0.938,
+          "n": 4
+        },
+        "Mentalidad de crecimiento": {
+          "apego": 0.8,
+          "n": 1
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.6542,
+          "n": 2
+        },
+        "Orientación a datos": {
+          "apego": 0.3167,
+          "n": 3
+        },
+        "Pensamiento Sistémico": {
+          "apego": 0.9886,
+          "n": 2
+        },
+        "Planeación Operativa de Supply Chain": {
+          "apego": 1.3043,
+          "n": 1
+        },
+        "Planificación de capacidad": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Planificación de la estrategia": {
+          "apego": 1.1739,
+          "n": 1
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.5,
+          "n": 2
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 0.825,
+          "n": 1
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.0875,
+          "n": 2
+        },
+        "Toma de decisiones": {
+          "apego": 0.4375,
+          "n": 1
+        },
+        "Técnicas de optimización": {
+          "apego": 0.6667,
+          "n": 1
+        }
+      }
+    },
+    {
+      "label": "Perú",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9482,
+          "n": 39
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.9838,
+          "n": 23
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.5,
+          "n": 4
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.9143,
+          "n": 7
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.6125,
+          "n": 6
+        },
+        "Estándares VPO programación y nivel de servicio": {
+          "apego": 0.7687,
+          "n": 6
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.8912,
+          "n": 10
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 0.9383,
+          "n": 3
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario": {
+          "apego": 1.21,
+          "n": 2
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.075,
+          "n": 4
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 2.05,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.8247,
+          "n": 39
+        },
+        "Finanzas empresariales": {
+          "apego": 1.2721,
+          "n": 9
+        },
+        "Gestión de interesados": {
+          "apego": 1.0229,
+          "n": 16
+        },
+        "Gestión de inventarios": {
+          "apego": 0.838,
+          "n": 39
+        },
+        "Gestión de riesgos": {
+          "apego": 1.1927,
+          "n": 8
+        },
+        "Gestión por sistemas": {
+          "apego": 1.3269,
+          "n": 2
+        },
+        "Inglés": {
+          "apego": 0.7838,
+          "n": 39
+        },
+        "Manufactura Esbelta": {
+          "apego": 1.4878,
+          "n": 6
+        },
+        "Mejora continua": {
+          "apego": 0.997,
+          "n": 7
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.6829,
+          "n": 4
+        },
+        "Negociación": {
+          "apego": 0.9472,
+          "n": 23
+        },
+        "Orientación a datos": {
+          "apego": 0.788,
+          "n": 39
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.2936,
+          "n": 7
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.6867,
+          "n": 5
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.4089,
+          "n": 3
+        },
+        "Planificación de capacidad": {
+          "apego": 1.82,
+          "n": 3
+        },
+        "Planificación y organización": {
+          "apego": 0.9491,
+          "n": 18
+        },
+        "Principios de manufactura": {
+          "apego": 0.76,
+          "n": 6
+        },
+        "Programación con Optplan": {
+          "apego": 0.64,
+          "n": 6
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.1179,
+          "n": 7
+        },
+        "Resiliencia": {
+          "apego": 0.9704,
+          "n": 25
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.2099,
+          "n": 21
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.1143,
+          "n": 7
+        },
+        "Toma de decisiones": {
+          "apego": 0.723,
+          "n": 2
+        },
+        "Transportación y logística": {
+          "apego": 0.9021,
+          "n": 20
+        },
+        "Técnicas de optimización": {
+          "apego": 0.7556,
+          "n": 3
+        },
+        "Técnicas de programación": {
+          "apego": 0.7378,
+          "n": 6
+        }
+      }
+    },
+    {
+      "label": "República Dominicana",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9052,
+          "n": 7
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 1.2058,
+          "n": 6
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.8,
+          "n": 1
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.9,
+          "n": 1
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.6283,
+          "n": 3
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario": {
+          "apego": 0.8975,
+          "n": 2
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.18,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.5357,
+          "n": 7
+        },
+        "Finanzas empresariales": {
+          "apego": 1.275,
+          "n": 1
+        },
+        "Gestión de interesados": {
+          "apego": 1.06,
+          "n": 1
+        },
+        "Gestión de inventarios": {
+          "apego": 0.8794,
+          "n": 7
+        },
+        "Inglés": {
+          "apego": 0.7789,
+          "n": 7
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.865,
+          "n": 1
+        },
+        "Negociación": {
+          "apego": 0.7808,
+          "n": 6
+        },
+        "Orientación a datos": {
+          "apego": 0.685,
+          "n": 7
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.6,
+          "n": 1
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.2333,
+          "n": 1
+        },
+        "Planificación y organización": {
+          "apego": 1.05,
+          "n": 4
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.275,
+          "n": 1
+        },
+        "Resiliencia": {
+          "apego": 0.9064,
+          "n": 5
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.364,
+          "n": 5
+        },
+        "Sensibilidad del mercado": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "Transportación y logística": {
+          "apego": 0.9347,
+          "n": 6
+        }
+      }
+    },
+    {
+      "label": "WH",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.0647,
+          "n": 13
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.7457,
+          "n": 7
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.2556,
+          "n": 6
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.9708,
+          "n": 12
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.9,
+          "n": 1
+        },
+        "Excel": {
+          "apego": 0.8665,
+          "n": 13
+        },
+        "Finanzas empresariales": {
+          "apego": 0.9625,
+          "n": 6
+        },
+        "Gestión de interesados": {
+          "apego": 1.0012,
+          "n": 12
+        },
+        "Gestión de inventarios": {
+          "apego": 1.104,
+          "n": 13
+        },
+        "Gestión por sistemas": {
+          "apego": 0.72,
+          "n": 6
+        },
+        "Inglés": {
+          "apego": 0.7252,
+          "n": 13
+        },
+        "Mejora continua": {
+          "apego": 0.9192,
+          "n": 6
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.6111,
+          "n": 6
+        },
+        "Negociación": {
+          "apego": 1.22,
+          "n": 1
+        },
+        "Orientación a datos": {
+          "apego": 0.5442,
+          "n": 13
+        },
+        "Planificación y organización": {
+          "apego": 1.35,
+          "n": 1
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.6458,
+          "n": 12
+        },
+        "Resiliencia": {
+          "apego": 1.224,
+          "n": 1
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.2,
+          "n": 1
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.8417,
+          "n": 12
+        },
+        "Transportación y logística": {
+          "apego": 0.715,
+          "n": 1
+        }
+      }
+    }
+  ],
+  "by_area": [
+    {
+      "label": "CONA",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.1147,
+          "n": 17
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 0.9779,
+          "n": 17
+        },
+        "Excel": {
+          "apego": 0.5876,
+          "n": 17
+        },
+        "Finanzas empresariales": {
+          "apego": 0.6991,
+          "n": 17
+        },
+        "Gestión de interesados": {
+          "apego": 1.1435,
+          "n": 17
+        },
+        "Gestión de inventarios": {
+          "apego": 0.8909,
+          "n": 17
+        },
+        "Gestión de riesgos": {
+          "apego": 1.0922,
+          "n": 9
+        },
+        "Inglés": {
+          "apego": 0.792,
+          "n": 17
+        },
+        "Mejora continua": {
+          "apego": 1.0361,
+          "n": 9
+        },
+        "Negociación": {
+          "apego": 1.2067,
+          "n": 9
+        },
+        "Orientación a datos": {
+          "apego": 0.7991,
+          "n": 17
+        },
+        "Pensamiento Sistémico": {
+          "apego": 0.9632,
+          "n": 17
+        },
+        "Planificación de capacidad": {
+          "apego": 1.31,
+          "n": 8
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 0.8344,
+          "n": 8
+        },
+        "Técnicas de optimización": {
+          "apego": 0.3992,
+          "n": 8
+        }
+      }
+    },
+    {
+      "label": "DP Estadistico",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.0562,
+          "n": 29
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.6921,
+          "n": 22
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.1977,
+          "n": 22
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 1.0003,
+          "n": 29
+        },
+        "Excel": {
+          "apego": 0.6238,
+          "n": 29
+        },
+        "Finanzas empresariales": {
+          "apego": 0.9321,
+          "n": 7
+        },
+        "Gestión de interesados": {
+          "apego": 0.9913,
+          "n": 29
+        },
+        "Gestión de inventarios": {
+          "apego": 1.5793,
+          "n": 29
+        },
+        "Gestión por sistemas": {
+          "apego": 0.7971,
+          "n": 7
+        },
+        "Inglés": {
+          "apego": 0.7601,
+          "n": 29
+        },
+        "Mejora continua": {
+          "apego": 1.0079,
+          "n": 7
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.6606,
+          "n": 22
+        },
+        "Orientación a datos": {
+          "apego": 0.4568,
+          "n": 29
+        },
+        "Pronóstico colaborativo": {
+          "apego": 1.9172,
+          "n": 29
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.9655,
+          "n": 29
+        }
+      }
+    },
+    {
+      "label": "DP Operativo",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.0267,
+          "n": 23
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 1.1332,
+          "n": 19
+        },
+        "Estructuras complejas de datos": {
+          "apego": 0.6084,
+          "n": 19
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.8371,
+          "n": 23
+        },
+        "Excel": {
+          "apego": 0.9091,
+          "n": 23
+        },
+        "Finanzas empresariales": {
+          "apego": 0.8654,
+          "n": 4
+        },
+        "Gestión de interesados": {
+          "apego": 1.0695,
+          "n": 23
+        },
+        "Gestión de inventarios": {
+          "apego": 1.6304,
+          "n": 23
+        },
+        "Gestión por sistemas": {
+          "apego": 0.7933,
+          "n": 4
+        },
+        "Inglés": {
+          "apego": 0.8904,
+          "n": 23
+        },
+        "Mejora continua": {
+          "apego": 0.935,
+          "n": 4
+        },
+        "Métodos estadísticos y de pronóstico": {
+          "apego": 0.9126,
+          "n": 19
+        },
+        "Orientación a datos": {
+          "apego": 0.6468,
+          "n": 23
+        },
+        "Pronóstico colaborativo": {
+          "apego": 0.8228,
+          "n": 23
+        },
+        "Sensibilidad del mercado": {
+          "apego": 0.7685,
+          "n": 23
+        }
+      }
+    },
+    {
+      "label": "DRP",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9167,
+          "n": 65
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.9955,
+          "n": 56
+        },
+        "Estándar LCP para despliegue de inventario": {
+          "apego": 0.7367,
+          "n": 64
+        },
+        "Excel": {
+          "apego": 0.5866,
+          "n": 64
+        },
+        "Gestión de inventarios": {
+          "apego": 0.6395,
+          "n": 64
+        },
+        "Inglés": {
+          "apego": 0.6762,
+          "n": 64
+        },
+        "Mejora continua": {
+          "apego": 1.1125,
+          "n": 8
+        },
+        "Negociación": {
+          "apego": 0.9307,
+          "n": 64
+        },
+        "Orientación a datos": {
+          "apego": 0.7537,
+          "n": 64
+        },
+        "Planificación y organización": {
+          "apego": 0.9289,
+          "n": 63
+        },
+        "Resiliencia": {
+          "apego": 0.8218,
+          "n": 64
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.0325,
+          "n": 53
+        },
+        "Toma de decisiones": {
+          "apego": 0.6925,
+          "n": 8
+        },
+        "Transportación y logística": {
+          "apego": 0.8271,
+          "n": 56
+        }
+      }
+    },
+    {
+      "label": "Gerente de Planning BU",
+      "cells": {
+        "Data Driven / Analítico": {
+          "apego": 0.9,
+          "n": 4
+        },
+        "Finanzas": {
+          "apego": 1.0739,
+          "n": 4
+        },
+        "Gestión de Equipos": {
+          "apego": 0.675,
+          "n": 4
+        },
+        "Gestión de interesados": {
+          "apego": 0.761,
+          "n": 4
+        },
+        "Gestión de la cadena de suministro": {
+          "apego": 1.0139,
+          "n": 4
+        },
+        "Grit (resilencia + empuje)": {
+          "apego": 0.9457,
+          "n": 4
+        },
+        "Inglés": {
+          "apego": 1.1859,
+          "n": 4
+        },
+        "Mentalidad de crecimiento": {
+          "apego": 0.8807,
+          "n": 4
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.125,
+          "n": 4
+        },
+        "Planeación Operativa de Supply Chain": {
+          "apego": 1.1087,
+          "n": 4
+        },
+        "Planificación de la estrategia": {
+          "apego": 1.0109,
+          "n": 4
+        },
+        "Toma de decisiones": {
+          "apego": 0.75,
+          "n": 4
+        }
+      }
+    },
+    {
+      "label": "Logística Inversa",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.7568,
+          "n": 15
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 1.4464,
+          "n": 11
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario": {
+          "apego": 0.8103,
+          "n": 15
+        },
+        "Excel": {
+          "apego": 0.7989,
+          "n": 15
+        },
+        "Gestión de inventarios": {
+          "apego": 0.6555,
+          "n": 15
+        },
+        "Gestión por sistemas": {
+          "apego": 1.3696,
+          "n": 4
+        },
+        "Inglés": {
+          "apego": 0.6736,
+          "n": 15
+        },
+        "Mejora continua": {
+          "apego": 1.8815,
+          "n": 4
+        },
+        "Negociación": {
+          "apego": 0.8912,
+          "n": 15
+        },
+        "Orientación a datos": {
+          "apego": 0.8257,
+          "n": 15
+        },
+        "Planificación y organización": {
+          "apego": 0.8421,
+          "n": 14
+        },
+        "Resiliencia": {
+          "apego": 0.9799,
+          "n": 15
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 0.93,
+          "n": 8
+        },
+        "Toma de decisiones": {
+          "apego": 0.9196,
+          "n": 4
+        },
+        "Transportación y logística": {
+          "apego": 0.9855,
+          "n": 11
+        }
+      }
+    },
+    {
+      "label": "MRP Operativo",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9045,
+          "n": 49
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.8174,
+          "n": 38
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.9462,
+          "n": 49
+        },
+        "Excel": {
+          "apego": 0.8365,
+          "n": 49
+        },
+        "Gestión de inventarios": {
+          "apego": 0.6784,
+          "n": 49
+        },
+        "Inglés": {
+          "apego": 0.728,
+          "n": 49
+        },
+        "Mejora continua": {
+          "apego": 1.31,
+          "n": 11
+        },
+        "Negociación": {
+          "apego": 1.0493,
+          "n": 49
+        },
+        "Orientación a datos": {
+          "apego": 0.8769,
+          "n": 49
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.8273,
+          "n": 11
+        },
+        "Planificación y organización": {
+          "apego": 1.086,
+          "n": 48
+        },
+        "Resiliencia": {
+          "apego": 1.157,
+          "n": 49
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.2141,
+          "n": 38
+        },
+        "Toma de decisiones": {
+          "apego": 1.1873,
+          "n": 11
+        },
+        "Transportación y logística": {
+          "apego": 0.6846,
+          "n": 38
+        }
+      }
+    },
+    {
+      "label": "MRP Táctico",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.8216,
+          "n": 17
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.8567,
+          "n": 9
+        },
+        "Estándares de MRP LCP": {
+          "apego": 0.838,
+          "n": 16
+        },
+        "Excel": {
+          "apego": 0.7318,
+          "n": 17
+        },
+        "Gestión de inventarios": {
+          "apego": 0.6759,
+          "n": 16
+        },
+        "Inglés": {
+          "apego": 0.7025,
+          "n": 17
+        },
+        "Mejora continua": {
+          "apego": 1.059,
+          "n": 8
+        },
+        "Negociación": {
+          "apego": 0.8509,
+          "n": 17
+        },
+        "Orientación a datos": {
+          "apego": 0.9162,
+          "n": 17
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 2.1889,
+          "n": 9
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.6317,
+          "n": 8
+        },
+        "Planificación de capacidad": {
+          "apego": 0.9667,
+          "n": 9
+        },
+        "Planificación y organización": {
+          "apego": 0.8656,
+          "n": 16
+        },
+        "Resiliencia": {
+          "apego": 1.0442,
+          "n": 17
+        },
+        "Toma de decisiones": {
+          "apego": 0.8035,
+          "n": 8
+        },
+        "Transportación y logística": {
+          "apego": 0.8611,
+          "n": 9
+        }
+      }
+    },
+    {
+      "label": "NPI Innovaciones",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.78,
+          "n": 10
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.815,
+          "n": 10
+        },
+        "Estándar LCP para Planeación de la Demanda": {
+          "apego": 0.69,
+          "n": 10
+        },
+        "Excel": {
+          "apego": 0.708,
+          "n": 10
+        },
+        "Finanzas empresariales": {
+          "apego": 1.3725,
+          "n": 10
+        },
+        "Gestión de interesados": {
+          "apego": 0.8457,
+          "n": 10
+        },
+        "Gestión de inventarios": {
+          "apego": 0.975,
+          "n": 10
+        },
+        "Inglés": {
+          "apego": 0.9556,
+          "n": 10
+        },
+        "Mejora continua": {
+          "apego": 1.174,
+          "n": 10
+        },
+        "Orientación a datos": {
+          "apego": 0.758,
+          "n": 10
+        },
+        "Pronóstico colaborativo": {
+          "apego": 0.725,
+          "n": 8
+        },
+        "Sensibilidad del mercado": {
+          "apego": 1.185,
+          "n": 10
+        }
+      }
+    },
+    {
+      "label": "Programación de la Producción",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.793,
+          "n": 33
+        },
+        "Estándares VPO programación y nivel de servicio": {
+          "apego": 0.8846,
+          "n": 33
+        },
+        "Excel": {
+          "apego": 0.8168,
+          "n": 33
+        },
+        "Gestión de interesados": {
+          "apego": 0.8794,
+          "n": 33
+        },
+        "Gestión de inventarios": {
+          "apego": 0.7818,
+          "n": 33
+        },
+        "Gestión de riesgos": {
+          "apego": 1.3596,
+          "n": 33
+        },
+        "Inglés": {
+          "apego": 0.8587,
+          "n": 33
+        },
+        "Manufactura Esbelta": {
+          "apego": 1.6952,
+          "n": 33
+        },
+        "Orientación a datos": {
+          "apego": 0.6738,
+          "n": 33
+        },
+        "Principios de manufactura": {
+          "apego": 0.8441,
+          "n": 33
+        },
+        "Programación con Optplan": {
+          "apego": 0.5673,
+          "n": 33
+        },
+        "Resiliencia": {
+          "apego": 0.8759,
+          "n": 33
+        },
+        "Técnicas de programación": {
+          "apego": 0.7446,
+          "n": 33
+        }
+      }
+    },
+    {
+      "label": "Retpack",
+      "cells": {
+        "Colaboración": {
+          "apego": 1.344,
+          "n": 25
+        },
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
+          "apego": 1.079,
+          "n": 25
+        },
+        "Excel": {
+          "apego": 0.7784,
+          "n": 25
+        },
+        "Finanzas empresariales": {
+          "apego": 1.3178,
+          "n": 18
+        },
+        "Gestión de inventarios": {
+          "apego": 0.7806,
+          "n": 25
+        },
+        "Gestión por sistemas": {
+          "apego": 1.5,
+          "n": 7
+        },
+        "Inglés": {
+          "apego": 0.7983,
+          "n": 25
+        },
+        "Mejora continua": {
+          "apego": 1.0489,
+          "n": 7
+        },
+        "Negociación": {
+          "apego": 0.9599,
+          "n": 25
+        },
+        "Orientación a datos": {
+          "apego": 0.7797,
+          "n": 25
+        },
+        "Pensamiento Sistémico": {
+          "apego": 1.2672,
+          "n": 25
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.1463,
+          "n": 18
+        },
+        "Planificación de aprovisionamiento": {
+          "apego": 0.631,
+          "n": 7
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 1.7043,
+          "n": 25
+        },
+        "Transportación y logística": {
+          "apego": 1.6444,
+          "n": 18
+        }
+      }
+    },
+    {
+      "label": "WSNP",
+      "cells": {
+        "Colaboración": {
+          "apego": 0.9399,
+          "n": 20
+        },
+        "Empuje / Orientación a resultados": {
+          "apego": 0.9477,
+          "n": 12
+        },
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
+          "apego": 1.269,
+          "n": 20
+        },
+        "Excel": {
+          "apego": 0.6329,
+          "n": 20
+        },
+        "Gestión de interesados": {
+          "apego": 1.2331,
+          "n": 8
+        },
+        "Gestión de inventarios": {
+          "apego": 0.8217,
+          "n": 20
+        },
+        "Gestión de riesgos": {
+          "apego": 1.1183,
+          "n": 12
+        },
+        "Inglés": {
+          "apego": 0.7158,
+          "n": 20
+        },
+        "Mejora continua": {
+          "apego": 1.2031,
+          "n": 8
+        },
+        "Negociación": {
+          "apego": 1.0231,
+          "n": 8
+        },
+        "Orientación a datos": {
+          "apego": 0.6995,
+          "n": 20
+        },
+        "Planeación y gestión de la producción": {
+          "apego": 1.225,
+          "n": 12
+        },
+        "Resiliencia": {
+          "apego": 0.94,
+          "n": 20
+        },
+        "Resolución de problemas y causa raíz": {
+          "apego": 0.815,
+          "n": 20
+        },
+        "Toma de decisiones": {
+          "apego": 1.35,
+          "n": 8
+        },
+        "Transportación y logística": {
+          "apego": 1.1444,
+          "n": 12
+        },
+        "Técnicas de optimización": {
+          "apego": 0.8292,
+          "n": 12
+        }
+      }
+    }
+  ],
+  "benchmark_threshold": 0.7
+}

@@ -1,0 +1,1451 @@
+{
+  "by_period": [
+    {
+      "año": 2025,
+      "periodo": 1,
+      "label": "2025-P1",
+      "n": 1,
+      "puntaje_promedio": 2.07,
+      "apego_promedio": 0.873,
+      "nivel_counts": {
+        "Novice": 0,
+        "Advanced Beginner": 0,
+        "Competent": 1,
+        "Proficient": 0,
+        "Expert": 0
+      },
+      "nivel_pct": {
+        "Novice": 0.0,
+        "Advanced Beginner": 0.0,
+        "Competent": 1.0,
+        "Proficient": 0.0,
+        "Expert": 0.0
+      }
+    },
+    {
+      "año": 2025,
+      "periodo": 2,
+      "label": "2025-P2",
+      "n": 104,
+      "puntaje_promedio": 1.855,
+      "apego_promedio": 0.8324,
+      "nivel_counts": {
+        "Novice": 8,
+        "Advanced Beginner": 27,
+        "Competent": 50,
+        "Proficient": 18,
+        "Expert": 1
+      },
+      "nivel_pct": {
+        "Novice": 0.0769,
+        "Advanced Beginner": 0.2596,
+        "Competent": 0.4808,
+        "Proficient": 0.1731,
+        "Expert": 0.0096
+      }
+    },
+    {
+      "año": 2026,
+      "periodo": 1,
+      "label": "2026-P1",
+      "n": 201,
+      "puntaje_promedio": 2.0979,
+      "apego_promedio": 0.9312,
+      "nivel_counts": {
+        "Novice": 4,
+        "Advanced Beginner": 26,
+        "Competent": 112,
+        "Proficient": 46,
+        "Expert": 13
+      },
+      "nivel_pct": {
+        "Novice": 0.0199,
+        "Advanced Beginner": 0.1294,
+        "Competent": 0.5572,
+        "Proficient": 0.2289,
+        "Expert": 0.0647
+      }
+    }
+  ],
+  "movers": [
+    {
+      "nombre": "Mauricio Raul Salazar",
+      "bu": "Perú",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.61,
+      "puntaje_p2": 1.08,
+      "apego_p1": 1.14,
+      "apego_p2": 0.476,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 1.53,
+      "delta_apego": 0.664,
+      "mejoro": true
+    },
+    {
+      "nombre": "Jorge Raul Macias",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.54,
+      "puntaje_p2": 0.24,
+      "apego_p1": 0.672,
+      "apego_p2": 0.08,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 1.3,
+      "delta_apego": 0.592,
+      "mejoro": true
+    },
+    {
+      "nombre": "Lauren Diaz",
+      "bu": "Colombia",
+      "rol": "Especialista - DP Operativo",
+      "puntaje_p1": 2.38,
+      "puntaje_p2": 1.4,
+      "apego_p1": 1.144,
+      "apego_p2": 0.673,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.98,
+      "delta_apego": 0.471,
+      "mejoro": true
+    },
+    {
+      "nombre": "Mauricio Raul Salazar",
+      "bu": "Perú",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.61,
+      "puntaje_p2": 1.75,
+      "apego_p1": 1.14,
+      "apego_p2": 0.764,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.86,
+      "delta_apego": 0.376,
+      "mejoro": true
+    },
+    {
+      "nombre": "Gerardo Rodriguez",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.51,
+      "puntaje_p2": 1.74,
+      "apego_p1": 1.096,
+      "apego_p2": 0.76,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.77,
+      "delta_apego": 0.336,
+      "mejoro": true
+    },
+    {
+      "nombre": "Carlos Riaño",
+      "bu": "Colombia",
+      "rol": "Gerente - CONA",
+      "puntaje_p1": 2.65,
+      "puntaje_p2": 1.93,
+      "apego_p1": 1.299,
+      "apego_p2": 0.946,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.72,
+      "delta_apego": 0.353,
+      "mejoro": true
+    },
+    {
+      "nombre": "Belen Beatriz Caravedo",
+      "bu": "Perú",
+      "rol": "Especialista - CONA",
+      "puntaje_p1": 2.31,
+      "puntaje_p2": 1.61,
+      "apego_p1": 1.085,
+      "apego_p2": 0.756,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.7,
+      "delta_apego": 0.329,
+      "mejoro": true
+    },
+    {
+      "nombre": "Bryan Diaz",
+      "bu": "Colombia",
+      "rol": "Especialista - Retpack",
+      "puntaje_p1": 2.88,
+      "puntaje_p2": 2.19,
+      "apego_p1": 1.44,
+      "apego_p2": 1.095,
+      "nivel_p1": "Expert",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.69,
+      "delta_apego": 0.345,
+      "mejoro": true
+    },
+    {
+      "nombre": "Valeria Carolina Calvillo",
+      "bu": "México",
+      "rol": "Especialista - CONA",
+      "puntaje_p1": 1.58,
+      "puntaje_p2": 0.89,
+      "apego_p1": 0.742,
+      "apego_p2": 0.418,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 0.69,
+      "delta_apego": 0.324,
+      "mejoro": true
+    },
+    {
+      "nombre": "Dulce Pillar Martinez",
+      "bu": "Honduras",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.24,
+      "puntaje_p2": 1.6,
+      "apego_p1": 0.978,
+      "apego_p2": 0.699,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.64,
+      "delta_apego": 0.279,
+      "mejoro": true
+    },
+    {
+      "nombre": "Franco Pastor",
+      "bu": "Perú",
+      "rol": "Especialista - Retpack",
+      "puntaje_p1": 2.76,
+      "puntaje_p2": 2.14,
+      "apego_p1": 1.38,
+      "apego_p2": 1.07,
+      "nivel_p1": "Expert",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.62,
+      "delta_apego": 0.31,
+      "mejoro": true
+    },
+    {
+      "nombre": "Ana Graciela Serna",
+      "bu": "WH",
+      "rol": "Gerente - DP Estadístico",
+      "puntaje_p1": 2.37,
+      "puntaje_p2": 1.75,
+      "apego_p1": 1.113,
+      "apego_p2": 0.822,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.62,
+      "delta_apego": 0.291,
+      "mejoro": true
+    },
+    {
+      "nombre": "Alejandro Perez",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.09,
+      "puntaje_p2": 1.48,
+      "apego_p1": 0.913,
+      "apego_p2": 0.646,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.61,
+      "delta_apego": 0.267,
+      "mejoro": true
+    },
+    {
+      "nombre": "Nicole Estefania Brun",
+      "bu": "Perú",
+      "rol": "Especialista - DP Operativo",
+      "puntaje_p1": 2.2,
+      "puntaje_p2": 1.64,
+      "apego_p1": 1.058,
+      "apego_p2": 0.788,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.56,
+      "delta_apego": 0.27,
+      "mejoro": true
+    },
+    {
+      "nombre": "Rodrigo Lira",
+      "bu": "WH",
+      "rol": "Especialista DP Estadistico",
+      "puntaje_p1": 1.58,
+      "puntaje_p2": 1.02,
+      "apego_p1": 0.742,
+      "apego_p2": 0.479,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 0.56,
+      "delta_apego": 0.263,
+      "mejoro": true
+    },
+    {
+      "nombre": "Daniel Fernando Diaz",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.84,
+      "puntaje_p2": 1.29,
+      "apego_p1": 0.803,
+      "apego_p2": 0.563,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.55,
+      "delta_apego": 0.24,
+      "mejoro": true
+    },
+    {
+      "nombre": "Josseline Priscila Mendieta Salazar",
+      "bu": "Ecuador",
+      "rol": "Especialista - DP Operativo",
+      "puntaje_p1": 1.91,
+      "puntaje_p2": 1.39,
+      "apego_p1": 0.918,
+      "apego_p2": 0.668,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.52,
+      "delta_apego": 0.25,
+      "mejoro": true
+    },
+    {
+      "nombre": "Josseline Priscila Mendieta Salazar",
+      "bu": "Ecuador",
+      "rol": "Especialista - DP Operativo",
+      "puntaje_p1": 1.91,
+      "puntaje_p2": 1.45,
+      "apego_p1": 0.918,
+      "apego_p2": 0.697,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.46,
+      "delta_apego": 0.221,
+      "mejoro": true
+    },
+    {
+      "nombre": "Humberto Azael De Luna",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.07,
+      "puntaje_p2": 1.62,
+      "apego_p1": 0.904,
+      "apego_p2": 0.707,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.45,
+      "delta_apego": 0.197,
+      "mejoro": true
+    },
+    {
+      "nombre": "Alexia Susana Medina",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.05,
+      "puntaje_p2": 1.61,
+      "apego_p1": 0.895,
+      "apego_p2": 0.703,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.44,
+      "delta_apego": 0.192,
+      "mejoro": true
+    },
+    {
+      "nombre": "Itzel Altagracia Estrada",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.17,
+      "puntaje_p2": 1.75,
+      "apego_p1": 0.948,
+      "apego_p2": 0.764,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.42,
+      "delta_apego": 0.184,
+      "mejoro": true
+    },
+    {
+      "nombre": "Juan Antonio Alba",
+      "bu": "México",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 2.16,
+      "puntaje_p2": 1.76,
+      "apego_p1": 0.919,
+      "apego_p2": 0.749,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.4,
+      "delta_apego": 0.17,
+      "mejoro": true
+    },
+    {
+      "nombre": "Ynny Paola Almeida Mosquera",
+      "bu": "Ecuador",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.91,
+      "puntaje_p2": 1.53,
+      "apego_p1": 0.841,
+      "apego_p2": 0.674,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.38,
+      "delta_apego": 0.167,
+      "mejoro": true
+    },
+    {
+      "nombre": "Christian Orlando Martinez",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.0,
+      "puntaje_p2": 1.63,
+      "apego_p1": 0.873,
+      "apego_p2": 0.712,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.37,
+      "delta_apego": 0.161,
+      "mejoro": true
+    },
+    {
+      "nombre": "Gabriela Paredes",
+      "bu": "México",
+      "rol": "Especialista - NPI",
+      "puntaje_p1": 2.69,
+      "puntaje_p2": 2.33,
+      "apego_p1": 1.093,
+      "apego_p2": 0.967,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": 0.36,
+      "delta_apego": 0.126,
+      "mejoro": true
+    },
+    {
+      "nombre": "Claudia Stephanie Romo",
+      "bu": "Guatemala",
+      "rol": "Especialista DP Estadistico",
+      "puntaje_p1": 1.93,
+      "puntaje_p2": 1.58,
+      "apego_p1": 0.906,
+      "apego_p2": 0.742,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.35,
+      "delta_apego": 0.164,
+      "mejoro": true
+    },
+    {
+      "nombre": "Helen Taveras",
+      "bu": "República Dominicana",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.92,
+      "puntaje_p2": 1.57,
+      "apego_p1": 0.838,
+      "apego_p2": 0.686,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.35,
+      "delta_apego": 0.152,
+      "mejoro": true
+    },
+    {
+      "nombre": "Jorge Raul Macias",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.54,
+      "puntaje_p2": 1.2,
+      "apego_p1": 0.672,
+      "apego_p2": 0.529,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.34,
+      "delta_apego": 0.143,
+      "mejoro": true
+    },
+    {
+      "nombre": "Wendi Yamileth Mejia",
+      "bu": "Honduras",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 2.18,
+      "puntaje_p2": 1.88,
+      "apego_p1": 0.928,
+      "apego_p2": 0.8,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.3,
+      "delta_apego": 0.128,
+      "mejoro": true
+    },
+    {
+      "nombre": "Edi Osvaldo Cruz",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.17,
+      "puntaje_p2": 1.87,
+      "apego_p1": 0.948,
+      "apego_p2": 0.817,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.3,
+      "delta_apego": 0.131,
+      "mejoro": true
+    },
+    {
+      "nombre": "Christopher Buen Abad",
+      "bu": "Otros",
+      "rol": "Especialista DP Estadistico",
+      "puntaje_p1": 1.75,
+      "puntaje_p2": 1.46,
+      "apego_p1": 0.822,
+      "apego_p2": 0.685,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.29,
+      "delta_apego": 0.137,
+      "mejoro": true
+    },
+    {
+      "nombre": "Helen Taveras",
+      "bu": "República Dominicana",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.92,
+      "puntaje_p2": 1.75,
+      "apego_p1": 0.838,
+      "apego_p2": 0.764,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.17,
+      "delta_apego": 0.074,
+      "mejoro": true
+    },
+    {
+      "nombre": "Astrid Franco",
+      "bu": "Honduras",
+      "rol": "Especialista - Retpack",
+      "puntaje_p1": 2.57,
+      "puntaje_p2": 2.42,
+      "apego_p1": 1.285,
+      "apego_p2": 1.21,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": 0.15,
+      "delta_apego": 0.075,
+      "mejoro": true
+    },
+    {
+      "nombre": "Alejandra Rochelle Gutierrez",
+      "bu": "Perú",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.1,
+      "puntaje_p2": 1.96,
+      "apego_p1": 0.917,
+      "apego_p2": 0.856,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.14,
+      "delta_apego": 0.061,
+      "mejoro": true
+    },
+    {
+      "nombre": "Luis Alfredo Veintimilla Villegas",
+      "bu": "Ecuador",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 2.59,
+      "puntaje_p2": 2.47,
+      "apego_p1": 1.102,
+      "apego_p2": 1.051,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": 0.12,
+      "delta_apego": 0.051,
+      "mejoro": true
+    },
+    {
+      "nombre": "Franddy De Los Santos Cabrera",
+      "bu": "República Dominicana",
+      "rol": "Especialista - Logística inversa",
+      "puntaje_p1": 2.22,
+      "puntaje_p2": 2.1,
+      "apego_p1": 0.978,
+      "apego_p2": 0.942,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.12,
+      "delta_apego": 0.036,
+      "mejoro": true
+    },
+    {
+      "nombre": "Carla Maria Gonzalez",
+      "bu": "Perú",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 1.91,
+      "puntaje_p2": 1.79,
+      "apego_p1": 0.813,
+      "apego_p2": 0.762,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.12,
+      "delta_apego": 0.051,
+      "mejoro": true
+    },
+    {
+      "nombre": "Libier Figueroa",
+      "bu": "El Salvador",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.76,
+      "puntaje_p2": 1.69,
+      "apego_p1": 0.769,
+      "apego_p2": 0.738,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.07,
+      "delta_apego": 0.031,
+      "mejoro": true
+    },
+    {
+      "nombre": "Marcela Cardenas",
+      "bu": "Colombia",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 2.4,
+      "puntaje_p2": 2.34,
+      "apego_p1": 1.057,
+      "apego_p2": 1.031,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": 0.06,
+      "delta_apego": 0.026,
+      "mejoro": true
+    },
+    {
+      "nombre": "Anahí Lomeli",
+      "bu": "WH",
+      "rol": "Gerente - DP Estadístico",
+      "puntaje_p1": 1.93,
+      "puntaje_p2": 1.91,
+      "apego_p1": 0.906,
+      "apego_p2": 0.897,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.02,
+      "delta_apego": 0.009,
+      "mejoro": true
+    },
+    {
+      "nombre": "Daniel Osvaldo Cervantes Hernandez",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.96,
+      "puntaje_p2": 1.96,
+      "apego_p1": 0.856,
+      "apego_p2": 0.856,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.0,
+      "delta_apego": 0.0,
+      "mejoro": false
+    },
+    {
+      "nombre": "Ana Graciela Serna",
+      "bu": "WH",
+      "rol": "Gerente - DP Estadístico",
+      "puntaje_p1": 2.37,
+      "puntaje_p2": 2.37,
+      "apego_p1": 1.113,
+      "apego_p2": 1.113,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": 0.0,
+      "delta_apego": 0.0,
+      "mejoro": false
+    },
+    {
+      "nombre": "Abril Vianey Saucedo",
+      "bu": "México",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 2.29,
+      "puntaje_p2": 2.3,
+      "apego_p1": 1.009,
+      "apego_p2": 1.013,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.01,
+      "delta_apego": -0.004,
+      "mejoro": false
+    },
+    {
+      "nombre": "Maria De Los Angeles Martinez",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.73,
+      "puntaje_p2": 1.79,
+      "apego_p1": 0.755,
+      "apego_p2": 0.782,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.06,
+      "delta_apego": -0.027,
+      "mejoro": false
+    },
+    {
+      "nombre": "Daniel Everardo Machuca",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.51,
+      "puntaje_p2": 2.6,
+      "apego_p1": 1.096,
+      "apego_p2": 1.135,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.09,
+      "delta_apego": -0.039,
+      "mejoro": false
+    },
+    {
+      "nombre": "Ofelia Salem",
+      "bu": "COPE",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 2.04,
+      "puntaje_p2": 2.19,
+      "apego_p1": 0.868,
+      "apego_p2": 0.932,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.15,
+      "delta_apego": -0.064,
+      "mejoro": false
+    },
+    {
+      "nombre": "Ruth Duran",
+      "bu": "México",
+      "rol": "Especialista - MRP Táctico",
+      "puntaje_p1": 2.01,
+      "puntaje_p2": 2.18,
+      "apego_p1": 0.918,
+      "apego_p2": 0.995,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.17,
+      "delta_apego": -0.077,
+      "mejoro": false
+    },
+    {
+      "nombre": "Carlos Alberto Delgado",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.69,
+      "puntaje_p2": 1.86,
+      "apego_p1": 0.738,
+      "apego_p2": 0.812,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.17,
+      "delta_apego": -0.074,
+      "mejoro": false
+    },
+    {
+      "nombre": "Pablo Andres Ayala",
+      "bu": "México",
+      "rol": "Especialista - NPI",
+      "puntaje_p1": 1.82,
+      "puntaje_p2": 2.03,
+      "apego_p1": 0.74,
+      "apego_p2": 0.842,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.21,
+      "delta_apego": -0.102,
+      "mejoro": false
+    },
+    {
+      "nombre": "Carol Casas",
+      "bu": "Colombia",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.71,
+      "puntaje_p2": 1.93,
+      "apego_p1": 0.753,
+      "apego_p2": 0.85,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.22,
+      "delta_apego": -0.097,
+      "mejoro": false
+    },
+    {
+      "nombre": "Alejandra Valencia",
+      "bu": "Colombia",
+      "rol": "Gerente - WSNP",
+      "puntaje_p1": 2.21,
+      "puntaje_p2": 2.45,
+      "apego_p1": 1.083,
+      "apego_p2": 1.201,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.24,
+      "delta_apego": -0.118,
+      "mejoro": false
+    },
+    {
+      "nombre": "Anaid De Jesus Morelos Contreras",
+      "bu": "México",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 2.14,
+      "puntaje_p2": 2.46,
+      "apego_p1": 0.943,
+      "apego_p2": 1.084,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.32,
+      "delta_apego": -0.141,
+      "mejoro": false
+    },
+    {
+      "nombre": "Jorge Raul Macias",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.54,
+      "puntaje_p2": 1.88,
+      "apego_p1": 0.672,
+      "apego_p2": 0.821,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.34,
+      "delta_apego": -0.149,
+      "mejoro": false
+    },
+    {
+      "nombre": "Herminio Garcia",
+      "bu": "México",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.45,
+      "puntaje_p2": 1.79,
+      "apego_p1": 0.639,
+      "apego_p2": 0.789,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.34,
+      "delta_apego": -0.15,
+      "mejoro": false
+    },
+    {
+      "nombre": "Miguel Arturo Leon",
+      "bu": "Perú",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.72,
+      "puntaje_p2": 2.2,
+      "apego_p1": 0.758,
+      "apego_p2": 0.969,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.48,
+      "delta_apego": -0.211,
+      "mejoro": false
+    },
+    {
+      "nombre": "Juan Pablo Diaz De Leon",
+      "bu": "Perú",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 1.52,
+      "puntaje_p2": 2.01,
+      "apego_p1": 0.647,
+      "apego_p2": 0.855,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.49,
+      "delta_apego": -0.208,
+      "mejoro": false
+    },
+    {
+      "nombre": "Jose Manuel Decuir",
+      "bu": "México",
+      "rol": "Especialista - WSNP",
+      "puntaje_p1": 0.84,
+      "puntaje_p2": 1.52,
+      "apego_p1": 0.384,
+      "apego_p2": 0.694,
+      "nivel_p1": "Novice",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": -0.68,
+      "delta_apego": -0.31,
+      "mejoro": false
+    },
+    {
+      "nombre": "Maria Jose Gavica Lozano",
+      "bu": "Ecuador",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.53,
+      "puntaje_p2": 2.33,
+      "apego_p1": 0.674,
+      "apego_p2": 1.026,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.8,
+      "delta_apego": -0.352,
+      "mejoro": false
+    }
+  ],
+  "top_mejoras": [
+    {
+      "nombre": "Mauricio Raul Salazar",
+      "bu": "Perú",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.61,
+      "puntaje_p2": 1.08,
+      "apego_p1": 1.14,
+      "apego_p2": 0.476,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 1.53,
+      "delta_apego": 0.664,
+      "mejoro": true
+    },
+    {
+      "nombre": "Jorge Raul Macias",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.54,
+      "puntaje_p2": 0.24,
+      "apego_p1": 0.672,
+      "apego_p2": 0.08,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 1.3,
+      "delta_apego": 0.592,
+      "mejoro": true
+    },
+    {
+      "nombre": "Lauren Diaz",
+      "bu": "Colombia",
+      "rol": "Especialista - DP Operativo",
+      "puntaje_p1": 2.38,
+      "puntaje_p2": 1.4,
+      "apego_p1": 1.144,
+      "apego_p2": 0.673,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.98,
+      "delta_apego": 0.471,
+      "mejoro": true
+    },
+    {
+      "nombre": "Mauricio Raul Salazar",
+      "bu": "Perú",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.61,
+      "puntaje_p2": 1.75,
+      "apego_p1": 1.14,
+      "apego_p2": 0.764,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.86,
+      "delta_apego": 0.376,
+      "mejoro": true
+    },
+    {
+      "nombre": "Gerardo Rodriguez",
+      "bu": "Colombia",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.51,
+      "puntaje_p2": 1.74,
+      "apego_p1": 1.096,
+      "apego_p2": 0.76,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.77,
+      "delta_apego": 0.336,
+      "mejoro": true
+    },
+    {
+      "nombre": "Carlos Riaño",
+      "bu": "Colombia",
+      "rol": "Gerente - CONA",
+      "puntaje_p1": 2.65,
+      "puntaje_p2": 1.93,
+      "apego_p1": 1.299,
+      "apego_p2": 0.946,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.72,
+      "delta_apego": 0.353,
+      "mejoro": true
+    },
+    {
+      "nombre": "Belen Beatriz Caravedo",
+      "bu": "Perú",
+      "rol": "Especialista - CONA",
+      "puntaje_p1": 2.31,
+      "puntaje_p2": 1.61,
+      "apego_p1": 1.085,
+      "apego_p2": 0.756,
+      "nivel_p1": "Proficient",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.7,
+      "delta_apego": 0.329,
+      "mejoro": true
+    },
+    {
+      "nombre": "Bryan Diaz",
+      "bu": "Colombia",
+      "rol": "Especialista - Retpack",
+      "puntaje_p1": 2.88,
+      "puntaje_p2": 2.19,
+      "apego_p1": 1.44,
+      "apego_p2": 1.095,
+      "nivel_p1": "Expert",
+      "nivel_p2": "Competent",
+      "delta_puntaje": 0.69,
+      "delta_apego": 0.345,
+      "mejoro": true
+    },
+    {
+      "nombre": "Valeria Carolina Calvillo",
+      "bu": "México",
+      "rol": "Especialista - CONA",
+      "puntaje_p1": 1.58,
+      "puntaje_p2": 0.89,
+      "apego_p1": 0.742,
+      "apego_p2": 0.418,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Novice",
+      "delta_puntaje": 0.69,
+      "delta_apego": 0.324,
+      "mejoro": true
+    },
+    {
+      "nombre": "Dulce Pillar Martinez",
+      "bu": "Honduras",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 2.24,
+      "puntaje_p2": 1.6,
+      "apego_p1": 0.978,
+      "apego_p2": 0.699,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": 0.64,
+      "delta_apego": 0.279,
+      "mejoro": true
+    }
+  ],
+  "top_retrocesos": [
+    {
+      "nombre": "Maria Jose Gavica Lozano",
+      "bu": "Ecuador",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.53,
+      "puntaje_p2": 2.33,
+      "apego_p1": 0.674,
+      "apego_p2": 1.026,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.8,
+      "delta_apego": -0.352,
+      "mejoro": false
+    },
+    {
+      "nombre": "Jose Manuel Decuir",
+      "bu": "México",
+      "rol": "Especialista - WSNP",
+      "puntaje_p1": 0.84,
+      "puntaje_p2": 1.52,
+      "apego_p1": 0.384,
+      "apego_p2": 0.694,
+      "nivel_p1": "Novice",
+      "nivel_p2": "Advanced Beginner",
+      "delta_puntaje": -0.68,
+      "delta_apego": -0.31,
+      "mejoro": false
+    },
+    {
+      "nombre": "Juan Pablo Diaz De Leon",
+      "bu": "Perú",
+      "rol": "Especialista - MRP Operativo",
+      "puntaje_p1": 1.52,
+      "puntaje_p2": 2.01,
+      "apego_p1": 0.647,
+      "apego_p2": 0.855,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.49,
+      "delta_apego": -0.208,
+      "mejoro": false
+    },
+    {
+      "nombre": "Miguel Arturo Leon",
+      "bu": "Perú",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.72,
+      "puntaje_p2": 2.2,
+      "apego_p1": 0.758,
+      "apego_p2": 0.969,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.48,
+      "delta_apego": -0.211,
+      "mejoro": false
+    },
+    {
+      "nombre": "Jorge Raul Macias",
+      "bu": "México",
+      "rol": "Especialista DRP",
+      "puntaje_p1": 1.54,
+      "puntaje_p2": 1.88,
+      "apego_p1": 0.672,
+      "apego_p2": 0.821,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.34,
+      "delta_apego": -0.149,
+      "mejoro": false
+    },
+    {
+      "nombre": "Herminio Garcia",
+      "bu": "México",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.45,
+      "puntaje_p2": 1.79,
+      "apego_p1": 0.639,
+      "apego_p2": 0.789,
+      "nivel_p1": "Advanced Beginner",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.34,
+      "delta_apego": -0.15,
+      "mejoro": false
+    },
+    {
+      "nombre": "Anaid De Jesus Morelos Contreras",
+      "bu": "México",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 2.14,
+      "puntaje_p2": 2.46,
+      "apego_p1": 0.943,
+      "apego_p2": 1.084,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.32,
+      "delta_apego": -0.141,
+      "mejoro": false
+    },
+    {
+      "nombre": "Alejandra Valencia",
+      "bu": "Colombia",
+      "rol": "Gerente - WSNP",
+      "puntaje_p1": 2.21,
+      "puntaje_p2": 2.45,
+      "apego_p1": 1.083,
+      "apego_p2": 1.201,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Proficient",
+      "delta_puntaje": -0.24,
+      "delta_apego": -0.118,
+      "mejoro": false
+    },
+    {
+      "nombre": "Carol Casas",
+      "bu": "Colombia",
+      "rol": "Especialista - Programación de la producción",
+      "puntaje_p1": 1.71,
+      "puntaje_p2": 1.93,
+      "apego_p1": 0.753,
+      "apego_p2": 0.85,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.22,
+      "delta_apego": -0.097,
+      "mejoro": false
+    },
+    {
+      "nombre": "Pablo Andres Ayala",
+      "bu": "México",
+      "rol": "Especialista - NPI",
+      "puntaje_p1": 1.82,
+      "puntaje_p2": 2.03,
+      "apego_p1": 0.74,
+      "apego_p2": 0.842,
+      "nivel_p1": "Competent",
+      "nivel_p2": "Competent",
+      "delta_puntaje": -0.21,
+      "delta_apego": -0.102,
+      "mejoro": false
+    }
+  ],
+  "by_bu": [
+    {
+      "bu": "CAC",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 6,
+          "puntaje_promedio": 2.045,
+          "apego_promedio": 0.9287
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 8,
+          "puntaje_promedio": 2.1825,
+          "apego_promedio": 0.9726
+        }
+      ]
+    },
+    {
+      "bu": "COPE",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 2,
+          "puntaje_promedio": 2.045,
+          "apego_promedio": 0.837
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 3,
+          "puntaje_promedio": 2.0667,
+          "apego_promedio": 0.8683
+        }
+      ]
+    },
+    {
+      "bu": "Colombia",
+      "periods": [
+        {
+          "label": "2025-P1",
+          "año": 2025,
+          "periodo": 1,
+          "n": 1,
+          "puntaje_promedio": 2.07,
+          "apego_promedio": 0.873
+        },
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 17,
+          "puntaje_promedio": 1.9888,
+          "apego_promedio": 0.8968
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 40,
+          "puntaje_promedio": 2.2548,
+          "apego_promedio": 0.9971
+        }
+      ]
+    },
+    {
+      "bu": "Ecuador",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 9,
+          "puntaje_promedio": 1.9556,
+          "apego_promedio": 0.9078
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 11,
+          "puntaje_promedio": 1.9455,
+          "apego_promedio": 0.8307
+        }
+      ]
+    },
+    {
+      "bu": "El Salvador",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 4,
+          "puntaje_promedio": 1.7475,
+          "apego_promedio": 0.8157
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 5,
+          "puntaje_promedio": 2.266,
+          "apego_promedio": 1.0452
+        }
+      ]
+    },
+    {
+      "bu": "Guatemala",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 3,
+          "puntaje_promedio": 1.83,
+          "apego_promedio": 0.822
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 4,
+          "puntaje_promedio": 1.78,
+          "apego_promedio": 0.8102
+        }
+      ]
+    },
+    {
+      "bu": "Honduras",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 5,
+          "puntaje_promedio": 1.822,
+          "apego_promedio": 0.8538
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 11,
+          "puntaje_promedio": 2.0982,
+          "apego_promedio": 0.966
+        }
+      ]
+    },
+    {
+      "bu": "México",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 36,
+          "puntaje_promedio": 1.7842,
+          "apego_promedio": 0.7774
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 68,
+          "puntaje_promedio": 2.0347,
+          "apego_promedio": 0.8938
+        }
+      ]
+    },
+    {
+      "bu": "Otros",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 4,
+          "puntaje_promedio": 2.01,
+          "apego_promedio": 0.915
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 6,
+          "puntaje_promedio": 1.91,
+          "apego_promedio": 0.8797
+        }
+      ]
+    },
+    {
+      "bu": "Panama",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 1,
+          "puntaje_promedio": 1.37,
+          "apego_promedio": 0.643
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 3,
+          "puntaje_promedio": 1.89,
+          "apego_promedio": 0.8563
+        }
+      ]
+    },
+    {
+      "bu": "Perú",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 10,
+          "puntaje_promedio": 1.745,
+          "apego_promedio": 0.7919
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 29,
+          "puntaje_promedio": 2.1659,
+          "apego_promedio": 0.9536
+        }
+      ]
+    },
+    {
+      "bu": "República Dominicana",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 3,
+          "puntaje_promedio": 1.8067,
+          "apego_promedio": 0.7973
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 4,
+          "puntaje_promedio": 2.1675,
+          "apego_promedio": 1.0103
+        }
+      ]
+    },
+    {
+      "bu": "WH",
+      "periods": [
+        {
+          "label": "2025-P2",
+          "año": 2025,
+          "periodo": 2,
+          "n": 4,
+          "puntaje_promedio": 1.7625,
+          "apego_promedio": 0.8277
+        },
+        {
+          "label": "2026-P1",
+          "año": 2026,
+          "periodo": 1,
+          "n": 9,
+          "puntaje_promedio": 1.9922,
+          "apego_promedio": 0.9273
+        }
+      ]
+    }
+  ]
+}

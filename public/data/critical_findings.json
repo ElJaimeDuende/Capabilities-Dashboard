@@ -1,0 +1,105 @@
+{
+  "total": 7,
+  "alta_severidad": 2,
+  "media_severidad": 4,
+  "positivos": 1,
+  "findings": [
+    {
+      "severity": "alta",
+      "category": "Gap crítico de capability",
+      "title": "Brecha crítica: Estructuras complejas de datos",
+      "detail": "Apego promedio de 39% vs perfil requerido de 277%. Gap de 238 puntos.",
+      "benchmark": "Umbral acción: apego < 60%",
+      "capability": "Estructuras complejas de datos"
+    },
+    {
+      "severity": "alta",
+      "category": "Gap crítico de capability",
+      "title": "Brecha crítica: Programación con Optplan",
+      "detail": "Apego promedio de 57% vs perfil requerido de 250%. Gap de 193 puntos.",
+      "benchmark": "Umbral acción: apego < 60%",
+      "capability": "Programación con Optplan"
+    },
+    {
+      "severity": "media",
+      "category": "Distribución de niveles",
+      "title": "El Salvador: 33% en niveles iniciales",
+      "detail": "El Salvador tiene 3 de 9 personas en Novice o Advanced Beginner (33%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
+      "bu": "El Salvador"
+    },
+    {
+      "severity": "media",
+      "category": "Distribución de niveles",
+      "title": "Panama: 50% en niveles iniciales",
+      "detail": "Panama tiene 2 de 4 personas en Novice o Advanced Beginner (50%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
+      "bu": "Panama"
+    },
+    {
+      "severity": "media",
+      "category": "Concentración de expertise",
+      "title": "42 capabilities con riesgo de persona clave",
+      "detail": "Las siguientes capabilities tienen ≤2 personas con alto dominio: Colaboración, Data Driven / Analítico, Empuje / Orientación a resultados, Estructuras complejas de datos, Estándar LCP para Planeación de la Demanda, Estándar LCP para despliegue de inventario, Estándares VPO programación y nivel de servicio, Estándares de MRP LCP.... Riesgo de dependencia crítica.",
+      "benchmark": "Recomendado: ≥3 personas con dominio alto por capability crítica",
+      "capabilities": [
+        "Colaboración",
+        "Data Driven / Analítico",
+        "Empuje / Orientación a resultados",
+        "Estructuras complejas de datos",
+        "Estándar LCP para Planeación de la Demanda",
+        "Estándar LCP para despliegue de inventario",
+        "Estándares VPO programación y nivel de servicio",
+        "Estándares de MRP LCP",
+        "Estándares de S&OP LCP + SNP LCP",
+        "Estándares de logística inversa LCP y mantenimiento del inventario",
+        "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
+        "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+        "Excel",
+        "Finanzas",
+        "Finanzas empresariales",
+        "Gestión de Equipos",
+        "Gestión de interesados",
+        "Gestión de la cadena de suministro",
+        "Gestión de riesgos",
+        "Gestión por sistemas",
+        "Grit (resilencia + empuje)",
+        "Inglés",
+        "Manufactura Esbelta",
+        "Mejora continua",
+        "Mentalidad de crecimiento",
+        "Métodos estadísticos y de pronóstico",
+        "Negociación",
+        "Orientación a datos",
+        "Pensamiento Sistémico",
+        "Planeación Operativa de Supply Chain",
+        "Planificación de aprovisionamiento",
+        "Planificación de capacidad",
+        "Planificación de la estrategia",
+        "Planificación y organización",
+        "Principios de manufactura",
+        "Programación con Optplan",
+        "Resiliencia",
+        "Resolución de problemas y causa raíz",
+        "Toma de decisiones",
+        "Transportación y logística",
+        "Técnicas de optimización",
+        "Técnicas de programación"
+      ]
+    },
+    {
+      "severity": "media",
+      "category": "Adopción del proceso",
+      "title": "58% de participantes no revisó su reporte",
+      "detail": "58% de los evaluados no ha revisado su reporte de resultados. Esto limita el impacto del assessment en el desarrollo individual.",
+      "benchmark": "Recomendado: 100% revisión de reportes"
+    },
+    {
+      "severity": "positivo",
+      "category": "Apego al perfil global",
+      "title": "Apego global (90%) en rango best-in-class",
+      "detail": "El apego promedio de la organización es 90%, dentro del rango best-in-class (80-85%).",
+      "benchmark": "Best-in-class: 80-85%"
+    }
+  ]
+}

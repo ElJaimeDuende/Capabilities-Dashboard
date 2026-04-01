@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useHeatmap } from '../hooks/useData'
-import { pct } from '../utils/format'
-import { heatColor, heatTextColor } from '../utils/format'
+import { pct, heatColor, heatTextColor } from '../utils/format'
 import type { Filters } from '../types'
 
 interface Props { filters: Filters }
@@ -10,45 +9,70 @@ export default function HeatmapPage({ filters }: Props) {
   const { data: heatmap, loading } = useHeatmap()
   const [view, setView] = useState<'bu' | 'area'>('bu')
   const [selectedCap, setSelectedCap] = useState<string | null>(null)
+  const [periodView, setPeriodView] = useState<'all' | '2026-P1'>('all')
 
   if (loading || !heatmap) return <Loader />
 
+  // Determine data source: aggregated or specific period
+  const isPeriodMode = filters.granularidad === 'periodo'
+  const effectivePeriod = isPeriodMode ? periodView : 'all'
+
+  const sourceRows = effectivePeriod === 'all'
+    ? { by_bu: heatmap.by_bu, by_area: heatmap.by_area }
+    : (heatmap.by_period[effectivePeriod] ?? { by_bu: heatmap.by_bu, by_area: heatmap.by_area })
+
   const rows = view === 'bu'
-    ? heatmap.by_bu.filter(r => !filters.bus.length || filters.bus.includes(r.label))
-    : heatmap.by_area.filter(r => !filters.areas.length || filters.areas.includes(r.label))
+    ? sourceRows.by_bu.filter(r => !filters.bus.length || filters.bus.includes(r.label))
+    : sourceRows.by_area.filter(r => !filters.areas.length || filters.areas.includes(r.label))
 
   const caps = heatmap.capabilities
 
-  // Selected capability column summary
-  const capSummary = selectedCap ? rows.map(r => ({
-    label: r.label,
-    apego: r.cells[selectedCap]?.apego ?? null,
-    n: r.cells[selectedCap]?.n ?? 0,
-  })).sort((a, b) => (b.apego ?? 0) - (a.apego ?? 0)) : []
+  const capSummary = selectedCap
+    ? rows.map(r => ({
+        label: r.label,
+        apego: r.cells[selectedCap]?.apego ?? null,
+        n: r.cells[selectedCap]?.n ?? 0,
+      })).sort((a, b) => (b.apego ?? 0) - (a.apego ?? 0))
+    : []
 
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <h2 className="text-lg font-semibold text-[#1E293B]">Heat Maps</h2>
-        <div className="flex rounded-xl overflow-hidden border border-[#E2E8F0]">
-          {(['bu', 'area'] as const).map(v => (
-            <button key={v} onClick={() => setView(v)}
-              className={`px-4 py-2 text-xs font-medium transition-colors
-                ${view === v ? 'bg-[#1E3A5F] text-white' : 'bg-white text-[#64748B] hover:bg-[#F1F5F9]'}`}>
-              {v === 'bu' ? 'Por BU' : 'Por Área'}
-            </button>
-          ))}
+
+        <div className="flex items-center gap-2 flex-wrap">
+          {/* Period selector — shown in period mode */}
+          {isPeriodMode && (
+            <div className="flex rounded-xl overflow-hidden border border-[#E2E8F0]">
+              {(['all', '2026-P1'] as const).map(p => (
+                <button key={p} onClick={() => { setPeriodView(p); setSelectedCap(null) }}
+                  className={`px-3 py-2 text-xs font-medium transition-colors
+                    ${periodView === p ? 'bg-[#1E3A5F] text-white' : 'bg-white text-[#64748B] hover:bg-[#F1F5F9]'}`}>
+                  {p === 'all' ? 'Agregado' : p}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* BU / Área toggle */}
+          <div className="flex rounded-xl overflow-hidden border border-[#E2E8F0]">
+            {(['bu', 'area'] as const).map(v => (
+              <button key={v} onClick={() => { setView(v); setSelectedCap(null) }}
+                className={`px-4 py-2 text-xs font-medium transition-colors
+                  ${view === v ? 'bg-[#1E3A5F] text-white' : 'bg-white text-[#64748B] hover:bg-[#F1F5F9]'}`}>
+                {v === 'bu' ? 'Por BU' : 'Por Área'}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       <div className="bg-white rounded-xl border border-[#E2E8F0] p-4">
         <div className="flex items-center gap-4 mb-3 flex-wrap">
-          <div>
-            <p className="text-xs text-[#64748B]">
-              {view === 'bu' ? `${rows.length} BUs` : `${rows.length} Áreas`} × {caps.length} capabilities
-              {selectedCap && <span className="ml-2 font-medium text-[#1E3A5F]">· {selectedCap}</span>}
-            </p>
-          </div>
+          <p className="text-xs text-[#64748B]">
+            {view === 'bu' ? `${rows.length} BUs` : `${rows.length} Áreas`} × {caps.length} capabilities
+            {selectedCap && <span className="ml-2 font-medium text-[#1E3A5F]">· {selectedCap}</span>}
+          </p>
           {selectedCap && (
             <button onClick={() => setSelectedCap(null)} className="ml-auto text-xs text-[#C62828] hover:underline">
               Limpiar selección
@@ -87,7 +111,7 @@ export default function HeatmapPage({ filters }: Props) {
                     className={`py-1.5 px-1 font-medium cursor-pointer min-w-[52px] border-b border-[#E2E8F0] transition-colors
                       ${selectedCap === cap ? 'text-[#1E3A5F] bg-[#EFF6FF]' : 'text-[#64748B] hover:text-[#1E3A5F]'}`}
                     title={cap}>
-                    <div className="writing-mode-vertical" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', maxHeight: 90, overflow: 'hidden' }}>
+                    <div style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', maxHeight: 90, overflow: 'hidden' }}>
                       {cap.length > 18 ? cap.slice(0, 16) + '…' : cap}
                     </div>
                   </th>
@@ -108,7 +132,8 @@ export default function HeatmapPage({ filters }: Props) {
                     const isSelected = selectedCap === cap
                     return (
                       <td key={cap}
-                        className={`py-1.5 px-1 text-center border-b border-[#E2E8F0] transition-opacity ${isSelected ? 'opacity-100 ring-1 ring-inset ring-[#1E3A5F]' : selectedCap ? 'opacity-60' : 'opacity-100'}`}
+                        className={`py-1.5 px-1 text-center border-b border-[#E2E8F0] transition-opacity
+                          ${isSelected ? 'opacity-100 ring-1 ring-inset ring-[#1E3A5F]' : selectedCap ? 'opacity-60' : 'opacity-100'}`}
                         style={{ background: bg, color: fg }}
                         title={`${row.label} · ${cap}: ${pct(apego)} (n=${cell?.n ?? 0})`}>
                         {apego != null ? pct(apego, 0) : '—'}

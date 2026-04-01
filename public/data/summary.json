@@ -21,6 +21,23 @@
     "República Dominicana",
     "WH"
   ],
+  "work_locations": [
+    "AGUASCALIENTES",
+    "CDMX",
+    "COLOMBIA",
+    "ECUADOR",
+    "EL SALVADOR",
+    "GUADALAJARA",
+    "GUATEMALA",
+    "HONDURAS",
+    "MAZATLAN",
+    "MERIDA",
+    "PANAMA",
+    "PERÚ",
+    "REPÚBLICA DOMINICANA",
+    "TORREON",
+    "TUXTEPEC"
+  ],
   "areas": [
     "CONA",
     "DP Estadistico",
@@ -113,6 +130,11 @@
   "años": [
     2025,
     2026
+  ],
+  "period_labels": [
+    "2025-P1",
+    "2025-P2",
+    "2026-P1"
   ],
   "nivel_distribution": {
     "Novice": 0.0392,

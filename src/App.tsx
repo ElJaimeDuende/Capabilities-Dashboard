@@ -16,14 +16,26 @@ type Section = 'summary' | 'gaps' | 'heatmap' | 'evolution' | 'rankings' | 'benc
 function Dashboard() {
   const [section, setSection] = useState<Section>('summary')
   const { data: summary } = useSummary()
-  const { filters, toggle, setPeriodo, reset, activeCount, filterRows, filterBuSummary } = useFilters()
+  const {
+    filters,
+    toggle,
+    toggleAño,
+    setPeriodo,
+    setGranularidad,
+    reset,
+    activeCount,
+    filterRows,
+    filterBuSummary,
+  } = useFilters()
 
   const filterBar = summary ? (
     <FilterBar
       filters={filters}
       summary={summary}
       toggle={toggle}
+      toggleAño={toggleAño}
       setPeriodo={setPeriodo}
+      setGranularidad={setGranularidad}
       reset={reset}
       activeCount={activeCount}
     />
@@ -34,7 +46,7 @@ function Dashboard() {
       {section === 'summary'    && <Summary filters={filters} filterBuSummary={filterBuSummary} />}
       {section === 'gaps'       && <Gaps filters={filters} />}
       {section === 'heatmap'    && <HeatmapPage filters={filters} />}
-      {section === 'evolution'  && <Evolution filters={filters} />}
+      {section === 'evolution'  && <Evolution filters={filters} filterRows={filterRows} />}
       {section === 'rankings'   && <Rankings filters={filters} filterRows={filterRows} />}
       {section === 'benchmarks' && <Benchmarks />}
     </Layout>

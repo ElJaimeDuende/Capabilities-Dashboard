@@ -27,11 +27,13 @@ export interface Summary {
   apego_promedio_global: number
   reviso_reporte_pct: number
   bus: string[]
+  work_locations: string[]
   areas: string[]
   roles: string[]
   capabilities: string[]
   periodos: number[]
   años: number[]
+  period_labels: string[]
   nivel_distribution: Record<NivelDominio, number>
   nivel_counts: Record<NivelDominio, number>
   bu_summary: BuSummary[]
@@ -55,8 +57,8 @@ export interface RolGap {
 
 export interface BuRadarItem {
   capability: string
-  perfil: number
   apego: number
+  gap: number
 }
 
 export interface Gaps {
@@ -75,16 +77,32 @@ export interface HeatmapRow {
   cells: Record<string, HeatmapCell>
 }
 
+export interface HeatmapPeriod {
+  by_bu: HeatmapRow[]
+  by_area: HeatmapRow[]
+}
+
 export interface Heatmap {
   capabilities: string[]
   by_bu: HeatmapRow[]
   by_area: HeatmapRow[]
+  by_period: Record<string, HeatmapPeriod>
   benchmark_threshold: number
 }
 
 export interface PeriodData {
   año: number
   periodo: number
+  label: string
+  n: number
+  puntaje_promedio: number
+  apego_promedio: number
+  nivel_counts: Record<NivelDominio, number>
+  nivel_pct: Record<NivelDominio, number>
+}
+
+export interface YearData {
+  año: number
   label: string
   n: number
   puntaje_promedio: number
@@ -113,22 +131,76 @@ export interface BuEvolution {
   periods: { label: string; año: number; periodo: number; n: number; puntaje_promedio: number; apego_promedio: number }[]
 }
 
+export interface BuEvolutionAnnual {
+  bu: string
+  years: { label: string; año: number; n: number; puntaje_promedio: number; apego_promedio: number }[]
+}
+
+export interface ScatterPoint {
+  nombre: string
+  bu: string
+  rol: string
+  area: string
+  funcion: string
+  año: number
+  periodo: number
+  label: string
+  apego: number
+  apego_pct: number
+  puntaje: number
+  nivel: NivelDominio
+  meses_rol: number | null
+  tendencia: 'mejora' | 'empeora' | 'igual' | 'nuevo'
+  delta_apego: number | null
+}
+
+export interface ScatterThresholds {
+  x_thresh: number
+  y_low: number
+  y_high: number
+}
+
+export interface PersonPeriod {
+  label: string
+  año: number
+  periodo: number
+  puntaje: number
+  apego: number
+  nivel: NivelDominio
+}
+
+export interface PersonEvolution {
+  nombre: string
+  bu: string
+  rol: string
+  area: string
+  periods: PersonPeriod[]
+}
+
 export interface Evolution {
   by_period: PeriodData[]
+  by_year: YearData[]
   movers: Mover[]
   top_mejoras: Mover[]
   top_retrocesos: Mover[]
   by_bu: BuEvolution[]
+  by_bu_annual: BuEvolutionAnnual[]
+  by_person: PersonEvolution[]
+  scatter: ScatterPoint[]
+  scatter_thresholds: ScatterThresholds
 }
 
 export interface RankingRow {
   nombre: string
   bu: string
+  work_location: string
   rol: string
   area: string
   año: number
   periodo: number
   puntaje: number
+  puntaje_maximo: number
+  puntaje_requerido: number | null
   apego: number
   nivel: NivelDominio
   reviso_reporte: string
@@ -188,9 +260,14 @@ export interface BenchmarkData {
   capability_categories: Record<string, string[]>
 }
 
+export type Granularidad = 'año' | 'periodo'
+
 export interface Filters {
   bus: string[]
+  work_locations: string[]
   areas: string[]
   roles: string[]
-  periodo: number | null
+  años: number[]
+  periodo: string | null   // label like "2025-P1", used only in period mode
+  granularidad: Granularidad
 }

@@ -58,6 +58,14 @@ ROL_LIST = sorted(gen["Rol realizado"].dropna().unique().tolist())
 CAP_LIST = sorted(cap["Capability"].dropna().unique().tolist())
 PERIODOS = sorted(gen["Periodo"].dropna().unique().tolist())
 AÑOS = sorted(gen["Año"].dropna().unique().tolist())
+WL_LIST = sorted(gen["Work Location"].dropna().unique().tolist()) if "Work Location" in gen.columns else []
+
+# Compute real period labels (avoid cartesian product phantoms)
+PERIOD_LABELS = sorted(
+    gen[["Año", "Periodo"]].dropna().drop_duplicates()
+    .apply(lambda r: f"{int(r['Año'])}-P{int(r['Periodo'])}", axis=1)
+    .tolist()
+)
 
 # ── 1. benchmarks.json ───────────────────────────────────────────────────────
 
@@ -104,7 +112,7 @@ benchmarks = {
       "Gestión de inventarios", "Estándares de logística inversa LCP y mantenimiento del inventario",
       "Transportación y logística", "Manufactura Esbelta", "Técnicas de programación",
       "Estándares VPO programación y nivel de servicio", "Gestión de riesgos",
-      "Metodología S&OP", "Metodología MPS/MRP", "Pronóstico de la demanda",
+      "Metodología S&OP", "Metodología MRP/MPS", "Pronóstico de la demanda",
       "DDMRP", "Control de la producción", "Planeación de capacidad"
     ],
     "Herramientas / Datos": [
@@ -146,11 +154,13 @@ summary = {
     "apego_promedio_global": pct(fin["% Apego al perfil"].mean()),
     "reviso_reporte_pct": pct((gen["Revisó reporte"] == "Sí").sum() / len(gen)),
     "bus": BU_LIST,
+    "work_locations": WL_LIST,
     "areas": AREA_LIST,
     "roles": ROL_LIST,
     "capabilities": CAP_LIST,
     "periodos": [int(p) for p in PERIODOS],
     "años": [int(a) for a in AÑOS],
+    "period_labels": PERIOD_LABELS,
     "nivel_distribution": {n: nivel_pct(n) for n in NIVEL_ORDER},
     "nivel_counts": {n: int(nivel_dist.get(n, 0)) for n in NIVEL_ORDER},
     "bu_summary": bu_summary,
@@ -161,23 +171,20 @@ to_json(summary, "summary.json")
 
 print("Generando gaps.json...")
 
-# Gap por capability: perfil requerido vs apego actual
+# Gap por capability: apego actual vs 100% (1.0 = meets profile exactly)
 cap_gaps = []
 for capability, grp in cap.groupby("Capability"):
-    perfil_mean = pct(grp["Perfil"].mean())
-    apego_mean = pct(grp["Apego Capability"].mean())
-    gap = pct((perfil_mean or 0) - (apego_mean or 0))
-    # by BU
+    apego_mean = pct(grp["% Apego al perfil"].mean())
+    gap = pct(1.0 - (apego_mean or 0))  # positive = below profile, negative = exceeds
     by_bu = {}
     for bu, bgrp in grp.groupby("BU del participante"):
         by_bu[bu] = {
-            "perfil": pct(bgrp["Perfil"].mean()),
-            "apego": pct(bgrp["Apego Capability"].mean()),
+            "apego": pct(bgrp["% Apego al perfil"].mean()),
             "n": len(bgrp)
         }
     cap_gaps.append({
         "capability": capability,
-        "perfil_requerido": perfil_mean,
+        "perfil_requerido": 1.0,   # always 100% — the reference
         "apego_actual": apego_mean,
         "gap": gap,
         "by_bu": by_bu
@@ -196,18 +203,19 @@ for rol, grp in fin.groupby("Rol realizado"):
     })
 rol_gaps.sort(key=lambda x: x["apego_promedio"] or 0)
 
-# Gap por BU: radar data (top 10 capabilities by gap for each BU)
+# Gap por BU: radar data (top 12 capabilities by gap for each BU)
 bu_radar = {}
 for bu in BU_LIST:
     bu_cap = cap[cap["BU del participante"] == bu]
     items = []
     for capability, grp in bu_cap.groupby("Capability"):
+        apego = pct(grp["% Apego al perfil"].mean())
         items.append({
             "capability": capability,
-            "perfil": pct(grp["Perfil"].mean()),
-            "apego": pct(grp["Apego Capability"].mean()),
+            "apego": apego,
+            "gap": pct(1.0 - (apego or 0)),
         })
-    items.sort(key=lambda x: -abs((x["perfil"] or 0) - (x["apego"] or 0)))
+    items.sort(key=lambda x: -(x["gap"] or 0))
     bu_radar[bu] = items[:12]
 
 gaps = {
@@ -228,16 +236,31 @@ def build_heatmap(df, row_col, row_list):
         cells = {}
         for capability, cgrp in grp.groupby("Capability"):
             cells[capability] = {
-                "apego": pct(cgrp["Apego Capability"].mean()),
+                "apego": pct(cgrp["% Apego al perfil"].mean()),
                 "n": len(cgrp)
             }
         rows.append({"label": row_val, "cells": cells})
     return rows
 
+# Build per-period heatmaps
+# cap uses "Período" (with accent) and "Año" for its period/year columns
+cap_year_col = "Año" if "Año" in cap.columns else [c for c in cap.columns if c.lower().startswith("a") and "o" in c.lower()][0]
+cap_period_col = next((c for c in cap.columns if "er" in c.lower() and "odo" in c.lower()), "Período")
+cap_area_col = next((c for c in cap.columns if "rea" in c.lower() and "real" in c.lower()), "Área Realizada")
+
+by_period = {}
+for (año, periodo), grp in cap.groupby([cap_year_col, cap_period_col]):
+    label = f"{int(año)}-P{int(periodo)}"
+    by_period[label] = {
+        "by_bu": build_heatmap(grp, "BU del participante", BU_LIST),
+        "by_area": build_heatmap(grp, cap_area_col, AREA_LIST),
+    }
+
 heatmap = {
     "capabilities": CAP_LIST,
     "by_bu": build_heatmap(cap, "BU del participante", BU_LIST),
     "by_area": build_heatmap(cap, "Área Realizada", AREA_LIST),
+    "by_period": by_period,
     "benchmark_threshold": 0.70
 }
 to_json(heatmap, "heatmap.json")
@@ -249,7 +272,6 @@ print("Generando evolution.json...")
 # Distribution per period
 period_dist = []
 for (año, periodo), grp in fin.groupby(["Año", "Periodo"]):
-    grp_fin = grp[grp["Assessments Status"] == "Finalizado"] if "Assessments Status" in grp.columns else grp
     dist = {n: int((grp["Nivel de dominio"] == n).sum()) for n in NIVEL_ORDER}
     total = sum(dist.values())
     period_dist.append({
@@ -262,6 +284,22 @@ for (año, periodo), grp in fin.groupby(["Año", "Periodo"]):
         "nivel_pct": {n: round(dist[n]/total, 4) if total > 0 else 0 for n in NIVEL_ORDER}
     })
 period_dist.sort(key=lambda x: (x["año"], x["periodo"]))
+
+# Annual aggregation
+year_dist = []
+for año, grp in fin.groupby("Año"):
+    dist = {n: int((grp["Nivel de dominio"] == n).sum()) for n in NIVEL_ORDER}
+    total = sum(dist.values())
+    year_dist.append({
+        "año": int(año),
+        "label": str(int(año)),
+        "n": len(grp),
+        "puntaje_promedio": pct(grp["Puntaje assessment"].mean()),
+        "apego_promedio": pct(grp["% Apego al perfil"].mean()),
+        "nivel_counts": dist,
+        "nivel_pct": {n: round(dist[n]/total, 4) if total > 0 else 0 for n in NIVEL_ORDER}
+    })
+year_dist.sort(key=lambda x: x["año"])
 
 # Per-person delta between periods
 p1 = fin[fin["Periodo"] == 1][["Nombre del participante","BU del participante","Rol realizado","Puntaje assessment","% Apego al perfil","Nivel de dominio"]].copy()
@@ -302,12 +340,117 @@ for bu in BU_LIST:
     if bu_periods:
         bu_evolution.append({"bu": bu, "periods": bu_periods})
 
+# BU annual evolution
+bu_evolution_annual = []
+for bu in BU_LIST:
+    bu_years = []
+    for yr_item in year_dist:
+        bu_grp = fin[(fin["BU del participante"] == bu) & (fin["Año"] == yr_item["año"])]
+        if len(bu_grp) > 0:
+            bu_years.append({
+                "label": yr_item["label"],
+                "año": yr_item["año"],
+                "n": len(bu_grp),
+                "puntaje_promedio": pct(bu_grp["Puntaje assessment"].mean()),
+                "apego_promedio": pct(bu_grp["% Apego al perfil"].mean()),
+            })
+    if bu_years:
+        bu_evolution_annual.append({"bu": bu, "years": bu_years})
+
+# Per-person evolution across all periods
+person_evolution = []
+for nombre, grp in fin.groupby("Nombre del participante"):
+    grp_sorted = grp.sort_values(["Año", "Periodo"])
+    row0 = grp_sorted.iloc[0]
+    periods = []
+    for _, row in grp_sorted.iterrows():
+        periods.append({
+            "label": f"{int(row['Año'])}-P{int(row['Periodo'])}",
+            "año": int(row["Año"]),
+            "periodo": int(row["Periodo"]),
+            "puntaje": pct(row["Puntaje assessment"]),
+            "apego": pct(row["% Apego al perfil"]),
+            "nivel": row["Nivel de dominio"],
+        })
+    person_evolution.append({
+        "nombre": str(nombre),
+        "bu": str(row0["BU del participante"]),
+        "rol": str(row0["Rol realizado"]),
+        "area": str(row0["Área Realizada"]) if "Área Realizada" in row0.index else "",
+        "periods": periods,
+    })
+person_evolution.sort(key=lambda x: x["nombre"])
+
+# ── Scatter: tendencias vs antigüedad en el rol ───────────────────────────────
+print("  Generando scatter de tendencias...")
+
+ant_col = next((c for c in fin.columns if "rol" in c.lower() and "ig" in c.lower()), None)
+fn_col  = next((c for c in fin.columns if "og" in c.lower() and "tica" in c.lower()), None)
+
+def _ref_date(row):
+    m = 4 if int(row["Periodo"]) == 1 else 10
+    return pd.Timestamp(int(row["Año"]), m, 1)
+
+fin2 = fin.copy()
+fin2["_ref"] = fin2.apply(_ref_date, axis=1)
+if ant_col:
+    fin2["_meses"] = ((fin2["_ref"] - fin2[ant_col]) / pd.Timedelta(days=30.44)).clip(lower=0).round(1)
+else:
+    fin2["_meses"] = None
+
+fin2 = fin2.sort_values(["Nombre del participante", "Año", "Periodo"])
+fin2["_prev_apego"] = fin2.groupby("Nombre del participante")["% Apego al perfil"].shift(1)
+fin2["_delta"]      = fin2["% Apego al perfil"] - fin2["_prev_apego"]
+
+def _tend(delta):
+    if delta is None or (isinstance(delta, float) and math.isnan(delta)): return "nuevo"
+    if delta >  0.04: return "mejora"
+    if delta < -0.04: return "empeora"
+    return "igual"
+
+fin2["_tend"] = fin2["_delta"].apply(_tend)
+
+scatter_rows = []
+for _, row in fin2.iterrows():
+    meses = row["_meses"]
+    scatter_rows.append({
+        "nombre":   str(row["Nombre del participante"]),
+        "bu":       str(row["BU del participante"]),
+        "rol":      str(row["Rol realizado"]),
+        "area":     str(row.get("Área Realizada", "")),
+        "funcion":  str(row[fn_col]) if fn_col and fn_col in row.index else "",
+        "año":      int(row["Año"]),
+        "periodo":  int(row["Periodo"]),
+        "label":    f"{int(row['Año'])}-P{int(row['Periodo'])}",
+        "apego":    pct(row["% Apego al perfil"]),
+        "apego_pct": round(float(row["% Apego al perfil"] or 0) * 100, 1),
+        "puntaje":  pct(row["Puntaje assessment"]),
+        "nivel":    row["Nivel de dominio"],
+        "meses_rol": round(float(meses), 1) if meses is not None and not (isinstance(meses, float) and math.isnan(meses)) else None,
+        "tendencia": row["_tend"],
+        "delta_apego": pct(row["_delta"]) if not (isinstance(row["_delta"], float) and math.isnan(row["_delta"])) else None,
+    })
+
+# Zone thresholds (stored so frontend can render consistent backgrounds)
+SCATTER_X_THRESH = 75   # % apego
+SCATTER_Y_LOW    = 18   # months — below = new in position / high potential
+SCATTER_Y_HIGH   = 36   # months — above = no learning / ready for challenge
+
 evolution = {
     "by_period": period_dist,
+    "by_year": year_dist,
     "movers": movers,
     "top_mejoras": movers[:10],
     "top_retrocesos": sorted(movers, key=lambda x: x["delta_puntaje"] or 0)[:10],
-    "by_bu": bu_evolution
+    "by_bu": bu_evolution,
+    "by_bu_annual": bu_evolution_annual,
+    "by_person": person_evolution,
+    "scatter": scatter_rows,
+    "scatter_thresholds": {
+        "x_thresh": SCATTER_X_THRESH,
+        "y_low":    SCATTER_Y_LOW,
+        "y_high":   SCATTER_Y_HIGH,
+    },
 }
 to_json(evolution, "evolution.json")
 
@@ -320,11 +463,14 @@ for _, row in fin.iterrows():
     rankings_rows.append({
         "nombre": row["Nombre del participante"],
         "bu": row["BU del participante"],
+        "work_location": str(row["Work Location"]).strip() if "Work Location" in fin.columns else "",
         "rol": row["Rol realizado"],
         "area": row["Área Realizada"],
         "año": int(row["Año"]),
         "periodo": int(row["Periodo"]),
         "puntaje": pct(row["Puntaje assessment"]),
+        "puntaje_maximo": pct(row["Puntaje máximo"]) if "Puntaje máximo" in fin.columns else 3,
+        "puntaje_requerido": pct(row["Puntaje requerido perfil"]) if "Puntaje requerido perfil" in fin.columns else None,
         "apego": pct(row["% Apego al perfil"]),
         "nivel": row["Nivel de dominio"],
         "reviso_reporte": row["Revisó reporte"],
@@ -335,7 +481,7 @@ rankings_rows.sort(key=lambda x: -(x["puntaje"] or 0))
 # Expertise concentration: per capability, who are the experts?
 expertise = {}
 for capability, grp in cap.groupby("Capability"):
-    experts = cap[(cap["Capability"] == capability) & (cap["Apego Capability"] >= 2.5)]
+    experts = cap[(cap["Capability"] == capability) & (cap["% Apego al perfil"] >= 1.0)]
     expertise[capability] = {
         "n_experts": len(experts),
         "experts": experts["Nombre del participante"].tolist()[:10],

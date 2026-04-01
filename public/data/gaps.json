@@ -2,161 +2,143 @@
   "by_capability": [
     {
       "capability": "Estructuras complejas de datos",
-      "perfil_requerido": 2.7683,
+      "perfil_requerido": 1.0,
       "apego_actual": 0.388,
-      "gap": 2.3803,
+      "gap": 0.612,
       "by_bu": {
         "CAC": {
-          "perfil": 3.0,
           "apego": 0.0,
           "n": 1
         },
         "Colombia": {
-          "perfil": 2.8,
           "apego": 0.3533,
           "n": 5
         },
         "Ecuador": {
-          "perfil": 2.5,
           "apego": 0.6,
           "n": 4
         },
         "El Salvador": {
-          "perfil": 2.5,
           "apego": 0.4,
           "n": 2
         },
         "Guatemala": {
-          "perfil": 2.8333,
           "apego": 0.4756,
           "n": 3
         },
         "Honduras": {
-          "perfil": 2.6667,
           "apego": 0.5333,
           "n": 3
         },
         "México": {
-          "perfil": 2.75,
           "apego": 0.2833,
           "n": 6
         },
         "Otros": {
-          "perfil": 3.0,
           "apego": 0.2708,
           "n": 4
         },
         "Panama": {
-          "perfil": 2.75,
           "apego": 0.4,
           "n": 2
         },
         "Perú": {
-          "perfil": 2.625,
           "apego": 0.5,
           "n": 4
         },
         "República Dominicana": {
-          "perfil": 2.5,
           "apego": 0.8,
           "n": 1
         },
         "WH": {
-          "perfil": 3.0,
           "apego": 0.2556,
           "n": 6
         }
       }
     },
     {
-      "capability": "Técnicas de programación",
-      "perfil_requerido": 3.0,
-      "apego_actual": 0.7446,
-      "gap": 2.2554,
-      "by_bu": {
-        "Colombia": {
-          "perfil": 3.0,
-          "apego": 0.7678,
-          "n": 12
-        },
-        "Ecuador": {
-          "perfil": 3.0,
-          "apego": 0.6358,
-          "n": 4
-        },
-        "El Salvador": {
-          "perfil": 3.0,
-          "apego": 1.0583,
-          "n": 2
-        },
-        "México": {
-          "perfil": 3.0,
-          "apego": 0.697,
-          "n": 9
-        },
-        "Perú": {
-          "perfil": 3.0,
-          "apego": 0.7378,
-          "n": 6
-        }
-      }
-    },
-    {
       "capability": "Programación con Optplan",
-      "perfil_requerido": 2.5,
+      "perfil_requerido": 1.0,
       "apego_actual": 0.5673,
-      "gap": 1.9327,
+      "gap": 0.4327,
       "by_bu": {
         "Colombia": {
-          "perfil": 2.5,
           "apego": 0.61,
           "n": 12
         },
         "Ecuador": {
-          "perfil": 2.5,
           "apego": 0.66,
           "n": 4
         },
         "El Salvador": {
-          "perfil": 2.5,
           "apego": 0.36,
           "n": 2
         },
         "México": {
-          "perfil": 2.5,
           "apego": 0.4667,
           "n": 9
         },
         "Perú": {
-          "perfil": 2.5,
           "apego": 0.64,
           "n": 6
         }
       }
     },
     {
-      "capability": "Gestión de Equipos",
-      "perfil_requerido": 2.6,
-      "apego_actual": 0.675,
-      "gap": 1.925,
+      "capability": "Técnicas de optimización",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.6572,
+      "gap": 0.3428,
       "by_bu": {
         "CAC": {
-          "perfil": 2.6,
+          "apego": 0.88,
+          "n": 2
+        },
+        "El Salvador": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Guatemala": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 0.5,
+          "n": 2
+        },
+        "México": {
+          "apego": 0.495,
+          "n": 10
+        },
+        "Panama": {
+          "apego": 0.6667,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 0.7556,
+          "n": 3
+        }
+      }
+    },
+    {
+      "capability": "Gestión de Equipos",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.675,
+      "gap": 0.325,
+      "by_bu": {
+        "CAC": {
           "apego": 0.5308,
           "n": 1
         },
         "Guatemala": {
-          "perfil": 2.6,
           "apego": 0.9615,
           "n": 1
         },
         "Honduras": {
-          "perfil": 2.6,
           "apego": 0.5654,
           "n": 1
         },
         "Panama": {
-          "perfil": 2.6,
           "apego": 0.6423,
           "n": 1
         }
@@ -164,115 +146,287 @@
     },
     {
       "capability": "Planificación de aprovisionamiento",
-      "perfil_requerido": 2.5769,
+      "perfil_requerido": 1.0,
       "apego_actual": 0.7142,
-      "gap": 1.8627,
+      "gap": 0.2858,
       "by_bu": {
         "CAC": {
-          "perfil": 2.6667,
           "apego": 0.8,
           "n": 3
         },
         "COPE": {
-          "perfil": 2.5,
           "apego": 0.475,
           "n": 2
         },
         "Colombia": {
-          "perfil": 2.5,
           "apego": 0.9225,
           "n": 4
         },
         "Ecuador": {
-          "perfil": 3.0,
           "apego": 0.9767,
           "n": 1
         },
         "México": {
-          "perfil": 2.5,
           "apego": 0.75,
           "n": 10
         },
         "Otros": {
-          "perfil": 2.6667,
           "apego": 0.6089,
           "n": 3
         },
         "Perú": {
-          "perfil": 2.6667,
           "apego": 0.4089,
           "n": 3
         }
       }
     },
     {
-      "capability": "Inglés",
-      "perfil_requerido": 2.535,
-      "apego_actual": 0.7644,
-      "gap": 1.7706,
+      "capability": "Excel",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.7222,
+      "gap": 0.2778,
       "by_bu": {
         "CAC": {
-          "perfil": 2.5571,
+          "apego": 0.6751,
+          "n": 13
+        },
+        "COPE": {
+          "apego": 0.644,
+          "n": 5
+        },
+        "Colombia": {
+          "apego": 0.8355,
+          "n": 58
+        },
+        "Ecuador": {
+          "apego": 0.6972,
+          "n": 20
+        },
+        "El Salvador": {
+          "apego": 0.578,
+          "n": 10
+        },
+        "Guatemala": {
+          "apego": 0.7199,
+          "n": 6
+        },
+        "Honduras": {
+          "apego": 0.7693,
+          "n": 15
+        },
+        "México": {
+          "apego": 0.6572,
+          "n": 103
+        },
+        "Otros": {
+          "apego": 0.53,
+          "n": 10
+        },
+        "Panama": {
+          "apego": 0.63,
+          "n": 3
+        },
+        "Perú": {
+          "apego": 0.8247,
+          "n": 39
+        },
+        "República Dominicana": {
+          "apego": 0.5357,
+          "n": 7
+        },
+        "WH": {
+          "apego": 0.8665,
+          "n": 13
+        }
+      }
+    },
+    {
+      "capability": "Estándar LCP para despliegue de inventario",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.7367,
+      "gap": 0.2633,
+      "by_bu": {
+        "COPE": {
+          "apego": 0.45,
+          "n": 1
+        },
+        "Colombia": {
+          "apego": 0.8108,
+          "n": 12
+        },
+        "Ecuador": {
+          "apego": 0.565,
+          "n": 1
+        },
+        "El Salvador": {
+          "apego": 0.6125,
+          "n": 2
+        },
+        "Honduras": {
+          "apego": 1.055,
+          "n": 3
+        },
+        "México": {
+          "apego": 0.7301,
+          "n": 35
+        },
+        "Perú": {
+          "apego": 0.6125,
+          "n": 6
+        },
+        "República Dominicana": {
+          "apego": 0.6283,
+          "n": 3
+        },
+        "WH": {
+          "apego": 0.9,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Orientación a datos",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.7423,
+      "gap": 0.2577,
+      "by_bu": {
+        "CAC": {
+          "apego": 0.7701,
+          "n": 13
+        },
+        "COPE": {
+          "apego": 0.699,
+          "n": 5
+        },
+        "Colombia": {
+          "apego": 0.8389,
+          "n": 58
+        },
+        "Ecuador": {
+          "apego": 0.6771,
+          "n": 20
+        },
+        "El Salvador": {
+          "apego": 0.4945,
+          "n": 10
+        },
+        "Guatemala": {
+          "apego": 0.6881,
+          "n": 6
+        },
+        "Honduras": {
+          "apego": 0.6929,
+          "n": 15
+        },
+        "México": {
+          "apego": 0.7714,
+          "n": 103
+        },
+        "Otros": {
+          "apego": 0.5994,
+          "n": 10
+        },
+        "Panama": {
+          "apego": 0.3167,
+          "n": 3
+        },
+        "Perú": {
+          "apego": 0.788,
+          "n": 39
+        },
+        "República Dominicana": {
+          "apego": 0.685,
+          "n": 7
+        },
+        "WH": {
+          "apego": 0.5442,
+          "n": 13
+        }
+      }
+    },
+    {
+      "capability": "Técnicas de programación",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.7446,
+      "gap": 0.2554,
+      "by_bu": {
+        "Colombia": {
+          "apego": 0.7678,
+          "n": 12
+        },
+        "Ecuador": {
+          "apego": 0.6358,
+          "n": 4
+        },
+        "El Salvador": {
+          "apego": 1.0583,
+          "n": 2
+        },
+        "México": {
+          "apego": 0.697,
+          "n": 9
+        },
+        "Perú": {
+          "apego": 0.7378,
+          "n": 6
+        }
+      }
+    },
+    {
+      "capability": "Inglés",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.7644,
+      "gap": 0.2356,
+      "by_bu": {
+        "CAC": {
           "apego": 0.7721,
           "n": 14
         },
         "COPE": {
-          "perfil": 2.7,
           "apego": 0.5905,
           "n": 5
         },
         "Colombia": {
-          "perfil": 2.5172,
           "apego": 0.8507,
           "n": 58
         },
         "Ecuador": {
-          "perfil": 2.525,
           "apego": 0.7466,
           "n": 20
         },
         "El Salvador": {
-          "perfil": 2.5,
           "apego": 0.7392,
           "n": 10
         },
         "Guatemala": {
-          "perfil": 2.4714,
           "apego": 0.9399,
           "n": 7
         },
         "Honduras": {
-          "perfil": 2.4875,
           "apego": 0.7336,
           "n": 16
         },
         "México": {
-          "perfil": 2.5583,
           "apego": 0.7134,
           "n": 103
         },
         "Otros": {
-          "perfil": 2.6,
           "apego": 0.7469,
           "n": 10
         },
         "Panama": {
-          "perfil": 2.45,
           "apego": 0.938,
           "n": 4
         },
         "Perú": {
-          "perfil": 2.5256,
           "apego": 0.7838,
           "n": 39
         },
         "República Dominicana": {
-          "perfil": 2.5,
           "apego": 0.7789,
           "n": 7
         },
         "WH": {
-          "perfil": 2.5,
           "apego": 0.7252,
           "n": 13
         }
@@ -280,978 +434,851 @@
     },
     {
       "capability": "Métodos estadísticos y de pronóstico",
-      "perfil_requerido": 2.5366,
+      "perfil_requerido": 1.0,
       "apego_actual": 0.7774,
-      "gap": 1.7592,
+      "gap": 0.2226,
       "by_bu": {
         "CAC": {
-          "perfil": 3.0,
           "apego": 0.3333,
           "n": 1
         },
         "Colombia": {
-          "perfil": 2.6,
           "apego": 0.9747,
           "n": 5
         },
         "Ecuador": {
-          "perfil": 2.0,
           "apego": 0.9375,
           "n": 4
         },
         "El Salvador": {
-          "perfil": 2.0,
           "apego": 1.07,
           "n": 2
         },
         "Guatemala": {
-          "perfil": 2.6667,
           "apego": 0.7083,
           "n": 3
         },
         "Honduras": {
-          "perfil": 2.3333,
           "apego": 0.8472,
           "n": 3
         },
         "México": {
-          "perfil": 2.5,
           "apego": 0.7286,
           "n": 6
         },
         "Otros": {
-          "perfil": 3.0,
           "apego": 0.7917,
           "n": 4
         },
         "Panama": {
-          "perfil": 2.5,
           "apego": 0.6542,
           "n": 2
         },
         "Perú": {
-          "perfil": 2.25,
           "apego": 0.6829,
           "n": 4
         },
         "República Dominicana": {
-          "perfil": 2.0,
           "apego": 0.865,
           "n": 1
         },
         "WH": {
-          "perfil": 3.0,
           "apego": 0.6111,
           "n": 6
         }
       }
     },
     {
-      "capability": "Técnicas de optimización",
-      "perfil_requerido": 2.4,
-      "apego_actual": 0.6572,
-      "gap": 1.7428,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.5,
-          "apego": 0.88,
-          "n": 2
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 1.5,
-          "n": 1
-        },
-        "Guatemala": {
-          "perfil": 2.0,
-          "apego": 1.0,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.0,
-          "apego": 0.5,
-          "n": 2
-        },
-        "México": {
-          "perfil": 2.4,
-          "apego": 0.495,
-          "n": 10
-        },
-        "Panama": {
-          "perfil": 3.0,
-          "apego": 0.6667,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 2.6667,
-          "apego": 0.7556,
-          "n": 3
-        }
-      }
-    },
-    {
-      "capability": "Gestión de la cadena de suministro",
-      "perfil_requerido": 2.7,
-      "apego_actual": 1.0139,
-      "gap": 1.6861,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.7,
-          "apego": 1.0556,
-          "n": 1
-        },
-        "Guatemala": {
-          "perfil": 2.7,
-          "apego": 1.0,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.7,
-          "apego": 1.0,
-          "n": 1
-        },
-        "Panama": {
-          "perfil": 2.7,
-          "apego": 1.0,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Estándares VPO programación y nivel de servicio",
-      "perfil_requerido": 2.5,
-      "apego_actual": 0.8846,
-      "gap": 1.6154,
-      "by_bu": {
-        "Colombia": {
-          "perfil": 2.5,
-          "apego": 0.9737,
-          "n": 12
-        },
-        "Ecuador": {
-          "perfil": 2.5,
-          "apego": 0.752,
-          "n": 4
-        },
-        "El Salvador": {
-          "perfil": 2.5,
-          "apego": 1.168,
-          "n": 2
-        },
-        "México": {
-          "perfil": 2.5,
-          "apego": 0.8391,
-          "n": 9
-        },
-        "Perú": {
-          "perfil": 2.5,
-          "apego": 0.7687,
-          "n": 6
-        }
-      }
-    },
-    {
-      "capability": "Data Driven / Analítico",
-      "perfil_requerido": 2.5,
-      "apego_actual": 0.9,
-      "gap": 1.6,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.5,
-          "apego": 1.14,
-          "n": 1
-        },
-        "Guatemala": {
-          "perfil": 2.5,
-          "apego": 1.08,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.5,
-          "apego": 0.84,
-          "n": 1
-        },
-        "Panama": {
-          "perfil": 2.5,
-          "apego": 0.54,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Colaboración",
-      "perfil_requerido": 2.5228,
-      "apego_actual": 0.9531,
-      "gap": 1.5697,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.2308,
-          "apego": 1.0469,
-          "n": 13
-        },
-        "COPE": {
-          "perfil": 2.7,
-          "apego": 0.9491,
-          "n": 5
-        },
-        "Colombia": {
-          "perfil": 2.5914,
-          "apego": 0.9549,
-          "n": 58
-        },
-        "Ecuador": {
-          "perfil": 2.525,
-          "apego": 0.8352,
-          "n": 20
-        },
-        "El Salvador": {
-          "perfil": 2.2,
-          "apego": 1.1752,
-          "n": 10
-        },
-        "Guatemala": {
-          "perfil": 2.4167,
-          "apego": 0.9293,
-          "n": 6
-        },
-        "Honduras": {
-          "perfil": 2.3333,
-          "apego": 1.1692,
-          "n": 15
-        },
-        "México": {
-          "perfil": 2.65,
-          "apego": 0.8963,
-          "n": 104
-        },
-        "Otros": {
-          "perfil": 2.25,
-          "apego": 1.0382,
-          "n": 10
-        },
-        "Panama": {
-          "perfil": 2.0,
-          "apego": 0.9083,
-          "n": 3
-        },
-        "Perú": {
-          "perfil": 2.5641,
-          "apego": 0.9482,
-          "n": 39
-        },
-        "República Dominicana": {
-          "perfil": 2.6429,
-          "apego": 0.9052,
-          "n": 7
-        },
-        "WH": {
-          "perfil": 2.0769,
-          "apego": 1.0647,
-          "n": 13
-        }
-      }
-    },
-    {
-      "capability": "Empuje / Orientación a resultados",
-      "perfil_requerido": 2.4802,
-      "apego_actual": 0.9419,
-      "gap": 1.5383,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.8333,
-          "apego": 0.7633,
-          "n": 3
-        },
-        "COPE": {
-          "perfil": 3.0,
-          "apego": 0.8417,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 2.4516,
-          "apego": 0.9928,
-          "n": 31
-        },
-        "Ecuador": {
-          "perfil": 2.5,
-          "apego": 0.8882,
-          "n": 12
-        },
-        "El Salvador": {
-          "perfil": 2.1,
-          "apego": 0.8858,
-          "n": 5
-        },
-        "Guatemala": {
-          "perfil": 2.75,
-          "apego": 0.7887,
-          "n": 6
-        },
-        "Honduras": {
-          "perfil": 2.4545,
-          "apego": 0.863,
-          "n": 11
-        },
-        "México": {
-          "perfil": 2.4219,
-          "apego": 0.9769,
-          "n": 64
-        },
-        "Otros": {
-          "perfil": 3.0,
-          "apego": 0.6307,
-          "n": 5
-        },
-        "Panama": {
-          "perfil": 2.5,
-          "apego": 0.9433,
-          "n": 2
-        },
-        "Perú": {
-          "perfil": 2.5,
-          "apego": 0.9838,
-          "n": 23
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 1.2058,
-          "n": 6
-        },
-        "WH": {
-          "perfil": 2.8571,
-          "apego": 0.7457,
-          "n": 7
-        }
-      }
-    },
-    {
-      "capability": "Orientación a datos",
-      "perfil_requerido": 2.2467,
-      "apego_actual": 0.7423,
-      "gap": 1.5044,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.2692,
-          "apego": 0.7701,
-          "n": 13
-        },
-        "COPE": {
-          "perfil": 2.2,
-          "apego": 0.699,
-          "n": 5
-        },
-        "Colombia": {
-          "perfil": 2.1638,
-          "apego": 0.8389,
-          "n": 58
-        },
-        "Ecuador": {
-          "perfil": 2.3,
-          "apego": 0.6771,
-          "n": 20
-        },
-        "El Salvador": {
-          "perfil": 2.35,
-          "apego": 0.4945,
-          "n": 10
-        },
-        "Guatemala": {
-          "perfil": 2.5,
-          "apego": 0.6881,
-          "n": 6
-        },
-        "Honduras": {
-          "perfil": 2.3333,
-          "apego": 0.6929,
-          "n": 15
-        },
-        "México": {
-          "perfil": 2.1456,
-          "apego": 0.7714,
-          "n": 103
-        },
-        "Otros": {
-          "perfil": 2.5,
-          "apego": 0.5994,
-          "n": 10
-        },
-        "Panama": {
-          "perfil": 2.6667,
-          "apego": 0.3167,
-          "n": 3
-        },
-        "Perú": {
-          "perfil": 2.1923,
-          "apego": 0.788,
-          "n": 39
-        },
-        "República Dominicana": {
-          "perfil": 2.2143,
-          "apego": 0.685,
-          "n": 7
-        },
-        "WH": {
-          "perfil": 2.9231,
-          "apego": 0.5442,
-          "n": 13
-        }
-      }
-    },
-    {
-      "capability": "Excel",
-      "perfil_requerido": 2.1825,
-      "apego_actual": 0.7222,
-      "gap": 1.4603,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.1692,
-          "apego": 0.6751,
-          "n": 13
-        },
-        "COPE": {
-          "perfil": 2.1,
-          "apego": 0.644,
-          "n": 5
-        },
-        "Colombia": {
-          "perfil": 2.1138,
-          "apego": 0.8355,
-          "n": 58
-        },
-        "Ecuador": {
-          "perfil": 2.185,
-          "apego": 0.6972,
-          "n": 20
-        },
-        "El Salvador": {
-          "perfil": 2.3,
-          "apego": 0.578,
-          "n": 10
-        },
-        "Guatemala": {
-          "perfil": 2.25,
-          "apego": 0.7199,
-          "n": 6
-        },
-        "Honduras": {
-          "perfil": 2.3,
-          "apego": 0.7693,
-          "n": 15
-        },
-        "México": {
-          "perfil": 2.2398,
-          "apego": 0.6572,
-          "n": 103
-        },
-        "Otros": {
-          "perfil": 2.17,
-          "apego": 0.53,
-          "n": 10
-        },
-        "Panama": {
-          "perfil": 2.0,
-          "apego": 0.63,
-          "n": 3
-        },
-        "Perú": {
-          "perfil": 2.1846,
-          "apego": 0.8247,
-          "n": 39
-        },
-        "República Dominicana": {
-          "perfil": 2.2857,
-          "apego": 0.5357,
-          "n": 7
-        },
-        "WH": {
-          "perfil": 1.8077,
-          "apego": 0.8665,
-          "n": 13
-        }
-      }
-    },
-    {
-      "capability": "Resiliencia",
-      "perfil_requerido": 2.4162,
-      "apego_actual": 0.9568,
-      "gap": 1.4594,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.44,
-          "apego": 1.0865,
-          "n": 5
-        },
-        "COPE": {
-          "perfil": 2.32,
-          "apego": 1.0068,
-          "n": 5
-        },
-        "Colombia": {
-          "perfil": 2.4205,
-          "apego": 0.9496,
-          "n": 44
-        },
-        "Ecuador": {
-          "perfil": 2.3273,
-          "apego": 1.0543,
-          "n": 11
-        },
-        "El Salvador": {
-          "perfil": 2.6,
-          "apego": 0.8587,
-          "n": 5
-        },
-        "Guatemala": {
-          "perfil": 2.4,
-          "apego": 1.0088,
-          "n": 3
-        },
-        "Honduras": {
-          "perfil": 2.5125,
-          "apego": 0.8118,
-          "n": 8
-        },
-        "México": {
-          "perfil": 2.4122,
-          "apego": 0.9347,
-          "n": 82
-        },
-        "Otros": {
-          "perfil": 2.25,
-          "apego": 1.2812,
-          "n": 4
-        },
-        "Perú": {
-          "perfil": 2.416,
-          "apego": 0.9704,
-          "n": 25
-        },
-        "República Dominicana": {
-          "perfil": 2.5,
-          "apego": 0.9064,
-          "n": 5
-        },
-        "WH": {
-          "perfil": 2.5,
-          "apego": 1.224,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Gestión de inventarios",
-      "perfil_requerido": 2.2724,
-      "apego_actual": 0.8796,
-      "gap": 1.3928,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.2308,
-          "apego": 1.0095,
-          "n": 13
-        },
-        "COPE": {
-          "perfil": 2.8,
-          "apego": 0.742,
-          "n": 5
-        },
-        "Colombia": {
-          "perfil": 2.3362,
-          "apego": 0.8917,
-          "n": 58
-        },
-        "Ecuador": {
-          "perfil": 2.175,
-          "apego": 0.9301,
-          "n": 20
-        },
-        "El Salvador": {
-          "perfil": 2.1,
-          "apego": 0.9268,
-          "n": 10
-        },
-        "Guatemala": {
-          "perfil": 1.5833,
-          "apego": 1.7339,
-          "n": 6
-        },
-        "Honduras": {
-          "perfil": 2.1667,
-          "apego": 0.9319,
-          "n": 15
-        },
-        "México": {
-          "perfil": 2.3981,
-          "apego": 0.7382,
-          "n": 103
-        },
-        "Otros": {
-          "perfil": 1.6111,
-          "apego": 1.2151,
-          "n": 9
-        },
-        "Panama": {
-          "perfil": 1.6667,
-          "apego": 1.2667,
-          "n": 3
-        },
-        "Perú": {
-          "perfil": 2.3846,
-          "apego": 0.838,
-          "n": 39
-        },
-        "República Dominicana": {
-          "perfil": 2.2857,
-          "apego": 0.8794,
-          "n": 7
-        },
-        "WH": {
-          "perfil": 1.8077,
-          "apego": 1.104,
-          "n": 13
-        }
-      }
-    },
-    {
-      "capability": "Estándar LCP para despliegue de inventario",
-      "perfil_requerido": 2.125,
-      "apego_actual": 0.7367,
-      "gap": 1.3883,
-      "by_bu": {
-        "COPE": {
-          "perfil": 3.0,
-          "apego": 0.45,
-          "n": 1
-        },
-        "Colombia": {
-          "perfil": 2.0,
-          "apego": 0.8108,
-          "n": 12
-        },
-        "Ecuador": {
-          "perfil": 2.0,
-          "apego": 0.565,
-          "n": 1
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 0.6125,
-          "n": 2
-        },
-        "Honduras": {
-          "perfil": 2.0,
-          "apego": 1.055,
-          "n": 3
-        },
-        "México": {
-          "perfil": 2.2,
-          "apego": 0.7301,
-          "n": 35
-        },
-        "Perú": {
-          "perfil": 2.0,
-          "apego": 0.6125,
-          "n": 6
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 0.6283,
-          "n": 3
-        },
-        "WH": {
-          "perfil": 2.0,
-          "apego": 0.9,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Grit (resilencia + empuje)",
-      "perfil_requerido": 2.3,
-      "apego_actual": 0.9457,
-      "gap": 1.3543,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.3,
-          "apego": 1.087,
-          "n": 1
-        },
-        "Guatemala": {
-          "perfil": 2.3,
-          "apego": 1.0435,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.3,
-          "apego": 0.6522,
-          "n": 1
-        },
-        "Panama": {
-          "perfil": 2.3,
-          "apego": 1.0,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Estándar LCP para Planeación de la Demanda",
-      "perfil_requerido": 2.2258,
-      "apego_actual": 0.8897,
-      "gap": 1.3361,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.5,
-          "apego": 0.95,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 2.3333,
-          "apego": 0.9356,
-          "n": 9
-        },
-        "Ecuador": {
-          "perfil": 2.3333,
-          "apego": 0.7972,
-          "n": 6
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 0.96,
-          "n": 2
-        },
-        "Guatemala": {
-          "perfil": 2.0,
-          "apego": 1.2,
-          "n": 3
-        },
-        "Honduras": {
-          "perfil": 2.0,
-          "apego": 0.75,
-          "n": 3
-        },
-        "México": {
-          "perfil": 2.4545,
-          "apego": 0.7082,
-          "n": 11
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 0.99,
-          "n": 4
-        },
-        "Panama": {
-          "perfil": 2.0,
-          "apego": 0.795,
-          "n": 2
-        },
-        "Perú": {
-          "perfil": 2.4286,
-          "apego": 0.9143,
-          "n": 7
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 0.9,
-          "n": 1
-        },
-        "WH": {
-          "perfil": 2.0,
-          "apego": 0.9708,
-          "n": 12
-        }
-      }
-    },
-    {
       "capability": "Estándares de logística inversa LCP y mantenimiento del inventario",
-      "perfil_requerido": 2.1333,
+      "perfil_requerido": 1.0,
       "apego_actual": 0.8103,
-      "gap": 1.323,
+      "gap": 0.1897,
       "by_bu": {
         "Colombia": {
-          "perfil": 2.25,
           "apego": 0.79,
           "n": 6
         },
         "Ecuador": {
-          "perfil": 2.0,
           "apego": 0.645,
           "n": 1
         },
         "México": {
-          "perfil": 2.125,
           "apego": 0.6388,
           "n": 4
         },
         "Perú": {
-          "perfil": 2.0,
           "apego": 1.21,
           "n": 2
         },
         "República Dominicana": {
-          "perfil": 2.0,
           "apego": 0.8975,
           "n": 2
         }
       }
     },
     {
-      "capability": "Planificación y organización",
-      "perfil_requerido": 2.2872,
-      "apego_actual": 0.9666,
-      "gap": 1.3206,
+      "capability": "Principios de manufactura",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.8441,
+      "gap": 0.1559,
+      "by_bu": {
+        "Colombia": {
+          "apego": 0.8579,
+          "n": 12
+        },
+        "Ecuador": {
+          "apego": 0.9062,
+          "n": 4
+        },
+        "El Salvador": {
+          "apego": 0.775,
+          "n": 2
+        },
+        "México": {
+          "apego": 0.8694,
+          "n": 9
+        },
+        "Perú": {
+          "apego": 0.76,
+          "n": 6
+        }
+      }
+    },
+    {
+      "capability": "Gestión de inventarios",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.8796,
+      "gap": 0.1204,
       "by_bu": {
         "CAC": {
-          "perfil": 2.5,
-          "apego": 1.0189,
-          "n": 3
+          "apego": 1.0095,
+          "n": 13
         },
         "COPE": {
-          "perfil": 2.5,
-          "apego": 0.98,
+          "apego": 0.742,
           "n": 5
         },
         "Colombia": {
-          "perfil": 2.2241,
-          "apego": 0.9752,
-          "n": 29
+          "apego": 0.8917,
+          "n": 58
         },
         "Ecuador": {
-          "perfil": 2.5,
-          "apego": 0.9164,
-          "n": 7
+          "apego": 0.9301,
+          "n": 20
         },
         "El Salvador": {
-          "perfil": 2.0,
-          "apego": 0.8625,
-          "n": 2
+          "apego": 0.9268,
+          "n": 10
         },
         "Guatemala": {
-          "perfil": 2.75,
-          "apego": 0.76,
-          "n": 2
-        },
-        "Honduras": {
-          "perfil": 2.25,
-          "apego": 1.205,
+          "apego": 1.7339,
           "n": 6
         },
+        "Honduras": {
+          "apego": 0.9319,
+          "n": 15
+        },
         "México": {
-          "perfil": 2.2742,
-          "apego": 0.9392,
-          "n": 62
+          "apego": 0.7382,
+          "n": 103
         },
         "Otros": {
-          "perfil": 2.5,
-          "apego": 1.15,
-          "n": 2
+          "apego": 1.2151,
+          "n": 9
+        },
+        "Panama": {
+          "apego": 1.2667,
+          "n": 3
         },
         "Perú": {
-          "perfil": 2.3056,
-          "apego": 0.9491,
-          "n": 18
+          "apego": 0.838,
+          "n": 39
         },
         "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 1.05,
-          "n": 4
+          "apego": 0.8794,
+          "n": 7
         },
         "WH": {
-          "perfil": 2.0,
-          "apego": 1.35,
-          "n": 1
+          "apego": 1.104,
+          "n": 13
         }
       }
     },
     {
       "capability": "Mentalidad de crecimiento",
-      "perfil_requerido": 2.2,
+      "perfil_requerido": 1.0,
       "apego_actual": 0.8807,
-      "gap": 1.3193,
+      "gap": 0.1193,
       "by_bu": {
         "CAC": {
-          "perfil": 2.2,
           "apego": 0.8409,
           "n": 1
         },
         "Guatemala": {
-          "perfil": 2.2,
           "apego": 1.1273,
           "n": 1
         },
         "Honduras": {
-          "perfil": 2.2,
           "apego": 0.7545,
           "n": 1
         },
         "Panama": {
-          "perfil": 2.2,
           "apego": 0.8,
           "n": 1
         }
       }
     },
     {
-      "capability": "Gestión de interesados",
-      "perfil_requerido": 2.2903,
-      "apego_actual": 0.9933,
-      "gap": 1.297,
+      "capability": "Estándares VPO programación y nivel de servicio",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.8846,
+      "gap": 0.1154,
+      "by_bu": {
+        "Colombia": {
+          "apego": 0.9737,
+          "n": 12
+        },
+        "Ecuador": {
+          "apego": 0.752,
+          "n": 4
+        },
+        "El Salvador": {
+          "apego": 1.168,
+          "n": 2
+        },
+        "México": {
+          "apego": 0.8391,
+          "n": 9
+        },
+        "Perú": {
+          "apego": 0.7687,
+          "n": 6
+        }
+      }
+    },
+    {
+      "capability": "Estándar LCP para Planeación de la Demanda",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.8897,
+      "gap": 0.1103,
       "by_bu": {
         "CAC": {
-          "perfil": 2.1875,
+          "apego": 0.95,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 0.9356,
+          "n": 9
+        },
+        "Ecuador": {
+          "apego": 0.7972,
+          "n": 6
+        },
+        "El Salvador": {
+          "apego": 0.96,
+          "n": 2
+        },
+        "Guatemala": {
+          "apego": 1.2,
+          "n": 3
+        },
+        "Honduras": {
+          "apego": 0.75,
+          "n": 3
+        },
+        "México": {
+          "apego": 0.7082,
+          "n": 11
+        },
+        "Otros": {
+          "apego": 0.99,
+          "n": 4
+        },
+        "Panama": {
+          "apego": 0.795,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 0.9143,
+          "n": 7
+        },
+        "República Dominicana": {
+          "apego": 0.9,
+          "n": 1
+        },
+        "WH": {
+          "apego": 0.9708,
+          "n": 12
+        }
+      }
+    },
+    {
+      "capability": "Data Driven / Analítico",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9,
+      "gap": 0.1,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.14,
+          "n": 1
+        },
+        "Guatemala": {
+          "apego": 1.08,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 0.84,
+          "n": 1
+        },
+        "Panama": {
+          "apego": 0.54,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Estándares de MRP LCP",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9196,
+      "gap": 0.0804,
+      "by_bu": {
+        "CAC": {
+          "apego": 0.7233,
+          "n": 3
+        },
+        "COPE": {
+          "apego": 0.9838,
+          "n": 4
+        },
+        "Colombia": {
+          "apego": 1.0074,
+          "n": 11
+        },
+        "Ecuador": {
+          "apego": 1.069,
+          "n": 5
+        },
+        "Guatemala": {
+          "apego": 0.835,
+          "n": 2
+        },
+        "Honduras": {
+          "apego": 0.3967,
+          "n": 3
+        },
+        "México": {
+          "apego": 0.936,
+          "n": 25
+        },
+        "Otros": {
+          "apego": 1.035,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 0.8912,
+          "n": 10
+        }
+      }
+    },
+    {
+      "capability": "Transportación y logística",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9323,
+      "gap": 0.0677,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.3217,
+          "n": 3
+        },
+        "COPE": {
+          "apego": 0.9375,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 0.9882,
+          "n": 25
+        },
+        "Ecuador": {
+          "apego": 0.8081,
+          "n": 8
+        },
+        "El Salvador": {
+          "apego": 1.1125,
+          "n": 6
+        },
+        "Guatemala": {
+          "apego": 1.0278,
+          "n": 3
+        },
+        "Honduras": {
+          "apego": 1.1229,
+          "n": 12
+        },
+        "México": {
+          "apego": 0.8569,
+          "n": 57
+        },
+        "Otros": {
+          "apego": 0.8,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 0.9021,
+          "n": 20
+        },
+        "República Dominicana": {
+          "apego": 0.9347,
+          "n": 6
+        },
+        "WH": {
+          "apego": 0.715,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Empuje / Orientación a resultados",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9419,
+      "gap": 0.0581,
+      "by_bu": {
+        "CAC": {
+          "apego": 0.7633,
+          "n": 3
+        },
+        "COPE": {
+          "apego": 0.8417,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 0.9928,
+          "n": 31
+        },
+        "Ecuador": {
+          "apego": 0.8882,
+          "n": 12
+        },
+        "El Salvador": {
+          "apego": 0.8858,
+          "n": 5
+        },
+        "Guatemala": {
+          "apego": 0.7887,
+          "n": 6
+        },
+        "Honduras": {
+          "apego": 0.863,
+          "n": 11
+        },
+        "México": {
+          "apego": 0.9769,
+          "n": 64
+        },
+        "Otros": {
+          "apego": 0.6307,
+          "n": 5
+        },
+        "Panama": {
+          "apego": 0.9433,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 0.9838,
+          "n": 23
+        },
+        "República Dominicana": {
+          "apego": 1.2058,
+          "n": 6
+        },
+        "WH": {
+          "apego": 0.7457,
+          "n": 7
+        }
+      }
+    },
+    {
+      "capability": "Grit (resilencia + empuje)",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9457,
+      "gap": 0.0543,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.087,
+          "n": 1
+        },
+        "Guatemala": {
+          "apego": 1.0435,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 0.6522,
+          "n": 1
+        },
+        "Panama": {
+          "apego": 1.0,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Colaboración",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9531,
+      "gap": 0.0469,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.0469,
+          "n": 13
+        },
+        "COPE": {
+          "apego": 0.9491,
+          "n": 5
+        },
+        "Colombia": {
+          "apego": 0.9549,
+          "n": 58
+        },
+        "Ecuador": {
+          "apego": 0.8352,
+          "n": 20
+        },
+        "El Salvador": {
+          "apego": 1.1752,
+          "n": 10
+        },
+        "Guatemala": {
+          "apego": 0.9293,
+          "n": 6
+        },
+        "Honduras": {
+          "apego": 1.1692,
+          "n": 15
+        },
+        "México": {
+          "apego": 0.8963,
+          "n": 104
+        },
+        "Otros": {
+          "apego": 1.0382,
+          "n": 10
+        },
+        "Panama": {
+          "apego": 0.9083,
+          "n": 3
+        },
+        "Perú": {
+          "apego": 0.9482,
+          "n": 39
+        },
+        "República Dominicana": {
+          "apego": 0.9052,
+          "n": 7
+        },
+        "WH": {
+          "apego": 1.0647,
+          "n": 13
+        }
+      }
+    },
+    {
+      "capability": "Resiliencia",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9568,
+      "gap": 0.0432,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.0865,
+          "n": 5
+        },
+        "COPE": {
+          "apego": 1.0068,
+          "n": 5
+        },
+        "Colombia": {
+          "apego": 0.9496,
+          "n": 44
+        },
+        "Ecuador": {
+          "apego": 1.0543,
+          "n": 11
+        },
+        "El Salvador": {
+          "apego": 0.8587,
+          "n": 5
+        },
+        "Guatemala": {
+          "apego": 1.0088,
+          "n": 3
+        },
+        "Honduras": {
+          "apego": 0.8118,
+          "n": 8
+        },
+        "México": {
+          "apego": 0.9347,
+          "n": 82
+        },
+        "Otros": {
+          "apego": 1.2812,
+          "n": 4
+        },
+        "Perú": {
+          "apego": 0.9704,
+          "n": 25
+        },
+        "República Dominicana": {
+          "apego": 0.9064,
+          "n": 5
+        },
+        "WH": {
+          "apego": 1.224,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Planificación y organización",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9666,
+      "gap": 0.0334,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.0189,
+          "n": 3
+        },
+        "COPE": {
+          "apego": 0.98,
+          "n": 5
+        },
+        "Colombia": {
+          "apego": 0.9752,
+          "n": 29
+        },
+        "Ecuador": {
+          "apego": 0.9164,
+          "n": 7
+        },
+        "El Salvador": {
+          "apego": 0.8625,
+          "n": 2
+        },
+        "Guatemala": {
+          "apego": 0.76,
+          "n": 2
+        },
+        "Honduras": {
+          "apego": 1.205,
+          "n": 6
+        },
+        "México": {
+          "apego": 0.9392,
+          "n": 62
+        },
+        "Otros": {
+          "apego": 1.15,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 0.9491,
+          "n": 18
+        },
+        "República Dominicana": {
+          "apego": 1.05,
+          "n": 4
+        },
+        "WH": {
+          "apego": 1.35,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Negociación",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9725,
+      "gap": 0.0275,
+      "by_bu": {
+        "CAC": {
+          "apego": 0.9769,
+          "n": 9
+        },
+        "COPE": {
+          "apego": 0.9033,
+          "n": 5
+        },
+        "Colombia": {
+          "apego": 1.0321,
+          "n": 37
+        },
+        "Ecuador": {
+          "apego": 1.0045,
+          "n": 10
+        },
+        "El Salvador": {
+          "apego": 0.931,
+          "n": 5
+        },
+        "Guatemala": {
+          "apego": 1.1875,
+          "n": 2
+        },
+        "Honduras": {
+          "apego": 1.0395,
+          "n": 10
+        },
+        "México": {
+          "apego": 0.9477,
+          "n": 73
+        },
+        "Otros": {
+          "apego": 1.0024,
+          "n": 6
+        },
+        "Perú": {
+          "apego": 0.9472,
+          "n": 23
+        },
+        "República Dominicana": {
+          "apego": 0.7808,
+          "n": 6
+        },
+        "WH": {
+          "apego": 1.22,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Estándares de S&OP LCP + SNP LCP",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9779,
+      "gap": 0.0221,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.1725,
+          "n": 4
+        },
+        "Colombia": {
+          "apego": 1.5,
+          "n": 2
+        },
+        "Ecuador": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "México": {
+          "apego": 0.736,
+          "n": 5
+        },
+        "Otros": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Panama": {
+          "apego": 0.19,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 0.9383,
+          "n": 3
+        }
+      }
+    },
+    {
+      "capability": "Toma de decisiones",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9885,
+      "gap": 0.0115,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.0695,
+          "n": 4
+        },
+        "COPE": {
+          "apego": 0.7623,
+          "n": 3
+        },
+        "Colombia": {
+          "apego": 1.2127,
+          "n": 9
+        },
+        "Guatemala": {
+          "apego": 1.1875,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 0.875,
+          "n": 1
+        },
+        "México": {
+          "apego": 0.9324,
+          "n": 19
+        },
+        "Otros": {
+          "apego": 1.1217,
+          "n": 3
+        },
+        "Panama": {
+          "apego": 0.4375,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 0.723,
+          "n": 2
+        }
+      }
+    },
+    {
+      "capability": "Gestión de interesados",
+      "perfil_requerido": 1.0,
+      "apego_actual": 0.9933,
+      "gap": 0.0067,
+      "by_bu": {
+        "CAC": {
           "apego": 0.9925,
           "n": 8
         },
         "Colombia": {
-          "perfil": 2.3654,
           "apego": 0.9978,
           "n": 26
         },
         "Ecuador": {
-          "perfil": 2.3636,
           "apego": 0.9285,
           "n": 11
         },
         "El Salvador": {
-          "perfil": 2.25,
           "apego": 1.064,
           "n": 4
         },
         "Guatemala": {
-          "perfil": 2.125,
           "apego": 1.0095,
           "n": 4
         },
         "Honduras": {
-          "perfil": 2.125,
           "apego": 0.9307,
           "n": 4
         },
         "México": {
-          "perfil": 2.3393,
           "apego": 0.9936,
           "n": 28
         },
         "Otros": {
-          "perfil": 2.0,
           "apego": 1.0442,
           "n": 6
         },
         "Panama": {
-          "perfil": 2.125,
           "apego": 0.8832,
           "n": 4
         },
         "Perú": {
-          "perfil": 2.375,
           "apego": 1.0229,
           "n": 16
         },
         "República Dominicana": {
-          "perfil": 2.0,
           "apego": 1.06,
           "n": 1
         },
         "WH": {
-          "perfil": 2.25,
           "apego": 1.0012,
           "n": 12
         }
@@ -1259,1041 +1286,229 @@
     },
     {
       "capability": "Planificación de la estrategia",
-      "perfil_requerido": 2.3,
+      "perfil_requerido": 1.0,
       "apego_actual": 1.0109,
-      "gap": 1.2891,
+      "gap": -0.0109,
       "by_bu": {
         "CAC": {
-          "perfil": 2.3,
           "apego": 1.3043,
           "n": 1
         },
         "Guatemala": {
-          "perfil": 2.3,
           "apego": 0.587,
           "n": 1
         },
         "Honduras": {
-          "perfil": 2.3,
           "apego": 0.9783,
           "n": 1
         },
         "Panama": {
-          "perfil": 2.3,
           "apego": 1.1739,
           "n": 1
         }
       }
     },
     {
-      "capability": "Toma de decisiones",
-      "perfil_requerido": 2.2512,
-      "apego_actual": 0.9885,
-      "gap": 1.2627,
+      "capability": "Gestión de la cadena de suministro",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.0139,
+      "gap": -0.0139,
       "by_bu": {
         "CAC": {
-          "perfil": 2.225,
-          "apego": 1.0695,
-          "n": 4
-        },
-        "COPE": {
-          "perfil": 2.3333,
-          "apego": 0.7623,
-          "n": 3
-        },
-        "Colombia": {
-          "perfil": 2.1556,
-          "apego": 1.2127,
-          "n": 9
-        },
-        "Guatemala": {
-          "perfil": 2.4,
-          "apego": 1.1875,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.4,
-          "apego": 0.875,
-          "n": 1
-        },
-        "México": {
-          "perfil": 2.2789,
-          "apego": 0.9324,
-          "n": 19
-        },
-        "Otros": {
-          "perfil": 2.1667,
-          "apego": 1.1217,
-          "n": 3
-        },
-        "Panama": {
-          "perfil": 2.4,
-          "apego": 0.4375,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 2.25,
-          "apego": 0.723,
-          "n": 2
-        }
-      }
-    },
-    {
-      "capability": "Gestión por sistemas",
-      "perfil_requerido": 2.3227,
-      "apego_actual": 1.1242,
-      "gap": 1.1985,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.3,
-          "apego": 1.6385,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 2.28,
-          "apego": 1.5433,
-          "n": 5
-        },
-        "Ecuador": {
-          "perfil": 2.3,
-          "apego": 1.0962,
-          "n": 2
-        },
-        "México": {
-          "perfil": 2.225,
-          "apego": 1.1429,
-          "n": 4
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 0.0,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 2.3,
-          "apego": 1.3269,
-          "n": 2
-        },
-        "WH": {
-          "perfil": 2.5,
-          "apego": 0.72,
-          "n": 6
-        }
-      }
-    },
-    {
-      "capability": "Planeación Operativa de Supply Chain",
-      "perfil_requerido": 2.3,
-      "apego_actual": 1.1087,
-      "gap": 1.1913,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.3,
-          "apego": 1.3043,
+          "apego": 1.0556,
           "n": 1
         },
         "Guatemala": {
-          "perfil": 2.3,
-          "apego": 1.1739,
+          "apego": 1.0,
           "n": 1
         },
         "Honduras": {
-          "perfil": 2.3,
-          "apego": 0.6522,
+          "apego": 1.0,
           "n": 1
         },
         "Panama": {
-          "perfil": 2.3,
-          "apego": 1.3043,
+          "apego": 1.0,
           "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Estándares de MRP LCP",
-      "perfil_requerido": 2.1077,
-      "apego_actual": 0.9196,
-      "gap": 1.1881,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.3333,
-          "apego": 0.7233,
-          "n": 3
-        },
-        "COPE": {
-          "perfil": 2.25,
-          "apego": 0.9838,
-          "n": 4
-        },
-        "Colombia": {
-          "perfil": 2.0909,
-          "apego": 1.0074,
-          "n": 11
-        },
-        "Ecuador": {
-          "perfil": 2.0,
-          "apego": 1.069,
-          "n": 5
-        },
-        "Guatemala": {
-          "perfil": 2.0,
-          "apego": 0.835,
-          "n": 2
-        },
-        "Honduras": {
-          "perfil": 2.0,
-          "apego": 0.3967,
-          "n": 3
-        },
-        "México": {
-          "perfil": 2.12,
-          "apego": 0.936,
-          "n": 25
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 1.035,
-          "n": 2
-        },
-        "Perú": {
-          "perfil": 2.1,
-          "apego": 0.8912,
-          "n": 10
-        }
-      }
-    },
-    {
-      "capability": "Principios de manufactura",
-      "perfil_requerido": 2.0,
-      "apego_actual": 0.8441,
-      "gap": 1.1559,
-      "by_bu": {
-        "Colombia": {
-          "perfil": 2.0,
-          "apego": 0.8579,
-          "n": 12
-        },
-        "Ecuador": {
-          "perfil": 2.0,
-          "apego": 0.9062,
-          "n": 4
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 0.775,
-          "n": 2
-        },
-        "México": {
-          "perfil": 2.0,
-          "apego": 0.8694,
-          "n": 9
-        },
-        "Perú": {
-          "perfil": 2.0,
-          "apego": 0.76,
-          "n": 6
-        }
-      }
-    },
-    {
-      "capability": "Finanzas",
-      "perfil_requerido": 2.2,
-      "apego_actual": 1.0739,
-      "gap": 1.1261,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.2,
-          "apego": 0.75,
-          "n": 1
-        },
-        "Guatemala": {
-          "perfil": 2.2,
-          "apego": 1.2273,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.2,
-          "apego": 0.6818,
-          "n": 1
-        },
-        "Panama": {
-          "perfil": 2.2,
-          "apego": 1.6364,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Resolución de problemas y causa raíz",
-      "perfil_requerido": 2.2664,
-      "apego_actual": 1.1439,
-      "gap": 1.1225,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.25,
-          "apego": 1.1958,
-          "n": 6
-        },
-        "COPE": {
-          "perfil": 2.0,
-          "apego": 1.075,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 2.25,
-          "apego": 1.105,
-          "n": 28
-        },
-        "Ecuador": {
-          "perfil": 2.2143,
-          "apego": 1.2443,
-          "n": 7
-        },
-        "El Salvador": {
-          "perfil": 2.0833,
-          "apego": 1.665,
-          "n": 6
-        },
-        "Guatemala": {
-          "perfil": 2.5,
-          "apego": 0.575,
-          "n": 2
-        },
-        "Honduras": {
-          "perfil": 2.125,
-          "apego": 1.3133,
-          "n": 12
-        },
-        "México": {
-          "perfil": 2.3475,
-          "apego": 1.0415,
-          "n": 59
-        },
-        "Otros": {
-          "perfil": 2.5,
-          "apego": 1.15,
-          "n": 2
-        },
-        "Panama": {
-          "perfil": 2.0,
-          "apego": 0.825,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 2.1905,
-          "apego": 1.2099,
-          "n": 21
-        },
-        "República Dominicana": {
-          "perfil": 2.3,
-          "apego": 1.364,
-          "n": 5
-        },
-        "WH": {
-          "perfil": 2.5,
-          "apego": 1.2,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Negociación",
-      "perfil_requerido": 2.093,
-      "apego_actual": 0.9725,
-      "gap": 1.1205,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.1778,
-          "apego": 0.9769,
-          "n": 9
-        },
-        "COPE": {
-          "perfil": 2.3,
-          "apego": 0.9033,
-          "n": 5
-        },
-        "Colombia": {
-          "perfil": 2.0676,
-          "apego": 1.0321,
-          "n": 37
-        },
-        "Ecuador": {
-          "perfil": 2.06,
-          "apego": 1.0045,
-          "n": 10
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 0.931,
-          "n": 5
-        },
-        "Guatemala": {
-          "perfil": 2.0,
-          "apego": 1.1875,
-          "n": 2
-        },
-        "Honduras": {
-          "perfil": 2.0,
-          "apego": 1.0395,
-          "n": 10
-        },
-        "México": {
-          "perfil": 2.1096,
-          "apego": 0.9477,
-          "n": 73
-        },
-        "Otros": {
-          "perfil": 2.2667,
-          "apego": 1.0024,
-          "n": 6
-        },
-        "Perú": {
-          "perfil": 2.0696,
-          "apego": 0.9472,
-          "n": 23
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 0.7808,
-          "n": 6
-        },
-        "WH": {
-          "perfil": 2.0,
-          "apego": 1.22,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Mejora continua",
-      "perfil_requerido": 2.2026,
-      "apego_actual": 1.1597,
-      "gap": 1.0429,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.2,
-          "apego": 1.1024,
-          "n": 8
-        },
-        "COPE": {
-          "perfil": 2.3333,
-          "apego": 1.1947,
-          "n": 3
-        },
-        "Colombia": {
-          "perfil": 2.125,
-          "apego": 1.305,
-          "n": 16
-        },
-        "Ecuador": {
-          "perfil": 2.275,
-          "apego": 1.1147,
-          "n": 4
-        },
-        "México": {
-          "perfil": 2.2593,
-          "apego": 1.2563,
-          "n": 27
-        },
-        "Otros": {
-          "perfil": 2.22,
-          "apego": 0.7959,
-          "n": 5
-        },
-        "Perú": {
-          "perfil": 2.2286,
-          "apego": 0.997,
-          "n": 7
-        },
-        "WH": {
-          "perfil": 2.0,
-          "apego": 0.9192,
-          "n": 6
-        }
-      }
-    },
-    {
-      "capability": "Estándares de S&OP LCP + SNP LCP",
-      "perfil_requerido": 2.0,
-      "apego_actual": 0.9779,
-      "gap": 1.0221,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.0,
-          "apego": 1.1725,
-          "n": 4
-        },
-        "Colombia": {
-          "perfil": 2.0,
-          "apego": 1.5,
-          "n": 2
-        },
-        "Ecuador": {
-          "perfil": 2.0,
-          "apego": 0.75,
-          "n": 1
-        },
-        "México": {
-          "perfil": 2.0,
-          "apego": 0.736,
-          "n": 5
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 1.5,
-          "n": 1
-        },
-        "Panama": {
-          "perfil": 2.0,
-          "apego": 0.19,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 2.0,
-          "apego": 0.9383,
-          "n": 3
         }
       }
     },
     {
       "capability": "Finanzas empresariales",
-      "perfil_requerido": 2.0429,
+      "perfil_requerido": 1.0,
       "apego_actual": 1.0592,
-      "gap": 0.9837,
+      "gap": -0.0592,
       "by_bu": {
         "CAC": {
-          "perfil": 2.1,
           "apego": 0.8112,
           "n": 6
         },
         "Colombia": {
-          "perfil": 2.0,
           "apego": 1.2019,
           "n": 8
         },
         "Ecuador": {
-          "perfil": 2.15,
           "apego": 1.0755,
           "n": 4
         },
         "El Salvador": {
-          "perfil": 2.0,
           "apego": 1.2183,
           "n": 3
         },
         "Honduras": {
-          "perfil": 2.0,
           "apego": 1.35,
           "n": 4
         },
         "México": {
-          "perfil": 2.0462,
           "apego": 0.8907,
           "n": 13
         },
         "Otros": {
-          "perfil": 2.0,
           "apego": 0.5,
           "n": 1
         },
         "Panama": {
-          "perfil": 2.0,
           "apego": 0.9,
           "n": 1
         },
         "Perú": {
-          "perfil": 2.0667,
           "apego": 1.2721,
           "n": 9
         },
         "República Dominicana": {
-          "perfil": 2.0,
           "apego": 1.275,
           "n": 1
         },
         "WH": {
-          "perfil": 2.0,
           "apego": 0.9625,
           "n": 6
         }
       }
     },
     {
-      "capability": "Transportación y logística",
-      "perfil_requerido": 1.8958,
-      "apego_actual": 0.9323,
-      "gap": 0.9635,
+      "capability": "Finanzas",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.0739,
+      "gap": -0.0739,
       "by_bu": {
         "CAC": {
-          "perfil": 1.6667,
-          "apego": 1.3217,
-          "n": 3
-        },
-        "COPE": {
-          "perfil": 2.0,
-          "apego": 0.9375,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 1.96,
-          "apego": 0.9882,
-          "n": 25
-        },
-        "Ecuador": {
-          "perfil": 1.9375,
-          "apego": 0.8081,
-          "n": 8
-        },
-        "El Salvador": {
-          "perfil": 1.6667,
-          "apego": 1.1125,
-          "n": 6
-        },
-        "Guatemala": {
-          "perfil": 1.8333,
-          "apego": 1.0278,
-          "n": 3
-        },
-        "Honduras": {
-          "perfil": 1.75,
-          "apego": 1.1229,
-          "n": 12
-        },
-        "México": {
-          "perfil": 1.9211,
-          "apego": 0.8569,
-          "n": 57
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 0.8,
+          "apego": 0.75,
           "n": 1
         },
-        "Perú": {
-          "perfil": 1.9,
-          "apego": 0.9021,
-          "n": 20
-        },
-        "República Dominicana": {
-          "perfil": 1.9167,
-          "apego": 0.9347,
-          "n": 6
-        },
-        "WH": {
-          "perfil": 2.0,
-          "apego": 0.715,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Pensamiento Sistémico",
-      "perfil_requerido": 2.0935,
-      "apego_actual": 1.1425,
-      "gap": 0.951,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.1,
-          "apego": 1.153,
-          "n": 7
-        },
-        "Colombia": {
-          "perfil": 2.1,
-          "apego": 1.256,
-          "n": 5
-        },
-        "Ecuador": {
-          "perfil": 2.1667,
-          "apego": 1.0117,
-          "n": 3
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 1.2,
-          "n": 3
-        },
         "Guatemala": {
-          "perfil": 2.2,
           "apego": 1.2273,
           "n": 1
         },
         "Honduras": {
-          "perfil": 2.04,
-          "apego": 1.2409,
-          "n": 5
-        },
-        "México": {
-          "perfil": 2.1,
-          "apego": 0.9675,
-          "n": 10
-        },
-        "Otros": {
-          "perfil": 2.25,
-          "apego": 0.915,
-          "n": 2
+          "apego": 0.6818,
+          "n": 1
         },
         "Panama": {
-          "perfil": 2.1,
-          "apego": 0.9886,
-          "n": 2
-        },
-        "Perú": {
-          "perfil": 2.0714,
-          "apego": 1.2936,
-          "n": 7
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 1.6,
+          "apego": 1.6364,
           "n": 1
         }
       }
     },
     {
       "capability": "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
-      "perfil_requerido": 2.0,
+      "perfil_requerido": 1.0,
       "apego_actual": 1.079,
-      "gap": 0.921,
+      "gap": -0.079,
       "by_bu": {
         "CAC": {
-          "perfil": 2.0,
           "apego": 1.0775,
           "n": 2
         },
         "Colombia": {
-          "perfil": 2.0,
           "apego": 1.1967,
           "n": 3
         },
         "Ecuador": {
-          "perfil": 2.0,
           "apego": 1.305,
           "n": 2
         },
         "El Salvador": {
-          "perfil": 2.0,
           "apego": 1.0967,
           "n": 3
         },
         "Honduras": {
-          "perfil": 2.0,
           "apego": 1.3275,
           "n": 4
         },
         "México": {
-          "perfil": 2.0,
           "apego": 0.788,
           "n": 5
         },
         "Otros": {
-          "perfil": 2.0,
           "apego": 0.6,
           "n": 1
         },
         "Perú": {
-          "perfil": 2.0,
           "apego": 1.075,
           "n": 4
         },
         "República Dominicana": {
-          "perfil": 2.0,
           "apego": 1.18,
           "n": 1
         }
       }
     },
     {
-      "capability": "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
-      "perfil_requerido": 2.0,
-      "apego_actual": 1.269,
-      "gap": 0.731,
+      "capability": "Planeación Operativa de Supply Chain",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.1087,
+      "gap": -0.1087,
       "by_bu": {
         "CAC": {
-          "perfil": 2.0,
-          "apego": 1.25,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 2.0,
-          "apego": 1.0,
-          "n": 3
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 1.25,
+          "apego": 1.3043,
           "n": 1
         },
         "Guatemala": {
-          "perfil": 2.0,
-          "apego": 1.87,
+          "apego": 1.1739,
           "n": 1
         },
         "Honduras": {
-          "perfil": 2.0,
-          "apego": 1.185,
-          "n": 2
-        },
-        "México": {
-          "perfil": 2.0,
-          "apego": 1.2878,
-          "n": 9
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 0.75,
+          "apego": 0.6522,
           "n": 1
-        },
-        "Perú": {
-          "perfil": 2.0,
-          "apego": 2.05,
-          "n": 1
-        }
-      }
-    },
-    {
-      "capability": "Pronóstico colaborativo",
-      "perfil_requerido": 1.775,
-      "apego_actual": 1.3387,
-      "gap": 0.4363,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.0,
-          "apego": 0.525,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 1.9444,
-          "apego": 1.4972,
-          "n": 9
-        },
-        "Ecuador": {
-          "perfil": 2.3333,
-          "apego": 0.35,
-          "n": 6
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 0.6,
-          "n": 2
-        },
-        "Guatemala": {
-          "perfil": 1.3333,
-          "apego": 1.825,
-          "n": 3
-        },
-        "Honduras": {
-          "perfil": 1.6667,
-          "apego": 1.7,
-          "n": 3
-        },
-        "México": {
-          "perfil": 2.0,
-          "apego": 1.2806,
-          "n": 9
-        },
-        "Otros": {
-          "perfil": 1.0,
-          "apego": 2.1375,
-          "n": 4
         },
         "Panama": {
-          "perfil": 1.5,
-          "apego": 1.5,
-          "n": 2
-        },
-        "Perú": {
-          "perfil": 2.2857,
-          "apego": 1.1179,
-          "n": 7
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 1.275,
+          "apego": 1.3043,
           "n": 1
-        },
-        "WH": {
-          "perfil": 1.25,
-          "apego": 1.6458,
-          "n": 12
         }
       }
     },
     {
-      "capability": "Gestión de riesgos",
-      "perfil_requerido": 1.6944,
-      "apego_actual": 1.2614,
-      "gap": 0.433,
+      "capability": "Gestión por sistemas",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.1242,
+      "gap": -0.1242,
       "by_bu": {
         "CAC": {
-          "perfil": 2.0,
-          "apego": 1.235,
-          "n": 4
+          "apego": 1.6385,
+          "n": 2
         },
         "Colombia": {
-          "perfil": 1.5714,
-          "apego": 1.4618,
-          "n": 14
-        },
-        "Ecuador": {
-          "perfil": 1.6,
-          "apego": 1.0633,
+          "apego": 1.5433,
           "n": 5
         },
-        "El Salvador": {
-          "perfil": 1.6667,
-          "apego": 2.0333,
-          "n": 3
-        },
-        "Guatemala": {
-          "perfil": 2.0,
-          "apego": 1.085,
-          "n": 1
-        },
-        "Honduras": {
-          "perfil": 2.0,
-          "apego": 0.6675,
-          "n": 2
-        },
-        "México": {
-          "perfil": 1.7188,
-          "apego": 1.1458,
-          "n": 16
-        },
-        "Otros": {
-          "perfil": 2.0,
-          "apego": 1.0,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 1.625,
-          "apego": 1.1927,
-          "n": 8
-        }
-      }
-    },
-    {
-      "capability": "Sensibilidad del mercado",
-      "perfil_requerido": 1.6532,
-      "apego_actual": 1.3956,
-      "gap": 0.2576,
-      "by_bu": {
-        "CAC": {
-          "perfil": 2.0,
-          "apego": 1.275,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 1.6111,
-          "apego": 1.6694,
-          "n": 9
-        },
         "Ecuador": {
-          "perfil": 2.1667,
-          "apego": 0.8417,
-          "n": 6
-        },
-        "El Salvador": {
-          "perfil": 2.0,
-          "apego": 1.05,
+          "apego": 1.0962,
           "n": 2
         },
-        "Guatemala": {
-          "perfil": 1.3333,
-          "apego": 1.5,
-          "n": 3
-        },
-        "Honduras": {
-          "perfil": 1.6667,
-          "apego": 0.75,
-          "n": 3
-        },
         "México": {
-          "perfil": 1.8182,
-          "apego": 1.0932,
-          "n": 11
-        },
-        "Otros": {
-          "perfil": 1.0,
-          "apego": 2.55,
+          "apego": 1.1429,
           "n": 4
         },
-        "Panama": {
-          "perfil": 1.5,
-          "apego": 1.0875,
-          "n": 2
+        "Otros": {
+          "apego": 0.0,
+          "n": 1
         },
         "Perú": {
-          "perfil": 2.0,
-          "apego": 1.1143,
-          "n": 7
-        },
-        "República Dominicana": {
-          "perfil": 2.0,
-          "apego": 0.75,
-          "n": 1
+          "apego": 1.3269,
+          "n": 2
         },
         "WH": {
-          "perfil": 1.25,
-          "apego": 1.8417,
-          "n": 12
-        }
-      }
-    },
-    {
-      "capability": "Planeación y gestión de la producción",
-      "perfil_requerido": 1.3846,
-      "apego_actual": 1.4111,
-      "gap": -0.0265,
-      "by_bu": {
-        "CAC": {
-          "perfil": 1.5,
-          "apego": 1.4167,
-          "n": 2
-        },
-        "Colombia": {
-          "perfil": 1.5,
-          "apego": 1.5333,
-          "n": 2
-        },
-        "Ecuador": {
-          "perfil": 1.1667,
-          "apego": 1.7889,
-          "n": 3
-        },
-        "El Salvador": {
-          "perfil": 1.5,
-          "apego": 0.925,
-          "n": 4
-        },
-        "Guatemala": {
-          "perfil": 1.25,
-          "apego": 0.95,
-          "n": 2
-        },
-        "Honduras": {
-          "perfil": 1.5,
-          "apego": 1.2778,
+          "apego": 0.72,
           "n": 6
-        },
-        "México": {
-          "perfil": 1.3462,
-          "apego": 1.3872,
-          "n": 13
-        },
-        "Otros": {
-          "perfil": 1.0,
-          "apego": 2.8,
-          "n": 1
-        },
-        "Perú": {
-          "perfil": 1.4,
-          "apego": 1.6867,
-          "n": 5
-        },
-        "República Dominicana": {
-          "perfil": 1.5,
-          "apego": 1.2333,
-          "n": 1
         }
       }
     },
@@ -2304,70 +1519,454 @@
       "gap": -0.1282,
       "by_bu": {
         "CAC": {
-          "perfil": 1.0,
           "apego": 1.23,
           "n": 1
         },
         "Ecuador": {
-          "perfil": 1.0,
           "apego": 1.35,
           "n": 2
         },
         "Guatemala": {
-          "perfil": 1.0,
           "apego": 0.0,
           "n": 1
         },
         "México": {
-          "perfil": 1.0,
           "apego": 0.8488,
           "n": 8
         },
         "Otros": {
-          "perfil": 1.0,
           "apego": 1.5,
           "n": 1
         },
         "Panama": {
-          "perfil": 1.0,
           "apego": 1.5,
           "n": 1
         },
         "Perú": {
-          "perfil": 1.0,
           "apego": 1.82,
           "n": 3
         }
       }
     },
     {
+      "capability": "Pensamiento Sistémico",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.1425,
+      "gap": -0.1425,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.153,
+          "n": 7
+        },
+        "Colombia": {
+          "apego": 1.256,
+          "n": 5
+        },
+        "Ecuador": {
+          "apego": 1.0117,
+          "n": 3
+        },
+        "El Salvador": {
+          "apego": 1.2,
+          "n": 3
+        },
+        "Guatemala": {
+          "apego": 1.2273,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 1.2409,
+          "n": 5
+        },
+        "México": {
+          "apego": 0.9675,
+          "n": 10
+        },
+        "Otros": {
+          "apego": 0.915,
+          "n": 2
+        },
+        "Panama": {
+          "apego": 0.9886,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 1.2936,
+          "n": 7
+        },
+        "República Dominicana": {
+          "apego": 1.6,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Resolución de problemas y causa raíz",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.1439,
+      "gap": -0.1439,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.1958,
+          "n": 6
+        },
+        "COPE": {
+          "apego": 1.075,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 1.105,
+          "n": 28
+        },
+        "Ecuador": {
+          "apego": 1.2443,
+          "n": 7
+        },
+        "El Salvador": {
+          "apego": 1.665,
+          "n": 6
+        },
+        "Guatemala": {
+          "apego": 0.575,
+          "n": 2
+        },
+        "Honduras": {
+          "apego": 1.3133,
+          "n": 12
+        },
+        "México": {
+          "apego": 1.0415,
+          "n": 59
+        },
+        "Otros": {
+          "apego": 1.15,
+          "n": 2
+        },
+        "Panama": {
+          "apego": 0.825,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 1.2099,
+          "n": 21
+        },
+        "República Dominicana": {
+          "apego": 1.364,
+          "n": 5
+        },
+        "WH": {
+          "apego": 1.2,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Mejora continua",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.1597,
+      "gap": -0.1597,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.1024,
+          "n": 8
+        },
+        "COPE": {
+          "apego": 1.1947,
+          "n": 3
+        },
+        "Colombia": {
+          "apego": 1.305,
+          "n": 16
+        },
+        "Ecuador": {
+          "apego": 1.1147,
+          "n": 4
+        },
+        "México": {
+          "apego": 1.2563,
+          "n": 27
+        },
+        "Otros": {
+          "apego": 0.7959,
+          "n": 5
+        },
+        "Perú": {
+          "apego": 0.997,
+          "n": 7
+        },
+        "WH": {
+          "apego": 0.9192,
+          "n": 6
+        }
+      }
+    },
+    {
+      "capability": "Gestión de riesgos",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.2614,
+      "gap": -0.2614,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.235,
+          "n": 4
+        },
+        "Colombia": {
+          "apego": 1.4618,
+          "n": 14
+        },
+        "Ecuador": {
+          "apego": 1.0633,
+          "n": 5
+        },
+        "El Salvador": {
+          "apego": 2.0333,
+          "n": 3
+        },
+        "Guatemala": {
+          "apego": 1.085,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 0.6675,
+          "n": 2
+        },
+        "México": {
+          "apego": 1.1458,
+          "n": 16
+        },
+        "Otros": {
+          "apego": 1.0,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 1.1927,
+          "n": 8
+        }
+      }
+    },
+    {
+      "capability": "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.269,
+      "gap": -0.269,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.25,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 1.0,
+          "n": 3
+        },
+        "El Salvador": {
+          "apego": 1.25,
+          "n": 1
+        },
+        "Guatemala": {
+          "apego": 1.87,
+          "n": 1
+        },
+        "Honduras": {
+          "apego": 1.185,
+          "n": 2
+        },
+        "México": {
+          "apego": 1.2878,
+          "n": 9
+        },
+        "Otros": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 2.05,
+          "n": 1
+        }
+      }
+    },
+    {
+      "capability": "Pronóstico colaborativo",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.3387,
+      "gap": -0.3387,
+      "by_bu": {
+        "CAC": {
+          "apego": 0.525,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 1.4972,
+          "n": 9
+        },
+        "Ecuador": {
+          "apego": 0.35,
+          "n": 6
+        },
+        "El Salvador": {
+          "apego": 0.6,
+          "n": 2
+        },
+        "Guatemala": {
+          "apego": 1.825,
+          "n": 3
+        },
+        "Honduras": {
+          "apego": 1.7,
+          "n": 3
+        },
+        "México": {
+          "apego": 1.2806,
+          "n": 9
+        },
+        "Otros": {
+          "apego": 2.1375,
+          "n": 4
+        },
+        "Panama": {
+          "apego": 1.5,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 1.1179,
+          "n": 7
+        },
+        "República Dominicana": {
+          "apego": 1.275,
+          "n": 1
+        },
+        "WH": {
+          "apego": 1.6458,
+          "n": 12
+        }
+      }
+    },
+    {
+      "capability": "Sensibilidad del mercado",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.3956,
+      "gap": -0.3956,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.275,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 1.6694,
+          "n": 9
+        },
+        "Ecuador": {
+          "apego": 0.8417,
+          "n": 6
+        },
+        "El Salvador": {
+          "apego": 1.05,
+          "n": 2
+        },
+        "Guatemala": {
+          "apego": 1.5,
+          "n": 3
+        },
+        "Honduras": {
+          "apego": 0.75,
+          "n": 3
+        },
+        "México": {
+          "apego": 1.0932,
+          "n": 11
+        },
+        "Otros": {
+          "apego": 2.55,
+          "n": 4
+        },
+        "Panama": {
+          "apego": 1.0875,
+          "n": 2
+        },
+        "Perú": {
+          "apego": 1.1143,
+          "n": 7
+        },
+        "República Dominicana": {
+          "apego": 0.75,
+          "n": 1
+        },
+        "WH": {
+          "apego": 1.8417,
+          "n": 12
+        }
+      }
+    },
+    {
+      "capability": "Planeación y gestión de la producción",
+      "perfil_requerido": 1.0,
+      "apego_actual": 1.4111,
+      "gap": -0.4111,
+      "by_bu": {
+        "CAC": {
+          "apego": 1.4167,
+          "n": 2
+        },
+        "Colombia": {
+          "apego": 1.5333,
+          "n": 2
+        },
+        "Ecuador": {
+          "apego": 1.7889,
+          "n": 3
+        },
+        "El Salvador": {
+          "apego": 0.925,
+          "n": 4
+        },
+        "Guatemala": {
+          "apego": 0.95,
+          "n": 2
+        },
+        "Honduras": {
+          "apego": 1.2778,
+          "n": 6
+        },
+        "México": {
+          "apego": 1.3872,
+          "n": 13
+        },
+        "Otros": {
+          "apego": 2.8,
+          "n": 1
+        },
+        "Perú": {
+          "apego": 1.6867,
+          "n": 5
+        },
+        "República Dominicana": {
+          "apego": 1.2333,
+          "n": 1
+        }
+      }
+    },
+    {
       "capability": "Manufactura Esbelta",
-      "perfil_requerido": 1.5,
+      "perfil_requerido": 1.0,
       "apego_actual": 1.6952,
-      "gap": -0.1952,
+      "gap": -0.6952,
       "by_bu": {
         "Colombia": {
-          "perfil": 1.5,
           "apego": 1.7333,
           "n": 12
         },
         "Ecuador": {
-          "perfil": 1.5,
           "apego": 1.7883,
           "n": 4
         },
         "El Salvador": {
-          "perfil": 1.5,
           "apego": 1.6,
           "n": 2
         },
         "México": {
-          "perfil": 1.5,
           "apego": 1.7622,
           "n": 9
         },
         "Perú": {
-          "perfil": 1.5,
           "apego": 1.4878,
           "n": 6
         }
@@ -2527,807 +2126,807 @@
     "CAC": [
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 3.0,
-        "apego": 0.0
+        "apego": 0.0,
+        "gap": 1.0
       },
       {
         "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 3.0,
-        "apego": 0.3333
+        "apego": 0.3333,
+        "gap": 0.6667
       },
       {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.8333,
-        "apego": 0.7633
+        "capability": "Pronóstico colaborativo",
+        "apego": 0.525,
+        "gap": 0.475
       },
       {
         "capability": "Gestión de Equipos",
-        "perfil": 2.6,
-        "apego": 0.5308
-      },
-      {
-        "capability": "Planificación de aprovisionamiento",
-        "perfil": 2.6667,
-        "apego": 0.8
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.5571,
-        "apego": 0.7721
-      },
-      {
-        "capability": "Gestión de la cadena de suministro",
-        "perfil": 2.7,
-        "apego": 1.0556
-      },
-      {
-        "capability": "Técnicas de optimización",
-        "perfil": 2.5,
-        "apego": 0.88
-      },
-      {
-        "capability": "Estándares de MRP LCP",
-        "perfil": 2.3333,
-        "apego": 0.7233
-      },
-      {
-        "capability": "Estándar LCP para Planeación de la Demanda",
-        "perfil": 2.5,
-        "apego": 0.95
-      },
-      {
-        "capability": "Orientación a datos",
-        "perfil": 2.2692,
-        "apego": 0.7701
+        "apego": 0.5308,
+        "gap": 0.4692
       },
       {
         "capability": "Excel",
-        "perfil": 2.1692,
-        "apego": 0.6751
+        "apego": 0.6751,
+        "gap": 0.3249
+      },
+      {
+        "capability": "Estándares de MRP LCP",
+        "apego": 0.7233,
+        "gap": 0.2767
+      },
+      {
+        "capability": "Finanzas",
+        "apego": 0.75,
+        "gap": 0.25
+      },
+      {
+        "capability": "Empuje / Orientación a resultados",
+        "apego": 0.7633,
+        "gap": 0.2367
+      },
+      {
+        "capability": "Orientación a datos",
+        "apego": 0.7701,
+        "gap": 0.2299
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.7721,
+        "gap": 0.2279
+      },
+      {
+        "capability": "Planificación de aprovisionamiento",
+        "apego": 0.8,
+        "gap": 0.2
+      },
+      {
+        "capability": "Finanzas empresariales",
+        "apego": 0.8112,
+        "gap": 0.1888
       }
     ],
     "COPE": [
       {
         "capability": "Estándar LCP para despliegue de inventario",
-        "perfil": 3.0,
-        "apego": 0.45
-      },
-      {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 3.0,
-        "apego": 0.8417
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.7,
-        "apego": 0.5905
-      },
-      {
-        "capability": "Gestión de inventarios",
-        "perfil": 2.8,
-        "apego": 0.742
+        "apego": 0.45,
+        "gap": 0.55
       },
       {
         "capability": "Planificación de aprovisionamiento",
-        "perfil": 2.5,
-        "apego": 0.475
+        "apego": 0.475,
+        "gap": 0.525
       },
       {
-        "capability": "Colaboración",
-        "perfil": 2.7,
-        "apego": 0.9491
-      },
-      {
-        "capability": "Toma de decisiones",
-        "perfil": 2.3333,
-        "apego": 0.7623
-      },
-      {
-        "capability": "Planificación y organización",
-        "perfil": 2.5,
-        "apego": 0.98
-      },
-      {
-        "capability": "Orientación a datos",
-        "perfil": 2.2,
-        "apego": 0.699
+        "capability": "Inglés",
+        "apego": 0.5905,
+        "gap": 0.4095
       },
       {
         "capability": "Excel",
-        "perfil": 2.1,
-        "apego": 0.644
+        "apego": 0.644,
+        "gap": 0.356
+      },
+      {
+        "capability": "Orientación a datos",
+        "apego": 0.699,
+        "gap": 0.301
+      },
+      {
+        "capability": "Gestión de inventarios",
+        "apego": 0.742,
+        "gap": 0.258
+      },
+      {
+        "capability": "Toma de decisiones",
+        "apego": 0.7623,
+        "gap": 0.2377
+      },
+      {
+        "capability": "Empuje / Orientación a resultados",
+        "apego": 0.8417,
+        "gap": 0.1583
       },
       {
         "capability": "Negociación",
-        "perfil": 2.3,
-        "apego": 0.9033
+        "apego": 0.9033,
+        "gap": 0.0967
       },
       {
-        "capability": "Resiliencia",
-        "perfil": 2.32,
-        "apego": 1.0068
+        "capability": "Transportación y logística",
+        "apego": 0.9375,
+        "gap": 0.0625
+      },
+      {
+        "capability": "Colaboración",
+        "apego": 0.9491,
+        "gap": 0.0509
+      },
+      {
+        "capability": "Planificación y organización",
+        "apego": 0.98,
+        "gap": 0.02
       }
     ],
     "Colombia": [
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.8,
-        "apego": 0.3533
-      },
-      {
-        "capability": "Técnicas de programación",
-        "perfil": 3.0,
-        "apego": 0.7678
+        "apego": 0.3533,
+        "gap": 0.6467
       },
       {
         "capability": "Programación con Optplan",
-        "perfil": 2.5,
-        "apego": 0.61
+        "apego": 0.61,
+        "gap": 0.39
       },
       {
-        "capability": "Inglés",
-        "perfil": 2.5172,
-        "apego": 0.8507
-      },
-      {
-        "capability": "Colaboración",
-        "perfil": 2.5914,
-        "apego": 0.9549
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 2.6,
-        "apego": 0.9747
-      },
-      {
-        "capability": "Planificación de aprovisionamiento",
-        "perfil": 2.5,
-        "apego": 0.9225
-      },
-      {
-        "capability": "Estándares VPO programación y nivel de servicio",
-        "perfil": 2.5,
-        "apego": 0.9737
-      },
-      {
-        "capability": "Resiliencia",
-        "perfil": 2.4205,
-        "apego": 0.9496
+        "capability": "Técnicas de programación",
+        "apego": 0.7678,
+        "gap": 0.2322
       },
       {
         "capability": "Estándares de logística inversa LCP y mantenimiento del inventario",
-        "perfil": 2.25,
-        "apego": 0.79
+        "apego": 0.79,
+        "gap": 0.21
       },
       {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.4516,
-        "apego": 0.9928
+        "capability": "Estándar LCP para despliegue de inventario",
+        "apego": 0.8108,
+        "gap": 0.1892
+      },
+      {
+        "capability": "Excel",
+        "apego": 0.8355,
+        "gap": 0.1645
+      },
+      {
+        "capability": "Orientación a datos",
+        "apego": 0.8389,
+        "gap": 0.1611
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.8507,
+        "gap": 0.1493
+      },
+      {
+        "capability": "Principios de manufactura",
+        "apego": 0.8579,
+        "gap": 0.1421
       },
       {
         "capability": "Gestión de inventarios",
-        "perfil": 2.3362,
-        "apego": 0.8917
+        "apego": 0.8917,
+        "gap": 0.1083
+      },
+      {
+        "capability": "Planificación de aprovisionamiento",
+        "apego": 0.9225,
+        "gap": 0.0775
+      },
+      {
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.9356,
+        "gap": 0.0644
       }
     ],
     "Ecuador": [
       {
-        "capability": "Técnicas de programación",
-        "perfil": 3.0,
-        "apego": 0.6358
-      },
-      {
-        "capability": "Planificación de aprovisionamiento",
-        "perfil": 3.0,
-        "apego": 0.9767
-      },
-      {
         "capability": "Pronóstico colaborativo",
-        "perfil": 2.3333,
-        "apego": 0.35
+        "apego": 0.35,
+        "gap": 0.65
+      },
+      {
+        "capability": "Estándar LCP para despliegue de inventario",
+        "apego": 0.565,
+        "gap": 0.435
       },
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.5,
-        "apego": 0.6
+        "apego": 0.6,
+        "gap": 0.4
+      },
+      {
+        "capability": "Técnicas de programación",
+        "apego": 0.6358,
+        "gap": 0.3642
+      },
+      {
+        "capability": "Estándares de logística inversa LCP y mantenimiento del inventario",
+        "apego": 0.645,
+        "gap": 0.355
       },
       {
         "capability": "Programación con Optplan",
-        "perfil": 2.5,
-        "apego": 0.66
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.525,
-        "apego": 0.7466
-      },
-      {
-        "capability": "Estándares VPO programación y nivel de servicio",
-        "perfil": 2.5,
-        "apego": 0.752
-      },
-      {
-        "capability": "Colaboración",
-        "perfil": 2.525,
-        "apego": 0.8352
+        "apego": 0.66,
+        "gap": 0.34
       },
       {
         "capability": "Orientación a datos",
-        "perfil": 2.3,
-        "apego": 0.6771
+        "apego": 0.6771,
+        "gap": 0.3229
       },
       {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.5,
-        "apego": 0.8882
+        "capability": "Excel",
+        "apego": 0.6972,
+        "gap": 0.3028
       },
       {
-        "capability": "Planificación y organización",
-        "perfil": 2.5,
-        "apego": 0.9164
+        "capability": "Inglés",
+        "apego": 0.7466,
+        "gap": 0.2534
+      },
+      {
+        "capability": "Estándares de S&OP LCP + SNP LCP",
+        "apego": 0.75,
+        "gap": 0.25
+      },
+      {
+        "capability": "Estándares VPO programación y nivel de servicio",
+        "apego": 0.752,
+        "gap": 0.248
       },
       {
         "capability": "Estándar LCP para Planeación de la Demanda",
-        "perfil": 2.3333,
-        "apego": 0.7972
+        "apego": 0.7972,
+        "gap": 0.2028
       }
     ],
     "El Salvador": [
       {
         "capability": "Programación con Optplan",
-        "perfil": 2.5,
-        "apego": 0.36
+        "apego": 0.36,
+        "gap": 0.64
       },
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.5,
-        "apego": 0.4
-      },
-      {
-        "capability": "Técnicas de programación",
-        "perfil": 3.0,
-        "apego": 1.0583
+        "apego": 0.4,
+        "gap": 0.6
       },
       {
         "capability": "Orientación a datos",
-        "perfil": 2.35,
-        "apego": 0.4945
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.5,
-        "apego": 0.7392
-      },
-      {
-        "capability": "Resiliencia",
-        "perfil": 2.6,
-        "apego": 0.8587
+        "apego": 0.4945,
+        "gap": 0.5055
       },
       {
         "capability": "Excel",
-        "perfil": 2.3,
-        "apego": 0.578
+        "apego": 0.578,
+        "gap": 0.422
       },
       {
         "capability": "Pronóstico colaborativo",
-        "perfil": 2.0,
-        "apego": 0.6
+        "apego": 0.6,
+        "gap": 0.4
       },
       {
         "capability": "Estándar LCP para despliegue de inventario",
-        "perfil": 2.0,
-        "apego": 0.6125
+        "apego": 0.6125,
+        "gap": 0.3875
       },
       {
-        "capability": "Estándares VPO programación y nivel de servicio",
-        "perfil": 2.5,
-        "apego": 1.168
+        "capability": "Inglés",
+        "apego": 0.7392,
+        "gap": 0.2608
       },
       {
         "capability": "Principios de manufactura",
-        "perfil": 2.0,
-        "apego": 0.775
+        "apego": 0.775,
+        "gap": 0.225
+      },
+      {
+        "capability": "Resiliencia",
+        "apego": 0.8587,
+        "gap": 0.1413
+      },
+      {
+        "capability": "Planificación y organización",
+        "apego": 0.8625,
+        "gap": 0.1375
       },
       {
         "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.1,
-        "apego": 0.8858
+        "apego": 0.8858,
+        "gap": 0.1142
+      },
+      {
+        "capability": "Planeación y gestión de la producción",
+        "apego": 0.925,
+        "gap": 0.075
       }
     ],
     "Guatemala": [
       {
+        "capability": "Planificación de capacidad",
+        "apego": 0.0,
+        "gap": 1.0
+      },
+      {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.8333,
-        "apego": 0.4756
-      },
-      {
-        "capability": "Planificación y organización",
-        "perfil": 2.75,
-        "apego": 0.76
-      },
-      {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.75,
-        "apego": 0.7887
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 2.6667,
-        "apego": 0.7083
+        "apego": 0.4756,
+        "gap": 0.5244
       },
       {
         "capability": "Resolución de problemas y causa raíz",
-        "perfil": 2.5,
-        "apego": 0.575
-      },
-      {
-        "capability": "Orientación a datos",
-        "perfil": 2.5,
-        "apego": 0.6881
+        "apego": 0.575,
+        "gap": 0.425
       },
       {
         "capability": "Planificación de la estrategia",
-        "perfil": 2.3,
-        "apego": 0.587
+        "apego": 0.587,
+        "gap": 0.413
       },
       {
-        "capability": "Gestión de la cadena de suministro",
-        "perfil": 2.7,
-        "apego": 1.0
+        "capability": "Orientación a datos",
+        "apego": 0.6881,
+        "gap": 0.3119
       },
       {
-        "capability": "Gestión de Equipos",
-        "perfil": 2.6,
-        "apego": 0.9615
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.4714,
-        "apego": 0.9399
+        "capability": "Métodos estadísticos y de pronóstico",
+        "apego": 0.7083,
+        "gap": 0.2917
       },
       {
         "capability": "Excel",
-        "perfil": 2.25,
-        "apego": 0.7199
+        "apego": 0.7199,
+        "gap": 0.2801
+      },
+      {
+        "capability": "Planificación y organización",
+        "apego": 0.76,
+        "gap": 0.24
+      },
+      {
+        "capability": "Empuje / Orientación a resultados",
+        "apego": 0.7887,
+        "gap": 0.2113
+      },
+      {
+        "capability": "Estándares de MRP LCP",
+        "apego": 0.835,
+        "gap": 0.165
       },
       {
         "capability": "Colaboración",
-        "perfil": 2.4167,
-        "apego": 0.9293
+        "apego": 0.9293,
+        "gap": 0.0707
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.9399,
+        "gap": 0.0601
       }
     ],
     "Honduras": [
       {
+        "capability": "Estándares de MRP LCP",
+        "apego": 0.3967,
+        "gap": 0.6033
+      },
+      {
+        "capability": "Técnicas de optimización",
+        "apego": 0.5,
+        "gap": 0.5
+      },
+      {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.6667,
-        "apego": 0.5333
+        "apego": 0.5333,
+        "gap": 0.4667
       },
       {
         "capability": "Gestión de Equipos",
-        "perfil": 2.6,
-        "apego": 0.5654
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.4875,
-        "apego": 0.7336
-      },
-      {
-        "capability": "Resiliencia",
-        "perfil": 2.5125,
-        "apego": 0.8118
-      },
-      {
-        "capability": "Gestión de la cadena de suministro",
-        "perfil": 2.7,
-        "apego": 1.0
-      },
-      {
-        "capability": "Data Driven / Analítico",
-        "perfil": 2.5,
-        "apego": 0.84
+        "apego": 0.5654,
+        "gap": 0.4346
       },
       {
         "capability": "Grit (resilencia + empuje)",
-        "perfil": 2.3,
-        "apego": 0.6522
+        "apego": 0.6522,
+        "gap": 0.3478
       },
       {
         "capability": "Planeación Operativa de Supply Chain",
-        "perfil": 2.3,
-        "apego": 0.6522
+        "apego": 0.6522,
+        "gap": 0.3478
+      },
+      {
+        "capability": "Gestión de riesgos",
+        "apego": 0.6675,
+        "gap": 0.3325
+      },
+      {
+        "capability": "Finanzas",
+        "apego": 0.6818,
+        "gap": 0.3182
       },
       {
         "capability": "Orientación a datos",
-        "perfil": 2.3333,
-        "apego": 0.6929
+        "apego": 0.6929,
+        "gap": 0.3071
       },
       {
-        "capability": "Estándares de MRP LCP",
-        "perfil": 2.0,
-        "apego": 0.3967
+        "capability": "Inglés",
+        "apego": 0.7336,
+        "gap": 0.2664
       },
       {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.4545,
-        "apego": 0.863
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.75,
+        "gap": 0.25
       },
       {
-        "capability": "Excel",
-        "perfil": 2.3,
-        "apego": 0.7693
+        "capability": "Sensibilidad del mercado",
+        "apego": 0.75,
+        "gap": 0.25
       }
     ],
     "México": [
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.75,
-        "apego": 0.2833
-      },
-      {
-        "capability": "Técnicas de programación",
-        "perfil": 3.0,
-        "apego": 0.697
+        "apego": 0.2833,
+        "gap": 0.7167
       },
       {
         "capability": "Programación con Optplan",
-        "perfil": 2.5,
-        "apego": 0.4667
+        "apego": 0.4667,
+        "gap": 0.5333
       },
       {
         "capability": "Técnicas de optimización",
-        "perfil": 2.4,
-        "apego": 0.495
+        "apego": 0.495,
+        "gap": 0.505
       },
       {
-        "capability": "Inglés",
-        "perfil": 2.5583,
-        "apego": 0.7134
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 2.5,
-        "apego": 0.7286
-      },
-      {
-        "capability": "Colaboración",
-        "perfil": 2.65,
-        "apego": 0.8963
-      },
-      {
-        "capability": "Planificación de aprovisionamiento",
-        "perfil": 2.5,
-        "apego": 0.75
-      },
-      {
-        "capability": "Estándar LCP para Planeación de la Demanda",
-        "perfil": 2.4545,
-        "apego": 0.7082
-      },
-      {
-        "capability": "Estándares VPO programación y nivel de servicio",
-        "perfil": 2.5,
-        "apego": 0.8391
-      },
-      {
-        "capability": "Gestión de inventarios",
-        "perfil": 2.3981,
-        "apego": 0.7382
+        "capability": "Estándares de logística inversa LCP y mantenimiento del inventario",
+        "apego": 0.6388,
+        "gap": 0.3612
       },
       {
         "capability": "Excel",
-        "perfil": 2.2398,
-        "apego": 0.6572
+        "apego": 0.6572,
+        "gap": 0.3428
+      },
+      {
+        "capability": "Técnicas de programación",
+        "apego": 0.697,
+        "gap": 0.303
+      },
+      {
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.7082,
+        "gap": 0.2918
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.7134,
+        "gap": 0.2866
+      },
+      {
+        "capability": "Métodos estadísticos y de pronóstico",
+        "apego": 0.7286,
+        "gap": 0.2714
+      },
+      {
+        "capability": "Estándar LCP para despliegue de inventario",
+        "apego": 0.7301,
+        "gap": 0.2699
+      },
+      {
+        "capability": "Estándares de S&OP LCP + SNP LCP",
+        "apego": 0.736,
+        "gap": 0.264
+      },
+      {
+        "capability": "Gestión de inventarios",
+        "apego": 0.7382,
+        "gap": 0.2618
       }
     ],
     "Otros": [
       {
-        "capability": "Estructuras complejas de datos",
-        "perfil": 3.0,
-        "apego": 0.2708
-      },
-      {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 3.0,
-        "apego": 0.6307
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 3.0,
-        "apego": 0.7917
-      },
-      {
-        "capability": "Planificación de aprovisionamiento",
-        "perfil": 2.6667,
-        "apego": 0.6089
-      },
-      {
         "capability": "Gestión por sistemas",
-        "perfil": 2.0,
-        "apego": 0.0
+        "apego": 0.0,
+        "gap": 1.0
       },
       {
-        "capability": "Orientación a datos",
-        "perfil": 2.5,
-        "apego": 0.5994
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.6,
-        "apego": 0.7469
-      },
-      {
-        "capability": "Planeación y gestión de la producción",
-        "perfil": 1.0,
-        "apego": 2.8
-      },
-      {
-        "capability": "Excel",
-        "perfil": 2.17,
-        "apego": 0.53
-      },
-      {
-        "capability": "Sensibilidad del mercado",
-        "perfil": 1.0,
-        "apego": 2.55
+        "capability": "Estructuras complejas de datos",
+        "apego": 0.2708,
+        "gap": 0.7292
       },
       {
         "capability": "Finanzas empresariales",
-        "perfil": 2.0,
-        "apego": 0.5
+        "apego": 0.5,
+        "gap": 0.5
+      },
+      {
+        "capability": "Excel",
+        "apego": 0.53,
+        "gap": 0.47
+      },
+      {
+        "capability": "Orientación a datos",
+        "apego": 0.5994,
+        "gap": 0.4006
+      },
+      {
+        "capability": "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
+        "apego": 0.6,
+        "gap": 0.4
+      },
+      {
+        "capability": "Planificación de aprovisionamiento",
+        "apego": 0.6089,
+        "gap": 0.3911
+      },
+      {
+        "capability": "Empuje / Orientación a resultados",
+        "apego": 0.6307,
+        "gap": 0.3693
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.7469,
+        "gap": 0.2531
+      },
+      {
+        "capability": "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+        "apego": 0.75,
+        "gap": 0.25
+      },
+      {
+        "capability": "Métodos estadísticos y de pronóstico",
+        "apego": 0.7917,
+        "gap": 0.2083
       },
       {
         "capability": "Mejora continua",
-        "perfil": 2.22,
-        "apego": 0.7959
+        "apego": 0.7959,
+        "gap": 0.2041
       }
     ],
     "Panama": [
       {
-        "capability": "Estructuras complejas de datos",
-        "perfil": 2.75,
-        "apego": 0.4
+        "capability": "Estándares de S&OP LCP + SNP LCP",
+        "apego": 0.19,
+        "gap": 0.81
       },
       {
         "capability": "Orientación a datos",
-        "perfil": 2.6667,
-        "apego": 0.3167
+        "apego": 0.3167,
+        "gap": 0.6833
       },
       {
-        "capability": "Técnicas de optimización",
-        "perfil": 3.0,
-        "apego": 0.6667
+        "capability": "Estructuras complejas de datos",
+        "apego": 0.4,
+        "gap": 0.6
       },
       {
         "capability": "Toma de decisiones",
-        "perfil": 2.4,
-        "apego": 0.4375
+        "apego": 0.4375,
+        "gap": 0.5625
       },
       {
         "capability": "Data Driven / Analítico",
-        "perfil": 2.5,
-        "apego": 0.54
+        "apego": 0.54,
+        "gap": 0.46
+      },
+      {
+        "capability": "Excel",
+        "apego": 0.63,
+        "gap": 0.37
       },
       {
         "capability": "Gestión de Equipos",
-        "perfil": 2.6,
-        "apego": 0.6423
+        "apego": 0.6423,
+        "gap": 0.3577
       },
       {
         "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 2.5,
-        "apego": 0.6542
+        "apego": 0.6542,
+        "gap": 0.3458
       },
       {
-        "capability": "Estándares de S&OP LCP + SNP LCP",
-        "perfil": 2.0,
-        "apego": 0.19
+        "capability": "Técnicas de optimización",
+        "apego": 0.6667,
+        "gap": 0.3333
       },
       {
-        "capability": "Gestión de la cadena de suministro",
-        "perfil": 2.7,
-        "apego": 1.0
-      },
-      {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.5,
-        "apego": 0.9433
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.45,
-        "apego": 0.938
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.795,
+        "gap": 0.205
       },
       {
         "capability": "Mentalidad de crecimiento",
-        "perfil": 2.2,
-        "apego": 0.8
+        "apego": 0.8,
+        "gap": 0.2
+      },
+      {
+        "capability": "Resolución de problemas y causa raíz",
+        "apego": 0.825,
+        "gap": 0.175
       }
     ],
     "Perú": [
       {
-        "capability": "Técnicas de programación",
-        "perfil": 3.0,
-        "apego": 0.7378
-      },
-      {
         "capability": "Planificación de aprovisionamiento",
-        "perfil": 2.6667,
-        "apego": 0.4089
+        "apego": 0.4089,
+        "gap": 0.5911
       },
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 2.625,
-        "apego": 0.5
+        "apego": 0.5,
+        "gap": 0.5
       },
       {
-        "capability": "Técnicas de optimización",
-        "perfil": 2.6667,
-        "apego": 0.7556
+        "capability": "Estándar LCP para despliegue de inventario",
+        "apego": 0.6125,
+        "gap": 0.3875
       },
       {
         "capability": "Programación con Optplan",
-        "perfil": 2.5,
-        "apego": 0.64
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.5256,
-        "apego": 0.7838
-      },
-      {
-        "capability": "Estándares VPO programación y nivel de servicio",
-        "perfil": 2.5,
-        "apego": 0.7687
-      },
-      {
-        "capability": "Colaboración",
-        "perfil": 2.5641,
-        "apego": 0.9482
+        "apego": 0.64,
+        "gap": 0.36
       },
       {
         "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 2.25,
-        "apego": 0.6829
-      },
-      {
-        "capability": "Gestión de inventarios",
-        "perfil": 2.3846,
-        "apego": 0.838
+        "apego": 0.6829,
+        "gap": 0.3171
       },
       {
         "capability": "Toma de decisiones",
-        "perfil": 2.25,
-        "apego": 0.723
+        "apego": 0.723,
+        "gap": 0.277
       },
       {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.5,
-        "apego": 0.9838
+        "capability": "Técnicas de programación",
+        "apego": 0.7378,
+        "gap": 0.2622
+      },
+      {
+        "capability": "Técnicas de optimización",
+        "apego": 0.7556,
+        "gap": 0.2444
+      },
+      {
+        "capability": "Principios de manufactura",
+        "apego": 0.76,
+        "gap": 0.24
+      },
+      {
+        "capability": "Estándares VPO programación y nivel de servicio",
+        "apego": 0.7687,
+        "gap": 0.2313
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.7838,
+        "gap": 0.2162
+      },
+      {
+        "capability": "Orientación a datos",
+        "apego": 0.788,
+        "gap": 0.212
       }
     ],
     "República Dominicana": [
       {
         "capability": "Excel",
-        "perfil": 2.2857,
-        "apego": 0.5357
-      },
-      {
-        "capability": "Colaboración",
-        "perfil": 2.6429,
-        "apego": 0.9052
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.5,
-        "apego": 0.7789
-      },
-      {
-        "capability": "Estructuras complejas de datos",
-        "perfil": 2.5,
-        "apego": 0.8
-      },
-      {
-        "capability": "Resiliencia",
-        "perfil": 2.5,
-        "apego": 0.9064
-      },
-      {
-        "capability": "Orientación a datos",
-        "perfil": 2.2143,
-        "apego": 0.685
-      },
-      {
-        "capability": "Gestión de inventarios",
-        "perfil": 2.2857,
-        "apego": 0.8794
+        "apego": 0.5357,
+        "gap": 0.4643
       },
       {
         "capability": "Estándar LCP para despliegue de inventario",
-        "perfil": 2.0,
-        "apego": 0.6283
+        "apego": 0.6283,
+        "gap": 0.3717
+      },
+      {
+        "capability": "Orientación a datos",
+        "apego": 0.685,
+        "gap": 0.315
       },
       {
         "capability": "Sensibilidad del mercado",
-        "perfil": 2.0,
-        "apego": 0.75
+        "apego": 0.75,
+        "gap": 0.25
+      },
+      {
+        "capability": "Inglés",
+        "apego": 0.7789,
+        "gap": 0.2211
       },
       {
         "capability": "Negociación",
-        "perfil": 2.0,
-        "apego": 0.7808
+        "apego": 0.7808,
+        "gap": 0.2192
+      },
+      {
+        "capability": "Estructuras complejas de datos",
+        "apego": 0.8,
+        "gap": 0.2
       },
       {
         "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 2.0,
-        "apego": 0.865
+        "apego": 0.865,
+        "gap": 0.135
+      },
+      {
+        "capability": "Gestión de inventarios",
+        "apego": 0.8794,
+        "gap": 0.1206
       },
       {
         "capability": "Estándares de logística inversa LCP y mantenimiento del inventario",
-        "perfil": 2.0,
-        "apego": 0.8975
+        "apego": 0.8975,
+        "gap": 0.1025
+      },
+      {
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.9,
+        "gap": 0.1
+      },
+      {
+        "capability": "Colaboración",
+        "apego": 0.9052,
+        "gap": 0.0948
       }
     ],
     "WH": [
       {
         "capability": "Estructuras complejas de datos",
-        "perfil": 3.0,
-        "apego": 0.2556
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "perfil": 3.0,
-        "apego": 0.6111
+        "apego": 0.2556,
+        "gap": 0.7444
       },
       {
         "capability": "Orientación a datos",
-        "perfil": 2.9231,
-        "apego": 0.5442
+        "apego": 0.5442,
+        "gap": 0.4558
       },
       {
-        "capability": "Empuje / Orientación a resultados",
-        "perfil": 2.8571,
-        "apego": 0.7457
-      },
-      {
-        "capability": "Gestión por sistemas",
-        "perfil": 2.5,
-        "apego": 0.72
-      },
-      {
-        "capability": "Inglés",
-        "perfil": 2.5,
-        "apego": 0.7252
-      },
-      {
-        "capability": "Resolución de problemas y causa raíz",
-        "perfil": 2.5,
-        "apego": 1.2
+        "capability": "Métodos estadísticos y de pronóstico",
+        "apego": 0.6111,
+        "gap": 0.3889
       },
       {
         "capability": "Transportación y logística",
-        "perfil": 2.0,
-        "apego": 0.715
+        "apego": 0.715,
+        "gap": 0.285
       },
       {
-        "capability": "Resiliencia",
-        "perfil": 2.5,
-        "apego": 1.224
+        "capability": "Gestión por sistemas",
+        "apego": 0.72,
+        "gap": 0.28
       },
       {
-        "capability": "Gestión de interesados",
-        "perfil": 2.25,
-        "apego": 1.0012
+        "capability": "Inglés",
+        "apego": 0.7252,
+        "gap": 0.2748
+      },
+      {
+        "capability": "Empuje / Orientación a resultados",
+        "apego": 0.7457,
+        "gap": 0.2543
+      },
+      {
+        "capability": "Excel",
+        "apego": 0.8665,
+        "gap": 0.1335
       },
       {
         "capability": "Estándar LCP para despliegue de inventario",
-        "perfil": 2.0,
-        "apego": 0.9
+        "apego": 0.9,
+        "gap": 0.1
       },
       {
         "capability": "Mejora continua",
-        "perfil": 2.0,
-        "apego": 0.9192
+        "apego": 0.9192,
+        "gap": 0.0808
+      },
+      {
+        "capability": "Finanzas empresariales",
+        "apego": 0.9625,
+        "gap": 0.0375
+      },
+      {
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.9708,
+        "gap": 0.0292
       }
     ]
   }

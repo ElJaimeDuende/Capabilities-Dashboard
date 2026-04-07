@@ -1,11 +1,11 @@
 {
-  "total_participantes": 231,
-  "total_assessments": 324,
-  "assessments_finalizados": 306,
-  "assessments_en_curso": 18,
-  "puntaje_promedio_global": 2.0153,
-  "apego_promedio_global": 0.8974,
-  "reviso_reporte_pct": 0.4167,
+  "total_participantes": 229,
+  "total_assessments": 312,
+  "assessments_finalizados": 296,
+  "assessments_en_curso": 16,
+  "puntaje_promedio_global": 2.0243,
+  "apego_promedio_global": 0.9012,
+  "reviso_reporte_pct": 0.4006,
   "bus": [
     "CAC",
     "COPE",
@@ -137,17 +137,17 @@
     "2026-P1"
   ],
   "nivel_distribution": {
-    "Novice": 0.0392,
-    "Advanced Beginner": 0.1732,
-    "Competent": 0.5327,
-    "Proficient": 0.2092,
-    "Expert": 0.0458
+    "Novice": 0.0338,
+    "Advanced Beginner": 0.1723,
+    "Competent": 0.5338,
+    "Proficient": 0.2128,
+    "Expert": 0.0473
   },
   "nivel_counts": {
-    "Novice": 12,
-    "Advanced Beginner": 53,
-    "Competent": 163,
-    "Proficient": 64,
+    "Novice": 10,
+    "Advanced Beginner": 51,
+    "Competent": 158,
+    "Proficient": 63,
     "Expert": 14
   },
   "bu_summary": [
@@ -269,6 +269,19 @@
       }
     },
     {
+      "bu": "México",
+      "n": 94,
+      "puntaje_promedio": 1.9691,
+      "apego_promedio": 0.8607,
+      "niveles": {
+        "Novice": 4,
+        "Advanced Beginner": 20,
+        "Competent": 45,
+        "Proficient": 24,
+        "Expert": 1
+      }
+    },
+    {
       "bu": "COPE",
       "n": 5,
       "puntaje_promedio": 2.058,
@@ -279,19 +292,6 @@
         "Competent": 5,
         "Proficient": 0,
         "Expert": 0
-      }
-    },
-    {
-      "bu": "México",
-      "n": 104,
-      "puntaje_promedio": 1.948,
-      "apego_promedio": 0.8535,
-      "niveles": {
-        "Novice": 6,
-        "Advanced Beginner": 22,
-        "Competent": 50,
-        "Proficient": 25,
-        "Expert": 1
       }
     },
     {

@@ -1,41 +1,148 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ReferenceLine } from 'recharts'
-import { useGaps } from '../hooks/useData'
+import { useGaps, useRankings } from '../hooks/useData'
 import { pct, apegoBadge } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
 import InfoTooltip from '../components/InfoTooltip'
-import type { Filters } from '../types'
+import type { Filters, RankingRow, CapabilityGap } from '../types'
+import { NIVEL_ORDER } from '../types'
 
-interface Props { filters: Filters }
+interface Props { filters: Filters; filterRows: (rows: RankingRow[]) => RankingRow[] }
 
 const TIPS = {
   gapCap: 'Apego actual = promedio del % Apego al perfil de todas las personas en esa capability.\nFórmula: Puntaje capability / Puntaje requerido perfil.\nMeta = 100% (apego ≥ 1.0).',
   gapRol: 'Apego promedio = promedio del % Apego al perfil de todas las personas en ese rol.\nFórmula: Puntaje assessment / Puntaje requerido perfil.',
-  radar: 'Muestra el apego promedio de las 8 capabilities con mayor brecha para la BU seleccionada.\nLa circunferencia exterior representa el 100% (cumple perfil). El área sombreada es el apego actual.',
+  radar: 'Muestra el apego promedio de las 8 capabilities con mayor brecha para la BU seleccionada.\nLa circunferencia exterior representa el 100% (cumple perfil). El área sombreada es el apego de ABI.',
 }
 
-export default function Gaps({ filters }: Props) {
+export default function Gaps({ filters, filterRows }: Props) {
   const { data: gaps, loading } = useGaps()
-  const [selectedBu, setSelectedBu] = useState<string>('')
+  const { data: rankings } = useRankings()
+  const [selectedBu] = useState<string>('')
   const [capSearch, setCapSearch] = useState('')
 
-  if (loading || !gaps) return <Loader />
+  const hasFilter = filters.bus.length > 0 || filters.work_locations.length > 0 ||
+    filters.areas.length > 0 || filters.roles.length > 0 || filters.años.length > 0
 
-  const buList = Object.keys(gaps.by_bu_radar)
-  const activeBu = selectedBu || (filters.bus.length === 1 ? filters.bus[0] : buList[0])
+  // Filter capability gaps: apply BU and/or year filter using pre-computed breakdowns
+  const capGaps = useMemo(() => {
+    if (!gaps) return []
+    return gaps.by_capability.map(c => {
+      const hasBu = filters.bus.length > 0
+      const hasYear = filters.años.length > 0
+      const hasArea = filters.areas.length > 0
+      const hasRol = filters.roles.length > 0
+      const hasWl = filters.work_locations.length > 0
 
-  const capGaps = gaps.by_capability
+      if (!hasBu && !hasYear && !hasArea && !hasRol && !hasWl) return c
+
+      let totalN = 0
+      let totalApego = 0
+
+      // Priority: most specific first
+      if (hasBu && hasYear && hasArea) {
+        for (const bu of filters.bus) {
+          for (const año of filters.años) {
+            for (const area of filters.areas) {
+              const d = c.by_bu_year_area?.[bu]?.[año]?.[area]
+              if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+            }
+          }
+        }
+      } else if (hasBu && hasYear) {
+        for (const bu of filters.bus) {
+          for (const año of filters.años) {
+            const d = c.by_bu_year?.[bu]?.[año]
+            if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+          }
+        }
+      } else if (hasYear && hasArea) {
+        for (const año of filters.años) {
+          for (const area of filters.areas) {
+            const d = c.by_year_area?.[año]?.[area]
+            if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+          }
+        }
+      } else if (hasBu) {
+        for (const bu of filters.bus) {
+          const d = c.by_bu?.[bu]
+          if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+        }
+      } else if (hasYear) {
+        for (const año of filters.años) {
+          const d = c.by_year?.[año]
+          if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+        }
+      } else if (hasArea) {
+        for (const area of filters.areas) {
+          const d = c.by_area?.[area]
+          if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+        }
+      } else if (hasWl) {
+        for (const wl of filters.work_locations) {
+          const d = c.by_work_location?.[wl]
+          if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+        }
+      } else if (hasRol) {
+        for (const rol of filters.roles) {
+          const d = c.by_rol?.[rol]
+          if (d) { totalApego += (d.apego || 0) * d.n; totalN += d.n }
+        }
+      }
+
+      if (totalN === 0) return null
+      const apego = totalApego / totalN
+      return { ...c, apego_actual: apego, gap: 1.0 - apego }
+    })
+    .filter((c): c is CapabilityGap => c !== null)
     .filter(c => !capSearch || c.capability.toLowerCase().includes(capSearch.toLowerCase()))
+    .sort((a, b) => (b.gap ?? 0) - (a.gap ?? 0))
     .slice(0, 30)
+  }, [gaps, filters.bus, filters.años, filters.areas, filters.roles, capSearch])
 
-  const radarData = (gaps.by_bu_radar[activeBu] ?? []).slice(0, 8).map(d => ({
+  // BU list for radar: limit to selected BUs when filter is active
+  const buList = gaps && filters.bus.length > 0
+    ? filters.bus.filter(bu => gaps.by_bu_radar[bu])
+    : Object.keys(gaps?.by_bu_radar ?? {})
+  const activeBu = selectedBu && buList.includes(selectedBu) ? selectedBu : buList[0] ?? ''
+
+  const radarData = (gaps?.by_bu_radar[activeBu] ?? []).slice(0, 8).map(d => ({
     capability: d.capability.length > 20 ? d.capability.slice(0, 18) + '…' : d.capability,
     Apego: Math.round((d.apego ?? 0) * 100),
   }))
 
-  const rolData = [...gaps.by_rol]
-    .filter(r => !filters.roles.length || filters.roles.includes(r.rol))
-    .sort((a, b) => (a.apego_promedio ?? 0) - (b.apego_promedio ?? 0))
+  // Rol gaps: recompute from raw rankings data when any filter active
+  const rolData = useMemo(() => {
+    if (hasFilter && rankings) {
+      const filtered = filterRows(rankings.all)
+      const rolMap: Record<string, RankingRow[]> = {}
+      for (const r of filtered) {
+        if (!rolMap[r.rol]) rolMap[r.rol] = []
+        rolMap[r.rol].push(r)
+      }
+      return Object.entries(rolMap)
+        .map(([rol, rows]) => {
+          const n = rows.length
+          const nivelCounts: Record<string, number> = {}
+          for (const r of rows) nivelCounts[r.nivel] = (nivelCounts[r.nivel] || 0) + 1
+          const nivel_predominante = NIVEL_ORDER.slice().sort((a, b) => (nivelCounts[b] || 0) - (nivelCounts[a] || 0))[0]
+          return {
+            rol,
+            n,
+            puntaje_promedio: rows.reduce((s, r) => s + (r.puntaje || 0), 0) / n,
+            apego_promedio: rows.reduce((s, r) => s + (r.apego || 0), 0) / n,
+            nivel_predominante,
+          }
+        })
+        .sort((a, b) => (a.apego_promedio ?? 0) - (b.apego_promedio ?? 0))
+    }
+    if (!gaps) return []
+    return [...gaps.by_rol]
+      .filter(r => !filters.roles.length || filters.roles.includes(r.rol))
+      .sort((a, b) => (a.apego_promedio ?? 0) - (b.apego_promedio ?? 0))
+  }, [hasFilter, rankings, gaps, filters.roles, filterRows])
+
+  if (loading || !gaps) return <Loader />
 
   const chartHeight = Math.max(400, capGaps.length * 26)
 
@@ -44,6 +151,15 @@ export default function Gaps({ filters }: Props) {
       Capability: c.capability,
       'Apego actual %': pct(c.apego_actual),
       'Gap %': pct(c.gap),
+    })))
+  }
+
+  function exportRadar() {
+    const data = gaps?.by_bu_radar[activeBu] ?? []
+    downloadCsv(`radar_${activeBu}.csv`, data.map(d => ({
+      Capability: d.capability,
+      'Apego %': pct(d.apego),
+      'Gap %': pct(d.gap),
     })))
   }
 
@@ -119,12 +235,12 @@ export default function Gaps({ filters }: Props) {
               Radar por BU
               <InfoTooltip text={TIPS.radar} />
             </h3>
-            <p className="text-xs text-[#64748B]">Top 8 capabilities con mayor brecha vs 100%</p>
+            <p className="text-xs text-[#64748B]">Top 8 capabilities con mayor brecha vs 100% · <span className="font-medium text-[#1E3A5F]">{activeBu}</span></p>
           </div>
-          <select value={activeBu} onChange={e => setSelectedBu(e.target.value)}
-            className="sm:ml-auto border border-[#E2E8F0] rounded-lg px-3 py-1.5 text-xs outline-none focus:border-[#1E3A5F]">
-            {buList.map(bu => <option key={bu} value={bu}>{bu}</option>)}
-          </select>
+          <button onClick={exportRadar}
+            className="sm:ml-auto text-xs text-[#64748B] border border-[#E2E8F0] rounded-lg px-2.5 py-1.5 hover:bg-[#F8FAFC] transition-colors shrink-0">
+            ↓ CSV
+          </button>
         </div>
         <ResponsiveContainer width="100%" height={300}>
           <RadarChart data={radarData}>

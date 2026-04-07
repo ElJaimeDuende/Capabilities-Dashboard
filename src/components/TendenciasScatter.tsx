@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import {
-  ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip,
+  ComposedChart, Scatter, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, ReferenceArea, ReferenceLine, Cell, Legend,
 } from 'recharts'
 import { pct } from '../utils/format'
@@ -24,7 +24,7 @@ const TEND_LABEL: Record<string, string> = {
   mejora:   'Mejora',
   igual:    'Igual (±4%)',
   empeora:  'Empeora',
-  nuevo:    'Primer período',
+  nuevo:    'Primer assmt',
 }
 
 const ZONES = [
@@ -75,45 +75,41 @@ function getZone(pt: ScatterPoint, x: number, yLow: number, yHigh: number): stri
   return 'growth_mindset'
 }
 
-function CustomTooltip({ active, payload }: any) {
-  if (!active || !payload?.length) return null
-  const d: ScatterPoint = payload[0]?.payload
-  if (!d) return null
-  const tend = TEND_LABEL[d.tendencia] ?? d.tendencia
-  const tColor = TEND_COLOR[d.tendencia] ?? '#64748B'
-  return (
-    <div className="bg-white border border-[#E2E8F0] rounded-xl shadow-lg p-3 text-xs max-w-[220px]">
-      <p className="font-semibold text-[#1E293B] mb-1">{d.nombre}</p>
-      <p className="text-[#64748B]">{d.bu} · {d.rol}</p>
-      {d.funcion && <p className="text-[#64748B]">{d.funcion}</p>}
-      <div className="mt-2 space-y-0.5">
-        <p>Apego: <span className="font-medium text-[#1E293B]">{pct(d.apego)}</span></p>
-        <p>Antigüedad en rol: <span className="font-medium text-[#1E293B]">{d.meses_rol != null ? `${d.meses_rol} m` : '—'}</span></p>
-        <p>Período: <span className="font-medium text-[#1E293B]">{d.label}</span></p>
-        <p>Tendencia: <span className="font-semibold" style={{ color: tColor }}>{tend}</span>
-          {d.delta_apego != null && d.tendencia !== 'nuevo' && (
-            <span className="ml-1 text-[#94A3B8]">({d.delta_apego > 0 ? '+' : ''}{pct(d.delta_apego)})</span>
-          )}
-        </p>
-      </div>
-    </div>
-  )
-}
 
 export default function TendenciasScatter({ data, thresholds, filters }: Props) {
   const { x_thresh: X, y_low: Y_LOW, y_high: Y_HIGH } = thresholds
   const [highlightZone, setHighlightZone] = useState<string | null>(null)
+  const [selectedPerson, setSelectedPerson] = useState<string | null>(null)
 
-  // Filter points
-  const filtered = useMemo(() => data.filter(p =>
-    (!filters.bus.length         || filters.bus.includes(p.bu)) &&
-    (!filters.work_locations.length || filters.work_locations.includes(p.funcion)) &&
-    (!filters.areas.length       || filters.areas.includes(p.area)) &&
-    (!filters.roles.length       || filters.roles.includes(p.rol))
-  ), [data, filters])
+  // Release selection on mouseup anywhere
+  useEffect(() => {
+    const handler = () => setSelectedPerson(null)
+    window.addEventListener('mouseup', handler)
+    return () => window.removeEventListener('mouseup', handler)
+  }, [])
+
+  // Fixed axis bounds from full dataset (never change with filters)
+  const globalMaxY = useMemo(() => {
+    const all = data.filter(p => p.meses_rol != null)
+    return Math.max(...all.map(p => p.meses_rol!), Y_HIGH + 10) + 5
+  }, [data, Y_HIGH])
+
+  // Filter points — includes year and period filters
+  const filtered = useMemo(() => data.filter(p => {
+    if (filters.bus.length && !filters.bus.includes(p.bu)) return false
+    if (filters.work_locations.length && !filters.work_locations.includes(p.funcion)) return false
+    if (filters.areas.length && !filters.areas.includes(p.area)) return false
+    if (filters.roles.length && !filters.roles.includes(p.rol)) return false
+    if (filters.granularidad === 'periodo') {
+      if (filters.periodo && p.label !== filters.periodo) return false
+    } else {
+      if (filters.años.length && !filters.años.includes(p.año)) return false
+    }
+    return true
+  }), [data, filters])
 
   const withMeses = filtered.filter(p => p.meses_rol != null)
-  const maxY = Math.max(...withMeses.map(p => p.meses_rol!), Y_HIGH + 10) + 5
+  const maxY = globalMaxY
 
   // Zone counts for insights
   const zoneCounts = useMemo(() => {
@@ -198,6 +194,21 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
     })))
   }
 
+  // Selected person: all their assessments sorted chronologically for the line
+  const selectedPoints = useMemo(() => {
+    if (!selectedPerson) return []
+    return withMeses
+      .filter(p => p.nombre === selectedPerson)
+      .sort((a, b) => a.año !== b.año ? a.año - b.año : a.periodo - b.periodo)
+  }, [selectedPerson, withMeses])
+
+  // Color for each scatter point
+  function pointColor(p: ScatterPoint): string {
+    if (!selectedPerson) return TEND_COLOR[p.tendencia] ?? '#64748B'
+    if (p.nombre === selectedPerson) return '#FF9800'
+    return '#CBD5E1'
+  }
+
   // Separate scatter series by tendencia for legend
   const TEND_KEYS = ['mejora', 'igual', 'empeora', 'nuevo'] as const
   const seriesByTend = TEND_KEYS.map(t => ({
@@ -206,6 +217,43 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
     color: TEND_COLOR[t],
     points: withMeses.filter(p => p.tendencia === t),
   }))
+
+  function CustomTooltip({ active, payload }: any) {
+    if (!active || !payload?.length) return null
+    const d: ScatterPoint = payload[0]?.payload
+    if (!d) return null
+    const tend = TEND_LABEL[d.tendencia] ?? d.tendencia
+    const tColor = TEND_COLOR[d.tendencia] ?? '#64748B'
+
+    const prevYear = d.año - 1
+    const prevPoint = data
+      .filter(p => p.nombre === d.nombre && p.año === prevYear)
+      .sort((a, b) => b.periodo - a.periodo)[0] ?? null
+
+    return (
+      <div className="bg-white border border-[#E2E8F0] rounded-xl shadow-lg p-3 text-xs max-w-[230px]">
+        <p className="font-semibold text-[#1E293B] mb-1">{d.nombre}</p>
+        <p className="text-[#64748B]">{d.bu} · {d.rol}</p>
+        {d.funcion && <p className="text-[#64748B]">{d.funcion}</p>}
+        <div className="mt-2 space-y-0.5">
+          <p>Antigüedad en rol: <span className="font-medium text-[#1E293B]">{d.meses_rol != null ? `${d.meses_rol} m` : '—'}</span></p>
+          <p>Tendencia: <span className="font-semibold" style={{ color: tColor }}>{tend}</span>
+            {d.delta_apego != null && d.tendencia !== 'nuevo' && (
+              <span className="ml-1 text-[#94A3B8]">({d.delta_apego > 0 ? '+' : ''}{pct(d.delta_apego)})</span>
+            )}
+          </p>
+          <p>Período {d.año}: <span className="font-medium text-[#1E293B]">{d.label}</span></p>
+          <p>Apego {d.año}: <span className="font-medium text-[#1E293B]">{pct(d.apego)}</span></p>
+          {prevPoint && (
+            <>
+              <p>Período {prevYear}: <span className="font-medium text-[#1E293B]">{prevPoint.label}</span></p>
+              <p>Apego {prevYear}: <span className="font-medium text-[#1E293B]">{pct(prevPoint.apego)}</span></p>
+            </>
+          )}
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="bg-white rounded-xl border border-[#E2E8F0] p-4 space-y-4">
@@ -239,30 +287,34 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
       </div>
 
       {/* Chart */}
+      <div className="relative">
+      <p className="absolute top-3 right-6 z-10 text-[24px] text-black italic pointer-events-none leading-tight text-right max-w-xs">
+        Presionar y mantener sobre un punto (participante) para ver su tendencia.
+      </p>
       <ResponsiveContainer width="100%" height={380}>
-        <ScatterChart margin={{ top: 10, right: 20, bottom: 30, left: 10 }}>
+        <ComposedChart margin={{ top: 10, right: 20, bottom: 55, left: 10 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#F1F5F9" />
 
           {/* Background zones */}
           <ReferenceArea x1={0}  x2={X}   y1={Y_LOW} y2={maxY} fill="#FFCDD2" fillOpacity={highlightZone ? (highlightZone === 'no_learning' ? 0.7 : 0.15) : 0.45} />
           <ReferenceArea x1={0}  x2={X}   y1={0}     y2={Y_LOW} fill="#FFF9C4" fillOpacity={highlightZone ? (highlightZone === 'new_in_position' ? 0.8 : 0.15) : 0.55} />
-          <ReferenceArea x1={X}  x2={130} y1={Y_HIGH} y2={maxY} fill="#BBDEFB" fillOpacity={highlightZone ? (highlightZone === 'ready' ? 0.7 : 0.15) : 0.5} />
-          <ReferenceArea x1={X}  x2={130} y1={Y_LOW}  y2={Y_HIGH} fill="#C8E6C9" fillOpacity={highlightZone ? (highlightZone === 'growth_mindset' ? 0.7 : 0.15) : 0.5} />
-          <ReferenceArea x1={X}  x2={130} y1={0}      y2={Y_LOW} fill="#E1BEE7" fillOpacity={highlightZone ? (highlightZone === 'high_potential' ? 0.8 : 0.15) : 0.6} />
+          <ReferenceArea x1={X}  x2={150} y1={Y_HIGH} y2={maxY} fill="#BBDEFB" fillOpacity={highlightZone ? (highlightZone === 'ready' ? 0.7 : 0.15) : 0.5} />
+          <ReferenceArea x1={X}  x2={150} y1={Y_LOW}  y2={Y_HIGH} fill="#C8E6C9" fillOpacity={highlightZone ? (highlightZone === 'growth_mindset' ? 0.7 : 0.15) : 0.5} />
+          <ReferenceArea x1={X}  x2={150} y1={0}      y2={Y_LOW} fill="#E1BEE7" fillOpacity={highlightZone ? (highlightZone === 'high_potential' ? 0.8 : 0.15) : 0.6} />
 
           {/* Zone labels */}
           <ReferenceArea x1={2}   x2={X-2} y1={Y_LOW+2} y2={maxY-2}   fill="transparent" label={{ value: 'No learning', fill: '#C62828', fontSize: 10, fontWeight: 600 }} />
           <ReferenceArea x1={2}   x2={X-2} y1={2}       y2={Y_LOW-2}  fill="transparent" label={{ value: 'New in position', fill: '#856404', fontSize: 10, fontWeight: 600 }} />
-          <ReferenceArea x1={X+1} x2={128} y1={Y_HIGH+2} y2={maxY-2}  fill="transparent" label={{ value: 'Ready for next challenge', fill: '#1565C0', fontSize: 10, fontWeight: 600 }} />
-          <ReferenceArea x1={X+1} x2={128} y1={Y_LOW+1}  y2={Y_HIGH-1} fill="transparent" label={{ value: 'Growth mindset', fill: '#2E7D32', fontSize: 10, fontWeight: 600 }} />
-          <ReferenceArea x1={X+1} x2={128} y1={2}        y2={Y_LOW-2}  fill="transparent" label={{ value: 'High potential', fill: '#6A1B9A', fontSize: 10, fontWeight: 600 }} />
+          <ReferenceArea x1={X+1} x2={148} y1={Y_HIGH+2} y2={maxY-2}  fill="transparent" label={{ value: 'Ready for next challenge', fill: '#1565C0', fontSize: 10, fontWeight: 600 }} />
+          <ReferenceArea x1={X+1} x2={148} y1={Y_LOW+1}  y2={Y_HIGH-1} fill="transparent" label={{ value: 'Growth mindset', fill: '#2E7D32', fontSize: 10, fontWeight: 600 }} />
+          <ReferenceArea x1={X+1} x2={148} y1={2}        y2={Y_LOW-2}  fill="transparent" label={{ value: 'High potential', fill: '#6A1B9A', fontSize: 10, fontWeight: 600 }} />
 
           {/* Threshold lines */}
           <ReferenceLine x={X}     stroke="#1E3A5F" strokeDasharray="5 3" strokeWidth={1.5} />
           <ReferenceLine y={Y_LOW}  stroke="#64748B" strokeDasharray="4 2" />
           <ReferenceLine y={Y_HIGH} stroke="#64748B" strokeDasharray="4 2" />
 
-          <XAxis type="number" dataKey="apego_pct" name="Apego" unit="%" domain={[0, 130]}
+          <XAxis type="number" dataKey="apego_pct" name="Apego" unit="%" domain={[0, 150]}
             tick={{ fontSize: 10, fill: '#64748B' }}
             label={{ value: '% Apego al perfil', position: 'insideBottom', offset: -15, fontSize: 11, fill: '#475569' }} />
           <YAxis type="number" dataKey="meses_rol" name="Antigüedad" unit="m" domain={[0, maxY]}
@@ -271,18 +323,50 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
 
           <Tooltip content={<CustomTooltip />} />
 
-          {/* One Scatter series per tendencia (for legend) */}
+          {/* One Scatter series per tendencia */}
           {seriesByTend.map(s => (
-            <Scatter key={s.key} name={s.label} data={s.points} fill={s.color}>
-              {s.points.map((_, i) => (
-                <Cell key={i} fill={s.color} fillOpacity={0.85} />
-              ))}
+            <Scatter key={s.key} name={s.label} data={s.points} fill={s.color}
+              shape={(props: any) => {
+                const { cx, cy, payload } = props
+                const color = pointColor(payload)
+                const isSelected = selectedPerson === payload.nombre
+                return (
+                  <circle
+                    cx={cx} cy={cy}
+                    r={isSelected ? 7 : 5}
+                    fill={color}
+                    fillOpacity={selectedPerson && !isSelected ? 0.35 : 0.85}
+                    stroke={isSelected ? '#E65100' : 'none'}
+                    strokeWidth={isSelected ? 1.5 : 0}
+                    style={{ cursor: 'pointer', userSelect: 'none' }}
+                    onMouseDown={(e) => { e.stopPropagation(); setSelectedPerson(payload.nombre) }}
+                  />
+                )
+              }}
+            >
+              {s.points.map((_, i) => <Cell key={i} />)}
             </Scatter>
           ))}
 
-          <Legend wrapperStyle={{ fontSize: 11, paddingTop: 8 }} />
-        </ScatterChart>
+          {/* Trend line for selected person */}
+          {selectedPoints.length > 1 && (
+            <Line
+              data={selectedPoints}
+              dataKey="meses_rol"
+              dot={false}
+              activeDot={false}
+              stroke="#FF9800"
+              strokeWidth={2.5}
+              strokeDasharray="0"
+              legendType="none"
+              isAnimationActive={false}
+            />
+          )}
+
+          <Legend verticalAlign="bottom" wrapperStyle={{ fontSize: 11, paddingTop: 4, bottom: 0 }} />
+        </ComposedChart>
       </ResponsiveContainer>
+      </div>
 
       {/* Insights */}
       {insights.length > 0 && (

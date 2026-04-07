@@ -23,10 +23,14 @@ export default function Layout({ activeSection, onNav, children, filterBar }: Pr
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex">
       {/* Sidebar desktop */}
-      <aside className="hidden lg:flex flex-col w-56 bg-[#1E3A5F] text-white shrink-0 fixed inset-y-0 left-0 z-30">
-        <div className="px-5 py-5 border-b border-white/10">
-          <p className="font-semibold text-sm leading-tight">Capabilities</p>
-          <p className="text-white/60 text-xs mt-0.5">Planning · Regional</p>
+      <aside className="hidden lg:flex flex-col w-56 bg-black text-white shrink-0 fixed inset-y-0 left-0 z-30">
+        <div className="px-5 py-4 border-b border-white/10 flex flex-col items-center gap-2">
+          <p className="text-white/60 text-xs tracking-widest uppercase">Self Capabilities</p>
+          <p className="text-white font-bold text-sm tracking-wide text-center">Planning Assessment</p>
+          <p className="text-white/50 text-xs">2026 Dashboard</p>
+          <img src="/abi-logo.png" alt="ABI" className="h-12 w-auto object-contain mt-1" />
+          <p className="text-white/50 text-xs">Powered by:</p>
+          <img src="/sci-logo.png" alt="SCI" className="h-7 w-auto object-contain" />
         </div>
         <nav className="flex-1 py-3 space-y-0.5 px-2">
           {NAV.map(item => (
@@ -46,7 +50,7 @@ export default function Layout({ activeSection, onNav, children, filterBar }: Pr
       </aside>
 
       {/* Mobile header */}
-      <div className="lg:hidden fixed top-0 inset-x-0 z-40 bg-[#1E3A5F] text-white flex items-center px-4 h-14 gap-3">
+      <div className="lg:hidden fixed top-0 inset-x-0 z-40 bg-black text-white flex items-center px-4 h-14 gap-3">
         <button onClick={() => setSidebarOpen(true)} className="p-1.5 -ml-1.5 rounded-lg hover:bg-white/10">
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -59,13 +63,17 @@ export default function Layout({ activeSection, onNav, children, filterBar }: Pr
       {sidebarOpen && (
         <div className="lg:hidden fixed inset-0 z-50 flex">
           <div className="absolute inset-0 bg-black/40" onClick={() => setSidebarOpen(false)} />
-          <aside className="relative w-64 bg-[#1E3A5F] text-white flex flex-col">
-            <div className="px-5 py-5 border-b border-white/10 flex items-center justify-between">
-              <div>
-                <p className="font-semibold text-sm">Capabilities</p>
-                <p className="text-white/60 text-xs mt-0.5">Planning · Regional</p>
+          <aside className="relative w-64 bg-black text-white flex flex-col">
+            <div className="px-5 py-4 border-b border-white/10 flex items-center justify-between">
+              <div className="flex flex-col items-start gap-2">
+                <p className="text-white/60 text-xs tracking-widest uppercase">Self Capabilities</p>
+                <p className="text-white font-bold text-sm tracking-wide">Planning Assessment</p>
+                <p className="text-white/50 text-xs">2026 Dashboard</p>
+                <img src="/abi-logo.png" alt="ABI" className="h-11 w-auto object-contain mt-1" />
+                <p className="text-white/50 text-xs">Powered by:</p>
+                <img src="/sci-logo.png" alt="SCI" className="h-6 w-auto object-contain" />
               </div>
-              <button onClick={() => setSidebarOpen(false)} className="p-1 rounded-lg hover:bg-white/10">
+              <button onClick={() => setSidebarOpen(false)} className="p-1 rounded-lg hover:bg-white/10 self-start">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>

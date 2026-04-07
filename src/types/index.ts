@@ -44,7 +44,14 @@ export interface CapabilityGap {
   perfil_requerido: number
   apego_actual: number
   gap: number
-  by_bu: Record<string, { perfil: number; apego: number; n: number }>
+  by_bu: Record<string, { apego: number; n: number }>
+  by_year: Record<number, { apego: number; n: number }>
+  by_bu_year: Record<string, Record<number, { apego: number; n: number }>>
+  by_area: Record<string, { apego: number; n: number }>
+  by_rol: Record<string, { apego: number; n: number }>
+  by_year_area: Record<number, Record<string, { apego: number; n: number }>>
+  by_bu_year_area: Record<string, Record<number, Record<string, { apego: number; n: number }>>>
+  by_work_location: Record<string, { apego: number; n: number }>
 }
 
 export interface RolGap {
@@ -68,7 +75,7 @@ export interface Gaps {
 }
 
 export interface HeatmapCell {
-  apego: number
+  apego: number | null
   n: number
 }
 
@@ -80,6 +87,8 @@ export interface HeatmapRow {
 export interface HeatmapPeriod {
   by_bu: HeatmapRow[]
   by_area: HeatmapRow[]
+  by_bu_area: Record<string, HeatmapRow[]>
+  by_area_bu: Record<string, HeatmapRow[]>
 }
 
 export interface Heatmap {
@@ -87,6 +96,10 @@ export interface Heatmap {
   by_bu: HeatmapRow[]
   by_area: HeatmapRow[]
   by_period: Record<string, HeatmapPeriod>
+  by_year: Record<number, HeatmapPeriod>
+  by_bu_area: Record<string, HeatmapRow[]>
+  by_area_bu: Record<string, HeatmapRow[]>
+  by_work_location: Record<string, { by_bu: HeatmapRow[]; by_area: HeatmapRow[] }>
   benchmark_threshold: number
 }
 
@@ -174,6 +187,7 @@ export interface PersonEvolution {
   bu: string
   rol: string
   area: string
+  work_location?: string
   periods: PersonPeriod[]
 }
 
@@ -207,9 +221,17 @@ export interface RankingRow {
   assessment_id: string
 }
 
+export interface ExpertDetail {
+  nombre: string
+  bu: string
+  area: string
+  año: number | null
+}
+
 export interface ExpertiseInfo {
   n_experts: number
   experts: string[]
+  experts_detail: ExpertDetail[]
   risk: 'alto' | 'medio' | 'bajo'
 }
 

@@ -48,8 +48,29 @@ for df in [gen, cap]:
         if col in df.columns:
             df[col] = df[col].astype(str).str.strip()
 
+# Exclude known invalid / test entries
+EXCLUDE_NAMES = {"Manuel A Mendoza", "Log Transformation Maz Log Transformation Maz"}
+gen = gen[~gen["Nombre del participante"].isin(EXCLUDE_NAMES)].copy()
+cap = cap[~cap["Nombre del participante"].isin(EXCLUDE_NAMES)].copy()
+print(f"  Excluidos: {', '.join(EXCLUDE_NAMES)}")
+
 # Only finalized assessments for scoring
 fin = gen[gen["Assessments Status"] == "Finalizado"].copy()
+
+# Detect cap sheet column names early (used in multiple sections)
+cap_year_col = "Año" if "Año" in cap.columns else next(
+    (c for c in cap.columns if c.lower().startswith("a") and "o" in c.lower()), "Año")
+cap_period_col = next((c for c in cap.columns if "er" in c.lower() and "odo" in c.lower()), "Período")
+cap_area_col = next((c for c in cap.columns if "rea" in c.lower() and "real" in c.lower() and "rol" not in c.lower()), "Área Realizada")
+cap_rol_col = next((c for c in cap.columns if c.lower().startswith("rol")), "Rol realizado")
+
+# Merge Work Location into cap from gen if not present
+if "Work Location" not in cap.columns and "Work Location" in gen.columns:
+    join_keys = [k for k in ["Nombre del participante", "Año", "Período", "Periodo"] if k in gen.columns and k in cap.columns]
+    if join_keys:
+        wl_map = gen[join_keys + ["Work Location"]].drop_duplicates(subset=join_keys)
+        cap = cap.merge(wl_map, on=join_keys, how="left")
+cap_wl_col = "Work Location" if "Work Location" in cap.columns else None
 
 NIVEL_ORDER = ["Novice", "Advanced Beginner", "Competent", "Proficient", "Expert"]
 BU_LIST = sorted(gen["BU del participante"].dropna().unique().tolist())
@@ -182,12 +203,76 @@ for capability, grp in cap.groupby("Capability"):
             "apego": pct(bgrp["% Apego al perfil"].mean()),
             "n": len(bgrp)
         }
+    by_year = {}
+    if cap_year_col in cap.columns:
+        for año, ygrp in grp.groupby(cap_year_col):
+            by_year[int(año)] = {
+                "apego": pct(ygrp["% Apego al perfil"].mean()),
+                "n": len(ygrp)
+            }
+    by_bu_year = {}
+    if cap_year_col in cap.columns:
+        for bu, bgrp in grp.groupby("BU del participante"):
+            by_bu_year[bu] = {}
+            for año, bygrp in bgrp.groupby(cap_year_col):
+                by_bu_year[bu][int(año)] = {
+                    "apego": pct(bygrp["% Apego al perfil"].mean()),
+                    "n": len(bygrp)
+                }
+    by_area = {}
+    if cap_area_col in grp.columns:
+        for area, agrp in grp.groupby(cap_area_col):
+            by_area[area] = {
+                "apego": pct(agrp["% Apego al perfil"].mean()),
+                "n": len(agrp)
+            }
+    by_rol = {}
+    if cap_rol_col in grp.columns:
+        for rol, rgrp in grp.groupby(cap_rol_col):
+            by_rol[rol] = {
+                "apego": pct(rgrp["% Apego al perfil"].mean()),
+                "n": len(rgrp)
+            }
+    by_year_area = {}
+    if cap_year_col in grp.columns and cap_area_col in grp.columns:
+        for año, ygrp in grp.groupby(cap_year_col):
+            by_year_area[int(año)] = {}
+            for area, agrp in ygrp.groupby(cap_area_col):
+                by_year_area[int(año)][area] = {
+                    "apego": pct(agrp["% Apego al perfil"].mean()),
+                    "n": len(agrp)
+                }
+    by_bu_year_area = {}
+    if cap_year_col in grp.columns and cap_area_col in grp.columns:
+        for bu, bgrp in grp.groupby("BU del participante"):
+            by_bu_year_area[bu] = {}
+            for año, bygrp in bgrp.groupby(cap_year_col):
+                by_bu_year_area[bu][int(año)] = {}
+                for area, agrp in bygrp.groupby(cap_area_col):
+                    by_bu_year_area[bu][int(año)][area] = {
+                        "apego": pct(agrp["% Apego al perfil"].mean()),
+                        "n": len(agrp)
+                    }
+    by_work_location = {}
+    if cap_wl_col and cap_wl_col in grp.columns:
+        for wl, wgrp in grp.groupby(cap_wl_col):
+            by_work_location[wl] = {
+                "apego": pct(wgrp["% Apego al perfil"].mean()),
+                "n": len(wgrp)
+            }
     cap_gaps.append({
         "capability": capability,
         "perfil_requerido": 1.0,   # always 100% — the reference
         "apego_actual": apego_mean,
         "gap": gap,
-        "by_bu": by_bu
+        "by_bu": by_bu,
+        "by_year": by_year,
+        "by_bu_year": by_bu_year,
+        "by_area": by_area,
+        "by_rol": by_rol,
+        "by_year_area": by_year_area,
+        "by_bu_year_area": by_bu_year_area,
+        "by_work_location": by_work_location,
     })
 cap_gaps.sort(key=lambda x: -(x["gap"] or 0))
 
@@ -243,11 +328,6 @@ def build_heatmap(df, row_col, row_list):
     return rows
 
 # Build per-period heatmaps
-# cap uses "Período" (with accent) and "Año" for its period/year columns
-cap_year_col = "Año" if "Año" in cap.columns else [c for c in cap.columns if c.lower().startswith("a") and "o" in c.lower()][0]
-cap_period_col = next((c for c in cap.columns if "er" in c.lower() and "odo" in c.lower()), "Período")
-cap_area_col = next((c for c in cap.columns if "rea" in c.lower() and "real" in c.lower()), "Área Realizada")
-
 by_period = {}
 for (año, periodo), grp in cap.groupby([cap_year_col, cap_period_col]):
     label = f"{int(año)}-P{int(periodo)}"
@@ -256,11 +336,52 @@ for (año, periodo), grp in cap.groupby([cap_year_col, cap_period_col]):
         "by_area": build_heatmap(grp, cap_area_col, AREA_LIST),
     }
 
+by_bu_area_heatmap = {
+    bu: build_heatmap(cap[cap["BU del participante"] == bu], cap_area_col, AREA_LIST)
+    for bu in BU_LIST
+}
+
+by_area_bu_heatmap = {
+    area: build_heatmap(cap[cap[cap_area_col] == area], "BU del participante", BU_LIST)
+    for area in AREA_LIST
+}
+
+by_year_heatmap = {}
+if cap_year_col in cap.columns:
+    for año, ygrp in cap.groupby(cap_year_col):
+        by_year_heatmap[int(año)] = {
+            "by_bu": build_heatmap(ygrp, "BU del participante", BU_LIST),
+            "by_area": build_heatmap(ygrp, cap_area_col, AREA_LIST),
+            "by_bu_area": {
+                bu: build_heatmap(ygrp[ygrp["BU del participante"] == bu], cap_area_col, AREA_LIST)
+                for bu in BU_LIST
+            },
+            "by_area_bu": {
+                area: build_heatmap(ygrp[ygrp[cap_area_col] == area], "BU del participante", BU_LIST)
+                for area in AREA_LIST
+            },
+        }
+
+by_wl_heatmap = {}
+if cap_wl_col and cap_wl_col in cap.columns:
+    for wl in WL_LIST:
+        wgrp = cap[cap[cap_wl_col] == wl]
+        if len(wgrp) == 0:
+            continue
+        by_wl_heatmap[wl] = {
+            "by_bu": build_heatmap(wgrp, "BU del participante", BU_LIST),
+            "by_area": build_heatmap(wgrp, cap_area_col, AREA_LIST),
+        }
+
 heatmap = {
     "capabilities": CAP_LIST,
     "by_bu": build_heatmap(cap, "BU del participante", BU_LIST),
-    "by_area": build_heatmap(cap, "Área Realizada", AREA_LIST),
+    "by_area": build_heatmap(cap, cap_area_col, AREA_LIST),
     "by_period": by_period,
+    "by_year": by_year_heatmap,
+    "by_bu_area": by_bu_area_heatmap,
+    "by_area_bu": by_area_bu_heatmap,
+    "by_work_location": by_wl_heatmap,
     "benchmark_threshold": 0.70
 }
 to_json(heatmap, "heatmap.json")
@@ -377,6 +498,7 @@ for nombre, grp in fin.groupby("Nombre del participante"):
         "bu": str(row0["BU del participante"]),
         "rol": str(row0["Rol realizado"]),
         "area": str(row0["Área Realizada"]) if "Área Realizada" in row0.index else "",
+        "work_location": str(row0["Work Location"]).strip() if "Work Location" in row0.index else "",
         "periods": periods,
     })
 person_evolution.sort(key=lambda x: x["nombre"])
@@ -482,9 +604,18 @@ rankings_rows.sort(key=lambda x: -(x["puntaje"] or 0))
 expertise = {}
 for capability, grp in cap.groupby("Capability"):
     experts = cap[(cap["Capability"] == capability) & (cap["% Apego al perfil"] >= 1.0)]
+    experts_detail = []
+    for _, row in experts.iterrows():
+        experts_detail.append({
+            "nombre": row["Nombre del participante"],
+            "bu": row["BU del participante"],
+            "area": row.get(cap_area_col, ""),
+            "año": int(row[cap_year_col]) if cap_year_col in row.index else None,
+        })
     expertise[capability] = {
         "n_experts": len(experts),
         "experts": experts["Nombre del participante"].tolist()[:10],
+        "experts_detail": experts_detail,
         "risk": "alto" if len(experts) <= 2 else ("medio" if len(experts) <= 5 else "bajo")
     }
 

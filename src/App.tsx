@@ -43,8 +43,8 @@ function Dashboard() {
 
   return (
     <Layout activeSection={section} onNav={id => setSection(id as Section)} filterBar={filterBar}>
-      {section === 'summary'    && <Summary filters={filters} filterBuSummary={filterBuSummary} />}
-      {section === 'gaps'       && <Gaps filters={filters} />}
+      {section === 'summary'    && <Summary filters={filters} filterBuSummary={filterBuSummary} filterRows={filterRows} />}
+      {section === 'gaps'       && <Gaps filters={filters} filterRows={filterRows} />}
       {section === 'heatmap'    && <HeatmapPage filters={filters} />}
       {section === 'evolution'  && <Evolution filters={filters} filterRows={filterRows} />}
       {section === 'rankings'   && <Rankings filters={filters} filterRows={filterRows} />}

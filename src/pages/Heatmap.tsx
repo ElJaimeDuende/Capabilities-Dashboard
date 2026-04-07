@@ -1,9 +1,29 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useHeatmap } from '../hooks/useData'
 import { pct, heatColor, heatTextColor } from '../utils/format'
-import type { Filters } from '../types'
+import type { Filters, HeatmapRow } from '../types'
 
 interface Props { filters: Filters }
+
+function mergeHeatmapRows(rowSets: HeatmapRow[][]): HeatmapRow[] {
+  const merged: Record<string, { label: string; cells: Record<string, { totalApego: number; n: number }> }> = {}
+  for (const rows of rowSets) {
+    for (const row of rows) {
+      if (!merged[row.label]) merged[row.label] = { label: row.label, cells: {} }
+      for (const [cap, cell] of Object.entries(row.cells)) {
+        if (!merged[row.label].cells[cap]) merged[row.label].cells[cap] = { totalApego: 0, n: 0 }
+        merged[row.label].cells[cap].totalApego += (cell.apego ?? 0) * cell.n
+        merged[row.label].cells[cap].n += cell.n
+      }
+    }
+  }
+  return Object.values(merged).map(row => ({
+    label: row.label,
+    cells: Object.fromEntries(
+      Object.entries(row.cells).map(([cap, d]) => [cap, { apego: d.n > 0 ? d.totalApego / d.n : null, n: d.n }])
+    ),
+  }))
+}
 
 export default function HeatmapPage({ filters }: Props) {
   const { data: heatmap, loading } = useHeatmap()
@@ -11,15 +31,73 @@ export default function HeatmapPage({ filters }: Props) {
   const [selectedCap, setSelectedCap] = useState<string | null>(null)
   const [periodView, setPeriodView] = useState<'all' | '2026-P1'>('all')
 
-  if (loading || !heatmap) return <Loader />
-
-  // Determine data source: aggregated or specific period
+  // Determine data source: aggregated, specific period, or filtered by year
   const isPeriodMode = filters.granularidad === 'periodo'
   const effectivePeriod = isPeriodMode ? periodView : 'all'
 
-  const sourceRows = effectivePeriod === 'all'
-    ? { by_bu: heatmap.by_bu, by_area: heatmap.by_area }
-    : (heatmap.by_period[effectivePeriod] ?? { by_bu: heatmap.by_bu, by_area: heatmap.by_area })
+  const sourceRows = useMemo(() => {
+    if (!heatmap) return { by_bu: [], by_area: [] }
+
+    const hasBu = filters.bus.length > 0
+    const hasArea = filters.areas.length > 0
+    const hasYear = !isPeriodMode && filters.años.length > 0
+    const hasWl = filters.work_locations.length > 0
+
+    // Work location only (no year/bu/area): merge by_work_location slices
+    if (hasWl && !hasYear && !hasBu && !hasArea) {
+      const wlSets = filters.work_locations.map(wl => heatmap.by_work_location?.[wl]).filter(Boolean) as { by_bu: HeatmapRow[]; by_area: HeatmapRow[] }[]
+      return {
+        by_bu: wlSets.length > 0 ? mergeHeatmapRows(wlSets.map(w => w.by_bu)) : heatmap.by_bu,
+        by_area: wlSets.length > 0 ? mergeHeatmapRows(wlSets.map(w => w.by_area)) : heatmap.by_area,
+      }
+    }
+
+    if (hasYear) {
+      const byBuSets: HeatmapRow[][] = []
+      const byAreaSets: HeatmapRow[][] = []
+      for (const año of filters.años) {
+        const yd = heatmap.by_year[año]
+        if (!yd) continue
+        // by_bu: area-filtered if hasArea, otherwise BU-filtered
+        if (hasArea) {
+          for (const area of filters.areas) {
+            const rows = yd.by_area_bu?.[area]
+            if (rows) byBuSets.push(rows)
+          }
+        } else {
+          byBuSets.push(yd.by_bu)
+        }
+        // by_area: BU-filtered if hasBu, otherwise year base
+        if (hasBu) {
+          for (const bu of filters.bus) {
+            const rows = yd.by_bu_area?.[bu]
+            if (rows) byAreaSets.push(rows)
+          }
+        } else {
+          byAreaSets.push(yd.by_area)
+        }
+      }
+      return {
+        by_bu: byBuSets.length > 0 ? mergeHeatmapRows(byBuSets) : [],
+        by_area: byAreaSets.length > 0 ? mergeHeatmapRows(byAreaSets) : [],
+      }
+    }
+
+    // No year filter
+    const byBuRows = hasArea
+      ? mergeHeatmapRows(filters.areas.map(a => heatmap.by_area_bu?.[a] ?? []))
+      : heatmap.by_bu
+    const byAreaRows = hasBu
+      ? mergeHeatmapRows(filters.bus.map(bu => heatmap.by_bu_area?.[bu] ?? []))
+      : heatmap.by_area
+
+    if (hasBu || hasArea) return { by_bu: byBuRows, by_area: byAreaRows }
+
+    if (effectivePeriod === 'all') return { by_bu: heatmap.by_bu, by_area: heatmap.by_area }
+    return heatmap.by_period[effectivePeriod] ?? { by_bu: heatmap.by_bu, by_area: heatmap.by_area }
+  }, [heatmap, isPeriodMode, filters.años, filters.bus, filters.areas, filters.work_locations, effectivePeriod])
+
+  if (loading || !heatmap) return <Loader />
 
   const rows = view === 'bu'
     ? sourceRows.by_bu.filter(r => !filters.bus.length || filters.bus.includes(r.label))

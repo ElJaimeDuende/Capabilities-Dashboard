@@ -12,7 +12,7 @@ interface Props {
   activeCount: number
 }
 
-type GroupId = 'vista' | 'tiempo' | 'bu' | 'work_location' | 'area' | 'rol'
+type GroupId = 'vista' | 'tiempo' | 'bu' | 'work_location' | 'area'
 
 export default function FilterBar({
   filters, summary, toggle, toggleAño, setPeriodo, setGranularidad, reset, activeCount,
@@ -74,16 +74,6 @@ export default function FilterBar({
           label="Área"
           count={filters.areas.length}
           open={open === 'area'}
-          onToggle={toggleGroup}
-        />
-
-        <Divider />
-
-        <GroupHeader
-          id="rol"
-          label="Rol"
-          count={filters.roles.length}
-          open={open === 'rol'}
           onToggle={toggleGroup}
         />
 
@@ -165,15 +155,6 @@ export default function FilterBar({
             </div>
           )}
 
-          {open === 'rol' && (
-            <div className="flex flex-wrap gap-2">
-              {summary.roles.map(rol => (
-                <Pill key={rol} active={filters.roles.includes(rol)} onClick={() => toggle('roles', rol)}>
-                  {rol}
-                </Pill>
-              ))}
-            </div>
-          )}
         </div>
       )}
     </div>

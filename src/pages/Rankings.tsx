@@ -57,14 +57,18 @@ const TIPS = {
   apego: '% Apego = Puntaje assessment / Puntaje requerido perfil.\n100% = iguala exactamente el perfil del rol.\n>100% = supera el perfil requerido.',
 }
 
-export default function Rankings({ filterRows }: Props) {
+export default function Rankings({ filters, filterRows }: Props) {
   const { data: rankings, loading } = useRankings()
   const [tab, setTab] = useState<Tab>('top')
   const [search, setSearch] = useState('')
 
   if (loading || !rankings) return <Loader />
 
-  const topRows = filterRows(rankings.all)
+  const isAnual = filters.granularidad === 'año'
+
+  const allFiltered = filterRows(rankings.all)
+
+  const topRows = allFiltered
     .filter(r => !search || r.nombre.toLowerCase().includes(search.toLowerCase()) || r.bu.toLowerCase().includes(search.toLowerCase()))
     .slice(0, 50)
 
@@ -72,7 +76,25 @@ export default function Rankings({ filterRows }: Props) {
     .filter(r => !search || r.nombre.toLowerCase().includes(search.toLowerCase()))
     .slice(0, 50)
 
+  // Recompute expertise concentration based on active filters
+  const hasFilter = filters.bus.length > 0 || filters.areas.length > 0 || filters.años.length > 0
   const concEntries = Object.entries(rankings.expertise_concentration)
+    .map(([cap, info]) => {
+      if (!hasFilter) return [cap, info] as [string, typeof info]
+      const filteredDetail = info.experts_detail?.filter(e =>
+        (!filters.bus.length || filters.bus.includes(e.bu)) &&
+        (!filters.areas.length || filters.areas.includes(e.area)) &&
+        (!filters.años.length || (e.año != null && filters.años.includes(e.año)))
+      ) ?? []
+      const n = filteredDetail.length
+      return [cap, {
+        ...info,
+        n_experts: n,
+        experts: filteredDetail.map(e => e.nombre).slice(0, 10),
+        experts_detail: filteredDetail.slice(0, 10),
+        risk: (n <= 2 ? 'alto' : n <= 5 ? 'medio' : 'bajo') as 'alto' | 'medio' | 'bajo',
+      }] as [string, typeof info]
+    })
     .sort((a, b) => {
       const riskOrder = { alto: 0, medio: 1, bajo: 2 }
       return riskOrder[a[1].risk] - riskOrder[b[1].risk]
@@ -87,7 +109,7 @@ export default function Rankings({ filterRows }: Props) {
       Nombre: r.nombre,
       BU: r.bu,
       Área: r.area,
-      Período: `${r.año}-P${r.periodo}`,
+      Período: isAnual ? String(r.año) : `${r.año}-P${r.periodo}`,
       Puntaje: r.puntaje,
       'Apego %': pct(r.apego),
       Nivel: r.nivel,
@@ -106,7 +128,7 @@ export default function Rankings({ filterRows }: Props) {
             className={`px-4 py-2 rounded-lg text-xs font-medium transition-colors
               ${tab === id ? 'bg-white text-[#1E3A5F] shadow-sm' : 'text-[#64748B] hover:text-[#1E293B]'}`}>
             {m.label}
-            {id === 'dev' && ` (${rankings.needs_development.length})`}
+            {id === 'dev' && ` (${filterRows(rankings.needs_development).length})`}
             {id === 'concentration' && ` (${concEntries.filter(([,i]) => i.risk === 'alto').length} alto)`}
           </button>
         ))}
@@ -145,7 +167,7 @@ export default function Rankings({ filterRows }: Props) {
             <table className="w-full text-xs">
               <thead>
                 <tr className="border-b border-[#E2E8F0]">
-                  {(['#', 'Nombre', 'BU', 'Área', 'Período'] as const).map(h => (
+                  {(['#', 'Nombre', 'BU', 'Área', isAnual ? 'Año' : 'Período'] as const).map(h => (
                     <th key={h} className="text-left py-2 pr-4 text-[#64748B] font-medium">{h}</th>
                   ))}
                   <th className="text-left py-2 pr-4 text-[#64748B] font-medium">
@@ -168,7 +190,7 @@ export default function Rankings({ filterRows }: Props) {
                       <td className="py-2 pr-4 font-medium text-[#1E293B] max-w-[160px]">{r.nombre}</td>
                       <td className="py-2 pr-4 text-[#64748B]">{r.bu}</td>
                       <td className="py-2 pr-4 text-[#64748B]">{r.area}</td>
-                      <td className="py-2 pr-4 text-[#64748B]">{r.año}-P{r.periodo}</td>
+                      <td className="py-2 pr-4 text-[#64748B]">{isAnual ? r.año : `${r.año}-P${r.periodo}`}</td>
                       <td className="py-2 pr-4 font-medium text-[#1E293B]">{score(r.puntaje)}</td>
                       <td className="py-2 pr-4 font-medium" style={{ color: badge.color }}>{pct(r.apego)}</td>
                       <td className="py-2 pr-4">
@@ -228,10 +250,13 @@ export default function Rankings({ filterRows }: Props) {
                         Riesgo {info.risk}
                       </span>
                     </div>
-                    {info.experts.length > 0 && (
+                    {(info.experts_detail ?? []).length > 0 && (
                       <div className="mt-2 flex flex-wrap gap-1.5">
-                        {info.experts.map(e => (
-                          <span key={e} className="px-2 py-0.5 bg-[#F1F5F9] text-[#475569] rounded-full text-xs">{e}</span>
+                        {(info.experts_detail ?? []).map(e => (
+                          <span key={`${e.nombre}-${e.año}`} className="px-2 py-0.5 bg-[#F1F5F9] text-[#475569] rounded-full text-xs flex items-center gap-1">
+                            <span className="font-semibold text-[#1E3A5F] text-[10px]">{buInitials(e.bu)}</span>
+                            <span>{e.nombre}</span>
+                          </span>
                         ))}
                       </div>
                     )}
@@ -244,6 +269,12 @@ export default function Rankings({ filterRows }: Props) {
       )}
     </div>
   )
+}
+
+function buInitials(bu: string): string {
+  const words = bu.normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().split(/\s+/)
+  if (words.length > 1) return words.map(w => w[0]).join('').toUpperCase().slice(0, 3)
+  return bu.slice(0, 3).toUpperCase()
 }
 
 function Loader() {

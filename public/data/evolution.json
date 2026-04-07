@@ -26,44 +26,44 @@
       "año": 2025,
       "periodo": 2,
       "label": "2025-P2",
-      "n": 104,
-      "puntaje_promedio": 1.855,
-      "apego_promedio": 0.8324,
+      "n": 95,
+      "puntaje_promedio": 1.8572,
+      "apego_promedio": 0.8338,
       "nivel_counts": {
-        "Novice": 8,
-        "Advanced Beginner": 27,
-        "Competent": 50,
-        "Proficient": 18,
+        "Novice": 7,
+        "Advanced Beginner": 25,
+        "Competent": 45,
+        "Proficient": 17,
         "Expert": 1
       },
       "nivel_pct": {
-        "Novice": 0.0769,
-        "Advanced Beginner": 0.2596,
-        "Competent": 0.4808,
-        "Proficient": 0.1731,
-        "Expert": 0.0096
+        "Novice": 0.0737,
+        "Advanced Beginner": 0.2632,
+        "Competent": 0.4737,
+        "Proficient": 0.1789,
+        "Expert": 0.0105
       }
     },
     {
       "año": 2026,
       "periodo": 1,
       "label": "2026-P1",
-      "n": 201,
-      "puntaje_promedio": 2.0979,
-      "apego_promedio": 0.9312,
+      "n": 200,
+      "puntaje_promedio": 2.1034,
+      "apego_promedio": 0.9333,
       "nivel_counts": {
-        "Novice": 4,
+        "Novice": 3,
         "Advanced Beginner": 26,
         "Competent": 112,
         "Proficient": 46,
         "Expert": 13
       },
       "nivel_pct": {
-        "Novice": 0.0199,
-        "Advanced Beginner": 0.1294,
-        "Competent": 0.5572,
-        "Proficient": 0.2289,
-        "Expert": 0.0647
+        "Novice": 0.015,
+        "Advanced Beginner": 0.13,
+        "Competent": 0.56,
+        "Proficient": 0.23,
+        "Expert": 0.065
       }
     }
   ],
@@ -71,43 +71,43 @@
     {
       "año": 2025,
       "label": "2025",
-      "n": 105,
-      "puntaje_promedio": 1.857,
-      "apego_promedio": 0.8328,
+      "n": 96,
+      "puntaje_promedio": 1.8594,
+      "apego_promedio": 0.8342,
       "nivel_counts": {
-        "Novice": 8,
-        "Advanced Beginner": 27,
-        "Competent": 51,
-        "Proficient": 18,
+        "Novice": 7,
+        "Advanced Beginner": 25,
+        "Competent": 46,
+        "Proficient": 17,
         "Expert": 1
       },
       "nivel_pct": {
-        "Novice": 0.0762,
-        "Advanced Beginner": 0.2571,
-        "Competent": 0.4857,
-        "Proficient": 0.1714,
-        "Expert": 0.0095
+        "Novice": 0.0729,
+        "Advanced Beginner": 0.2604,
+        "Competent": 0.4792,
+        "Proficient": 0.1771,
+        "Expert": 0.0104
       }
     },
     {
       "año": 2026,
       "label": "2026",
-      "n": 201,
-      "puntaje_promedio": 2.0979,
-      "apego_promedio": 0.9312,
+      "n": 200,
+      "puntaje_promedio": 2.1034,
+      "apego_promedio": 0.9333,
       "nivel_counts": {
-        "Novice": 4,
+        "Novice": 3,
         "Advanced Beginner": 26,
         "Competent": 112,
         "Proficient": 46,
         "Expert": 13
       },
       "nivel_pct": {
-        "Novice": 0.0199,
-        "Advanced Beginner": 0.1294,
-        "Competent": 0.5572,
-        "Proficient": 0.2289,
-        "Expert": 0.0647
+        "Novice": 0.015,
+        "Advanced Beginner": 0.13,
+        "Competent": 0.56,
+        "Proficient": 0.23,
+        "Expert": 0.065
       }
     }
   ],
@@ -1372,17 +1372,17 @@
           "label": "2025-P2",
           "año": 2025,
           "periodo": 2,
-          "n": 36,
-          "puntaje_promedio": 1.7842,
-          "apego_promedio": 0.7774
+          "n": 27,
+          "puntaje_promedio": 1.7681,
+          "apego_promedio": 0.764
         },
         {
           "label": "2026-P1",
           "año": 2026,
           "periodo": 1,
-          "n": 68,
-          "puntaje_promedio": 2.0347,
-          "apego_promedio": 0.8938
+          "n": 67,
+          "puntaje_promedio": 2.0501,
+          "apego_promedio": 0.8997
         }
       ]
     },
@@ -1632,16 +1632,16 @@
         {
           "label": "2025",
           "año": 2025,
-          "n": 36,
-          "puntaje_promedio": 1.7842,
-          "apego_promedio": 0.7774
+          "n": 27,
+          "puntaje_promedio": 1.7681,
+          "apego_promedio": 0.764
         },
         {
           "label": "2026",
           "año": 2026,
-          "n": 68,
-          "puntaje_promedio": 2.0347,
-          "apego_promedio": 0.8938
+          "n": 67,
+          "puntaje_promedio": 2.0501,
+          "apego_promedio": 0.8997
         }
       ]
     },
@@ -1747,6 +1747,7 @@
       "bu": "Perú",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -1763,6 +1764,7 @@
       "bu": "COPE",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -1779,6 +1781,7 @@
       "bu": "México",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "MAZATLAN",
       "periods": [
         {
           "label": "2025-P2",
@@ -1803,6 +1806,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -1819,6 +1823,7 @@
       "bu": "Colombia",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -1835,6 +1840,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -1851,6 +1857,7 @@
       "bu": "Perú",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -1875,6 +1882,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -1891,6 +1899,7 @@
       "bu": "México",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -1907,6 +1916,7 @@
       "bu": "Colombia",
       "rol": "Gerente - WSNP",
       "area": "WSNP",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -1931,6 +1941,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -1947,6 +1958,7 @@
       "bu": "México",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "MERIDA",
       "periods": [
         {
           "label": "2026-P1",
@@ -1963,6 +1975,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -1979,6 +1992,7 @@
       "bu": "Colombia",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2003,6 +2017,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2027,6 +2042,7 @@
       "bu": "México",
       "rol": "Gerente - Retpack",
       "area": "Retpack",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2025-P2",
@@ -2043,6 +2059,7 @@
       "bu": "Guatemala",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "GUATEMALA",
       "periods": [
         {
           "label": "2026-P1",
@@ -2059,6 +2076,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2075,6 +2093,7 @@
       "bu": "WH",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2107,6 +2126,7 @@
       "bu": "México",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -2123,6 +2143,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2139,6 +2160,7 @@
       "bu": "WH",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2163,6 +2185,7 @@
       "bu": "México",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "TUXTEPEC",
       "periods": [
         {
           "label": "2025-P2",
@@ -2187,6 +2210,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -2203,6 +2227,7 @@
       "bu": "México",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2227,6 +2252,7 @@
       "bu": "CAC",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2243,6 +2269,7 @@
       "bu": "Panama",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2259,6 +2286,7 @@
       "bu": "Colombia",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -2275,6 +2303,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -2291,6 +2320,7 @@
       "bu": "México",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2307,6 +2337,7 @@
       "bu": "México",
       "rol": "Especialista - CONA",
       "area": "CONA",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -2323,6 +2354,7 @@
       "bu": "Otros",
       "rol": "Gerente - Retpack",
       "area": "Retpack",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -2339,6 +2371,7 @@
       "bu": "Panama",
       "rol": "Especialista - CONA",
       "area": "CONA",
+      "work_location": "PANAMA",
       "periods": [
         {
           "label": "2025-P2",
@@ -2355,6 +2388,7 @@
       "bu": "Honduras",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2025-P2",
@@ -2379,6 +2413,7 @@
       "bu": "México",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2395,6 +2430,7 @@
       "bu": "WH",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2411,6 +2447,7 @@
       "bu": "Ecuador",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -2427,6 +2464,7 @@
       "bu": "Perú",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2443,6 +2481,7 @@
       "bu": "Perú",
       "rol": "Especialista - CONA",
       "area": "CONA",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2025-P2",
@@ -2467,6 +2506,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2483,6 +2523,7 @@
       "bu": "México",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2499,6 +2540,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2515,6 +2557,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -2539,6 +2582,7 @@
       "bu": "Honduras",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2026-P1",
@@ -2555,6 +2599,7 @@
       "bu": "Perú",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2579,6 +2624,7 @@
       "bu": "Colombia",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2603,6 +2649,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -2619,6 +2666,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -2635,6 +2683,7 @@
       "bu": "Colombia",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -2659,6 +2708,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -2683,6 +2733,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2699,6 +2750,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2715,6 +2767,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2739,6 +2792,7 @@
       "bu": "Otros",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2763,6 +2817,7 @@
       "bu": "México",
       "rol": "Gerente - WSNP",
       "area": "WSNP",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -2779,6 +2834,7 @@
       "bu": "Perú",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -2795,6 +2851,7 @@
       "bu": "Guatemala",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2819,6 +2876,7 @@
       "bu": "Perú",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2835,6 +2893,7 @@
       "bu": "Colombia",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2859,6 +2918,7 @@
       "bu": "Colombia",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2883,6 +2943,7 @@
       "bu": "Perú",
       "rol": "Especialista - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -2899,6 +2960,7 @@
       "bu": "Colombia",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -2923,6 +2985,7 @@
       "bu": "Colombia",
       "rol": "Gerente - WSNP",
       "area": "WSNP",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -2939,6 +3002,7 @@
       "bu": "Otros",
       "rol": "Gerente - WSNP",
       "area": "WSNP",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -2955,6 +3019,7 @@
       "bu": "WH",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -2971,6 +3036,7 @@
       "bu": "México",
       "rol": "Especialista - CONA",
       "area": "CONA",
+      "work_location": "TORREON",
       "periods": [
         {
           "label": "2025-P2",
@@ -2987,6 +3053,7 @@
       "bu": "Otros",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2025-P2",
@@ -3011,6 +3078,7 @@
       "bu": "Colombia",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -3035,6 +3103,7 @@
       "bu": "Perú",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -3051,6 +3120,7 @@
       "bu": "Honduras",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2025-P2",
@@ -3075,6 +3145,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3091,6 +3162,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3115,6 +3187,7 @@
       "bu": "Perú",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3131,6 +3204,7 @@
       "bu": "Colombia",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3147,6 +3221,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -3163,6 +3238,7 @@
       "bu": "Panama",
       "rol": "Gerente de Planning BU",
       "area": "Gerente de Planning BU",
+      "work_location": "PANAMA",
       "periods": [
         {
           "label": "2026-P1",
@@ -3179,6 +3255,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -3195,6 +3272,7 @@
       "bu": "México",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -3211,6 +3289,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3227,6 +3306,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3243,6 +3323,7 @@
       "bu": "WH",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3259,6 +3340,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3275,6 +3357,7 @@
       "bu": "México",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -3291,6 +3374,7 @@
       "bu": "CAC",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2026-P1",
@@ -3307,6 +3391,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -3323,6 +3408,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -3339,6 +3425,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -3355,6 +3442,7 @@
       "bu": "Perú",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2025-P2",
@@ -3379,6 +3467,7 @@
       "bu": "República Dominicana",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2025-P2",
@@ -3403,6 +3492,7 @@
       "bu": "CAC",
       "rol": "Gerente DP Operativo",
       "area": "DP Operativo",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -3427,6 +3517,7 @@
       "bu": "México",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2025-P2",
@@ -3451,6 +3542,7 @@
       "bu": "Honduras",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2026-P1",
@@ -3467,6 +3559,7 @@
       "bu": "Colombia",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3491,6 +3584,7 @@
       "bu": "Perú",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3507,6 +3601,7 @@
       "bu": "CAC",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3523,6 +3618,7 @@
       "bu": "Colombia",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3539,6 +3635,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3555,6 +3652,7 @@
       "bu": "República Dominicana",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2025-P2",
@@ -3587,6 +3685,7 @@
       "bu": "México",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "TUXTEPEC",
       "periods": [
         {
           "label": "2025-P2",
@@ -3611,6 +3710,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3627,6 +3727,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3651,6 +3752,7 @@
       "bu": "Honduras",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3667,6 +3769,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3691,6 +3794,7 @@
       "bu": "Perú",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3707,6 +3811,7 @@
       "bu": "CAC",
       "rol": "Gerente - WSNP",
       "area": "WSNP",
+      "work_location": "PANAMA",
       "periods": [
         {
           "label": "2025-P2",
@@ -3731,6 +3836,7 @@
       "bu": "Otros",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2025-P2",
@@ -3747,6 +3853,7 @@
       "bu": "Colombia",
       "rol": "Gerente - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3763,6 +3870,7 @@
       "bu": "México",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -3779,6 +3887,7 @@
       "bu": "Perú",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3795,6 +3904,7 @@
       "bu": "COPE",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3811,6 +3921,7 @@
       "bu": "México",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3827,6 +3938,7 @@
       "bu": "Colombia",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -3843,6 +3955,7 @@
       "bu": "México",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "MERIDA",
       "periods": [
         {
           "label": "2025-P2",
@@ -3859,6 +3972,7 @@
       "bu": "México",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3875,6 +3989,7 @@
       "bu": "Perú",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -3891,6 +4006,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3907,6 +4023,7 @@
       "bu": "Colombia",
       "rol": "Gerente - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P1",
@@ -3923,6 +4040,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -3963,6 +4081,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -3979,6 +4098,7 @@
       "bu": "WH",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -3995,6 +4115,7 @@
       "bu": "México",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4019,6 +4140,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4035,6 +4157,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4051,6 +4174,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -4083,6 +4207,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4107,6 +4232,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4123,6 +4249,7 @@
       "bu": "Panama",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "PANAMA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4139,6 +4266,7 @@
       "bu": "Perú",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4163,6 +4291,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4179,6 +4308,7 @@
       "bu": "Colombia",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4195,6 +4325,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4211,6 +4342,7 @@
       "bu": "Perú",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4235,6 +4367,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4251,6 +4384,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4267,6 +4401,7 @@
       "bu": "Colombia",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4283,6 +4418,7 @@
       "bu": "Perú",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -4299,6 +4435,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -4323,6 +4460,7 @@
       "bu": "CAC",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2025-P2",
@@ -4339,6 +4477,7 @@
       "bu": "CAC",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -4355,6 +4494,7 @@
       "bu": "Honduras",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2025-P2",
@@ -4379,6 +4519,7 @@
       "bu": "República Dominicana",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4395,6 +4536,7 @@
       "bu": "México",
       "rol": "Gerente - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4411,6 +4553,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4435,6 +4578,7 @@
       "bu": "Guatemala",
       "rol": "Gerente de Planning BU",
       "area": "Gerente de Planning BU",
+      "work_location": "GUATEMALA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4451,6 +4595,7 @@
       "bu": "México",
       "rol": "Gerente DP Operativo",
       "area": "DP Operativo",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -4467,6 +4612,7 @@
       "bu": "Colombia",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -4491,6 +4637,7 @@
       "bu": "CAC",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4507,6 +4654,7 @@
       "bu": "Perú",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -4523,6 +4671,7 @@
       "bu": "El Salvador",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4547,6 +4696,7 @@
       "bu": "Honduras",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2025-P2",
@@ -4571,6 +4721,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4587,6 +4738,7 @@
       "bu": "México",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -4599,26 +4751,11 @@
       ]
     },
     {
-      "nombre": "Log Transformation Maz Log Transformation Maz",
-      "bu": "México",
-      "rol": "Especialista - Retpack",
-      "area": "Retpack",
-      "periods": [
-        {
-          "label": "2026-P1",
-          "año": 2026,
-          "periodo": 1,
-          "puntaje": 1.0,
-          "apego": 0.5,
-          "nivel": "Novice"
-        }
-      ]
-    },
-    {
       "nombre": "Lucero Lizbeth Ortiz",
       "bu": "Guatemala",
       "rol": "Especialista - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4643,6 +4780,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -4667,6 +4805,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -4691,6 +4830,7 @@
       "bu": "México",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4707,6 +4847,7 @@
       "bu": "WH",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4723,6 +4864,7 @@
       "bu": "Perú",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -4739,6 +4881,7 @@
       "bu": "Colombia",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4755,6 +4898,7 @@
       "bu": "COPE",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4771,6 +4915,7 @@
       "bu": "CAC",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4787,6 +4932,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4803,6 +4949,7 @@
       "bu": "Otros",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4819,6 +4966,7 @@
       "bu": "República Dominicana",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2026-P1",
@@ -4831,90 +4979,11 @@
       ]
     },
     {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Especialista DRP",
-      "area": "DRP",
-      "periods": [
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 0.99,
-          "apego": 0.43,
-          "nivel": "Novice"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 1.92,
-          "apego": 0.75,
-          "nivel": "Competent"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 1.77,
-          "apego": 0.794,
-          "nivel": "Competent"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 1.62,
-          "apego": 0.74,
-          "nivel": "Advanced Beginner"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 2.41,
-          "apego": 1.026,
-          "nivel": "Proficient"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 2.25,
-          "apego": 1.125,
-          "nivel": "Competent"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 2.29,
-          "apego": 0.905,
-          "nivel": "Competent"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 1.77,
-          "apego": 0.868,
-          "nivel": "Competent"
-        },
-        {
-          "label": "2025-P2",
-          "año": 2025,
-          "periodo": 2,
-          "puntaje": 1.47,
-          "apego": 0.721,
-          "nivel": "Advanced Beginner"
-        }
-      ]
-    },
-    {
       "nombre": "Manuel Alejandro Martinez",
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4931,6 +5000,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -4955,6 +5025,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -4971,6 +5042,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -4995,6 +5067,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5011,6 +5084,7 @@
       "bu": "Honduras",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5027,6 +5101,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5043,6 +5118,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -5067,6 +5143,7 @@
       "bu": "Colombia",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5083,6 +5160,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5099,6 +5177,7 @@
       "bu": "Perú",
       "rol": "Gerente DP Operativo",
       "area": "DP Operativo",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -5115,6 +5194,7 @@
       "bu": "México",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5131,6 +5211,7 @@
       "bu": "Perú",
       "rol": "Gerente - Retpack",
       "area": "Retpack",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -5147,6 +5228,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -5163,6 +5245,7 @@
       "bu": "México",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5179,6 +5262,7 @@
       "bu": "CAC",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "PANAMA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5195,6 +5279,7 @@
       "bu": "Perú",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -5211,6 +5296,7 @@
       "bu": "Perú",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -5243,6 +5329,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -5259,6 +5346,7 @@
       "bu": "Honduras",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2026-P1",
@@ -5275,6 +5363,7 @@
       "bu": "Perú",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2025-P2",
@@ -5299,6 +5388,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5315,6 +5405,7 @@
       "bu": "Colombia",
       "rol": "Gerente - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2025-P2",
@@ -5339,6 +5430,7 @@
       "bu": "WH",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5355,6 +5447,7 @@
       "bu": "Perú",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2025-P2",
@@ -5379,6 +5472,7 @@
       "bu": "COPE",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -5403,6 +5497,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5419,6 +5514,7 @@
       "bu": "Honduras",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5435,6 +5531,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5451,6 +5548,7 @@
       "bu": "México",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2025-P2",
@@ -5475,6 +5573,7 @@
       "bu": "Colombia",
       "rol": "Gerente - Retpack",
       "area": "Retpack",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5491,6 +5590,7 @@
       "bu": "Colombia",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "COLOMBIA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5507,6 +5607,7 @@
       "bu": "Perú",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -5523,6 +5624,7 @@
       "bu": "México",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -5539,6 +5641,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5555,6 +5658,7 @@
       "bu": "CAC",
       "rol": "Especialista - CONA",
       "area": "CONA",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2026-P1",
@@ -5571,6 +5675,7 @@
       "bu": "México",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5587,6 +5692,7 @@
       "bu": "México",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "GUADALAJARA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5603,6 +5709,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -5619,6 +5726,7 @@
       "bu": "WH",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -5643,6 +5751,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - Retpack",
       "area": "Retpack",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -5659,6 +5768,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -5675,6 +5785,7 @@
       "bu": "México",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2026-P1",
@@ -5691,6 +5802,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Táctico",
       "area": "MRP Táctico",
+      "work_location": "CDMX",
       "periods": [
         {
           "label": "2025-P2",
@@ -5715,6 +5827,7 @@
       "bu": "Otros",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5731,6 +5844,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -5747,6 +5861,7 @@
       "bu": "Guatemala",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
+      "work_location": "GUATEMALA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5763,6 +5878,7 @@
       "bu": "México",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5779,6 +5895,7 @@
       "bu": "Ecuador",
       "rol": "Especialista DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5795,6 +5912,7 @@
       "bu": "México",
       "rol": "Especialista - CONA",
       "area": "CONA",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -5819,6 +5937,7 @@
       "bu": "El Salvador",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "EL SALVADOR",
       "periods": [
         {
           "label": "2026-P1",
@@ -5835,6 +5954,7 @@
       "bu": "México",
       "rol": "Especialista - Logística inversa",
       "area": "Logística Inversa",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5851,6 +5971,7 @@
       "bu": "México",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2025-P2",
@@ -5867,6 +5988,7 @@
       "bu": "CAC",
       "rol": "Gerente - CONA",
       "area": "CONA",
+      "work_location": "REPÚBLICA DOMINICANA",
       "periods": [
         {
           "label": "2026-P1",
@@ -5883,6 +6005,7 @@
       "bu": "Perú",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -5899,6 +6022,7 @@
       "bu": "Perú",
       "rol": "Especialista - DP Operativo",
       "area": "DP Operativo",
+      "work_location": "PERÚ",
       "periods": [
         {
           "label": "2026-P1",
@@ -5915,6 +6039,7 @@
       "bu": "Honduras",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "HONDURAS",
       "periods": [
         {
           "label": "2025-P2",
@@ -5939,6 +6064,7 @@
       "bu": "Colombia",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5955,6 +6081,7 @@
       "bu": "México",
       "rol": "Gerente - DRP",
       "area": "DRP",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -5971,6 +6098,7 @@
       "bu": "Ecuador",
       "rol": "Especialista - Programación de la producción",
       "area": "Programación de la Producción",
+      "work_location": "ECUADOR",
       "periods": [
         {
           "label": "2025-P2",
@@ -5995,6 +6123,7 @@
       "bu": "Otros",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
+      "work_location": "AGUASCALIENTES",
       "periods": [
         {
           "label": "2026-P1",
@@ -9494,23 +9623,6 @@
       "delta_apego": null
     },
     {
-      "nombre": "Log Transformation Maz Log Transformation Maz",
-      "bu": "México",
-      "rol": "Especialista - Retpack",
-      "area": "Retpack",
-      "funcion": "Planning",
-      "año": 2026,
-      "periodo": 1,
-      "label": "2026-P1",
-      "apego": 0.5,
-      "apego_pct": 50.0,
-      "puntaje": 1.0,
-      "nivel": "Novice",
-      "meses_rol": 12.0,
-      "tendencia": "nuevo",
-      "delta_apego": null
-    },
-    {
       "nombre": "Lucero Lizbeth Ortiz",
       "bu": "Guatemala",
       "rol": "Especialista - MRP Táctico",
@@ -9764,159 +9876,6 @@
       "meses_rol": 14.9,
       "tendencia": "nuevo",
       "delta_apego": null
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Especialista DRP",
-      "area": "DRP",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.43,
-      "apego_pct": 43.0,
-      "puntaje": 0.99,
-      "nivel": "Novice",
-      "meses_rol": null,
-      "tendencia": "nuevo",
-      "delta_apego": null
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Gerente - DRP",
-      "area": "DRP",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.75,
-      "apego_pct": 75.0,
-      "puntaje": 1.92,
-      "nivel": "Competent",
-      "meses_rol": null,
-      "tendencia": "mejora",
-      "delta_apego": 0.32
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Especialista - Logística inversa",
-      "area": "Logística Inversa",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.794,
-      "apego_pct": 79.4,
-      "puntaje": 1.77,
-      "nivel": "Competent",
-      "meses_rol": null,
-      "tendencia": "mejora",
-      "delta_apego": 0.044
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Especialista - MRP Táctico",
-      "area": "MRP Táctico",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.74,
-      "apego_pct": 74.0,
-      "puntaje": 1.62,
-      "nivel": "Advanced Beginner",
-      "meses_rol": null,
-      "tendencia": "empeora",
-      "delta_apego": -0.054
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Especialista - MRP Operativo",
-      "area": "MRP Operativo",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 1.026,
-      "apego_pct": 102.6,
-      "puntaje": 2.41,
-      "nivel": "Proficient",
-      "meses_rol": null,
-      "tendencia": "mejora",
-      "delta_apego": 0.286
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Especialista - Retpack",
-      "area": "Retpack",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 1.125,
-      "apego_pct": 112.5,
-      "puntaje": 2.25,
-      "nivel": "Competent",
-      "meses_rol": null,
-      "tendencia": "mejora",
-      "delta_apego": 0.099
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Gerente - Retpack",
-      "area": "Retpack",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.905,
-      "apego_pct": 90.5,
-      "puntaje": 2.29,
-      "nivel": "Competent",
-      "meses_rol": null,
-      "tendencia": "empeora",
-      "delta_apego": -0.22
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Gerente - CONA",
-      "area": "CONA",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.868,
-      "apego_pct": 86.8,
-      "puntaje": 1.77,
-      "nivel": "Competent",
-      "meses_rol": null,
-      "tendencia": "igual",
-      "delta_apego": -0.037
-    },
-    {
-      "nombre": "Manuel A Mendoza",
-      "bu": "México",
-      "rol": "Gerente - WSNP",
-      "area": "WSNP",
-      "funcion": "Planning",
-      "año": 2025,
-      "periodo": 2,
-      "label": "2025-P2",
-      "apego": 0.721,
-      "apego_pct": 72.1,
-      "puntaje": 1.47,
-      "nivel": "Advanced Beginner",
-      "meses_rol": null,
-      "tendencia": "empeora",
-      "delta_apego": -0.147
     },
     {
       "nombre": "Manuel Alejandro Martinez",

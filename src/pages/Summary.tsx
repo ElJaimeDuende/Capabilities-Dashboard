@@ -1,13 +1,17 @@
-import { useState, type ReactNode } from 'react'
+import { useState, useMemo, type ReactNode } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, Cell } from 'recharts'
-import { useSummary, useCriticalFindings, useBenchmarks } from '../hooks/useData'
+import { useSummary, useCriticalFindings, useBenchmarks, useRankings } from '../hooks/useData'
 import { pct, score, apegoBadge } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
 import InfoTooltip from '../components/InfoTooltip'
-import type { Filters, BuSummary } from '../types'
+import type { Filters, BuSummary, RankingRow } from '../types'
 import { NIVEL_ORDER, NIVEL_COLORS } from '../types'
 
-interface Props { filters: Filters; filterBuSummary: (rows: BuSummary[]) => BuSummary[] }
+interface Props {
+  filters: Filters
+  filterBuSummary: (rows: BuSummary[]) => BuSummary[]
+  filterRows: (rows: RankingRow[]) => RankingRow[]
+}
 
 type SortCol = 'bu' | 'n' | 'apego_promedio' | 'Novice' | 'Advanced Beginner' | 'Competent' | 'Proficient' | 'Expert'
 type SortDir = 'asc' | 'desc'
@@ -23,21 +27,80 @@ const COL_TIPS = {
   apego: 'Promedio del % Apego al perfil para la BU.\nFórmula: Puntaje assessment / Puntaje requerido perfil.\nMeta: ≥100%.',
 }
 
-export default function Summary({ filterBuSummary }: Props) {
+export default function Summary({ filters, filterBuSummary, filterRows }: Props) {
   const { data: summary, loading: ls } = useSummary()
+  const { data: rankings } = useRankings()
   const { data: findings } = useCriticalFindings()
   const { data: benchmarks } = useBenchmarks()
   const [sortCol, setSortCol] = useState<SortCol>('apego_promedio')
   const [sortDir, setSortDir] = useState<SortDir>('desc')
 
-  if (ls || !summary) return <Loader />
+  const hasFilter = filters.bus.length > 0 || filters.work_locations.length > 0 ||
+    filters.areas.length > 0 || filters.roles.length > 0 || filters.años.length > 0
 
-  const buData = filterBuSummary(summary.bu_summary)
-  const badge = apegoBadge(summary.apego_promedio_global)
+  // When a filter is active, recompute KPIs and bu_summary from raw rankings rows
+  const filteredRows = useMemo<RankingRow[] | null>(() => {
+    if (!hasFilter || !rankings) return null
+    return filterRows(rankings.all)
+  }, [hasFilter, rankings, filterRows])
+
+  const kpi = useMemo(() => {
+    if (filteredRows) {
+      const n = filteredRows.length
+      return {
+        total_participantes: new Set(filteredRows.map(r => r.nombre)).size,
+        assessments_finalizados: n,
+        assessments_en_curso: null as number | null,
+        puntaje_promedio_global: n > 0 ? filteredRows.reduce((s, r) => s + (r.puntaje || 0), 0) / n : 0,
+        apego_promedio_global: n > 0 ? filteredRows.reduce((s, r) => s + (r.apego || 0), 0) / n : 0,
+      }
+    }
+    if (!summary) return null
+    return {
+      total_participantes: summary.total_participantes,
+      assessments_finalizados: summary.assessments_finalizados,
+      assessments_en_curso: summary.assessments_en_curso,
+      puntaje_promedio_global: summary.puntaje_promedio_global,
+      apego_promedio_global: summary.apego_promedio_global,
+    }
+  }, [filteredRows, summary])
+
+  const buData: BuSummary[] = useMemo(() => {
+    if (filteredRows) {
+      const buMap: Record<string, { n: number; puntaje: number; apego: number; niveles: Record<string, number> }> = {}
+      for (const r of filteredRows) {
+        if (!buMap[r.bu]) buMap[r.bu] = { n: 0, puntaje: 0, apego: 0, niveles: {} }
+        buMap[r.bu].n++
+        buMap[r.bu].puntaje += r.puntaje || 0
+        buMap[r.bu].apego += r.apego || 0
+        buMap[r.bu].niveles[r.nivel] = (buMap[r.bu].niveles[r.nivel] || 0) + 1
+      }
+      return Object.entries(buMap).map(([bu, d]) => ({
+        bu,
+        n: d.n,
+        puntaje_promedio: d.n > 0 ? d.puntaje / d.n : 0,
+        apego_promedio: d.n > 0 ? d.apego / d.n : 0,
+        niveles: Object.fromEntries(NIVEL_ORDER.map(n => [n, d.niveles[n] || 0])) as Record<string, number>,
+      })) as BuSummary[]
+    }
+    return filterBuSummary(summary?.bu_summary ?? [])
+  }, [filteredRows, summary, filterBuSummary])
+
+  const nivelDist = useMemo(() => {
+    if (filteredRows) {
+      const total = filteredRows.length
+      return Object.fromEntries(NIVEL_ORDER.map(n => [n, total > 0 ? filteredRows.filter(r => r.nivel === n).length / total : 0]))
+    }
+    return summary?.nivel_distribution ?? {}
+  }, [filteredRows, summary])
+
+  if (ls || !kpi) return <Loader />
+
+  const badge = apegoBadge(kpi.apego_promedio_global)
 
   const distData = NIVEL_ORDER.map(n => ({
     nivel: n.replace('Advanced Beginner', 'Adv. Beginner'),
-    actual: Math.round((summary.nivel_distribution[n] ?? 0) * 100),
+    actual: Math.round((nivelDist[n] ?? 0) * 100),
     madura: benchmarks ? Math.round((benchmarks.nivel_distribution.mature_org[n] ?? 0) * 100) : 0,
   }))
 
@@ -77,13 +140,13 @@ export default function Summary({ filterBuSummary }: Props) {
 
       {/* KPI cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-        <KpiCard label="Participantes" value={String(summary.total_participantes)} tip={KPI_TIPS.participantes} />
-        <KpiCard label="Assessments finalizados" value={String(summary.assessments_finalizados)}
-          sub={`${summary.assessments_en_curso} en curso`} tip={KPI_TIPS.finalizados} />
-        <KpiCard label="Puntaje promedio" value={score(summary.puntaje_promedio_global)}
+        <KpiCard label="Participantes" value={String(kpi.total_participantes)} tip={KPI_TIPS.participantes} />
+        <KpiCard label="Assessments finalizados" value={String(kpi.assessments_finalizados)}
+          sub={kpi.assessments_en_curso != null ? `${kpi.assessments_en_curso} en curso` : undefined} tip={KPI_TIPS.finalizados} />
+        <KpiCard label="Puntaje promedio" value={score(kpi.puntaje_promedio_global)}
           sub="Escala 0–3 (Dreyfus)" tip={KPI_TIPS.puntaje} />
         <KpiCard label="Apego al perfil"
-          value={pct(summary.apego_promedio_global)}
+          value={pct(kpi.apego_promedio_global)}
           valueColor={badge.color}
           sub={`${badge.label} · Meta: ≥100%`}
           tip={KPI_TIPS.apego} />
@@ -123,13 +186,13 @@ export default function Summary({ filterBuSummary }: Props) {
         {/* Distribution vs benchmark */}
         <div className="bg-white rounded-xl border border-[#E2E8F0] p-4">
           <h3 className="text-sm font-semibold text-[#1E293B] mb-1">Distribución de niveles vs benchmark</h3>
-          <p className="text-xs text-[#64748B] mb-4">Actual vs organización madura (Gartner/Dreyfus)</p>
+          <p className="text-xs text-[#64748B] mb-4">ABI vs organización madura (Gartner/Dreyfus)</p>
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={distData} barGap={4} barCategoryGap="30%">
               <XAxis dataKey="nivel" tick={{ fontSize: 10, fill: '#64748B' }} />
               <YAxis tick={{ fontSize: 10, fill: '#64748B' }} unit="%" domain={[0, 60]} />
               <Tooltip formatter={(v: unknown) => `${v}%`} />
-              <Bar dataKey="actual" name="Actual" radius={[4,4,0,0]}>
+              <Bar dataKey="actual" name="ABI" radius={[4,4,0,0]}>
                 {distData.map((d) => (
                   <Cell key={d.nivel} fill={NIVEL_COLORS[d.nivel.replace('Adv. Beginner', 'Advanced Beginner') as keyof typeof NIVEL_COLORS] ?? '#1E3A5F'} />
                 ))}
@@ -138,7 +201,7 @@ export default function Summary({ filterBuSummary }: Props) {
             </BarChart>
           </ResponsiveContainer>
           <div className="flex gap-4 mt-2 justify-center">
-            <ChartLegend color="#1E3A5F" label="Actual" />
+            <ChartLegend color="#1E3A5F" label="ABI" />
             <ChartLegend color="#CBD5E1" label="Org. madura" />
           </div>
         </div>

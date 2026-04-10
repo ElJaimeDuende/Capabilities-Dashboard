@@ -10,7 +10,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).parent.parent
-EXCEL = ROOT.parent / "Data" / "Base de Datos.xlsx"
+EXCEL = ROOT.parent / "Data" / "Base de Datos V2.xlsx"
 OUT = ROOT / "public" / "data"
 OUT.mkdir(parents=True, exist_ok=True)
 
@@ -127,17 +127,34 @@ benchmarks = {
   "capability_categories": {
     "Soft Skills / Liderazgo": [
       "Empuje / Orientación a resultados", "Colaboración", "Resiliencia",
-      "Negociación", "Planificación y organización"
+      "Grit (resilencia + empuje)", "Negociación", "Planificación y organización",
+      "Gestión de Equipos", "Gestión de interesados", "Mentalidad de crecimiento",
+      "Pensamiento Sistémico", "Sensibilidad del mercado", "Toma de decisiones"
     ],
     "Técnicas de Planning": [
-      "Gestión de inventarios", "Estándares de logística inversa LCP y mantenimiento del inventario",
+      "Gestión de inventarios", "Gestión de la cadena de suministro",
+      "Estándares de logística inversa LCP y mantenimiento del inventario",
+      "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
       "Transportación y logística", "Manufactura Esbelta", "Técnicas de programación",
       "Estándares VPO programación y nivel de servicio", "Gestión de riesgos",
-      "Metodología S&OP", "Metodología MRP/MPS", "Pronóstico de la demanda",
-      "DDMRP", "Control de la producción", "Planeación de capacidad"
+      "Estándar LCP para Planeación de la Demanda", "Estándar LCP para despliegue de inventario",
+      "Estándares de MRP LCP", "Estándares de S&OP LCP + SNP LCP",
+      "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+      "Planeación Operativa de Supply Chain", "Planeación y gestión de la producción",
+      "Planificación de aprovisionamiento", "Planificación de capacidad",
+      "Planificación de la estrategia", "Programación con Optplan",
+      "Pronóstico colaborativo", "Técnicas de optimización", "Principios de manufactura"
     ],
     "Herramientas / Datos": [
-      "Excel", "Orientación a datos", "SAP", "Power BI", "Sistemas de planeación"
+      "Excel", "Orientación a datos", "Data Driven / Analítico",
+      "Estructuras complejas de datos", "Gestión por sistemas",
+      "Métodos estadísticos y de pronóstico"
+    ],
+    "Finanzas": [
+      "Finanzas", "Finanzas empresariales"
+    ],
+    "Mejora Continua": [
+      "Mejora continua", "Resolución de problemas y causa raíz"
     ],
     "Idiomas": ["Inglés"]
   }
@@ -540,7 +557,7 @@ for _, row in fin2.iterrows():
         "bu":       str(row["BU del participante"]),
         "rol":      str(row["Rol realizado"]),
         "area":     str(row.get("Área Realizada", "")),
-        "funcion":  str(row[fn_col]) if fn_col and fn_col in row.index else "",
+        "funcion":  str(row["Work Location"]).strip() if "Work Location" in row.index and pd.notna(row["Work Location"]) else "",
         "año":      int(row["Año"]),
         "periodo":  int(row["Periodo"]),
         "label":    f"{int(row['Año'])}-P{int(row['Periodo'])}",

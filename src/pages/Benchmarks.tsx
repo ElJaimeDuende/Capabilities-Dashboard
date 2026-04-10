@@ -1,12 +1,16 @@
+import { useRef } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts'
 import { useBenchmarks, useSummary, useGaps } from '../hooks/useData'
 import { pct } from '../utils/format'
 import { NIVEL_ORDER } from '../types'
+import CopyChartBtn from '../components/CopyChartBtn'
 
 export default function Benchmarks() {
   const { data: benchmarks, loading: lb } = useBenchmarks()
   const { data: summary } = useSummary()
   const { data: gaps } = useGaps()
+  const distChartRef = useRef<HTMLDivElement>(null)
+  const radarChartRef = useRef<HTMLDivElement>(null)
 
   if (lb || !benchmarks || !summary) return <Loader />
 
@@ -73,8 +77,12 @@ export default function Benchmarks() {
 
       {/* Distribution vs benchmarks */}
       <div className="bg-white rounded-xl border border-[#E2E8F0] p-4">
-        <h3 className="text-sm font-semibold text-[#1E293B] mb-1">Distribución de niveles vs referencias de industria</h3>
+        <div className="flex items-start justify-between mb-1">
+          <h3 className="text-sm font-semibold text-[#1E293B]">Distribución de niveles vs referencias de industria</h3>
+          <CopyChartBtn chartRef={distChartRef} />
+        </div>
         <p className="text-xs text-[#64748B] mb-4">Fuentes: Dreyfus Model, Gartner, McKinsey</p>
+        <div ref={distChartRef}>
         <ResponsiveContainer width="100%" height={240}>
           <BarChart data={distData} barGap={4} barCategoryGap="25%">
             <XAxis dataKey="nivel" tick={{ fontSize: 10, fill: '#64748B' }} />
@@ -97,6 +105,7 @@ export default function Benchmarks() {
             </div>
           ))}
         </div>
+        </div>
       </div>
 
       {/* Category radar */}
@@ -107,28 +116,33 @@ export default function Benchmarks() {
               <h3 className="text-sm font-semibold text-[#1E293B] mb-0.5">Apego promedio por categoría de capability</h3>
               <p className="text-xs text-[#64748B]">Fuentes: ISM, ASCM</p>
             </div>
-            <div className="flex gap-3 text-xs shrink-0">
-              <div className="flex items-center gap-1.5">
-                <div className="w-3 h-3 rounded-full bg-[#1E3A5F] opacity-70" />
-                <span className="text-[#1E293B] font-medium">ABI</span>
+            <div className="flex items-center gap-3">
+              <div className="flex gap-3 text-xs shrink-0">
+                <div className="flex items-center gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-[#1E3A5F] opacity-70" />
+                  <span className="text-[#1E293B] font-medium">ABI</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <div className="w-3 h-0.5 bg-[#66BB6A]" style={{ borderTop: '2px dashed #66BB6A', background: 'none' }} />
+                  <div className="w-3 h-3 rounded-full border-2 border-[#66BB6A] bg-[#E8F5E9]" />
+                  <span className="text-[#64748B]">Benchmark 75% (org. buena)</span>
+                </div>
               </div>
-              <div className="flex items-center gap-1.5">
-                <div className="w-3 h-0.5 bg-[#66BB6A]" style={{ borderTop: '2px dashed #66BB6A', background: 'none' }} />
-                <div className="w-3 h-3 rounded-full border-2 border-[#66BB6A] bg-[#E8F5E9]" />
-                <span className="text-[#64748B]">Benchmark 75% (org. buena)</span>
-              </div>
+              <CopyChartBtn chartRef={radarChartRef} />
             </div>
           </div>
-          <ResponsiveContainer width="100%" height={280}>
-            <RadarChart data={catData}>
-              <PolarGrid stroke="#E2E8F0" />
-              <PolarAngleAxis dataKey="category" tick={{ fontSize: 10, fill: '#475569' }} />
-              <PolarRadiusAxis angle={30} domain={[0, 120]} tick={{ fontSize: 9, fill: '#94A3B8' }} unit="%" />
-              <Radar name="Benchmark (75%)" dataKey="Benchmark (75%)" stroke="#66BB6A" fill="#66BB6A" fillOpacity={0.12} strokeDasharray="5 3" strokeWidth={1.5} />
-              <Radar name="ABI" dataKey="ABI" stroke="#1E3A5F" fill="#1E3A5F" fillOpacity={0.35} strokeWidth={2} />
-              <Tooltip formatter={(v: any, name: any) => [`${v}%`, name === 'Benchmark (75%)' ? 'Benchmark (org. buena)' : 'ABI']} />
-            </RadarChart>
-          </ResponsiveContainer>
+          <div ref={radarChartRef}>
+            <ResponsiveContainer width="100%" height={280}>
+              <RadarChart data={catData}>
+                <PolarGrid stroke="#E2E8F0" />
+                <PolarAngleAxis dataKey="category" tick={{ fontSize: 10, fill: '#475569' }} />
+                <PolarRadiusAxis angle={30} domain={[0, 120]} tick={{ fontSize: 9, fill: '#94A3B8' }} unit="%" />
+                <Radar name="Benchmark (75%)" dataKey="Benchmark (75%)" stroke="#66BB6A" fill="#66BB6A" fillOpacity={0.12} strokeDasharray="5 3" strokeWidth={1.5} />
+                <Radar name="ABI" dataKey="ABI" stroke="#1E3A5F" fill="#1E3A5F" fillOpacity={0.35} strokeWidth={2} />
+                <Tooltip formatter={(v: any, name: any) => [`${v}%`, name === 'Benchmark (75%)' ? 'Benchmark (org. buena)' : 'ABI']} />
+              </RadarChart>
+            </ResponsiveContainer>
+          </div>
         </div>
       )}
 

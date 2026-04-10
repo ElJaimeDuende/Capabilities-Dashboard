@@ -54,6 +54,9 @@ npx vercel alias set <deployment-url> self-abi-dashboard.vercel.app
 |----------|-----------|
 | "ABI" instead of "Actual" | Selective replacement per element, user approved case-by-case |
 | Sidebar black | Brand alignment with SCI + ABI logos |
+| Sidebar branding order | "SELF CAPABILITIES" > "Planning Assessment" > "2026 Dashboard" > ABI logo > "Powered by:" > SCI logo |
+| Scatter tooltip prev year | Shows current year period+apego + previous year if exists; lookup via `data` closure |
+| Scatter instruction overlay | 24px black italic text positioned absolute top-right over chart area |
 | Rol filter hidden | Removed from FilterBar, kept in data/types for internal use |
 | Scatter mousedown/mouseup | Hold-to-highlight person trend line, release to reset |
 | Evolution "Todos" default | Shows aggregate puntaje/apego across all filtered persons |
@@ -66,6 +69,11 @@ npx vercel alias set <deployment-url> self-abi-dashboard.vercel.app
 
 ### Gaps Filter Cascade
 Priority: BU+Year+Area -> BU+Year -> Year+Area -> BU -> Year -> Area -> WL -> Rol
+
+### TendenciasScatter
+- `CustomTooltip` is a closure inside component (accesses `data` for prev year lookup)
+- Hold-click: `selectedPerson` state + global `mouseup` listener to reset
+- Instruction overlay: absolute-positioned `<p>` over chart via wrapping `<div className="relative">`
 
 ### Evolution Recomputation
 When pre-aggregated data lacks filter dimensions, recompute from `evolution.scatter`:

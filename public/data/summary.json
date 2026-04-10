@@ -1,14 +1,13 @@
 {
-  "total_participantes": 229,
-  "total_assessments": 312,
-  "assessments_finalizados": 296,
-  "assessments_en_curso": 16,
-  "puntaje_promedio_global": 2.0243,
-  "apego_promedio_global": 0.9012,
-  "reviso_reporte_pct": 0.4006,
+  "total_participantes": 342,
+  "total_assessments": 420,
+  "assessments_finalizados": 413,
+  "assessments_en_curso": 7,
+  "puntaje_promedio_global": 1.9882,
+  "apego_promedio_global": 0.8796,
+  "reviso_reporte_pct": 0.2095,
   "bus": [
     "CAC",
-    "COPE",
     "Colombia",
     "Ecuador",
     "El Salvador",
@@ -18,25 +17,25 @@
     "Otros",
     "Panama",
     "Perú",
-    "República Dominicana",
-    "WH"
+    "República Dominicana"
   ],
   "work_locations": [
-    "AGUASCALIENTES",
+    "Aguascalientes",
     "CDMX",
-    "COLOMBIA",
-    "ECUADOR",
-    "EL SALVADOR",
-    "GUADALAJARA",
-    "GUATEMALA",
-    "HONDURAS",
-    "MAZATLAN",
-    "MERIDA",
-    "PANAMA",
-    "PERÚ",
-    "REPÚBLICA DOMINICANA",
-    "TORREON",
-    "TUXTEPEC"
+    "Colombia",
+    "Ecuador",
+    "El Salvador",
+    "Guadalajara",
+    "Guatemala",
+    "Honduras",
+    "Mazatlan",
+    "Merida",
+    "México",
+    "Panama",
+    "Perú",
+    "República Dominicana",
+    "Tuxtepec",
+    "West Hub"
   ],
   "areas": [
     "CONA",
@@ -137,186 +136,160 @@
     "2026-P1"
   ],
   "nivel_distribution": {
-    "Novice": 0.0338,
-    "Advanced Beginner": 0.1723,
-    "Competent": 0.5338,
-    "Proficient": 0.2128,
-    "Expert": 0.0473
+    "Novice": 0.0291,
+    "Advanced Beginner": 0.1913,
+    "Competent": 0.5521,
+    "Proficient": 0.1937,
+    "Expert": 0.0339
   },
   "nivel_counts": {
-    "Novice": 10,
-    "Advanced Beginner": 51,
-    "Competent": 158,
-    "Proficient": 63,
+    "Novice": 12,
+    "Advanced Beginner": 79,
+    "Competent": 228,
+    "Proficient": 80,
     "Expert": 14
   },
   "bu_summary": [
     {
-      "bu": "Colombia",
-      "n": 58,
-      "puntaje_promedio": 2.1736,
-      "apego_promedio": 0.9656,
-      "niveles": {
-        "Novice": 0,
-        "Advanced Beginner": 8,
-        "Competent": 28,
-        "Proficient": 16,
-        "Expert": 6
-      }
-    },
-    {
       "bu": "CAC",
       "n": 14,
-      "puntaje_promedio": 2.1236,
-      "apego_promedio": 0.9538,
+      "puntaje_promedio": 2.185,
+      "apego_promedio": 0.967,
       "niveles": {
-        "Novice": 1,
+        "Novice": 0,
         "Advanced Beginner": 0,
-        "Competent": 9,
+        "Competent": 10,
         "Proficient": 3,
         "Expert": 1
       }
     },
     {
-      "bu": "El Salvador",
-      "n": 9,
-      "puntaje_promedio": 2.0356,
-      "apego_promedio": 0.9432,
+      "bu": "Colombia",
+      "n": 77,
+      "puntaje_promedio": 2.1548,
+      "apego_promedio": 0.9508,
+      "niveles": {
+        "Novice": 1,
+        "Advanced Beginner": 7,
+        "Competent": 40,
+        "Proficient": 24,
+        "Expert": 5
+      }
+    },
+    {
+      "bu": "República Dominicana",
+      "n": 13,
+      "puntaje_promedio": 2.0869,
+      "apego_promedio": 0.9419,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 0,
+        "Competent": 10,
+        "Proficient": 3,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "Honduras",
+      "n": 20,
+      "puntaje_promedio": 2.039,
+      "apego_promedio": 0.9281,
       "niveles": {
         "Novice": 0,
         "Advanced Beginner": 3,
-        "Competent": 4,
+        "Competent": 13,
+        "Proficient": 3,
+        "Expert": 1
+      }
+    },
+    {
+      "bu": "Perú",
+      "n": 52,
+      "puntaje_promedio": 2.0435,
+      "apego_promedio": 0.901,
+      "niveles": {
+        "Novice": 1,
+        "Advanced Beginner": 9,
+        "Competent": 29,
+        "Proficient": 9,
+        "Expert": 4
+      }
+    },
+    {
+      "bu": "El Salvador",
+      "n": 18,
+      "puntaje_promedio": 1.97,
+      "apego_promedio": 0.8743,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 5,
+        "Competent": 11,
         "Proficient": 1,
         "Expert": 1
       }
     },
     {
-      "bu": "Honduras",
-      "n": 16,
-      "puntaje_promedio": 2.0119,
-      "apego_promedio": 0.9309,
-      "niveles": {
-        "Novice": 1,
-        "Advanced Beginner": 2,
-        "Competent": 10,
-        "Proficient": 2,
-        "Expert": 1
-      }
-    },
-    {
-      "bu": "República Dominicana",
+      "bu": "Panama",
       "n": 7,
-      "puntaje_promedio": 2.0129,
-      "apego_promedio": 0.919,
+      "puntaje_promedio": 1.8743,
+      "apego_promedio": 0.8718,
       "niveles": {
         "Novice": 0,
-        "Advanced Beginner": 1,
-        "Competent": 5,
+        "Advanced Beginner": 3,
+        "Competent": 3,
         "Proficient": 1,
         "Expert": 0
       }
     },
     {
-      "bu": "Perú",
-      "n": 39,
-      "puntaje_promedio": 2.0579,
-      "apego_promedio": 0.9121,
+      "bu": "México",
+      "n": 144,
+      "puntaje_promedio": 1.9644,
+      "apego_promedio": 0.8627,
       "niveles": {
-        "Novice": 2,
-        "Advanced Beginner": 4,
-        "Competent": 24,
-        "Proficient": 5,
-        "Expert": 4
+        "Novice": 3,
+        "Advanced Beginner": 32,
+        "Competent": 79,
+        "Proficient": 28,
+        "Expert": 2
       }
     },
     {
-      "bu": "WH",
-      "n": 13,
-      "puntaje_promedio": 1.9215,
-      "apego_promedio": 0.8967,
+      "bu": "Ecuador",
+      "n": 19,
+      "puntaje_promedio": 1.9221,
+      "apego_promedio": 0.8363,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 6,
+        "Competent": 9,
+        "Proficient": 4,
+        "Expert": 0
+      }
+    },
+    {
+      "bu": "Guatemala",
+      "n": 6,
+      "puntaje_promedio": 1.7683,
+      "apego_promedio": 0.7935,
       "niveles": {
         "Novice": 1,
-        "Advanced Beginner": 2,
-        "Competent": 8,
+        "Advanced Beginner": 1,
+        "Competent": 2,
         "Proficient": 2,
         "Expert": 0
       }
     },
     {
       "bu": "Otros",
-      "n": 10,
-      "puntaje_promedio": 1.95,
-      "apego_promedio": 0.8938,
+      "n": 43,
+      "puntaje_promedio": 1.6707,
+      "apego_promedio": 0.7474,
       "niveles": {
-        "Novice": 0,
-        "Advanced Beginner": 2,
-        "Competent": 7,
-        "Proficient": 1,
-        "Expert": 0
-      }
-    },
-    {
-      "bu": "Ecuador",
-      "n": 20,
-      "puntaje_promedio": 1.95,
-      "apego_promedio": 0.8654,
-      "niveles": {
-        "Novice": 0,
-        "Advanced Beginner": 6,
-        "Competent": 9,
-        "Proficient": 5,
-        "Expert": 0
-      }
-    },
-    {
-      "bu": "México",
-      "n": 94,
-      "puntaje_promedio": 1.9691,
-      "apego_promedio": 0.8607,
-      "niveles": {
-        "Novice": 4,
-        "Advanced Beginner": 20,
-        "Competent": 45,
-        "Proficient": 24,
-        "Expert": 1
-      }
-    },
-    {
-      "bu": "COPE",
-      "n": 5,
-      "puntaje_promedio": 2.058,
-      "apego_promedio": 0.8558,
-      "niveles": {
-        "Novice": 0,
-        "Advanced Beginner": 0,
-        "Competent": 5,
-        "Proficient": 0,
-        "Expert": 0
-      }
-    },
-    {
-      "bu": "Guatemala",
-      "n": 7,
-      "puntaje_promedio": 1.8014,
-      "apego_promedio": 0.8153,
-      "niveles": {
-        "Novice": 1,
-        "Advanced Beginner": 1,
-        "Competent": 3,
+        "Novice": 6,
+        "Advanced Beginner": 13,
+        "Competent": 22,
         "Proficient": 2,
-        "Expert": 0
-      }
-    },
-    {
-      "bu": "Panama",
-      "n": 4,
-      "puntaje_promedio": 1.76,
-      "apego_promedio": 0.803,
-      "niveles": {
-        "Novice": 0,
-        "Advanced Beginner": 2,
-        "Competent": 1,
-        "Proficient": 1,
         "Expert": 0
       }
     }

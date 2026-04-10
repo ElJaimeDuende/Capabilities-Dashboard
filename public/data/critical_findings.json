@@ -1,68 +1,82 @@
 {
-  "total": 7,
+  "total": 9,
   "alta_severidad": 2,
-  "media_severidad": 4,
+  "media_severidad": 6,
   "positivos": 1,
   "findings": [
     {
       "severity": "alta",
       "category": "Gap crítico de capability",
       "title": "Brecha crítica: Estructuras complejas de datos",
-      "detail": "Apego promedio de 39% vs perfil requerido de 100%. Gap de 61 puntos.",
+      "detail": "Apego promedio de 42% vs perfil requerido de 100%. Gap de 58 puntos.",
       "benchmark": "Umbral acción: apego < 60%",
       "capability": "Estructuras complejas de datos"
     },
     {
       "severity": "alta",
       "category": "Gap crítico de capability",
-      "title": "Brecha crítica: Programación con Optplan",
-      "detail": "Apego promedio de 57% vs perfil requerido de 100%. Gap de 43 puntos.",
+      "title": "Brecha crítica: Gestión de Equipos",
+      "detail": "Apego promedio de 54% vs perfil requerido de 100%. Gap de 46 puntos.",
       "benchmark": "Umbral acción: apego < 60%",
-      "capability": "Programación con Optplan"
+      "capability": "Gestión de Equipos"
     },
     {
       "severity": "media",
       "category": "Distribución de niveles",
-      "title": "El Salvador: 33% en niveles iniciales",
-      "detail": "El Salvador tiene 3 de 9 personas en Novice o Advanced Beginner (33%). Benchmark de org madura: máx 25-30% en estos niveles.",
-      "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
-      "bu": "El Salvador"
-    },
-    {
-      "severity": "media",
-      "category": "Distribución de niveles",
-      "title": "Panama: 50% en niveles iniciales",
-      "detail": "Panama tiene 2 de 4 personas en Novice o Advanced Beginner (50%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "title": "Panama: 43% en niveles iniciales",
+      "detail": "Panama tiene 3 de 7 personas en Novice o Advanced Beginner (43%). Benchmark de org madura: máx 25-30% en estos niveles.",
       "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
       "bu": "Panama"
     },
     {
       "severity": "media",
+      "category": "Distribución de niveles",
+      "title": "Ecuador: 32% en niveles iniciales",
+      "detail": "Ecuador tiene 6 de 19 personas en Novice o Advanced Beginner (32%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
+      "bu": "Ecuador"
+    },
+    {
+      "severity": "media",
+      "category": "Distribución de niveles",
+      "title": "Guatemala: 33% en niveles iniciales",
+      "detail": "Guatemala tiene 2 de 6 personas en Novice o Advanced Beginner (33%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
+      "bu": "Guatemala"
+    },
+    {
+      "severity": "media",
+      "category": "Distribución de niveles",
+      "title": "Otros: 44% en niveles iniciales",
+      "detail": "Otros tiene 19 de 43 personas en Novice o Advanced Beginner (44%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
+      "bu": "Otros"
+    },
+    {
+      "severity": "media",
       "category": "Concentración de expertise",
-      "title": "6 capabilities con riesgo de persona clave",
-      "detail": "Las siguientes capabilities tienen ≤2 personas con alto dominio: Data Driven / Analítico, Estructuras complejas de datos, Finanzas, Gestión de Equipos, Mentalidad de crecimiento, Planificación de la estrategia. Riesgo de dependencia crítica.",
+      "title": "4 capabilities con riesgo de persona clave",
+      "detail": "Las siguientes capabilities tienen ≤2 personas con alto dominio: Estructuras complejas de datos, Finanzas, Gestión de Equipos, Mentalidad de crecimiento. Riesgo de dependencia crítica.",
       "benchmark": "Recomendado: ≥3 personas con dominio alto por capability crítica",
       "capabilities": [
-        "Data Driven / Analítico",
         "Estructuras complejas de datos",
         "Finanzas",
         "Gestión de Equipos",
-        "Mentalidad de crecimiento",
-        "Planificación de la estrategia"
+        "Mentalidad de crecimiento"
       ]
     },
     {
       "severity": "media",
       "category": "Adopción del proceso",
-      "title": "60% de participantes no revisó su reporte",
-      "detail": "60% de los evaluados no ha revisado su reporte de resultados. Esto limita el impacto del assessment en el desarrollo individual.",
+      "title": "79% de participantes no revisó su reporte",
+      "detail": "79% de los evaluados no ha revisado su reporte de resultados. Esto limita el impacto del assessment en el desarrollo individual.",
       "benchmark": "Recomendado: 100% revisión de reportes"
     },
     {
       "severity": "positivo",
       "category": "Apego al perfil global",
-      "title": "Apego global (90%) en rango best-in-class",
-      "detail": "El apego promedio de la organización es 90%, dentro del rango best-in-class (80-85%).",
+      "title": "Apego global (88%) en rango best-in-class",
+      "detail": "El apego promedio de la organización es 88%, dentro del rango best-in-class (80-85%).",
       "benchmark": "Best-in-class: 80-85%"
     }
   ]

@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useRef } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ReferenceLine } from 'recharts'
 import { useGaps, useRankings } from '../hooks/useData'
 import { pct, apegoBadge } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
 import InfoTooltip from '../components/InfoTooltip'
+import CopyChartBtn from '../components/CopyChartBtn'
 import type { Filters, RankingRow, CapabilityGap } from '../types'
 import { NIVEL_ORDER } from '../types'
 
@@ -18,6 +19,8 @@ const TIPS = {
 export default function Gaps({ filters, filterRows }: Props) {
   const { data: gaps, loading } = useGaps()
   const { data: rankings } = useRankings()
+  const capChartRef = useRef<HTMLDivElement>(null)
+  const radarChartRef = useRef<HTMLDivElement>(null)
   const [selectedBu] = useState<string>('')
   const [capSearch, setCapSearch] = useState('')
 
@@ -191,12 +194,14 @@ export default function Gaps({ filters, filterRows }: Props) {
             <input value={capSearch} onChange={e => setCapSearch(e.target.value)}
               placeholder="Buscar capability..."
               className="border border-[#E2E8F0] rounded-lg px-3 py-1.5 text-xs outline-none focus:border-[#1E3A5F] w-full sm:w-48" />
+            <CopyChartBtn chartRef={capChartRef} />
             <button onClick={exportCapGaps}
               className="text-xs text-[#64748B] border border-[#E2E8F0] rounded-lg px-2.5 py-1.5 hover:bg-[#F8FAFC] transition-colors shrink-0">
               ↓ CSV
             </button>
           </div>
         </div>
+        <div ref={capChartRef}>
         <ResponsiveContainer width="100%" height={chartHeight}>
           <BarChart
             data={capGaps.map(c => ({
@@ -225,6 +230,7 @@ export default function Gaps({ filters, filterRows }: Props) {
           <ChartLegend color="#F9A825" label="75–99%" />
           <ChartLegend color="#C62828" label="<75% brecha crítica" />
         </div>
+        </div>
       </div>
 
       {/* Radar by BU */}
@@ -237,11 +243,15 @@ export default function Gaps({ filters, filterRows }: Props) {
             </h3>
             <p className="text-xs text-[#64748B]">Top 8 capabilities con mayor brecha vs 100% · <span className="font-medium text-[#1E3A5F]">{activeBu}</span></p>
           </div>
-          <button onClick={exportRadar}
-            className="sm:ml-auto text-xs text-[#64748B] border border-[#E2E8F0] rounded-lg px-2.5 py-1.5 hover:bg-[#F8FAFC] transition-colors shrink-0">
-            ↓ CSV
-          </button>
+          <div className="sm:ml-auto flex items-center gap-2">
+            <CopyChartBtn chartRef={radarChartRef} />
+            <button onClick={exportRadar}
+              className="text-xs text-[#64748B] border border-[#E2E8F0] rounded-lg px-2.5 py-1.5 hover:bg-[#F8FAFC] transition-colors shrink-0">
+              ↓ CSV
+            </button>
+          </div>
         </div>
+        <div ref={radarChartRef}>
         <ResponsiveContainer width="100%" height={300}>
           <RadarChart data={radarData}>
             <PolarGrid stroke="#E2E8F0" />
@@ -254,6 +264,7 @@ export default function Gaps({ filters, filterRows }: Props) {
         <p className="text-xs text-center text-[#94A3B8] mt-1">
           Línea exterior = 100% (cumple perfil requerido). Área sombreada = apego actual.
         </p>
+        </div>
       </div>
 
       {/* Gap por rol table */}

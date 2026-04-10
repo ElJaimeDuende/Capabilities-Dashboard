@@ -1,10 +1,11 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import {
   ComposedChart, Scatter, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, ReferenceArea, ReferenceLine, Cell, Legend,
 } from 'recharts'
 import { pct } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
+import CopyChartBtn from './CopyChartBtn'
 import type { ScatterPoint, ScatterThresholds, Filters } from '../types'
 
 interface Props {
@@ -80,6 +81,7 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
   const { x_thresh: X, y_low: Y_LOW, y_high: Y_HIGH } = thresholds
   const [highlightZone, setHighlightZone] = useState<string | null>(null)
   const [selectedPerson, setSelectedPerson] = useState<string | null>(null)
+  const scatterChartRef = useRef<HTMLDivElement>(null)
 
   // Release selection on mouseup anywhere
   useEffect(() => {
@@ -266,10 +268,13 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
             Cada punto = una persona · Eje X = % apego al perfil · Eje Y = meses en el rol actual
           </p>
         </div>
-        <button onClick={exportScatter}
-          className="text-xs text-[#64748B] border border-[#E2E8F0] rounded-lg px-2.5 py-1 hover:bg-[#F8FAFC] transition-colors shrink-0">
-          ↓ CSV
-        </button>
+        <div className="flex items-center gap-2">
+          <CopyChartBtn chartRef={scatterChartRef} />
+          <button onClick={exportScatter}
+            className="text-xs text-[#64748B] border border-[#E2E8F0] rounded-lg px-2.5 py-1 hover:bg-[#F8FAFC] transition-colors shrink-0">
+            ↓ CSV
+          </button>
+        </div>
       </div>
 
       {/* Zone legend */}
@@ -287,7 +292,7 @@ export default function TendenciasScatter({ data, thresholds, filters }: Props) 
       </div>
 
       {/* Chart */}
-      <div className="relative">
+      <div className="relative" ref={scatterChartRef}>
       <p className="absolute top-3 right-6 z-10 text-[24px] text-black italic pointer-events-none leading-tight text-right max-w-xs">
         Presionar y mantener sobre un punto (participante) para ver su tendencia.
       </p>

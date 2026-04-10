@@ -1,9 +1,10 @@
-import { useState, useMemo, type ReactNode } from 'react'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, Cell } from 'recharts'
+import { useState, useMemo, useRef, type ReactNode } from 'react'
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, Cell, LabelList } from 'recharts'
 import { useSummary, useCriticalFindings, useBenchmarks, useRankings } from '../hooks/useData'
 import { pct, score, apegoBadge } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
 import InfoTooltip from '../components/InfoTooltip'
+import CopyChartBtn from '../components/CopyChartBtn'
 import type { Filters, BuSummary, RankingRow } from '../types'
 import { NIVEL_ORDER, NIVEL_COLORS } from '../types'
 
@@ -34,6 +35,8 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
   const { data: benchmarks } = useBenchmarks()
   const [sortCol, setSortCol] = useState<SortCol>('apego_promedio')
   const [sortDir, setSortDir] = useState<SortDir>('desc')
+  const distChartRef = useRef<HTMLDivElement>(null)
+  const buChartRef = useRef<HTMLDivElement>(null)
 
   const hasFilter = filters.bus.length > 0 || filters.work_locations.length > 0 ||
     filters.areas.length > 0 || filters.roles.length > 0 || filters.años.length > 0
@@ -94,14 +97,26 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
     return summary?.nivel_distribution ?? {}
   }, [filteredRows, summary])
 
+  const nivelCounts = useMemo(() => {
+    if (filteredRows) {
+      return Object.fromEntries(NIVEL_ORDER.map(n => [n, new Set(filteredRows.filter(r => r.nivel === n).map(r => r.nombre)).size]))
+    }
+    return summary?.nivel_counts ?? {}
+  }, [filteredRows, summary])
+
   if (ls || !kpi) return <Loader />
 
   const badge = apegoBadge(kpi.apego_promedio_global)
+
+  const totalPersons = filteredRows
+    ? new Set(filteredRows.map(r => r.nombre)).size
+    : (summary?.total_participantes ?? 0)
 
   const distData = NIVEL_ORDER.map(n => ({
     nivel: n.replace('Advanced Beginner', 'Adv. Beginner'),
     actual: Math.round((nivelDist[n] ?? 0) * 100),
     madura: benchmarks ? Math.round((benchmarks.nivel_distribution.mature_org[n] ?? 0) * 100) : 0,
+    count: nivelCounts[n] ?? Math.round((nivelDist[n] ?? 0) * totalPersons),
   }))
 
   const buChart = [...buData]
@@ -185,21 +200,40 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Distribution vs benchmark */}
         <div className="bg-white rounded-xl border border-[#E2E8F0] p-4">
-          <h3 className="text-sm font-semibold text-[#1E293B] mb-1">Distribución de niveles vs benchmark</h3>
+          <div className="flex items-start justify-between mb-1">
+            <h3 className="text-sm font-semibold text-[#1E293B]">Distribución de niveles vs benchmark</h3>
+            <CopyChartBtn chartRef={distChartRef} />
+          </div>
           <p className="text-xs text-[#64748B] mb-4">ABI vs organización madura (Gartner/Dreyfus)</p>
-          <ResponsiveContainer width="100%" height={220}>
-            <BarChart data={distData} barGap={4} barCategoryGap="30%">
-              <XAxis dataKey="nivel" tick={{ fontSize: 10, fill: '#64748B' }} />
-              <YAxis tick={{ fontSize: 10, fill: '#64748B' }} unit="%" domain={[0, 60]} />
-              <Tooltip formatter={(v: unknown) => `${v}%`} />
-              <Bar dataKey="actual" name="ABI" radius={[4,4,0,0]}>
-                {distData.map((d) => (
-                  <Cell key={d.nivel} fill={NIVEL_COLORS[d.nivel.replace('Adv. Beginner', 'Advanced Beginner') as keyof typeof NIVEL_COLORS] ?? '#1E3A5F'} />
-                ))}
-              </Bar>
-              <Bar dataKey="madura" name="Org. madura" fill="#CBD5E1" radius={[4,4,0,0]} />
-            </BarChart>
-          </ResponsiveContainer>
+          <div ref={distChartRef}>
+            <ResponsiveContainer width="100%" height={220}>
+              <BarChart data={distData} barGap={4} barCategoryGap="30%">
+                <XAxis dataKey="nivel" tick={{ fontSize: 10, fill: '#64748B' }} />
+                <YAxis tick={{ fontSize: 10, fill: '#64748B' }} unit="%" domain={[0, 60]} />
+                <Tooltip formatter={(v: unknown, name: unknown) => name === 'ABI' ? `${v}%` : `${v}%`}
+                  content={({ active, payload, label }) => {
+                    if (!active || !payload?.length) return null
+                    const d = distData.find(x => x.nivel === label)
+                    return (
+                      <div className="bg-white border border-[#E2E8F0] rounded-xl shadow p-2 text-xs">
+                        <p className="font-semibold text-[#1E293B] mb-1">{label}</p>
+                        {payload.map((p: any) => (
+                          <p key={p.name} style={{ color: p.color }}>{p.name}: {p.value}%{p.name === 'ABI' && d ? ` (${d.count} personas)` : ''}</p>
+                        ))}
+                      </div>
+                    )
+                  }}
+                />
+                <Bar dataKey="actual" name="ABI" radius={[4,4,0,0]}>
+                  {distData.map((d) => (
+                    <Cell key={d.nivel} fill={NIVEL_COLORS[d.nivel.replace('Adv. Beginner', 'Advanced Beginner') as keyof typeof NIVEL_COLORS] ?? '#1E3A5F'} />
+                  ))}
+                  <LabelList dataKey="count" position="top" style={{ fontSize: 10, fill: '#475569' }} formatter={(v: any) => v > 0 ? v : ''} />
+                </Bar>
+                <Bar dataKey="madura" name="Org. madura" fill="#CBD5E1" radius={[4,4,0,0]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
           <div className="flex gap-4 mt-2 justify-center">
             <ChartLegend color="#1E3A5F" label="ABI" />
             <ChartLegend color="#CBD5E1" label="Org. madura" />
@@ -208,27 +242,32 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
 
         {/* BU apego % chart */}
         <div className="bg-white rounded-xl border border-[#E2E8F0] p-4">
-          <h3 className="text-sm font-semibold text-[#1E293B] mb-1">Apego al perfil por BU</h3>
+          <div className="flex items-start justify-between mb-1">
+            <h3 className="text-sm font-semibold text-[#1E293B]">Apego al perfil por BU</h3>
+            <CopyChartBtn chartRef={buChartRef} />
+          </div>
           <p className="text-xs text-[#64748B] mb-4">% de cumplimiento del perfil requerido · Meta: 100%</p>
-          <ResponsiveContainer width="100%" height={chartHeight}>
-            <BarChart data={buChart} layout="vertical" barCategoryGap="25%">
-              <XAxis type="number" domain={[0, 140]} tick={{ fontSize: 10, fill: '#64748B' }} unit="%" />
-              <YAxis type="category" dataKey="bu" width={120} tick={{ fontSize: 10, fill: '#64748B' }} />
-              <Tooltip formatter={(v: unknown) => `${v}%`} />
-              <ReferenceLine x={100} stroke="#1E3A5F" strokeDasharray="4 2"
-                label={{ value: '100% Meta', fill: '#1E3A5F', fontSize: 10, position: 'top' }} />
-              <Bar dataKey="apego_pct" name="Apego %" radius={[0,4,4,0]}>
-                {buChart.map((d) => (
-                  <Cell key={d.bu}
-                    fill={d.apego_promedio >= 1.0 ? '#2E7D32' : d.apego_promedio >= 0.75 ? '#F9A825' : '#C62828'} />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-          <div className="flex gap-3 mt-2 justify-center flex-wrap">
-            <ChartLegend color="#2E7D32" label="≥100% (cumple perfil)" />
-            <ChartLegend color="#F9A825" label="75–99%" />
-            <ChartLegend color="#C62828" label="<75%" />
+          <div ref={buChartRef}>
+            <ResponsiveContainer width="100%" height={chartHeight}>
+              <BarChart data={buChart} layout="vertical" barCategoryGap="25%">
+                <XAxis type="number" domain={[0, 140]} tick={{ fontSize: 10, fill: '#64748B' }} unit="%" />
+                <YAxis type="category" dataKey="bu" width={120} tick={{ fontSize: 10, fill: '#64748B' }} />
+                <Tooltip formatter={(v: unknown) => `${v}%`} />
+                <ReferenceLine x={100} stroke="#1E3A5F" strokeDasharray="4 2"
+                  label={{ value: '100% Meta', fill: '#1E3A5F', fontSize: 10, position: 'top' }} />
+                <Bar dataKey="apego_pct" name="Apego %" radius={[0,4,4,0]}>
+                  {buChart.map((d) => (
+                    <Cell key={d.bu}
+                      fill={d.apego_promedio >= 1.0 ? '#2E7D32' : d.apego_promedio >= 0.75 ? '#F9A825' : '#C62828'} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+            <div className="flex gap-3 mt-2 justify-center flex-wrap">
+              <ChartLegend color="#2E7D32" label="≥100% (cumple perfil)" />
+              <ChartLegend color="#F9A825" label="75–99%" />
+              <ChartLegend color="#C62828" label="<75%" />
+            </div>
           </div>
         </div>
       </div>

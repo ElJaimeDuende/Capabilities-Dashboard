@@ -68,30 +68,56 @@
       "Empuje / Orientación a resultados",
       "Colaboración",
       "Resiliencia",
+      "Grit (resilencia + empuje)",
       "Negociación",
-      "Planificación y organización"
+      "Planificación y organización",
+      "Gestión de Equipos",
+      "Gestión de interesados",
+      "Mentalidad de crecimiento",
+      "Pensamiento Sistémico",
+      "Sensibilidad del mercado",
+      "Toma de decisiones"
     ],
     "Técnicas de Planning": [
       "Gestión de inventarios",
+      "Gestión de la cadena de suministro",
       "Estándares de logística inversa LCP y mantenimiento del inventario",
+      "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
       "Transportación y logística",
       "Manufactura Esbelta",
       "Técnicas de programación",
       "Estándares VPO programación y nivel de servicio",
       "Gestión de riesgos",
-      "Metodología S&OP",
-      "Metodología MRP/MPS",
-      "Pronóstico de la demanda",
-      "DDMRP",
-      "Control de la producción",
-      "Planeación de capacidad"
+      "Estándar LCP para Planeación de la Demanda",
+      "Estándar LCP para despliegue de inventario",
+      "Estándares de MRP LCP",
+      "Estándares de S&OP LCP + SNP LCP",
+      "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
+      "Planeación Operativa de Supply Chain",
+      "Planeación y gestión de la producción",
+      "Planificación de aprovisionamiento",
+      "Planificación de capacidad",
+      "Planificación de la estrategia",
+      "Programación con Optplan",
+      "Pronóstico colaborativo",
+      "Técnicas de optimización",
+      "Principios de manufactura"
     ],
     "Herramientas / Datos": [
       "Excel",
       "Orientación a datos",
-      "SAP",
-      "Power BI",
-      "Sistemas de planeación"
+      "Data Driven / Analítico",
+      "Estructuras complejas de datos",
+      "Gestión por sistemas",
+      "Métodos estadísticos y de pronóstico"
+    ],
+    "Finanzas": [
+      "Finanzas",
+      "Finanzas empresariales"
+    ],
+    "Mejora Continua": [
+      "Mejora continua",
+      "Resolución de problemas y causa raíz"
     ],
     "Idiomas": [
       "Inglés"

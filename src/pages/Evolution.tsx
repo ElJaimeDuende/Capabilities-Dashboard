@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, LineChart, Line, Legend, ReferenceLine } from 'recharts'
 import { useEvolution } from '../hooks/useData'
 import { pct, score, delta } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
 import TendenciasScatter from '../components/TendenciasScatter'
+import CopyChartBtn from '../components/CopyChartBtn'
 import { NIVEL_ORDER, NIVEL_COLORS } from '../types'
 import type { Filters, RankingRow, PersonEvolution } from '../types'
 
@@ -15,6 +16,7 @@ interface Props {
 export default function Evolution({ filters }: Props) {
   const { data: evolution, loading } = useEvolution()
   const [selectedPerson, setSelectedPerson] = useState<string>('__todos__')
+  const distChartRef = useRef<HTMLDivElement>(null)
 
   if (loading || !evolution) return <Loader />
 
@@ -264,6 +266,7 @@ export default function Evolution({ filters }: Props) {
           <h3 className="text-sm font-semibold text-[#1E293B]">
             Distribución de niveles {isAnual ? 'por año' : 'por periodo'}
           </h3>
+          <div className="ml-auto"><CopyChartBtn chartRef={distChartRef} /></div>
           {[
             ...filters.bus.map(v => ({ label: v, key: 'bu-' + v })),
             ...filters.work_locations.map(v => ({ label: v, key: 'wl-' + v })),
@@ -277,16 +280,18 @@ export default function Evolution({ filters }: Props) {
           ))}
         </div>
         <p className="text-xs text-[#64748B] mb-4">Evolución hacia benchmark de organización madura</p>
-        <ResponsiveContainer width="100%" height={220}>
-          <BarChart data={distData} barCategoryGap="30%">
-            <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#64748B' }} />
-            <YAxis unit="%" tick={{ fontSize: 10, fill: '#64748B' }} />
-            <Tooltip formatter={(v: unknown) => `${v}%`} />
-            {NIVEL_ORDER.map(n => (
-              <Bar key={n} dataKey={n} stackId="a" fill={NIVEL_COLORS[n]} name={n} />
-            ))}
-          </BarChart>
-        </ResponsiveContainer>
+        <div ref={distChartRef}>
+          <ResponsiveContainer width="100%" height={220}>
+            <BarChart data={distData} barCategoryGap="30%">
+              <XAxis dataKey="label" tick={{ fontSize: 11, fill: '#64748B' }} />
+              <YAxis unit="%" tick={{ fontSize: 10, fill: '#64748B' }} />
+              <Tooltip formatter={(v: unknown) => `${v}%`} />
+              {NIVEL_ORDER.map(n => (
+                <Bar key={n} dataKey={n} stackId="a" fill={NIVEL_COLORS[n]} name={n} />
+              ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
         <div className="flex flex-wrap gap-3 mt-2 justify-center">
           {NIVEL_ORDER.map(n => (
             <div key={n} className="flex items-center gap-1.5">
@@ -497,6 +502,7 @@ function BuTrendPanel({ buTrend, isAnual, scatter, filters }: {
   scatter: any[]
   filters: Filters
 }) {
+  const buTrendChartRef = useRef<HTMLDivElement>(null)
   // Compute KPIs from scatter filtered by current BU + area + wl filters
   const pts = scatter.filter(p =>
     (!filters.bus.length || filters.bus.includes(p.bu)) &&
@@ -579,9 +585,12 @@ function BuTrendPanel({ buTrend, isAnual, scatter, filters }: {
 
   return (
     <div className="bg-white rounded-xl border border-[#E2E8F0] p-4">
-      <h3 className="text-sm font-semibold text-[#1E293B] mb-1">
-        Tendencia de puntaje por BU {isAnual ? '(anual)' : '(por periodo)'}
-      </h3>
+      <div className="flex items-start justify-between mb-1">
+        <h3 className="text-sm font-semibold text-[#1E293B]">
+          Tendencia de puntaje por BU {isAnual ? '(anual)' : '(por periodo)'}
+        </h3>
+        <CopyChartBtn chartRef={buTrendChartRef} />
+      </div>
       <p className="text-xs text-[#64748B] mb-4">
         {isAnual ? 'Cambio entre años para BUs con datos en ambos' : 'Cambio entre periodos para BUs con datos en ambos'}
       </p>
@@ -593,7 +602,7 @@ function BuTrendPanel({ buTrend, isAnual, scatter, filters }: {
       )}
       <div className="flex gap-4">
         {/* Chart — 50% */}
-        <div className="w-1/2 min-w-0">
+        <div className="w-1/2 min-w-0" ref={buTrendChartRef}>
           <ResponsiveContainer width="100%" height={240}>
             <LineChart>
               <XAxis dataKey="label" type="category" allowDuplicatedCategory={false} tick={{ fontSize: 10, fill: '#64748B' }} />

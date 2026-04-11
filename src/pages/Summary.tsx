@@ -1,11 +1,11 @@
 import { useState, useMemo, useRef, type ReactNode } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, Cell, LabelList } from 'recharts'
-import { useSummary, useCriticalFindings, useBenchmarks, useRankings } from '../hooks/useData'
+import { useSummary, useCriticalFindings, useBenchmarks, useRankings, useGaps } from '../hooks/useData'
 import { pct, score, apegoBadge } from '../utils/format'
 import { downloadCsv } from '../utils/csv'
 import InfoTooltip from '../components/InfoTooltip'
 import CopyChartBtn from '../components/CopyChartBtn'
-import type { Filters, BuSummary, RankingRow } from '../types'
+import type { Filters, BuSummary, RankingRow, Finding, CriticalFindings } from '../types'
 import { NIVEL_ORDER, NIVEL_COLORS } from '../types'
 
 interface Props {
@@ -33,6 +33,7 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
   const { data: rankings } = useRankings()
   const { data: findings } = useCriticalFindings()
   const { data: benchmarks } = useBenchmarks()
+  const { data: gaps } = useGaps()
   const [sortCol, setSortCol] = useState<SortCol>('apego_promedio')
   const [sortDir, setSortDir] = useState<SortDir>('desc')
   const distChartRef = useRef<HTMLDivElement>(null)
@@ -40,6 +41,73 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
 
   const hasFilter = filters.bus.length > 0 || filters.work_locations.length > 0 ||
     filters.areas.length > 0 || filters.roles.length > 0 || filters.años.length > 0
+
+  // Dynamic findings computed from gaps.json by_year when a single year is selected
+  const dynamicFindings = useMemo<CriticalFindings | null>(() => {
+    if (!gaps || filters.años.length !== 1) return null
+    const year = filters.años[0]
+
+    type CapEntry = { capability: string; apego: number; n: number; perfil: number; gap: number }
+    const capData: CapEntry[] = gaps.by_capability
+      .map(cap => {
+        const yd = cap.by_year[year]
+        if (!yd || yd.n === 0) return null
+        return {
+          capability: cap.capability,
+          apego: yd.apego,
+          n: yd.n,
+          perfil: cap.perfil_requerido,
+          gap: cap.perfil_requerido - yd.apego,
+        }
+      })
+      .filter(Boolean) as CapEntry[]
+
+    capData.sort((a, b) => b.gap - a.gap)
+
+    const result: Finding[] = []
+
+    // Alta: apego < 60%
+    capData.filter(c => c.apego < 0.60).slice(0, 3).forEach(c => result.push({
+      severity: 'alta',
+      category: 'Gap crítico de capability',
+      title: `Brecha crítica: ${c.capability}`,
+      detail: `Apego de ${Math.round(c.apego * 100)}% vs perfil requerido ${Math.round(c.perfil * 100)}%. Gap de ${Math.round(c.gap * 100)} puntos en ${year}.`,
+      benchmark: 'Umbral acción: apego < 60%',
+      capability: c.capability,
+    }))
+
+    // Media: 60% ≤ apego < 80%
+    capData.filter(c => c.apego >= 0.60 && c.apego < 0.80).slice(0, 3).forEach(c => result.push({
+      severity: 'media',
+      category: 'Gap moderado de capability',
+      title: `Gap moderado: ${c.capability}`,
+      detail: `Apego de ${Math.round(c.apego * 100)}% en ${year}. Gap de ${Math.round(c.gap * 100)} puntos al perfil requerido.`,
+      benchmark: 'Umbral acción: apego < 80%',
+      capability: c.capability,
+    }))
+
+    // Positivo: apego ≥ 100%
+    capData.filter(c => c.apego >= 1.0).slice(0, 2).forEach(c => result.push({
+      severity: 'positivo',
+      category: 'Fortaleza',
+      title: `Fortaleza: ${c.capability}`,
+      detail: `Apego de ${Math.round(c.apego * 100)}% en ${year}, superando o cumpliendo el perfil requerido.`,
+      benchmark: 'Meta: ≥100% apego al perfil',
+      capability: c.capability,
+    }))
+
+    return {
+      total: result.length,
+      alta_severidad: result.filter(f => f.severity === 'alta').length,
+      media_severidad: result.filter(f => f.severity === 'media').length,
+      positivos: result.filter(f => f.severity === 'positivo').length,
+      findings: result,
+    }
+  }, [gaps, filters.años])
+
+  // Use dynamic findings when a single year is selected, otherwise use static JSON
+  const activeFindingsData = dynamicFindings ?? findings
+  const findingsLabel = filters.años.length === 1 ? `${filters.años[0]}` : 'Global'
 
   // When a filter is active, recompute KPIs and bu_summary from raw rankings rows
   const filteredRows = useMemo<RankingRow[] | null>(() => {
@@ -168,16 +236,22 @@ export default function Summary({ filters, filterBuSummary, filterRows }: Props)
       </div>
 
       {/* Critical findings */}
-      {findings && findings.findings.length > 0 && (
+      {activeFindingsData && activeFindingsData.findings.length > 0 && (
         <div>
-          <h3 className="text-sm font-semibold text-[#1E293B] mb-3">
+          <h3 className="text-sm font-semibold text-[#1E293B] mb-3 flex items-center gap-2 flex-wrap">
             Hallazgos críticos
-            <span className="ml-2 bg-[#FFEBEE] text-[#C62828] text-xs px-2 py-0.5 rounded-full">
-              {findings.alta_severidad} alta · {findings.media_severidad} media
+            <span className="bg-[#FFEBEE] text-[#C62828] text-xs px-2 py-0.5 rounded-full">
+              {activeFindingsData.alta_severidad} alta · {activeFindingsData.media_severidad} media
             </span>
+            <span className="bg-[#EFF6FF] text-[#1E3A5F] text-xs px-2 py-0.5 rounded-full">
+              {findingsLabel}
+            </span>
+            {dynamicFindings && (
+              <span className="text-xs text-[#94A3B8] font-normal italic">Calculado desde datos reales del año</span>
+            )}
           </h3>
           <div className="space-y-2">
-            {findings.findings.slice(0, 6).map((f, i) => (
+            {activeFindingsData.findings.slice(0, 6).map((f, i) => (
               <div key={i} className={`rounded-xl p-3.5 border-l-4 bg-white
                 ${f.severity === 'alta' ? 'border-[#C62828]' : f.severity === 'positivo' ? 'border-[#2E7D32]' : 'border-[#F9A825]'}`}>
                 <div className="flex items-start gap-2">

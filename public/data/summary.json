@@ -15,7 +15,6 @@
     "Honduras",
     "MAZ",
     "México",
-    "Otros",
     "Panama",
     "Perú",
     "República Dominicana"
@@ -226,19 +225,6 @@
       }
     },
     {
-      "bu": "MAZ",
-      "n": 6,
-      "puntaje_promedio": 1.91,
-      "apego_promedio": 0.8797,
-      "niveles": {
-        "Novice": 0,
-        "Advanced Beginner": 1,
-        "Competent": 5,
-        "Proficient": 0,
-        "Expert": 0
-      }
-    },
-    {
       "bu": "El Salvador",
       "n": 18,
       "puntaje_promedio": 1.97,
@@ -304,14 +290,14 @@
       }
     },
     {
-      "bu": "Otros",
-      "n": 37,
-      "puntaje_promedio": 1.6319,
-      "apego_promedio": 0.7259,
+      "bu": "MAZ",
+      "n": 43,
+      "puntaje_promedio": 1.6707,
+      "apego_promedio": 0.7474,
       "niveles": {
         "Novice": 6,
-        "Advanced Beginner": 12,
-        "Competent": 17,
+        "Advanced Beginner": 13,
+        "Competent": 22,
         "Proficient": 2,
         "Expert": 0
       }

@@ -31,8 +31,8 @@
           "n": 2
         },
         "MAZ": {
-          "apego": 0.3333,
-          "n": 3
+          "apego": 0.282,
+          "n": 5
         },
         "Honduras": {
           "apego": 0.546,
@@ -49,10 +49,6 @@
         "CAC": {
           "apego": 0,
           "n": 1
-        },
-        "Otros": {
-          "apego": 0.205,
-          "n": 2
         }
       },
       "by_year": {
@@ -127,6 +123,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.205,
+            "n": 2
+          },
           "2026": {
             "apego": 0.3333,
             "n": 3
@@ -166,12 +166,6 @@
           "2025": {
             "apego": 0,
             "n": 1
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.205,
-            "n": 2
           }
         }
       },
@@ -331,6 +325,12 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "DP Estadistico": {
+              "apego": 0.205,
+              "n": 2
+            }
+          },
           "2026": {
             "DP Estadistico": {
               "apego": 0.3333,
@@ -393,14 +393,6 @@
             "DP Estadistico": {
               "apego": 0,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "DP Estadistico": {
-              "apego": 0.205,
-              "n": 2
             }
           }
         }
@@ -901,12 +893,8 @@
           "n": 6
         },
         "MAZ": {
-          "apego": 0.3767,
-          "n": 1
-        },
-        "Otros": {
-          "apego": 0,
-          "n": 1
+          "apego": 0.1883,
+          "n": 2
         }
       },
       "by_year": {
@@ -967,14 +955,12 @@
           }
         },
         "MAZ": {
-          "2026": {
-            "apego": 0.3767,
-            "n": 1
-          }
-        },
-        "Otros": {
           "2025": {
             "apego": 0,
+            "n": 1
+          },
+          "2026": {
+            "apego": 0.3767,
             "n": 1
           }
         }
@@ -1151,17 +1137,15 @@
           }
         },
         "MAZ": {
-          "2026": {
-            "Retpack": {
-              "apego": 0.3767,
-              "n": 1
-            }
-          }
-        },
-        "Otros": {
           "2025": {
             "MRP Táctico": {
               "apego": 0,
+              "n": 1
+            }
+          },
+          "2026": {
+            "Retpack": {
+              "apego": 0.3767,
               "n": 1
             }
           }
@@ -1745,8 +1729,8 @@
           "n": 16
         },
         "MAZ": {
-          "apego": 0.5615,
-          "n": 6
+          "apego": 0.4917,
+          "n": 11
         },
         "Guatemala": {
           "apego": 0.6889,
@@ -1767,10 +1751,6 @@
         "CAC": {
           "apego": 0.7551,
           "n": 20
-        },
-        "Otros": {
-          "apego": 0.408,
-          "n": 5
         }
       },
       "by_year": {
@@ -1835,6 +1815,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.408,
+            "n": 5
+          },
           "2026": {
             "apego": 0.5615,
             "n": 6
@@ -1888,12 +1872,6 @@
           "2026": {
             "apego": 0.7801,
             "n": 7
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.408,
-            "n": 5
           }
         }
       },
@@ -2491,6 +2469,24 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.45,
+              "n": 1
+            },
+            "MRP Táctico": {
+              "apego": 0,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 1.13,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.23,
+              "n": 2
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 0,
@@ -2715,26 +2711,6 @@
               "n": 1
             }
           }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.45,
-              "n": 1
-            },
-            "MRP Táctico": {
-              "apego": 0,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 1.13,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.23,
-              "n": 2
-            }
-          }
         }
       },
       "by_work_location": {
@@ -2859,8 +2835,8 @@
           "n": 16
         },
         "MAZ": {
-          "apego": 0.6176,
-          "n": 6
+          "apego": 0.4314,
+          "n": 11
         },
         "Guatemala": {
           "apego": 0.7643,
@@ -2881,10 +2857,6 @@
         "CAC": {
           "apego": 0.6531,
           "n": 20
-        },
-        "Otros": {
-          "apego": 0.208,
-          "n": 5
         }
       },
       "by_year": {
@@ -2949,6 +2921,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.208,
+            "n": 5
+          },
           "2026": {
             "apego": 0.6176,
             "n": 6
@@ -3002,12 +2978,6 @@
           "2026": {
             "apego": 0.8002,
             "n": 7
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.208,
-            "n": 5
           }
         }
       },
@@ -3605,6 +3575,24 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.19,
+              "n": 1
+            },
+            "MRP Táctico": {
+              "apego": 0,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 0,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.425,
+              "n": 2
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 0,
@@ -3829,26 +3817,6 @@
               "n": 1
             }
           }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.19,
-              "n": 1
-            },
-            "MRP Táctico": {
-              "apego": 0,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 0,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.425,
-              "n": 2
-            }
-          }
         }
       },
       "by_work_location": {
@@ -3977,8 +3945,8 @@
           "n": 2
         },
         "MAZ": {
-          "apego": 0.8333,
-          "n": 3
+          "apego": 0.566,
+          "n": 5
         },
         "Honduras": {
           "apego": 0.7243,
@@ -3995,10 +3963,6 @@
         "CAC": {
           "apego": 0.33,
           "n": 1
-        },
-        "Otros": {
-          "apego": 0.165,
-          "n": 2
         }
       },
       "by_year": {
@@ -4073,6 +4037,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.165,
+            "n": 2
+          },
           "2026": {
             "apego": 0.8333,
             "n": 3
@@ -4112,12 +4080,6 @@
           "2025": {
             "apego": 0.33,
             "n": 1
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.165,
-            "n": 2
           }
         }
       },
@@ -4277,6 +4239,12 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "DP Estadistico": {
+              "apego": 0.165,
+              "n": 2
+            }
+          },
           "2026": {
             "DP Estadistico": {
               "apego": 0.8333,
@@ -4339,14 +4307,6 @@
             "DP Estadistico": {
               "apego": 0.33,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "DP Estadistico": {
-              "apego": 0.165,
-              "n": 2
             }
           }
         }
@@ -4433,8 +4393,8 @@
           "n": 17
         },
         "MAZ": {
-          "apego": 0.7761,
-          "n": 6
+          "apego": 0.7979,
+          "n": 11
         },
         "Guatemala": {
           "apego": 0.8942,
@@ -4455,10 +4415,6 @@
         "CAC": {
           "apego": 0.7385,
           "n": 21
-        },
-        "Otros": {
-          "apego": 0.824,
-          "n": 5
         }
       },
       "by_year": {
@@ -4523,6 +4479,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.824,
+            "n": 5
+          },
           "2026": {
             "apego": 0.7761,
             "n": 6
@@ -4576,12 +4536,6 @@
           "2026": {
             "apego": 0.8262,
             "n": 8
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.824,
-            "n": 5
           }
         }
       },
@@ -5207,6 +5161,24 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.92,
+              "n": 1
+            },
+            "MRP Táctico": {
+              "apego": 0.72,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 0.94,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.77,
+              "n": 2
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 1.056,
@@ -5445,26 +5417,6 @@
             "MRP Táctico": {
               "apego": 0.68,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.92,
-              "n": 1
-            },
-            "MRP Táctico": {
-              "apego": 0.72,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 0.94,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.77,
-              "n": 2
             }
           }
         }
@@ -6645,8 +6597,8 @@
           "n": 2
         },
         "MAZ": {
-          "apego": 1.07,
-          "n": 3
+          "apego": 0.7017,
+          "n": 6
         },
         "Honduras": {
           "apego": 0.63,
@@ -6658,10 +6610,6 @@
         },
         "El Salvador": {
           "apego": 0.79,
-          "n": 3
-        },
-        "Otros": {
-          "apego": 0.3333,
           "n": 3
         },
         "CAC": {
@@ -6741,6 +6689,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.3333,
+            "n": 3
+          },
           "2026": {
             "apego": 1.07,
             "n": 3
@@ -6774,12 +6726,6 @@
           "2026": {
             "apego": 1.17,
             "n": 1
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.3333,
-            "n": 3
           }
         },
         "CAC": {
@@ -6993,6 +6939,16 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.4,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.3,
+              "n": 2
+            }
+          },
           "2026": {
             "DP Estadistico": {
               "apego": 1.07,
@@ -7055,18 +7011,6 @@
             "DP Operativo": {
               "apego": 1.17,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.4,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.3,
-              "n": 2
             }
           }
         },
@@ -7793,8 +7737,8 @@
           "n": 16
         },
         "MAZ": {
-          "apego": 1.0727,
-          "n": 6
+          "apego": 0.9436,
+          "n": 10
         },
         "Guatemala": {
           "apego": 1.6922,
@@ -7815,10 +7759,6 @@
         "CAC": {
           "apego": 0.9967,
           "n": 20
-        },
-        "Otros": {
-          "apego": 0.75,
-          "n": 4
         }
       },
       "by_year": {
@@ -7883,6 +7823,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.75,
+            "n": 4
+          },
           "2026": {
             "apego": 1.0727,
             "n": 6
@@ -7936,12 +7880,6 @@
           "2026": {
             "apego": 0.7961,
             "n": 7
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.75,
-            "n": 4
           }
         }
       },
@@ -8539,6 +8477,20 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.5,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.5,
+              "n": 2
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 0,
@@ -8761,22 +8713,6 @@
             "MRP Táctico": {
               "apego": 0,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.5,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.5,
-              "n": 2
             }
           }
         }
@@ -9985,8 +9921,8 @@
           "n": 8
         },
         "MAZ": {
-          "apego": 0.6817,
-          "n": 4
+          "apego": 0.7067,
+          "n": 7
         },
         "CAC": {
           "apego": 0.81,
@@ -9995,10 +9931,6 @@
         "El Salvador": {
           "apego": 0.8275,
           "n": 8
-        },
-        "Otros": {
-          "apego": 0.74,
-          "n": 3
         }
       },
       "by_year": {
@@ -10093,6 +10025,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.74,
+            "n": 3
+          },
           "2026": {
             "apego": 0.6817,
             "n": 4
@@ -10116,12 +10052,6 @@
           "2026": {
             "apego": 1.06,
             "n": 2
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.74,
-            "n": 3
           }
         }
       },
@@ -10633,6 +10563,16 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 1,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.61,
+              "n": 2
+            }
+          },
           "2026": {
             "DP Estadistico": {
               "apego": 0.6689,
@@ -10689,18 +10629,6 @@
             "DRP": {
               "apego": 0.805,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 1,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.61,
-              "n": 2
             }
           }
         }
@@ -11359,8 +11287,8 @@
           "n": 16
         },
         "MAZ": {
-          "apego": 0.9253,
-          "n": 6
+          "apego": 0.8929,
+          "n": 11
         },
         "Guatemala": {
           "apego": 0.921,
@@ -11381,10 +11309,6 @@
         "CAC": {
           "apego": 0.9982,
           "n": 20
-        },
-        "Otros": {
-          "apego": 0.854,
-          "n": 5
         }
       },
       "by_year": {
@@ -11449,6 +11373,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.854,
+            "n": 5
+          },
           "2026": {
             "apego": 0.9253,
             "n": 6
@@ -11502,12 +11430,6 @@
           "2026": {
             "apego": 1.1148,
             "n": 7
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.854,
-            "n": 5
           }
         }
       },
@@ -12105,6 +12027,24 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.71,
+              "n": 1
+            },
+            "MRP Táctico": {
+              "apego": 1,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 1.45,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.555,
+              "n": 2
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 1.44,
@@ -12329,26 +12269,6 @@
               "n": 1
             }
           }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.71,
-              "n": 1
-            },
-            "MRP Táctico": {
-              "apego": 1,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 1.45,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.555,
-              "n": 2
-            }
-          }
         }
       },
       "by_work_location": {
@@ -12469,8 +12389,8 @@
           "n": 10
         },
         "MAZ": {
-          "apego": 1.3425,
-          "n": 2
+          "apego": 1.2283,
+          "n": 3
         },
         "Honduras": {
           "apego": 0.8637,
@@ -12491,10 +12411,6 @@
         "Guatemala": {
           "apego": 0.73,
           "n": 3
-        },
-        "Otros": {
-          "apego": 1,
-          "n": 1
         }
       },
       "by_year": {
@@ -12549,6 +12465,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 1,
+            "n": 1
+          },
           "2026": {
             "apego": 1.3425,
             "n": 2
@@ -12601,12 +12521,6 @@
           },
           "2026": {
             "apego": 0.35,
-            "n": 1
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 1,
             "n": 1
           }
         }
@@ -12927,6 +12841,12 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "MRP Táctico": {
+              "apego": 1,
+              "n": 1
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 1.595,
@@ -13076,14 +12996,6 @@
           "2026": {
             "WSNP": {
               "apego": 0.35,
-              "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "MRP Táctico": {
-              "apego": 1,
               "n": 1
             }
           }
@@ -13379,8 +13291,8 @@
           "n": 9
         },
         "MAZ": {
-          "apego": 0.9788,
-          "n": 4
+          "apego": 0.9694,
+          "n": 8
         },
         "Guatemala": {
           "apego": 0.9426,
@@ -13405,10 +13317,6 @@
         "CAC": {
           "apego": 0.9844,
           "n": 9
-        },
-        "Otros": {
-          "apego": 0.96,
-          "n": 4
         }
       },
       "by_year": {
@@ -13463,6 +13371,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.96,
+            "n": 4
+          },
           "2026": {
             "apego": 0.9788,
             "n": 4
@@ -13525,12 +13437,6 @@
           },
           "2026": {
             "apego": 0.975,
-            "n": 4
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.96,
             "n": 4
           }
         }
@@ -13847,6 +13753,20 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.93,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 1,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.955,
+              "n": 2
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 1.56,
@@ -14013,22 +13933,6 @@
               "n": 1
             }
           }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.93,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 1,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.955,
-              "n": 2
-            }
-          }
         }
       },
       "by_work_location": {
@@ -14141,8 +14045,8 @@
           "n": 32
         },
         "MAZ": {
-          "apego": 0.9932,
-          "n": 3
+          "apego": 0.9619,
+          "n": 5
         },
         "Ecuador": {
           "apego": 1.0027,
@@ -14159,10 +14063,6 @@
         "El Salvador": {
           "apego": 0.9458,
           "n": 6
-        },
-        "Otros": {
-          "apego": 0.915,
-          "n": 2
         },
         "Guatemala": {
           "apego": 1.18,
@@ -14221,6 +14121,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.915,
+            "n": 2
+          },
           "2026": {
             "apego": 0.9932,
             "n": 3
@@ -14264,12 +14168,6 @@
           "2026": {
             "apego": 0.935,
             "n": 3
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.915,
-            "n": 2
           }
         },
         "Guatemala": {
@@ -14627,6 +14525,16 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "MRP Táctico": {
+              "apego": 0.5,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 1.33,
+              "n": 1
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 1.43,
@@ -14771,18 +14679,6 @@
             "Retpack": {
               "apego": 0.895,
               "n": 2
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "MRP Táctico": {
-              "apego": 0.5,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 1.33,
-              "n": 1
             }
           }
         },
@@ -15423,8 +15319,8 @@
           "n": 13
         },
         "MAZ": {
-          "apego": 1.35,
-          "n": 1
+          "apego": 1.035,
+          "n": 2
         },
         "México": {
           "apego": 0.9663,
@@ -15448,10 +15344,6 @@
         },
         "Panama": {
           "apego": 0.4375,
-          "n": 1
-        },
-        "Otros": {
-          "apego": 0.72,
           "n": 1
         }
       },
@@ -15477,6 +15369,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.72,
+            "n": 1
+          },
           "2026": {
             "apego": 1.35,
             "n": 1
@@ -15527,12 +15423,6 @@
         "Panama": {
           "2026": {
             "apego": 0.4375,
-            "n": 1
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.72,
             "n": 1
           }
         }
@@ -15683,6 +15573,12 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "MRP Táctico": {
+              "apego": 0.72,
+              "n": 1
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 1.35,
@@ -15803,14 +15699,6 @@
               "n": 1
             }
           }
-        },
-        "Otros": {
-          "2025": {
-            "MRP Táctico": {
-              "apego": 0.72,
-              "n": 1
-            }
-          }
         }
       },
       "by_work_location": {
@@ -15879,8 +15767,8 @@
           "n": 24
         },
         "MAZ": {
-          "apego": 0.4998,
-          "n": 2
+          "apego": 0.7779,
+          "n": 5
         },
         "Perú": {
           "apego": 0.9241,
@@ -15893,10 +15781,6 @@
         "CAC": {
           "apego": 0.9043,
           "n": 13
-        },
-        "Otros": {
-          "apego": 0.9633,
-          "n": 3
         },
         "Guatemala": {
           "apego": 0,
@@ -15939,6 +15823,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.9633,
+            "n": 3
+          },
           "2026": {
             "apego": 0.4998,
             "n": 2
@@ -15972,12 +15860,6 @@
           "2026": {
             "apego": 1.2841,
             "n": 4
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.9633,
-            "n": 3
           }
         },
         "Guatemala": {
@@ -16317,6 +16199,20 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0.98,
+              "n": 1
+            },
+            "MRP Táctico": {
+              "apego": 1.2,
+              "n": 1
+            },
+            "CONA": {
+              "apego": 0.71,
+              "n": 1
+            }
+          },
           "2026": {
             "WSNP": {
               "apego": 0.565,
@@ -16442,22 +16338,6 @@
             }
           }
         },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0.98,
-              "n": 1
-            },
-            "MRP Táctico": {
-              "apego": 1.2,
-              "n": 1
-            },
-            "CONA": {
-              "apego": 0.71,
-              "n": 1
-            }
-          }
-        },
         "Guatemala": {
           "2025": {
             "WSNP": {
@@ -16576,7 +16456,7 @@
           "apego": 1.2183,
           "n": 3
         },
-        "Otros": {
+        "MAZ": {
           "apego": 1,
           "n": 2
         },
@@ -16672,7 +16552,7 @@
             "n": 2
           }
         },
-        "Otros": {
+        "MAZ": {
           "2025": {
             "apego": 1,
             "n": 2
@@ -16978,7 +16858,7 @@
             }
           }
         },
-        "Otros": {
+        "MAZ": {
           "2025": {
             "NPI Innovaciones": {
               "apego": 1.5,
@@ -17754,7 +17634,7 @@
           "apego": 0.19,
           "n": 1
         },
-        "Otros": {
+        "MAZ": {
           "apego": 1.5,
           "n": 1
         }
@@ -17816,7 +17696,7 @@
             "n": 1
           }
         },
-        "Otros": {
+        "MAZ": {
           "2025": {
             "apego": 1.5,
             "n": 1
@@ -17918,7 +17798,7 @@
             }
           }
         },
-        "Otros": {
+        "MAZ": {
           "2025": {
             "CONA": {
               "apego": 1.5,
@@ -18501,8 +18381,8 @@
           "n": 2
         },
         "MAZ": {
-          "apego": 1.08,
-          "n": 1
+          "apego": 0.915,
+          "n": 2
         },
         "Panama": {
           "apego": 0.9886,
@@ -18511,10 +18391,6 @@
         "El Salvador": {
           "apego": 1.24,
           "n": 4
-        },
-        "Otros": {
-          "apego": 0.75,
-          "n": 1
         }
       },
       "by_year": {
@@ -18601,6 +18477,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.75,
+            "n": 1
+          },
           "2026": {
             "apego": 1.08,
             "n": 1
@@ -18624,12 +18504,6 @@
           "2026": {
             "apego": 1.35,
             "n": 2
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.75,
-            "n": 1
           }
         }
       },
@@ -18845,6 +18719,12 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "CONA": {
+              "apego": 0.75,
+              "n": 1
+            }
+          },
           "2026": {
             "Retpack": {
               "apego": 1.08,
@@ -18881,14 +18761,6 @@
             "Retpack": {
               "apego": 1.35,
               "n": 2
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "CONA": {
-              "apego": 0.75,
-              "n": 1
             }
           }
         }
@@ -18987,8 +18859,8 @@
           "n": 2
         },
         "MAZ": {
-          "apego": 1.75,
-          "n": 3
+          "apego": 1.05,
+          "n": 5
         },
         "Honduras": {
           "apego": 1.17,
@@ -19004,10 +18876,6 @@
         },
         "CAC": {
           "apego": 0.5,
-          "n": 2
-        },
-        "Otros": {
-          "apego": 0,
           "n": 2
         }
       },
@@ -19083,6 +18951,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0,
+            "n": 2
+          },
           "2026": {
             "apego": 1.75,
             "n": 3
@@ -19121,12 +18993,6 @@
         "CAC": {
           "2025": {
             "apego": 0.5,
-            "n": 2
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0,
             "n": 2
           }
         }
@@ -19319,6 +19185,12 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "DP Estadistico": {
+              "apego": 0,
+              "n": 2
+            }
+          },
           "2026": {
             "DP Estadistico": {
               "apego": 1.75,
@@ -19389,14 +19261,6 @@
             "DP Operativo": {
               "apego": 1,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "DP Estadistico": {
-              "apego": 0,
-              "n": 2
             }
           }
         }
@@ -19786,7 +19650,7 @@
           "apego": 0.9575,
           "n": 2
         },
-        "Otros": {
+        "MAZ": {
           "apego": 1,
           "n": 1
         }
@@ -19878,7 +19742,7 @@
             "n": 1
           }
         },
-        "Otros": {
+        "MAZ": {
           "2025": {
             "apego": 1,
             "n": 1
@@ -20098,7 +19962,7 @@
             }
           }
         },
-        "Otros": {
+        "MAZ": {
           "2025": {
             "CONA": {
               "apego": 1,
@@ -20217,8 +20081,8 @@
           "n": 2
         },
         "MAZ": {
-          "apego": 2.9,
-          "n": 3
+          "apego": 1.7,
+          "n": 6
         },
         "Honduras": {
           "apego": 0.45,
@@ -20230,10 +20094,6 @@
         },
         "El Salvador": {
           "apego": 0.95,
-          "n": 3
-        },
-        "Otros": {
-          "apego": 0.5,
           "n": 3
         },
         "CAC": {
@@ -20313,6 +20173,10 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "apego": 0.5,
+            "n": 3
+          },
           "2026": {
             "apego": 2.9,
             "n": 3
@@ -20346,12 +20210,6 @@
           "2026": {
             "apego": 0.6,
             "n": 1
-          }
-        },
-        "Otros": {
-          "2025": {
-            "apego": 0.5,
-            "n": 3
           }
         },
         "CAC": {
@@ -20565,6 +20423,16 @@
           }
         },
         "MAZ": {
+          "2025": {
+            "NPI Innovaciones": {
+              "apego": 0,
+              "n": 1
+            },
+            "DP Estadistico": {
+              "apego": 0.75,
+              "n": 2
+            }
+          },
           "2026": {
             "DP Estadistico": {
               "apego": 2.9,
@@ -20627,18 +20495,6 @@
             "DP Operativo": {
               "apego": 0.6,
               "n": 1
-            }
-          }
-        },
-        "Otros": {
-          "2025": {
-            "NPI Innovaciones": {
-              "apego": 0,
-              "n": 1
-            },
-            "DP Estadistico": {
-              "apego": 0.75,
-              "n": 2
             }
           }
         },
@@ -22168,24 +22024,29 @@
         "gap": 1
       },
       {
-        "capability": "Estructuras complejas de datos",
-        "apego": 0.3333,
-        "gap": 0.6667
-      },
-      {
         "capability": "Planificación de aprovisionamiento",
-        "apego": 0.3767,
-        "gap": 0.6233
+        "apego": 0.1883,
+        "gap": 0.8117
       },
       {
-        "capability": "Mejora continua",
-        "apego": 0.4998,
-        "gap": 0.5002
+        "capability": "Estructuras complejas de datos",
+        "apego": 0.282,
+        "gap": 0.718
+      },
+      {
+        "capability": "Excel",
+        "apego": 0.4314,
+        "gap": 0.5686
       },
       {
         "capability": "Orientación a datos",
-        "apego": 0.5615,
-        "gap": 0.4385
+        "apego": 0.4917,
+        "gap": 0.5083
+      },
+      {
+        "capability": "Métodos estadísticos y de pronóstico",
+        "apego": 0.566,
+        "gap": 0.434
       },
       {
         "capability": "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP",
@@ -22193,14 +22054,14 @@
         "gap": 0.4
       },
       {
-        "capability": "Excel",
-        "apego": 0.6176,
-        "gap": 0.3824
+        "capability": "Estándar LCP para Planeación de la Demanda",
+        "apego": 0.7017,
+        "gap": 0.2983
       },
       {
         "capability": "Empuje / Orientación a resultados",
-        "apego": 0.6817,
-        "gap": 0.3183
+        "apego": 0.7067,
+        "gap": 0.2933
       },
       {
         "capability": "Estándares de planificación de SNP y S&OE y la red de suministro LCP",
@@ -22208,19 +22069,14 @@
         "gap": 0.25
       },
       {
+        "capability": "Mejora continua",
+        "apego": 0.7779,
+        "gap": 0.2221
+      },
+      {
         "capability": "Inglés",
-        "apego": 0.7761,
-        "gap": 0.2239
-      },
-      {
-        "capability": "Transportación y logística",
-        "apego": 0.8,
-        "gap": 0.2
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "apego": 0.8333,
-        "gap": 0.1667
+        "apego": 0.7979,
+        "gap": 0.2021
       }
     ],
     "México": [
@@ -22283,68 +22139,6 @@
         "capability": "Estándares de logística inversa LCP y mantenimiento del inventario",
         "apego": 0.7821,
         "gap": 0.2179
-      }
-    ],
-    "Otros": [
-      {
-        "capability": "Planificación de aprovisionamiento",
-        "apego": 0,
-        "gap": 1
-      },
-      {
-        "capability": "Pronóstico colaborativo",
-        "apego": 0,
-        "gap": 1
-      },
-      {
-        "capability": "Métodos estadísticos y de pronóstico",
-        "apego": 0.165,
-        "gap": 0.835
-      },
-      {
-        "capability": "Estructuras complejas de datos",
-        "apego": 0.205,
-        "gap": 0.795
-      },
-      {
-        "capability": "Excel",
-        "apego": 0.208,
-        "gap": 0.792
-      },
-      {
-        "capability": "Estándar LCP para Planeación de la Demanda",
-        "apego": 0.3333,
-        "gap": 0.6667
-      },
-      {
-        "capability": "Orientación a datos",
-        "apego": 0.408,
-        "gap": 0.592
-      },
-      {
-        "capability": "Sensibilidad del mercado",
-        "apego": 0.5,
-        "gap": 0.5
-      },
-      {
-        "capability": "Toma de decisiones",
-        "apego": 0.72,
-        "gap": 0.28
-      },
-      {
-        "capability": "Empuje / Orientación a resultados",
-        "apego": 0.74,
-        "gap": 0.26
-      },
-      {
-        "capability": "Gestión de inventarios",
-        "apego": 0.75,
-        "gap": 0.25
-      },
-      {
-        "capability": "Pensamiento Sistémico",
-        "apego": 0.75,
-        "gap": 0.25
       }
     ],
     "Panama": [

@@ -285,6 +285,22 @@
       "bu": "MAZ",
       "periods": [
         {
+          "label": "2025-P25H1",
+          "año": 2025,
+          "periodo": "25H1",
+          "n": 23,
+          "puntaje_promedio": 1.5687,
+          "apego_promedio": 0.7118
+        },
+        {
+          "label": "2025-P25H2",
+          "año": 2025,
+          "periodo": "25H2",
+          "n": 14,
+          "puntaje_promedio": 1.7357,
+          "apego_promedio": 0.7492
+        },
+        {
           "label": "2026-P1",
           "año": 2026,
           "periodo": 1,
@@ -320,27 +336,6 @@
           "n": 79,
           "puntaje_promedio": 2.0442,
           "apego_promedio": 0.9016
-        }
-      ]
-    },
-    {
-      "bu": "Otros",
-      "periods": [
-        {
-          "label": "2025-P25H1",
-          "año": 2025,
-          "periodo": "25H1",
-          "n": 23,
-          "puntaje_promedio": 1.5687,
-          "apego_promedio": 0.7118
-        },
-        {
-          "label": "2025-P25H2",
-          "año": 2025,
-          "periodo": "25H2",
-          "n": 14,
-          "puntaje_promedio": 1.7357,
-          "apego_promedio": 0.7492
         }
       ]
     },
@@ -551,6 +546,13 @@
       "bu": "MAZ",
       "years": [
         {
+          "label": "2025",
+          "año": 2025,
+          "n": 37,
+          "puntaje_promedio": 1.6319,
+          "apego_promedio": 0.7259
+        },
+        {
           "label": "2026",
           "año": 2026,
           "n": 6,
@@ -575,18 +577,6 @@
           "n": 79,
           "puntaje_promedio": 2.0442,
           "apego_promedio": 0.9016
-        }
-      ]
-    },
-    {
-      "bu": "Otros",
-      "years": [
-        {
-          "label": "2025",
-          "año": 2025,
-          "n": 37,
-          "puntaje_promedio": 1.6319,
-          "apego_promedio": 0.7259
         }
       ]
     },
@@ -736,7 +726,7 @@
     },
     {
       "nombre": "Abdo Bridi",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
       "work_location": "CDMX",
@@ -812,7 +802,7 @@
     },
     {
       "nombre": "Aldo Alberto Navarro Chavez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -1109,7 +1099,7 @@
     },
     {
       "nombre": "America Yuzeth Felix Chavez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - Retpack",
       "area": "Retpack",
       "work_location": "México",
@@ -1185,7 +1175,7 @@
     },
     {
       "nombre": "Ana Graciela Serna Moncibaiz",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -1287,7 +1277,7 @@
     },
     {
       "nombre": "Anahí Lomeli Sedano",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -1389,7 +1379,7 @@
     },
     {
       "nombre": "Andres Alberto Ariza Gaitan",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DRP",
       "area": "DRP",
       "work_location": "AGUASCALIENTES",
@@ -1423,7 +1413,7 @@
     },
     {
       "nombre": "Andres Guerrero Lopez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -1618,7 +1608,7 @@
     },
     {
       "nombre": "Ayde Flores Martinez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -1896,7 +1886,7 @@
     },
     {
       "nombre": "Carlos Alberto Vicente",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
       "work_location": "CDMX",
@@ -2148,7 +2138,7 @@
     },
     {
       "nombre": "Claudia Stephanie Romo Guerrero",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -2351,7 +2341,7 @@
     },
     {
       "nombre": "David Guzman Almeida",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -2453,7 +2443,7 @@
     },
     {
       "nombre": "Diego Morgan Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
       "work_location": "México",
@@ -2621,7 +2611,7 @@
     },
     {
       "nombre": "Eleazar Martinez Ledesma",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -2731,7 +2721,7 @@
     },
     {
       "nombre": "Erika Jaqueline Macias",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DRP",
       "area": "DRP",
       "work_location": "AGUASCALIENTES",
@@ -2815,7 +2805,7 @@
     },
     {
       "nombre": "Evangelina Velasco Zermeño",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -3010,7 +3000,7 @@
     },
     {
       "nombre": "Francisco Cesar Ortiz",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
       "work_location": "CDMX",
@@ -3137,7 +3127,7 @@
     },
     {
       "nombre": "Gabriela Paredes Romero",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
       "work_location": "CDMX",
@@ -3473,7 +3463,7 @@
     },
     {
       "nombre": "Ivan De Jesus Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "work_location": "AGUASCALIENTES",
@@ -3955,7 +3945,7 @@
     },
     {
       "nombre": "Jose Manuel Decuir Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
       "work_location": "AGUASCALIENTES",
@@ -3972,7 +3962,7 @@
     },
     {
       "nombre": "Jose Manuel Leos",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -4132,7 +4122,7 @@
     },
     {
       "nombre": "Juan Jose Torres",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -4191,7 +4181,7 @@
     },
     {
       "nombre": "Juan Pablo Diaz De Leon Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "work_location": "AGUASCALIENTES",
@@ -4359,7 +4349,7 @@
     },
     {
       "nombre": "Karla Ivett Mancilla",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -4899,7 +4889,7 @@
     },
     {
       "nombre": "Luis Andres Esqueda",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -4983,7 +4973,7 @@
     },
     {
       "nombre": "Luis Enrique Jahen",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "work_location": "Aguascalientes",
@@ -5170,7 +5160,7 @@
     },
     {
       "nombre": "Margarita Sosa",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "work_location": "AGUASCALIENTES",
@@ -5263,7 +5253,7 @@
     },
     {
       "nombre": "Maria Fernanda Rosales",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -5686,7 +5676,7 @@
     },
     {
       "nombre": "Michelandrea Caballero Ospina",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "work_location": "COLOMBIA",
@@ -5737,7 +5727,7 @@
     },
     {
       "nombre": "Miranda Pérez Romero",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "Aguascalientes",
@@ -5754,7 +5744,7 @@
     },
     {
       "nombre": "Monica Gallardo Mantilla",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - CONA",
       "area": "CONA",
       "work_location": "Aguascalientes",
@@ -5873,7 +5863,7 @@
     },
     {
       "nombre": "Neftali Ibarra Marin",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "West Hub",
@@ -5958,7 +5948,7 @@
     },
     {
       "nombre": "Ofelia Salem",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "work_location": "AGUASCALIENTES",
@@ -6304,7 +6294,7 @@
     },
     {
       "nombre": "Rocio Del Pilar Diaz",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -6380,7 +6370,7 @@
     },
     {
       "nombre": "Rodrigo Lira Gonzalez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "Aguascalientes",
@@ -6532,7 +6522,7 @@
     },
     {
       "nombre": "Sandra Saucedo Solís",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -6676,7 +6666,7 @@
     },
     {
       "nombre": "Valeria Carolina Calvillo Cisneros",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - CONA",
       "area": "CONA",
       "work_location": "AGUASCALIENTES",
@@ -6971,7 +6961,7 @@
     },
     {
       "nombre": "Zaira Veronica Delgadillo",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "work_location": "AGUASCALIENTES",
@@ -7075,7 +7065,7 @@
     },
     {
       "nombre": "Abdo Bridi",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
       "funcion": "CDMX",
@@ -7160,7 +7150,7 @@
     },
     {
       "nombre": "Aldo Alberto Navarro Chavez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -7466,7 +7456,7 @@
     },
     {
       "nombre": "America Yuzeth Felix Chavez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - Retpack",
       "area": "Retpack",
       "funcion": "México",
@@ -7551,7 +7541,7 @@
     },
     {
       "nombre": "Ana Graciela Serna Moncibaiz",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -7653,7 +7643,7 @@
     },
     {
       "nombre": "Anahí Lomeli Sedano",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -7755,7 +7745,7 @@
     },
     {
       "nombre": "Andres Alberto Ariza Gaitan",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DRP",
       "area": "DRP",
       "funcion": "AGUASCALIENTES",
@@ -7789,7 +7779,7 @@
     },
     {
       "nombre": "Andres Guerrero Lopez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -7993,7 +7983,7 @@
     },
     {
       "nombre": "Ayde Flores Martinez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -8316,7 +8306,7 @@
     },
     {
       "nombre": "Carlos Alberto Vicente",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - MRP Operativo",
       "area": "MRP Operativo",
       "funcion": "CDMX",
@@ -8622,7 +8612,7 @@
     },
     {
       "nombre": "Claudia Stephanie Romo Guerrero",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -8843,7 +8833,7 @@
     },
     {
       "nombre": "David Guzman Almeida",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -8945,7 +8935,7 @@
     },
     {
       "nombre": "Diego Morgan Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
       "funcion": "México",
@@ -9149,7 +9139,7 @@
     },
     {
       "nombre": "Eleazar Martinez Ledesma",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -9268,7 +9258,7 @@
     },
     {
       "nombre": "Erika Jaqueline Macias",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DRP",
       "area": "DRP",
       "funcion": "AGUASCALIENTES",
@@ -9370,7 +9360,7 @@
     },
     {
       "nombre": "Evangelina Velasco Zermeño",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -9574,7 +9564,7 @@
     },
     {
       "nombre": "Francisco Cesar Ortiz",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - MRP Táctico",
       "area": "MRP Táctico",
       "funcion": "CDMX",
@@ -9710,7 +9700,7 @@
     },
     {
       "nombre": "Gabriela Paredes Romero",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - NPI",
       "area": "NPI Innovaciones",
       "funcion": "CDMX",
@@ -10118,7 +10108,7 @@
     },
     {
       "nombre": "Ivan De Jesus Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "funcion": "AGUASCALIENTES",
@@ -10645,7 +10635,7 @@
     },
     {
       "nombre": "Jose Manuel Decuir Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - WSNP",
       "area": "WSNP",
       "funcion": "AGUASCALIENTES",
@@ -10662,7 +10652,7 @@
     },
     {
       "nombre": "Jose Manuel Leos",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -10849,7 +10839,7 @@
     },
     {
       "nombre": "Juan Jose Torres",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -10917,7 +10907,7 @@
     },
     {
       "nombre": "Juan Pablo Diaz De Leon Rodriguez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "funcion": "AGUASCALIENTES",
@@ -11121,7 +11111,7 @@
     },
     {
       "nombre": "Karla Ivett Mancilla",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -11733,7 +11723,7 @@
     },
     {
       "nombre": "Luis Andres Esqueda",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -11835,7 +11825,7 @@
     },
     {
       "nombre": "Luis Enrique Jahen",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "funcion": "Aguascalientes",
@@ -12022,7 +12012,7 @@
     },
     {
       "nombre": "Margarita Sosa",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "funcion": "AGUASCALIENTES",
@@ -12124,7 +12114,7 @@
     },
     {
       "nombre": "Maria Fernanda Rosales",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -12583,7 +12573,7 @@
     },
     {
       "nombre": "Michelandrea Caballero Ospina",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - DP Estadístico",
       "area": "DP Estadistico",
       "funcion": "COLOMBIA",
@@ -12634,7 +12624,7 @@
     },
     {
       "nombre": "Miranda Pérez Romero",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "Aguascalientes",
@@ -12651,7 +12641,7 @@
     },
     {
       "nombre": "Monica Gallardo Mantilla",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Gerente - CONA",
       "area": "CONA",
       "funcion": "Aguascalientes",
@@ -12770,7 +12760,7 @@
     },
     {
       "nombre": "Neftali Ibarra Marin",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "West Hub",
@@ -12855,7 +12845,7 @@
     },
     {
       "nombre": "Ofelia Salem",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - MRP Operativo",
       "area": "MRP Operativo",
       "funcion": "AGUASCALIENTES",
@@ -13246,7 +13236,7 @@
     },
     {
       "nombre": "Rocio Del Pilar Diaz",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -13331,7 +13321,7 @@
     },
     {
       "nombre": "Rodrigo Lira Gonzalez",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "Aguascalientes",
@@ -13501,7 +13491,7 @@
     },
     {
       "nombre": "Sandra Saucedo Solís",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",
@@ -13654,7 +13644,7 @@
     },
     {
       "nombre": "Valeria Carolina Calvillo Cisneros",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista - CONA",
       "area": "CONA",
       "funcion": "AGUASCALIENTES",
@@ -13994,7 +13984,7 @@
     },
     {
       "nombre": "Zaira Veronica Delgadillo",
-      "bu": "Otros",
+      "bu": "MAZ",
       "rol": "Especialista DP Estadistico",
       "area": "DP Estadistico",
       "funcion": "AGUASCALIENTES",

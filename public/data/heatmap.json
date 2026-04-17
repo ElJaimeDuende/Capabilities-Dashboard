@@ -954,76 +954,76 @@
       "label": "MAZ",
       "cells": {
         "Resiliencia": {
-          "apego": 1.3425,
-          "n": 2
+          "apego": 1.2283,
+          "n": 3
         },
         "Gestión de interesados": {
-          "apego": 0.9788,
-          "n": 4
+          "apego": 0.9694,
+          "n": 8
         },
         "Resolución de problemas y causa raíz": {
           "apego": 1.15,
           "n": 2
         },
         "Colaboración": {
-          "apego": 0.9253,
-          "n": 6
+          "apego": 0.8929,
+          "n": 11
         },
         "Negociación": {
-          "apego": 0.9932,
-          "n": 3
+          "apego": 0.9619,
+          "n": 5
         },
         "Toma de decisiones": {
-          "apego": 1.35,
-          "n": 1
+          "apego": 1.035,
+          "n": 2
         },
         "Inglés": {
-          "apego": 0.7761,
-          "n": 6
+          "apego": 0.7979,
+          "n": 11
         },
         "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
           "apego": 0.75,
           "n": 1
         },
         "Mejora continua": {
-          "apego": 0.4998,
-          "n": 2
+          "apego": 0.7779,
+          "n": 5
         },
         "Orientación a datos": {
-          "apego": 0.5615,
-          "n": 6
+          "apego": 0.4917,
+          "n": 11
         },
         "Gestión de inventarios": {
-          "apego": 1.0727,
-          "n": 6
+          "apego": 0.9436,
+          "n": 10
         },
         "Excel": {
-          "apego": 0.6176,
-          "n": 6
+          "apego": 0.4314,
+          "n": 11
         },
         "Métodos estadísticos y de pronóstico": {
-          "apego": 0.8333,
-          "n": 3
+          "apego": 0.566,
+          "n": 5
         },
         "Sensibilidad del mercado": {
-          "apego": 2.9,
-          "n": 3
+          "apego": 1.7,
+          "n": 6
         },
         "Estándar LCP para Planeación de la Demanda": {
-          "apego": 1.07,
-          "n": 3
+          "apego": 0.7017,
+          "n": 6
         },
         "Empuje / Orientación a resultados": {
-          "apego": 0.6817,
-          "n": 4
+          "apego": 0.7067,
+          "n": 7
         },
         "Estructuras complejas de datos": {
-          "apego": 0.3333,
-          "n": 3
+          "apego": 0.282,
+          "n": 5
         },
         "Pronóstico colaborativo": {
-          "apego": 1.75,
-          "n": 3
+          "apego": 1.05,
+          "n": 5
         },
         "Planificación y organización": {
           "apego": 0.95,
@@ -1046,19 +1046,31 @@
           "n": 1
         },
         "Pensamiento Sistémico": {
-          "apego": 1.08,
-          "n": 1
+          "apego": 0.915,
+          "n": 2
         },
         "Estándares de logística inversa LCP y mantenimiento del inventario y la red de suministro LCP": {
           "apego": 0.6,
           "n": 1
         },
         "Planificación de aprovisionamiento": {
-          "apego": 0.3767,
-          "n": 1
+          "apego": 0.1883,
+          "n": 2
         },
         "Gestión por sistemas": {
           "apego": 0,
+          "n": 1
+        },
+        "Finanzas empresariales": {
+          "apego": 1,
+          "n": 2
+        },
+        "Estándares de S&OP LCP + SNP LCP": {
+          "apego": 1.5,
+          "n": 1
+        },
+        "Gestión de riesgos": {
+          "apego": 1,
           "n": 1
         }
       }
@@ -1217,95 +1229,6 @@
         "Estándares de logística inversa LCP y mantenimiento del inventario": {
           "apego": 0.7821,
           "n": 7
-        }
-      }
-    },
-    {
-      "label": "Otros",
-      "cells": {
-        "Empuje / Orientación a resultados": {
-          "apego": 0.74,
-          "n": 3
-        },
-        "Finanzas empresariales": {
-          "apego": 1,
-          "n": 2
-        },
-        "Gestión de interesados": {
-          "apego": 0.96,
-          "n": 4
-        },
-        "Inglés": {
-          "apego": 0.824,
-          "n": 5
-        },
-        "Colaboración": {
-          "apego": 0.854,
-          "n": 5
-        },
-        "Mejora continua": {
-          "apego": 0.9633,
-          "n": 3
-        },
-        "Estándar LCP para Planeación de la Demanda": {
-          "apego": 0.3333,
-          "n": 3
-        },
-        "Gestión de inventarios": {
-          "apego": 0.75,
-          "n": 4
-        },
-        "Orientación a datos": {
-          "apego": 0.408,
-          "n": 5
-        },
-        "Excel": {
-          "apego": 0.208,
-          "n": 5
-        },
-        "Sensibilidad del mercado": {
-          "apego": 0.5,
-          "n": 3
-        },
-        "Resiliencia": {
-          "apego": 1,
-          "n": 1
-        },
-        "Toma de decisiones": {
-          "apego": 0.72,
-          "n": 1
-        },
-        "Negociación": {
-          "apego": 0.915,
-          "n": 2
-        },
-        "Planificación de aprovisionamiento": {
-          "apego": 0,
-          "n": 1
-        },
-        "Estándares de S&OP LCP + SNP LCP": {
-          "apego": 1.5,
-          "n": 1
-        },
-        "Gestión de riesgos": {
-          "apego": 1,
-          "n": 1
-        },
-        "Pensamiento Sistémico": {
-          "apego": 0.75,
-          "n": 1
-        },
-        "Métodos estadísticos y de pronóstico": {
-          "apego": 0.165,
-          "n": 2
-        },
-        "Estructuras complejas de datos": {
-          "apego": 0.205,
-          "n": 2
-        },
-        "Pronóstico colaborativo": {
-          "apego": 0,
-          "n": 2
         }
       }
     },
@@ -3531,10 +3454,6 @@
           }
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {
             "Colaboración": {
@@ -5355,7 +5274,64 @@
         },
         {
           "label": "MAZ",
-          "cells": {}
+          "cells": {
+            "Empuje / Orientación a resultados": {
+              "apego": 0.74,
+              "n": 3
+            },
+            "Finanzas empresariales": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Gestión de interesados": {
+              "apego": 0.9467,
+              "n": 3
+            },
+            "Inglés": {
+              "apego": 0.82,
+              "n": 3
+            },
+            "Colaboración": {
+              "apego": 0.6067,
+              "n": 3
+            },
+            "Mejora continua": {
+              "apego": 0.98,
+              "n": 1
+            },
+            "Estándar LCP para Planeación de la Demanda": {
+              "apego": 0.3333,
+              "n": 3
+            },
+            "Gestión de inventarios": {
+              "apego": 0.5,
+              "n": 3
+            },
+            "Orientación a datos": {
+              "apego": 0.3033,
+              "n": 3
+            },
+            "Excel": {
+              "apego": 0.3467,
+              "n": 3
+            },
+            "Sensibilidad del mercado": {
+              "apego": 0.5,
+              "n": 3
+            },
+            "Métodos estadísticos y de pronóstico": {
+              "apego": 0.165,
+              "n": 2
+            },
+            "Estructuras complejas de datos": {
+              "apego": 0.205,
+              "n": 2
+            },
+            "Pronóstico colaborativo": {
+              "apego": 0,
+              "n": 2
+            }
+          }
         },
         {
           "label": "México",
@@ -5490,67 +5466,6 @@
             },
             "Planificación de capacidad": {
               "apego": 1.54,
-              "n": 2
-            }
-          }
-        },
-        {
-          "label": "Otros",
-          "cells": {
-            "Empuje / Orientación a resultados": {
-              "apego": 0.74,
-              "n": 3
-            },
-            "Finanzas empresariales": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Gestión de interesados": {
-              "apego": 0.9467,
-              "n": 3
-            },
-            "Inglés": {
-              "apego": 0.82,
-              "n": 3
-            },
-            "Colaboración": {
-              "apego": 0.6067,
-              "n": 3
-            },
-            "Mejora continua": {
-              "apego": 0.98,
-              "n": 1
-            },
-            "Estándar LCP para Planeación de la Demanda": {
-              "apego": 0.3333,
-              "n": 3
-            },
-            "Gestión de inventarios": {
-              "apego": 0.5,
-              "n": 3
-            },
-            "Orientación a datos": {
-              "apego": 0.3033,
-              "n": 3
-            },
-            "Excel": {
-              "apego": 0.3467,
-              "n": 3
-            },
-            "Sensibilidad del mercado": {
-              "apego": 0.5,
-              "n": 3
-            },
-            "Métodos estadísticos y de pronóstico": {
-              "apego": 0.165,
-              "n": 2
-            },
-            "Estructuras complejas de datos": {
-              "apego": 0.205,
-              "n": 2
-            },
-            "Pronóstico colaborativo": {
-              "apego": 0,
               "n": 2
             }
           }
@@ -7196,7 +7111,68 @@
         },
         {
           "label": "MAZ",
-          "cells": {}
+          "cells": {
+            "Colaboración": {
+              "apego": 1.225,
+              "n": 2
+            },
+            "Resiliencia": {
+              "apego": 1,
+              "n": 1
+            },
+            "Mejora continua": {
+              "apego": 0.955,
+              "n": 2
+            },
+            "Inglés": {
+              "apego": 0.83,
+              "n": 2
+            },
+            "Toma de decisiones": {
+              "apego": 0.72,
+              "n": 1
+            },
+            "Negociación": {
+              "apego": 0.915,
+              "n": 2
+            },
+            "Orientación a datos": {
+              "apego": 0.565,
+              "n": 2
+            },
+            "Excel": {
+              "apego": 0,
+              "n": 2
+            },
+            "Planificación de aprovisionamiento": {
+              "apego": 0,
+              "n": 1
+            },
+            "Gestión de interesados": {
+              "apego": 1,
+              "n": 1
+            },
+            "Gestión de inventarios": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Estándares de S&OP LCP + SNP LCP": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Gestión de riesgos": {
+              "apego": 1,
+              "n": 1
+            },
+            "Pensamiento Sistémico": {
+              "apego": 0.75,
+              "n": 1
+            },
+            "Finanzas empresariales": {
+              "apego": 0.5,
+              "n": 1
+            }
+          }
         },
         {
           "label": "México",
@@ -7347,71 +7323,6 @@
             },
             "Planificación de aprovisionamiento": {
               "apego": 0.75,
-              "n": 1
-            }
-          }
-        },
-        {
-          "label": "Otros",
-          "cells": {
-            "Colaboración": {
-              "apego": 1.225,
-              "n": 2
-            },
-            "Resiliencia": {
-              "apego": 1,
-              "n": 1
-            },
-            "Mejora continua": {
-              "apego": 0.955,
-              "n": 2
-            },
-            "Inglés": {
-              "apego": 0.83,
-              "n": 2
-            },
-            "Toma de decisiones": {
-              "apego": 0.72,
-              "n": 1
-            },
-            "Negociación": {
-              "apego": 0.915,
-              "n": 2
-            },
-            "Orientación a datos": {
-              "apego": 0.565,
-              "n": 2
-            },
-            "Excel": {
-              "apego": 0,
-              "n": 2
-            },
-            "Planificación de aprovisionamiento": {
-              "apego": 0,
-              "n": 1
-            },
-            "Gestión de interesados": {
-              "apego": 1,
-              "n": 1
-            },
-            "Gestión de inventarios": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Estándares de S&OP LCP + SNP LCP": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Gestión de riesgos": {
-              "apego": 1,
-              "n": 1
-            },
-            "Pensamiento Sistémico": {
-              "apego": 0.75,
-              "n": 1
-            },
-            "Finanzas empresariales": {
-              "apego": 0.5,
               "n": 1
             }
           }
@@ -9186,7 +9097,92 @@
         },
         {
           "label": "MAZ",
-          "cells": {}
+          "cells": {
+            "Empuje / Orientación a resultados": {
+              "apego": 0.74,
+              "n": 3
+            },
+            "Finanzas empresariales": {
+              "apego": 1,
+              "n": 2
+            },
+            "Gestión de interesados": {
+              "apego": 0.96,
+              "n": 4
+            },
+            "Inglés": {
+              "apego": 0.824,
+              "n": 5
+            },
+            "Colaboración": {
+              "apego": 0.854,
+              "n": 5
+            },
+            "Mejora continua": {
+              "apego": 0.9633,
+              "n": 3
+            },
+            "Estándar LCP para Planeación de la Demanda": {
+              "apego": 0.3333,
+              "n": 3
+            },
+            "Gestión de inventarios": {
+              "apego": 0.75,
+              "n": 4
+            },
+            "Orientación a datos": {
+              "apego": 0.408,
+              "n": 5
+            },
+            "Excel": {
+              "apego": 0.208,
+              "n": 5
+            },
+            "Sensibilidad del mercado": {
+              "apego": 0.5,
+              "n": 3
+            },
+            "Resiliencia": {
+              "apego": 1,
+              "n": 1
+            },
+            "Toma de decisiones": {
+              "apego": 0.72,
+              "n": 1
+            },
+            "Negociación": {
+              "apego": 0.915,
+              "n": 2
+            },
+            "Planificación de aprovisionamiento": {
+              "apego": 0,
+              "n": 1
+            },
+            "Estándares de S&OP LCP + SNP LCP": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Gestión de riesgos": {
+              "apego": 1,
+              "n": 1
+            },
+            "Pensamiento Sistémico": {
+              "apego": 0.75,
+              "n": 1
+            },
+            "Métodos estadísticos y de pronóstico": {
+              "apego": 0.165,
+              "n": 2
+            },
+            "Estructuras complejas de datos": {
+              "apego": 0.205,
+              "n": 2
+            },
+            "Pronóstico colaborativo": {
+              "apego": 0,
+              "n": 2
+            }
+          }
         },
         {
           "label": "México",
@@ -9342,95 +9338,6 @@
             "Estándares de logística inversa LCP y mantenimiento del inventario": {
               "apego": 0.7825,
               "n": 4
-            }
-          }
-        },
-        {
-          "label": "Otros",
-          "cells": {
-            "Empuje / Orientación a resultados": {
-              "apego": 0.74,
-              "n": 3
-            },
-            "Finanzas empresariales": {
-              "apego": 1,
-              "n": 2
-            },
-            "Gestión de interesados": {
-              "apego": 0.96,
-              "n": 4
-            },
-            "Inglés": {
-              "apego": 0.824,
-              "n": 5
-            },
-            "Colaboración": {
-              "apego": 0.854,
-              "n": 5
-            },
-            "Mejora continua": {
-              "apego": 0.9633,
-              "n": 3
-            },
-            "Estándar LCP para Planeación de la Demanda": {
-              "apego": 0.3333,
-              "n": 3
-            },
-            "Gestión de inventarios": {
-              "apego": 0.75,
-              "n": 4
-            },
-            "Orientación a datos": {
-              "apego": 0.408,
-              "n": 5
-            },
-            "Excel": {
-              "apego": 0.208,
-              "n": 5
-            },
-            "Sensibilidad del mercado": {
-              "apego": 0.5,
-              "n": 3
-            },
-            "Resiliencia": {
-              "apego": 1,
-              "n": 1
-            },
-            "Toma de decisiones": {
-              "apego": 0.72,
-              "n": 1
-            },
-            "Negociación": {
-              "apego": 0.915,
-              "n": 2
-            },
-            "Planificación de aprovisionamiento": {
-              "apego": 0,
-              "n": 1
-            },
-            "Estándares de S&OP LCP + SNP LCP": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Gestión de riesgos": {
-              "apego": 1,
-              "n": 1
-            },
-            "Pensamiento Sistémico": {
-              "apego": 0.75,
-              "n": 1
-            },
-            "Métodos estadísticos y de pronóstico": {
-              "apego": 0.165,
-              "n": 2
-            },
-            "Estructuras complejas de datos": {
-              "apego": 0.205,
-              "n": 2
-            },
-            "Pronóstico colaborativo": {
-              "apego": 0,
-              "n": 2
             }
           }
         },
@@ -12880,11 +12787,109 @@
         "MAZ": [
           {
             "label": "CONA",
-            "cells": {}
+            "cells": {
+              "Gestión de interesados": {
+                "apego": 1,
+                "n": 1
+              },
+              "Gestión de inventarios": {
+                "apego": 1.5,
+                "n": 1
+              },
+              "Estándares de S&OP LCP + SNP LCP": {
+                "apego": 1.5,
+                "n": 1
+              },
+              "Colaboración": {
+                "apego": 1.45,
+                "n": 1
+              },
+              "Negociación": {
+                "apego": 1.33,
+                "n": 1
+              },
+              "Inglés": {
+                "apego": 0.94,
+                "n": 1
+              },
+              "Orientación a datos": {
+                "apego": 1.13,
+                "n": 1
+              },
+              "Gestión de riesgos": {
+                "apego": 1,
+                "n": 1
+              },
+              "Pensamiento Sistémico": {
+                "apego": 0.75,
+                "n": 1
+              },
+              "Mejora continua": {
+                "apego": 0.71,
+                "n": 1
+              },
+              "Finanzas empresariales": {
+                "apego": 0.5,
+                "n": 1
+              },
+              "Excel": {
+                "apego": 0,
+                "n": 1
+              }
+            }
           },
           {
             "label": "DP Estadistico",
-            "cells": {}
+            "cells": {
+              "Gestión de interesados": {
+                "apego": 0.955,
+                "n": 2
+              },
+              "Inglés": {
+                "apego": 0.77,
+                "n": 2
+              },
+              "Empuje / Orientación a resultados": {
+                "apego": 0.61,
+                "n": 2
+              },
+              "Excel": {
+                "apego": 0.425,
+                "n": 2
+              },
+              "Sensibilidad del mercado": {
+                "apego": 0.75,
+                "n": 2
+              },
+              "Estándar LCP para Planeación de la Demanda": {
+                "apego": 0.3,
+                "n": 2
+              },
+              "Colaboración": {
+                "apego": 0.555,
+                "n": 2
+              },
+              "Orientación a datos": {
+                "apego": 0.23,
+                "n": 2
+              },
+              "Métodos estadísticos y de pronóstico": {
+                "apego": 0.165,
+                "n": 2
+              },
+              "Estructuras complejas de datos": {
+                "apego": 0.205,
+                "n": 2
+              },
+              "Gestión de inventarios": {
+                "apego": 0.5,
+                "n": 2
+              },
+              "Pronóstico colaborativo": {
+                "apego": 0,
+                "n": 2
+              }
+            }
           },
           {
             "label": "DP Operativo",
@@ -12908,11 +12913,93 @@
           },
           {
             "label": "MRP Táctico",
-            "cells": {}
+            "cells": {
+              "Colaboración": {
+                "apego": 1,
+                "n": 1
+              },
+              "Resiliencia": {
+                "apego": 1,
+                "n": 1
+              },
+              "Mejora continua": {
+                "apego": 1.2,
+                "n": 1
+              },
+              "Inglés": {
+                "apego": 0.72,
+                "n": 1
+              },
+              "Toma de decisiones": {
+                "apego": 0.72,
+                "n": 1
+              },
+              "Negociación": {
+                "apego": 0.5,
+                "n": 1
+              },
+              "Orientación a datos": {
+                "apego": 0,
+                "n": 1
+              },
+              "Excel": {
+                "apego": 0,
+                "n": 1
+              },
+              "Planificación de aprovisionamiento": {
+                "apego": 0,
+                "n": 1
+              }
+            }
           },
           {
             "label": "NPI Innovaciones",
-            "cells": {}
+            "cells": {
+              "Empuje / Orientación a resultados": {
+                "apego": 1,
+                "n": 1
+              },
+              "Finanzas empresariales": {
+                "apego": 1.5,
+                "n": 1
+              },
+              "Gestión de interesados": {
+                "apego": 0.93,
+                "n": 1
+              },
+              "Inglés": {
+                "apego": 0.92,
+                "n": 1
+              },
+              "Colaboración": {
+                "apego": 0.71,
+                "n": 1
+              },
+              "Mejora continua": {
+                "apego": 0.98,
+                "n": 1
+              },
+              "Estándar LCP para Planeación de la Demanda": {
+                "apego": 0.4,
+                "n": 1
+              },
+              "Gestión de inventarios": {
+                "apego": 0.5,
+                "n": 1
+              },
+              "Orientación a datos": {
+                "apego": 0.45,
+                "n": 1
+              },
+              "Excel": {
+                "apego": 0.19,
+                "n": 1
+              },
+              "Sensibilidad del mercado": {
+                "apego": 0,
+                "n": 1
+              }
+            }
           },
           {
             "label": "Programación de la Producción",
@@ -13618,236 +13705,6 @@
                 "n": 1
               }
             }
-          }
-        ],
-        "Otros": [
-          {
-            "label": "CONA",
-            "cells": {
-              "Gestión de interesados": {
-                "apego": 1,
-                "n": 1
-              },
-              "Gestión de inventarios": {
-                "apego": 1.5,
-                "n": 1
-              },
-              "Estándares de S&OP LCP + SNP LCP": {
-                "apego": 1.5,
-                "n": 1
-              },
-              "Colaboración": {
-                "apego": 1.45,
-                "n": 1
-              },
-              "Negociación": {
-                "apego": 1.33,
-                "n": 1
-              },
-              "Inglés": {
-                "apego": 0.94,
-                "n": 1
-              },
-              "Orientación a datos": {
-                "apego": 1.13,
-                "n": 1
-              },
-              "Gestión de riesgos": {
-                "apego": 1,
-                "n": 1
-              },
-              "Pensamiento Sistémico": {
-                "apego": 0.75,
-                "n": 1
-              },
-              "Mejora continua": {
-                "apego": 0.71,
-                "n": 1
-              },
-              "Finanzas empresariales": {
-                "apego": 0.5,
-                "n": 1
-              },
-              "Excel": {
-                "apego": 0,
-                "n": 1
-              }
-            }
-          },
-          {
-            "label": "DP Estadistico",
-            "cells": {
-              "Gestión de interesados": {
-                "apego": 0.955,
-                "n": 2
-              },
-              "Inglés": {
-                "apego": 0.77,
-                "n": 2
-              },
-              "Empuje / Orientación a resultados": {
-                "apego": 0.61,
-                "n": 2
-              },
-              "Excel": {
-                "apego": 0.425,
-                "n": 2
-              },
-              "Sensibilidad del mercado": {
-                "apego": 0.75,
-                "n": 2
-              },
-              "Estándar LCP para Planeación de la Demanda": {
-                "apego": 0.3,
-                "n": 2
-              },
-              "Colaboración": {
-                "apego": 0.555,
-                "n": 2
-              },
-              "Orientación a datos": {
-                "apego": 0.23,
-                "n": 2
-              },
-              "Métodos estadísticos y de pronóstico": {
-                "apego": 0.165,
-                "n": 2
-              },
-              "Estructuras complejas de datos": {
-                "apego": 0.205,
-                "n": 2
-              },
-              "Gestión de inventarios": {
-                "apego": 0.5,
-                "n": 2
-              },
-              "Pronóstico colaborativo": {
-                "apego": 0,
-                "n": 2
-              }
-            }
-          },
-          {
-            "label": "DP Operativo",
-            "cells": {}
-          },
-          {
-            "label": "DRP",
-            "cells": {}
-          },
-          {
-            "label": "Gerente de Planning BU",
-            "cells": {}
-          },
-          {
-            "label": "Logística Inversa",
-            "cells": {}
-          },
-          {
-            "label": "MRP Operativo",
-            "cells": {}
-          },
-          {
-            "label": "MRP Táctico",
-            "cells": {
-              "Colaboración": {
-                "apego": 1,
-                "n": 1
-              },
-              "Resiliencia": {
-                "apego": 1,
-                "n": 1
-              },
-              "Mejora continua": {
-                "apego": 1.2,
-                "n": 1
-              },
-              "Inglés": {
-                "apego": 0.72,
-                "n": 1
-              },
-              "Toma de decisiones": {
-                "apego": 0.72,
-                "n": 1
-              },
-              "Negociación": {
-                "apego": 0.5,
-                "n": 1
-              },
-              "Orientación a datos": {
-                "apego": 0,
-                "n": 1
-              },
-              "Excel": {
-                "apego": 0,
-                "n": 1
-              },
-              "Planificación de aprovisionamiento": {
-                "apego": 0,
-                "n": 1
-              }
-            }
-          },
-          {
-            "label": "NPI Innovaciones",
-            "cells": {
-              "Empuje / Orientación a resultados": {
-                "apego": 1,
-                "n": 1
-              },
-              "Finanzas empresariales": {
-                "apego": 1.5,
-                "n": 1
-              },
-              "Gestión de interesados": {
-                "apego": 0.93,
-                "n": 1
-              },
-              "Inglés": {
-                "apego": 0.92,
-                "n": 1
-              },
-              "Colaboración": {
-                "apego": 0.71,
-                "n": 1
-              },
-              "Mejora continua": {
-                "apego": 0.98,
-                "n": 1
-              },
-              "Estándar LCP para Planeación de la Demanda": {
-                "apego": 0.4,
-                "n": 1
-              },
-              "Gestión de inventarios": {
-                "apego": 0.5,
-                "n": 1
-              },
-              "Orientación a datos": {
-                "apego": 0.45,
-                "n": 1
-              },
-              "Excel": {
-                "apego": 0.19,
-                "n": 1
-              },
-              "Sensibilidad del mercado": {
-                "apego": 0,
-                "n": 1
-              }
-            }
-          },
-          {
-            "label": "Programación de la Producción",
-            "cells": {}
-          },
-          {
-            "label": "Retpack",
-            "cells": {}
-          },
-          {
-            "label": "WSNP",
-            "cells": {}
           }
         ],
         "Panama": [
@@ -15020,7 +14877,56 @@
           },
           {
             "label": "MAZ",
-            "cells": {}
+            "cells": {
+              "Gestión de interesados": {
+                "apego": 1,
+                "n": 1
+              },
+              "Gestión de inventarios": {
+                "apego": 1.5,
+                "n": 1
+              },
+              "Estándares de S&OP LCP + SNP LCP": {
+                "apego": 1.5,
+                "n": 1
+              },
+              "Colaboración": {
+                "apego": 1.45,
+                "n": 1
+              },
+              "Negociación": {
+                "apego": 1.33,
+                "n": 1
+              },
+              "Inglés": {
+                "apego": 0.94,
+                "n": 1
+              },
+              "Orientación a datos": {
+                "apego": 1.13,
+                "n": 1
+              },
+              "Gestión de riesgos": {
+                "apego": 1,
+                "n": 1
+              },
+              "Pensamiento Sistémico": {
+                "apego": 0.75,
+                "n": 1
+              },
+              "Mejora continua": {
+                "apego": 0.71,
+                "n": 1
+              },
+              "Finanzas empresariales": {
+                "apego": 0.5,
+                "n": 1
+              },
+              "Excel": {
+                "apego": 0,
+                "n": 1
+              }
+            }
           },
           {
             "label": "México",
@@ -15084,59 +14990,6 @@
               "Técnicas de optimización": {
                 "apego": 0.335,
                 "n": 2
-              }
-            }
-          },
-          {
-            "label": "Otros",
-            "cells": {
-              "Gestión de interesados": {
-                "apego": 1,
-                "n": 1
-              },
-              "Gestión de inventarios": {
-                "apego": 1.5,
-                "n": 1
-              },
-              "Estándares de S&OP LCP + SNP LCP": {
-                "apego": 1.5,
-                "n": 1
-              },
-              "Colaboración": {
-                "apego": 1.45,
-                "n": 1
-              },
-              "Negociación": {
-                "apego": 1.33,
-                "n": 1
-              },
-              "Inglés": {
-                "apego": 0.94,
-                "n": 1
-              },
-              "Orientación a datos": {
-                "apego": 1.13,
-                "n": 1
-              },
-              "Gestión de riesgos": {
-                "apego": 1,
-                "n": 1
-              },
-              "Pensamiento Sistémico": {
-                "apego": 0.75,
-                "n": 1
-              },
-              "Mejora continua": {
-                "apego": 0.71,
-                "n": 1
-              },
-              "Finanzas empresariales": {
-                "apego": 0.5,
-                "n": 1
-              },
-              "Excel": {
-                "apego": 0,
-                "n": 1
               }
             }
           },
@@ -15498,7 +15351,56 @@
           },
           {
             "label": "MAZ",
-            "cells": {}
+            "cells": {
+              "Gestión de interesados": {
+                "apego": 0.955,
+                "n": 2
+              },
+              "Inglés": {
+                "apego": 0.77,
+                "n": 2
+              },
+              "Empuje / Orientación a resultados": {
+                "apego": 0.61,
+                "n": 2
+              },
+              "Excel": {
+                "apego": 0.425,
+                "n": 2
+              },
+              "Sensibilidad del mercado": {
+                "apego": 0.75,
+                "n": 2
+              },
+              "Estándar LCP para Planeación de la Demanda": {
+                "apego": 0.3,
+                "n": 2
+              },
+              "Colaboración": {
+                "apego": 0.555,
+                "n": 2
+              },
+              "Orientación a datos": {
+                "apego": 0.23,
+                "n": 2
+              },
+              "Métodos estadísticos y de pronóstico": {
+                "apego": 0.165,
+                "n": 2
+              },
+              "Estructuras complejas de datos": {
+                "apego": 0.205,
+                "n": 2
+              },
+              "Gestión de inventarios": {
+                "apego": 0.5,
+                "n": 2
+              },
+              "Pronóstico colaborativo": {
+                "apego": 0,
+                "n": 2
+              }
+            }
           },
           {
             "label": "México",
@@ -15562,59 +15464,6 @@
               "Estructuras complejas de datos": {
                 "apego": 0.3225,
                 "n": 8
-              }
-            }
-          },
-          {
-            "label": "Otros",
-            "cells": {
-              "Gestión de interesados": {
-                "apego": 0.955,
-                "n": 2
-              },
-              "Inglés": {
-                "apego": 0.77,
-                "n": 2
-              },
-              "Empuje / Orientación a resultados": {
-                "apego": 0.61,
-                "n": 2
-              },
-              "Excel": {
-                "apego": 0.425,
-                "n": 2
-              },
-              "Sensibilidad del mercado": {
-                "apego": 0.75,
-                "n": 2
-              },
-              "Estándar LCP para Planeación de la Demanda": {
-                "apego": 0.3,
-                "n": 2
-              },
-              "Colaboración": {
-                "apego": 0.555,
-                "n": 2
-              },
-              "Orientación a datos": {
-                "apego": 0.23,
-                "n": 2
-              },
-              "Métodos estadísticos y de pronóstico": {
-                "apego": 0.165,
-                "n": 2
-              },
-              "Estructuras complejas de datos": {
-                "apego": 0.205,
-                "n": 2
-              },
-              "Gestión de inventarios": {
-                "apego": 0.5,
-                "n": 2
-              },
-              "Pronóstico colaborativo": {
-                "apego": 0,
-                "n": 2
               }
             }
           },
@@ -15957,10 +15806,6 @@
                 "n": 3
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -16429,10 +16274,6 @@
             }
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {}
           },
@@ -16712,10 +16553,6 @@
             "cells": {}
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {}
           },
@@ -16919,10 +16756,6 @@
                 "n": 2
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -17403,10 +17236,6 @@
             }
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {}
           },
@@ -17695,7 +17524,44 @@
           },
           {
             "label": "MAZ",
-            "cells": {}
+            "cells": {
+              "Colaboración": {
+                "apego": 1,
+                "n": 1
+              },
+              "Resiliencia": {
+                "apego": 1,
+                "n": 1
+              },
+              "Mejora continua": {
+                "apego": 1.2,
+                "n": 1
+              },
+              "Inglés": {
+                "apego": 0.72,
+                "n": 1
+              },
+              "Toma de decisiones": {
+                "apego": 0.72,
+                "n": 1
+              },
+              "Negociación": {
+                "apego": 0.5,
+                "n": 1
+              },
+              "Orientación a datos": {
+                "apego": 0,
+                "n": 1
+              },
+              "Excel": {
+                "apego": 0,
+                "n": 1
+              },
+              "Planificación de aprovisionamiento": {
+                "apego": 0,
+                "n": 1
+              }
+            }
           },
           {
             "label": "México",
@@ -17763,47 +17629,6 @@
               "Planificación de capacidad": {
                 "apego": 1.5,
                 "n": 2
-              }
-            }
-          },
-          {
-            "label": "Otros",
-            "cells": {
-              "Colaboración": {
-                "apego": 1,
-                "n": 1
-              },
-              "Resiliencia": {
-                "apego": 1,
-                "n": 1
-              },
-              "Mejora continua": {
-                "apego": 1.2,
-                "n": 1
-              },
-              "Inglés": {
-                "apego": 0.72,
-                "n": 1
-              },
-              "Toma de decisiones": {
-                "apego": 0.72,
-                "n": 1
-              },
-              "Negociación": {
-                "apego": 0.5,
-                "n": 1
-              },
-              "Orientación a datos": {
-                "apego": 0,
-                "n": 1
-              },
-              "Excel": {
-                "apego": 0,
-                "n": 1
-              },
-              "Planificación de aprovisionamiento": {
-                "apego": 0,
-                "n": 1
               }
             }
           },
@@ -18002,7 +17827,52 @@
           },
           {
             "label": "MAZ",
-            "cells": {}
+            "cells": {
+              "Empuje / Orientación a resultados": {
+                "apego": 1,
+                "n": 1
+              },
+              "Finanzas empresariales": {
+                "apego": 1.5,
+                "n": 1
+              },
+              "Gestión de interesados": {
+                "apego": 0.93,
+                "n": 1
+              },
+              "Inglés": {
+                "apego": 0.92,
+                "n": 1
+              },
+              "Colaboración": {
+                "apego": 0.71,
+                "n": 1
+              },
+              "Mejora continua": {
+                "apego": 0.98,
+                "n": 1
+              },
+              "Estándar LCP para Planeación de la Demanda": {
+                "apego": 0.4,
+                "n": 1
+              },
+              "Gestión de inventarios": {
+                "apego": 0.5,
+                "n": 1
+              },
+              "Orientación a datos": {
+                "apego": 0.45,
+                "n": 1
+              },
+              "Excel": {
+                "apego": 0.19,
+                "n": 1
+              },
+              "Sensibilidad del mercado": {
+                "apego": 0,
+                "n": 1
+              }
+            }
           },
           {
             "label": "México",
@@ -18050,55 +17920,6 @@
               "Gestión de inventarios": {
                 "apego": 0.6667,
                 "n": 3
-              }
-            }
-          },
-          {
-            "label": "Otros",
-            "cells": {
-              "Empuje / Orientación a resultados": {
-                "apego": 1,
-                "n": 1
-              },
-              "Finanzas empresariales": {
-                "apego": 1.5,
-                "n": 1
-              },
-              "Gestión de interesados": {
-                "apego": 0.93,
-                "n": 1
-              },
-              "Inglés": {
-                "apego": 0.92,
-                "n": 1
-              },
-              "Colaboración": {
-                "apego": 0.71,
-                "n": 1
-              },
-              "Mejora continua": {
-                "apego": 0.98,
-                "n": 1
-              },
-              "Estándar LCP para Planeación de la Demanda": {
-                "apego": 0.4,
-                "n": 1
-              },
-              "Gestión de inventarios": {
-                "apego": 0.5,
-                "n": 1
-              },
-              "Orientación a datos": {
-                "apego": 0.45,
-                "n": 1
-              },
-              "Excel": {
-                "apego": 0.19,
-                "n": 1
-              },
-              "Sensibilidad del mercado": {
-                "apego": 0,
-                "n": 1
               }
             }
           },
@@ -18404,10 +18225,6 @@
                 "n": 4
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -18784,10 +18601,6 @@
                 "n": 1
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -19212,10 +19025,6 @@
                 "n": 1
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -20370,10 +20179,6 @@
               "n": 3
             }
           }
-        },
-        {
-          "label": "Otros",
-          "cells": {}
         },
         {
           "label": "Panama",
@@ -24740,56 +24545,6 @@
             }
           }
         ],
-        "Otros": [
-          {
-            "label": "CONA",
-            "cells": {}
-          },
-          {
-            "label": "DP Estadistico",
-            "cells": {}
-          },
-          {
-            "label": "DP Operativo",
-            "cells": {}
-          },
-          {
-            "label": "DRP",
-            "cells": {}
-          },
-          {
-            "label": "Gerente de Planning BU",
-            "cells": {}
-          },
-          {
-            "label": "Logística Inversa",
-            "cells": {}
-          },
-          {
-            "label": "MRP Operativo",
-            "cells": {}
-          },
-          {
-            "label": "MRP Táctico",
-            "cells": {}
-          },
-          {
-            "label": "NPI Innovaciones",
-            "cells": {}
-          },
-          {
-            "label": "Programación de la Producción",
-            "cells": {}
-          },
-          {
-            "label": "Retpack",
-            "cells": {}
-          },
-          {
-            "label": "WSNP",
-            "cells": {}
-          }
-        ],
         "Panama": [
           {
             "label": "CONA",
@@ -26073,10 +25828,6 @@
             }
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {}
           },
@@ -26451,10 +26202,6 @@
                 "n": 3
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -26919,10 +26666,6 @@
             }
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {
               "Inglés": {
@@ -27381,10 +27124,6 @@
             }
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {}
           },
@@ -27676,10 +27415,6 @@
             "cells": {}
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {
               "Finanzas": {
@@ -27944,10 +27679,6 @@
                 "n": 2
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -28308,10 +28039,6 @@
                 "n": 8
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -28678,10 +28405,6 @@
             }
           },
           {
-            "label": "Otros",
-            "cells": {}
-          },
-          {
             "label": "Panama",
             "cells": {}
           },
@@ -28938,10 +28661,6 @@
                 "n": 2
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -29249,10 +28968,6 @@
                 "n": 5
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -29719,10 +29434,6 @@
                 "n": 1
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -30205,10 +29916,6 @@
                 "n": 2
               }
             }
-          },
-          {
-            "label": "Otros",
-            "cells": {}
           },
           {
             "label": "Panama",
@@ -32956,58 +32663,107 @@
     "MAZ": [
       {
         "label": "CONA",
-        "cells": {}
+        "cells": {
+          "Gestión de interesados": {
+            "apego": 1,
+            "n": 1
+          },
+          "Gestión de inventarios": {
+            "apego": 1.5,
+            "n": 1
+          },
+          "Estándares de S&OP LCP + SNP LCP": {
+            "apego": 1.5,
+            "n": 1
+          },
+          "Colaboración": {
+            "apego": 1.45,
+            "n": 1
+          },
+          "Negociación": {
+            "apego": 1.33,
+            "n": 1
+          },
+          "Inglés": {
+            "apego": 0.94,
+            "n": 1
+          },
+          "Orientación a datos": {
+            "apego": 1.13,
+            "n": 1
+          },
+          "Gestión de riesgos": {
+            "apego": 1,
+            "n": 1
+          },
+          "Pensamiento Sistémico": {
+            "apego": 0.75,
+            "n": 1
+          },
+          "Mejora continua": {
+            "apego": 0.71,
+            "n": 1
+          },
+          "Finanzas empresariales": {
+            "apego": 0.5,
+            "n": 1
+          },
+          "Excel": {
+            "apego": 0,
+            "n": 1
+          }
+        }
       },
       {
         "label": "DP Estadistico",
         "cells": {
           "Métodos estadísticos y de pronóstico": {
-            "apego": 0.8333,
-            "n": 3
+            "apego": 0.566,
+            "n": 5
           },
           "Sensibilidad del mercado": {
-            "apego": 2.9,
-            "n": 3
+            "apego": 2.04,
+            "n": 5
           },
           "Inglés": {
-            "apego": 0.764,
-            "n": 3
+            "apego": 0.7664,
+            "n": 5
           },
           "Estándar LCP para Planeación de la Demanda": {
-            "apego": 1.07,
-            "n": 3
+            "apego": 0.762,
+            "n": 5
           },
           "Empuje / Orientación a resultados": {
-            "apego": 0.6689,
-            "n": 3
+            "apego": 0.6453,
+            "n": 5
           },
           "Gestión de interesados": {
-            "apego": 0.785,
-            "n": 3
+            "apego": 0.853,
+            "n": 5
           },
           "Gestión de inventarios": {
-            "apego": 1.6667,
-            "n": 3
+            "apego": 1.2,
+            "n": 5
           },
           "Colaboración": {
-            "apego": 0.8467,
-            "n": 3
+            "apego": 0.73,
+            "n": 5
           },
           "Orientación a datos": {
-            "apego": 0.5,
-            "n": 3
+            "apego": 0.392,
+            "n": 5
           },
           "Estructuras complejas de datos": {
-            "apego": 0.3333,
-            "n": 3
+            "apego": 0.282,
+            "n": 5
           },
           "Excel": {
-            "apego": 0.625,
-            "n": 3
+            "apego": 0.545,
+            "n": 5
           },
           "Pronóstico colaborativo": {
-            "apego": 1.75,
-            "n": 3
+            "apego": 1.05,
+            "n": 5
           }
         }
       },
@@ -33043,12 +32799,12 @@
             "n": 1
           },
           "Colaboración": {
-            "apego": 0.76,
-            "n": 1
+            "apego": 0.88,
+            "n": 2
           },
           "Resiliencia": {
-            "apego": 1.09,
-            "n": 1
+            "apego": 1.045,
+            "n": 2
           },
           "Empuje / Orientación a resultados": {
             "apego": 0.72,
@@ -33059,24 +32815,24 @@
             "n": 1
           },
           "Orientación a datos": {
-            "apego": 0.925,
-            "n": 1
+            "apego": 0.4625,
+            "n": 2
           },
           "Negociación": {
-            "apego": 0.865,
-            "n": 1
+            "apego": 0.6825,
+            "n": 2
           },
           "Excel": {
-            "apego": 0.5667,
-            "n": 1
+            "apego": 0.2833,
+            "n": 2
           },
           "Transportación y logística": {
             "apego": 0.8,
             "n": 1
           },
           "Inglés": {
-            "apego": 0.612,
-            "n": 1
+            "apego": 0.666,
+            "n": 2
           },
           "Planificación de capacidad": {
             "apego": 1.5,
@@ -33085,12 +32841,69 @@
           "Gestión de inventarios": {
             "apego": 0.64,
             "n": 1
+          },
+          "Mejora continua": {
+            "apego": 1.2,
+            "n": 1
+          },
+          "Toma de decisiones": {
+            "apego": 0.72,
+            "n": 1
+          },
+          "Planificación de aprovisionamiento": {
+            "apego": 0,
+            "n": 1
           }
         }
       },
       {
         "label": "NPI Innovaciones",
-        "cells": {}
+        "cells": {
+          "Empuje / Orientación a resultados": {
+            "apego": 1,
+            "n": 1
+          },
+          "Finanzas empresariales": {
+            "apego": 1.5,
+            "n": 1
+          },
+          "Gestión de interesados": {
+            "apego": 0.93,
+            "n": 1
+          },
+          "Inglés": {
+            "apego": 0.92,
+            "n": 1
+          },
+          "Colaboración": {
+            "apego": 0.71,
+            "n": 1
+          },
+          "Mejora continua": {
+            "apego": 0.98,
+            "n": 1
+          },
+          "Estándar LCP para Planeación de la Demanda": {
+            "apego": 0.4,
+            "n": 1
+          },
+          "Gestión de inventarios": {
+            "apego": 0.5,
+            "n": 1
+          },
+          "Orientación a datos": {
+            "apego": 0.45,
+            "n": 1
+          },
+          "Excel": {
+            "apego": 0.19,
+            "n": 1
+          },
+          "Sensibilidad del mercado": {
+            "apego": 0,
+            "n": 1
+          }
+        }
       },
       {
         "label": "Programación de la Producción",
@@ -33914,236 +33727,6 @@
             "n": 3
           }
         }
-      }
-    ],
-    "Otros": [
-      {
-        "label": "CONA",
-        "cells": {
-          "Gestión de interesados": {
-            "apego": 1,
-            "n": 1
-          },
-          "Gestión de inventarios": {
-            "apego": 1.5,
-            "n": 1
-          },
-          "Estándares de S&OP LCP + SNP LCP": {
-            "apego": 1.5,
-            "n": 1
-          },
-          "Colaboración": {
-            "apego": 1.45,
-            "n": 1
-          },
-          "Negociación": {
-            "apego": 1.33,
-            "n": 1
-          },
-          "Inglés": {
-            "apego": 0.94,
-            "n": 1
-          },
-          "Orientación a datos": {
-            "apego": 1.13,
-            "n": 1
-          },
-          "Gestión de riesgos": {
-            "apego": 1,
-            "n": 1
-          },
-          "Pensamiento Sistémico": {
-            "apego": 0.75,
-            "n": 1
-          },
-          "Mejora continua": {
-            "apego": 0.71,
-            "n": 1
-          },
-          "Finanzas empresariales": {
-            "apego": 0.5,
-            "n": 1
-          },
-          "Excel": {
-            "apego": 0,
-            "n": 1
-          }
-        }
-      },
-      {
-        "label": "DP Estadistico",
-        "cells": {
-          "Gestión de interesados": {
-            "apego": 0.955,
-            "n": 2
-          },
-          "Inglés": {
-            "apego": 0.77,
-            "n": 2
-          },
-          "Empuje / Orientación a resultados": {
-            "apego": 0.61,
-            "n": 2
-          },
-          "Excel": {
-            "apego": 0.425,
-            "n": 2
-          },
-          "Sensibilidad del mercado": {
-            "apego": 0.75,
-            "n": 2
-          },
-          "Estándar LCP para Planeación de la Demanda": {
-            "apego": 0.3,
-            "n": 2
-          },
-          "Colaboración": {
-            "apego": 0.555,
-            "n": 2
-          },
-          "Orientación a datos": {
-            "apego": 0.23,
-            "n": 2
-          },
-          "Métodos estadísticos y de pronóstico": {
-            "apego": 0.165,
-            "n": 2
-          },
-          "Estructuras complejas de datos": {
-            "apego": 0.205,
-            "n": 2
-          },
-          "Gestión de inventarios": {
-            "apego": 0.5,
-            "n": 2
-          },
-          "Pronóstico colaborativo": {
-            "apego": 0,
-            "n": 2
-          }
-        }
-      },
-      {
-        "label": "DP Operativo",
-        "cells": {}
-      },
-      {
-        "label": "DRP",
-        "cells": {}
-      },
-      {
-        "label": "Gerente de Planning BU",
-        "cells": {}
-      },
-      {
-        "label": "Logística Inversa",
-        "cells": {}
-      },
-      {
-        "label": "MRP Operativo",
-        "cells": {}
-      },
-      {
-        "label": "MRP Táctico",
-        "cells": {
-          "Colaboración": {
-            "apego": 1,
-            "n": 1
-          },
-          "Resiliencia": {
-            "apego": 1,
-            "n": 1
-          },
-          "Mejora continua": {
-            "apego": 1.2,
-            "n": 1
-          },
-          "Inglés": {
-            "apego": 0.72,
-            "n": 1
-          },
-          "Toma de decisiones": {
-            "apego": 0.72,
-            "n": 1
-          },
-          "Negociación": {
-            "apego": 0.5,
-            "n": 1
-          },
-          "Orientación a datos": {
-            "apego": 0,
-            "n": 1
-          },
-          "Excel": {
-            "apego": 0,
-            "n": 1
-          },
-          "Planificación de aprovisionamiento": {
-            "apego": 0,
-            "n": 1
-          }
-        }
-      },
-      {
-        "label": "NPI Innovaciones",
-        "cells": {
-          "Empuje / Orientación a resultados": {
-            "apego": 1,
-            "n": 1
-          },
-          "Finanzas empresariales": {
-            "apego": 1.5,
-            "n": 1
-          },
-          "Gestión de interesados": {
-            "apego": 0.93,
-            "n": 1
-          },
-          "Inglés": {
-            "apego": 0.92,
-            "n": 1
-          },
-          "Colaboración": {
-            "apego": 0.71,
-            "n": 1
-          },
-          "Mejora continua": {
-            "apego": 0.98,
-            "n": 1
-          },
-          "Estándar LCP para Planeación de la Demanda": {
-            "apego": 0.4,
-            "n": 1
-          },
-          "Gestión de inventarios": {
-            "apego": 0.5,
-            "n": 1
-          },
-          "Orientación a datos": {
-            "apego": 0.45,
-            "n": 1
-          },
-          "Excel": {
-            "apego": 0.19,
-            "n": 1
-          },
-          "Sensibilidad del mercado": {
-            "apego": 0,
-            "n": 1
-          }
-        }
-      },
-      {
-        "label": "Programación de la Producción",
-        "cells": {}
-      },
-      {
-        "label": "Retpack",
-        "cells": {}
-      },
-      {
-        "label": "WSNP",
-        "cells": {}
       }
     ],
     "Panama": [
@@ -35487,7 +35070,56 @@
       },
       {
         "label": "MAZ",
-        "cells": {}
+        "cells": {
+          "Gestión de interesados": {
+            "apego": 1,
+            "n": 1
+          },
+          "Gestión de inventarios": {
+            "apego": 1.5,
+            "n": 1
+          },
+          "Estándares de S&OP LCP + SNP LCP": {
+            "apego": 1.5,
+            "n": 1
+          },
+          "Colaboración": {
+            "apego": 1.45,
+            "n": 1
+          },
+          "Negociación": {
+            "apego": 1.33,
+            "n": 1
+          },
+          "Inglés": {
+            "apego": 0.94,
+            "n": 1
+          },
+          "Orientación a datos": {
+            "apego": 1.13,
+            "n": 1
+          },
+          "Gestión de riesgos": {
+            "apego": 1,
+            "n": 1
+          },
+          "Pensamiento Sistémico": {
+            "apego": 0.75,
+            "n": 1
+          },
+          "Mejora continua": {
+            "apego": 0.71,
+            "n": 1
+          },
+          "Finanzas empresariales": {
+            "apego": 0.5,
+            "n": 1
+          },
+          "Excel": {
+            "apego": 0,
+            "n": 1
+          }
+        }
       },
       {
         "label": "México",
@@ -35551,59 +35183,6 @@
           "Mejora continua": {
             "apego": 1.055,
             "n": 2
-          }
-        }
-      },
-      {
-        "label": "Otros",
-        "cells": {
-          "Gestión de interesados": {
-            "apego": 1,
-            "n": 1
-          },
-          "Gestión de inventarios": {
-            "apego": 1.5,
-            "n": 1
-          },
-          "Estándares de S&OP LCP + SNP LCP": {
-            "apego": 1.5,
-            "n": 1
-          },
-          "Colaboración": {
-            "apego": 1.45,
-            "n": 1
-          },
-          "Negociación": {
-            "apego": 1.33,
-            "n": 1
-          },
-          "Inglés": {
-            "apego": 0.94,
-            "n": 1
-          },
-          "Orientación a datos": {
-            "apego": 1.13,
-            "n": 1
-          },
-          "Gestión de riesgos": {
-            "apego": 1,
-            "n": 1
-          },
-          "Pensamiento Sistémico": {
-            "apego": 0.75,
-            "n": 1
-          },
-          "Mejora continua": {
-            "apego": 0.71,
-            "n": 1
-          },
-          "Finanzas empresariales": {
-            "apego": 0.5,
-            "n": 1
-          },
-          "Excel": {
-            "apego": 0,
-            "n": 1
           }
         }
       },
@@ -35967,52 +35546,52 @@
         "label": "MAZ",
         "cells": {
           "Métodos estadísticos y de pronóstico": {
-            "apego": 0.8333,
-            "n": 3
+            "apego": 0.566,
+            "n": 5
           },
           "Sensibilidad del mercado": {
-            "apego": 2.9,
-            "n": 3
+            "apego": 2.04,
+            "n": 5
           },
           "Inglés": {
-            "apego": 0.764,
-            "n": 3
+            "apego": 0.7664,
+            "n": 5
           },
           "Estándar LCP para Planeación de la Demanda": {
-            "apego": 1.07,
-            "n": 3
+            "apego": 0.762,
+            "n": 5
           },
           "Empuje / Orientación a resultados": {
-            "apego": 0.6689,
-            "n": 3
+            "apego": 0.6453,
+            "n": 5
           },
           "Gestión de interesados": {
-            "apego": 0.785,
-            "n": 3
+            "apego": 0.853,
+            "n": 5
           },
           "Gestión de inventarios": {
-            "apego": 1.6667,
-            "n": 3
+            "apego": 1.2,
+            "n": 5
           },
           "Colaboración": {
-            "apego": 0.8467,
-            "n": 3
+            "apego": 0.73,
+            "n": 5
           },
           "Orientación a datos": {
-            "apego": 0.5,
-            "n": 3
+            "apego": 0.392,
+            "n": 5
           },
           "Estructuras complejas de datos": {
-            "apego": 0.3333,
-            "n": 3
+            "apego": 0.282,
+            "n": 5
           },
           "Excel": {
-            "apego": 0.625,
-            "n": 3
+            "apego": 0.545,
+            "n": 5
           },
           "Pronóstico colaborativo": {
-            "apego": 1.75,
-            "n": 3
+            "apego": 1.05,
+            "n": 5
           }
         }
       },
@@ -36078,59 +35657,6 @@
           "Finanzas empresariales": {
             "apego": 0.825,
             "n": 7
-          }
-        }
-      },
-      {
-        "label": "Otros",
-        "cells": {
-          "Gestión de interesados": {
-            "apego": 0.955,
-            "n": 2
-          },
-          "Inglés": {
-            "apego": 0.77,
-            "n": 2
-          },
-          "Empuje / Orientación a resultados": {
-            "apego": 0.61,
-            "n": 2
-          },
-          "Excel": {
-            "apego": 0.425,
-            "n": 2
-          },
-          "Sensibilidad del mercado": {
-            "apego": 0.75,
-            "n": 2
-          },
-          "Estándar LCP para Planeación de la Demanda": {
-            "apego": 0.3,
-            "n": 2
-          },
-          "Colaboración": {
-            "apego": 0.555,
-            "n": 2
-          },
-          "Orientación a datos": {
-            "apego": 0.23,
-            "n": 2
-          },
-          "Métodos estadísticos y de pronóstico": {
-            "apego": 0.165,
-            "n": 2
-          },
-          "Estructuras complejas de datos": {
-            "apego": 0.205,
-            "n": 2
-          },
-          "Gestión de inventarios": {
-            "apego": 0.5,
-            "n": 2
-          },
-          "Pronóstico colaborativo": {
-            "apego": 0,
-            "n": 2
           }
         }
       },
@@ -36646,10 +36172,6 @@
         }
       },
       {
-        "label": "Otros",
-        "cells": {}
-      },
-      {
         "label": "Panama",
         "cells": {
           "Inglés": {
@@ -37116,10 +36638,6 @@
         }
       },
       {
-        "label": "Otros",
-        "cells": {}
-      },
-      {
         "label": "Panama",
         "cells": {}
       },
@@ -37456,10 +36974,6 @@
         "cells": {}
       },
       {
-        "label": "Otros",
-        "cells": {}
-      },
-      {
         "label": "Panama",
         "cells": {
           "Finanzas": {
@@ -37724,10 +37238,6 @@
             "n": 4
           }
         }
-      },
-      {
-        "label": "Otros",
-        "cells": {}
       },
       {
         "label": "Panama",
@@ -38216,10 +37726,6 @@
         }
       },
       {
-        "label": "Otros",
-        "cells": {}
-      },
-      {
         "label": "Panama",
         "cells": {}
       },
@@ -38518,12 +38024,12 @@
             "n": 1
           },
           "Colaboración": {
-            "apego": 0.76,
-            "n": 1
+            "apego": 0.88,
+            "n": 2
           },
           "Resiliencia": {
-            "apego": 1.09,
-            "n": 1
+            "apego": 1.045,
+            "n": 2
           },
           "Empuje / Orientación a resultados": {
             "apego": 0.72,
@@ -38534,24 +38040,24 @@
             "n": 1
           },
           "Orientación a datos": {
-            "apego": 0.925,
-            "n": 1
+            "apego": 0.4625,
+            "n": 2
           },
           "Negociación": {
-            "apego": 0.865,
-            "n": 1
+            "apego": 0.6825,
+            "n": 2
           },
           "Excel": {
-            "apego": 0.5667,
-            "n": 1
+            "apego": 0.2833,
+            "n": 2
           },
           "Transportación y logística": {
             "apego": 0.8,
             "n": 1
           },
           "Inglés": {
-            "apego": 0.612,
-            "n": 1
+            "apego": 0.666,
+            "n": 2
           },
           "Planificación de capacidad": {
             "apego": 1.5,
@@ -38559,6 +38065,18 @@
           },
           "Gestión de inventarios": {
             "apego": 0.64,
+            "n": 1
+          },
+          "Mejora continua": {
+            "apego": 1.2,
+            "n": 1
+          },
+          "Toma de decisiones": {
+            "apego": 0.72,
+            "n": 1
+          },
+          "Planificación de aprovisionamiento": {
+            "apego": 0,
             "n": 1
           }
         }
@@ -38629,47 +38147,6 @@
           "Transportación y logística": {
             "apego": 0.875,
             "n": 4
-          }
-        }
-      },
-      {
-        "label": "Otros",
-        "cells": {
-          "Colaboración": {
-            "apego": 1,
-            "n": 1
-          },
-          "Resiliencia": {
-            "apego": 1,
-            "n": 1
-          },
-          "Mejora continua": {
-            "apego": 1.2,
-            "n": 1
-          },
-          "Inglés": {
-            "apego": 0.72,
-            "n": 1
-          },
-          "Toma de decisiones": {
-            "apego": 0.72,
-            "n": 1
-          },
-          "Negociación": {
-            "apego": 0.5,
-            "n": 1
-          },
-          "Orientación a datos": {
-            "apego": 0,
-            "n": 1
-          },
-          "Excel": {
-            "apego": 0,
-            "n": 1
-          },
-          "Planificación de aprovisionamiento": {
-            "apego": 0,
-            "n": 1
           }
         }
       },
@@ -38876,7 +38353,52 @@
       },
       {
         "label": "MAZ",
-        "cells": {}
+        "cells": {
+          "Empuje / Orientación a resultados": {
+            "apego": 1,
+            "n": 1
+          },
+          "Finanzas empresariales": {
+            "apego": 1.5,
+            "n": 1
+          },
+          "Gestión de interesados": {
+            "apego": 0.93,
+            "n": 1
+          },
+          "Inglés": {
+            "apego": 0.92,
+            "n": 1
+          },
+          "Colaboración": {
+            "apego": 0.71,
+            "n": 1
+          },
+          "Mejora continua": {
+            "apego": 0.98,
+            "n": 1
+          },
+          "Estándar LCP para Planeación de la Demanda": {
+            "apego": 0.4,
+            "n": 1
+          },
+          "Gestión de inventarios": {
+            "apego": 0.5,
+            "n": 1
+          },
+          "Orientación a datos": {
+            "apego": 0.45,
+            "n": 1
+          },
+          "Excel": {
+            "apego": 0.19,
+            "n": 1
+          },
+          "Sensibilidad del mercado": {
+            "apego": 0,
+            "n": 1
+          }
+        }
       },
       {
         "label": "México",
@@ -38928,55 +38450,6 @@
           "Orientación a datos": {
             "apego": 0.642,
             "n": 5
-          }
-        }
-      },
-      {
-        "label": "Otros",
-        "cells": {
-          "Empuje / Orientación a resultados": {
-            "apego": 1,
-            "n": 1
-          },
-          "Finanzas empresariales": {
-            "apego": 1.5,
-            "n": 1
-          },
-          "Gestión de interesados": {
-            "apego": 0.93,
-            "n": 1
-          },
-          "Inglés": {
-            "apego": 0.92,
-            "n": 1
-          },
-          "Colaboración": {
-            "apego": 0.71,
-            "n": 1
-          },
-          "Mejora continua": {
-            "apego": 0.98,
-            "n": 1
-          },
-          "Estándar LCP para Planeación de la Demanda": {
-            "apego": 0.4,
-            "n": 1
-          },
-          "Gestión de inventarios": {
-            "apego": 0.5,
-            "n": 1
-          },
-          "Orientación a datos": {
-            "apego": 0.45,
-            "n": 1
-          },
-          "Excel": {
-            "apego": 0.19,
-            "n": 1
-          },
-          "Sensibilidad del mercado": {
-            "apego": 0,
-            "n": 1
           }
         }
       },
@@ -39286,10 +38759,6 @@
             "n": 9
           }
         }
-      },
-      {
-        "label": "Otros",
-        "cells": {}
       },
       {
         "label": "Panama",
@@ -39768,10 +39237,6 @@
             "n": 1
           }
         }
-      },
-      {
-        "label": "Otros",
-        "cells": {}
       },
       {
         "label": "Panama",
@@ -40349,10 +39814,6 @@
         }
       },
       {
-        "label": "Otros",
-        "cells": {}
-      },
-      {
         "label": "Panama",
         "cells": {}
       },
@@ -40828,52 +40289,52 @@
           "label": "MAZ",
           "cells": {
             "Métodos estadísticos y de pronóstico": {
-              "apego": 0.8333,
-              "n": 3
+              "apego": 0.566,
+              "n": 5
             },
             "Sensibilidad del mercado": {
-              "apego": 2.9,
-              "n": 3
+              "apego": 2.04,
+              "n": 5
             },
             "Inglés": {
-              "apego": 0.764,
-              "n": 3
+              "apego": 0.7664,
+              "n": 5
             },
             "Estándar LCP para Planeación de la Demanda": {
-              "apego": 1.07,
-              "n": 3
+              "apego": 0.762,
+              "n": 5
             },
             "Empuje / Orientación a resultados": {
-              "apego": 0.6689,
-              "n": 3
+              "apego": 0.6453,
+              "n": 5
             },
             "Gestión de interesados": {
-              "apego": 0.785,
-              "n": 3
+              "apego": 0.853,
+              "n": 5
             },
             "Gestión de inventarios": {
-              "apego": 1.6667,
-              "n": 3
+              "apego": 1.2,
+              "n": 5
             },
             "Colaboración": {
-              "apego": 0.8467,
-              "n": 3
+              "apego": 0.73,
+              "n": 5
             },
             "Orientación a datos": {
-              "apego": 0.5,
-              "n": 3
+              "apego": 0.392,
+              "n": 5
             },
             "Estructuras complejas de datos": {
-              "apego": 0.3333,
-              "n": 3
+              "apego": 0.282,
+              "n": 5
             },
             "Excel": {
-              "apego": 0.625,
-              "n": 3
+              "apego": 0.545,
+              "n": 5
             },
             "Pronóstico colaborativo": {
-              "apego": 1.75,
-              "n": 3
+              "apego": 1.05,
+              "n": 5
             }
           }
         },
@@ -41007,59 +40468,6 @@
             "Gestión por sistemas": {
               "apego": 0.6803,
               "n": 5
-            }
-          }
-        },
-        {
-          "label": "Otros",
-          "cells": {
-            "Gestión de interesados": {
-              "apego": 0.955,
-              "n": 2
-            },
-            "Inglés": {
-              "apego": 0.77,
-              "n": 2
-            },
-            "Empuje / Orientación a resultados": {
-              "apego": 0.61,
-              "n": 2
-            },
-            "Excel": {
-              "apego": 0.425,
-              "n": 2
-            },
-            "Sensibilidad del mercado": {
-              "apego": 0.75,
-              "n": 2
-            },
-            "Estándar LCP para Planeación de la Demanda": {
-              "apego": 0.3,
-              "n": 2
-            },
-            "Colaboración": {
-              "apego": 0.555,
-              "n": 2
-            },
-            "Orientación a datos": {
-              "apego": 0.23,
-              "n": 2
-            },
-            "Métodos estadísticos y de pronóstico": {
-              "apego": 0.165,
-              "n": 2
-            },
-            "Estructuras complejas de datos": {
-              "apego": 0.205,
-              "n": 2
-            },
-            "Gestión de inventarios": {
-              "apego": 0.5,
-              "n": 2
-            },
-            "Pronóstico colaborativo": {
-              "apego": 0,
-              "n": 2
             }
           }
         },
@@ -41946,10 +41354,6 @@
           }
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -42426,48 +41830,48 @@
               "n": 1
             },
             "Colaboración": {
-              "apego": 0.786,
-              "n": 2
+              "apego": 0.8205,
+              "n": 4
             },
             "Resiliencia": {
-              "apego": 1.09,
-              "n": 1
+              "apego": 1.045,
+              "n": 2
             },
             "Empuje / Orientación a resultados": {
-              "apego": 0.72,
-              "n": 1
+              "apego": 0.86,
+              "n": 2
             },
             "Estándares de MRP LCP": {
               "apego": 1.07,
               "n": 1
             },
             "Orientación a datos": {
-              "apego": 0.9345,
-              "n": 2
+              "apego": 0.5798,
+              "n": 4
             },
             "Negociación": {
-              "apego": 0.7748,
-              "n": 2
+              "apego": 0.6832,
+              "n": 3
             },
             "Excel": {
-              "apego": 0.9152,
-              "n": 2
+              "apego": 0.5051,
+              "n": 4
             },
             "Transportación y logística": {
               "apego": 0.8,
               "n": 1
             },
             "Inglés": {
-              "apego": 0.6543,
-              "n": 2
+              "apego": 0.7372,
+              "n": 4
             },
             "Planificación de capacidad": {
               "apego": 1.5,
               "n": 1
             },
             "Gestión de inventarios": {
-              "apego": 0.718,
-              "n": 2
+              "apego": 0.6453,
+              "n": 3
             },
             "Pensamiento Sistémico": {
               "apego": 1.08,
@@ -42482,15 +41886,35 @@
               "n": 1
             },
             "Mejora continua": {
-              "apego": 0.4346,
-              "n": 1
+              "apego": 0.8715,
+              "n": 3
             },
             "Planificación de aprovisionamiento": {
-              "apego": 0.3767,
-              "n": 1
+              "apego": 0.1883,
+              "n": 2
             },
             "Gestión por sistemas": {
               "apego": 0,
+              "n": 1
+            },
+            "Finanzas empresariales": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Gestión de interesados": {
+              "apego": 0.93,
+              "n": 1
+            },
+            "Estándar LCP para Planeación de la Demanda": {
+              "apego": 0.4,
+              "n": 1
+            },
+            "Sensibilidad del mercado": {
+              "apego": 0,
+              "n": 1
+            },
+            "Toma de decisiones": {
+              "apego": 0.72,
               "n": 1
             }
           }
@@ -42621,71 +42045,6 @@
             "Estándares de S&OP LCP + SNP LCP": {
               "apego": 0.8083,
               "n": 3
-            }
-          }
-        },
-        {
-          "label": "Otros",
-          "cells": {
-            "Empuje / Orientación a resultados": {
-              "apego": 1,
-              "n": 1
-            },
-            "Finanzas empresariales": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Gestión de interesados": {
-              "apego": 0.93,
-              "n": 1
-            },
-            "Inglés": {
-              "apego": 0.82,
-              "n": 2
-            },
-            "Colaboración": {
-              "apego": 0.855,
-              "n": 2
-            },
-            "Mejora continua": {
-              "apego": 1.09,
-              "n": 2
-            },
-            "Estándar LCP para Planeación de la Demanda": {
-              "apego": 0.4,
-              "n": 1
-            },
-            "Gestión de inventarios": {
-              "apego": 0.5,
-              "n": 1
-            },
-            "Orientación a datos": {
-              "apego": 0.225,
-              "n": 2
-            },
-            "Excel": {
-              "apego": 0.095,
-              "n": 2
-            },
-            "Sensibilidad del mercado": {
-              "apego": 0,
-              "n": 1
-            },
-            "Resiliencia": {
-              "apego": 1,
-              "n": 1
-            },
-            "Toma de decisiones": {
-              "apego": 0.72,
-              "n": 1
-            },
-            "Negociación": {
-              "apego": 0.5,
-              "n": 1
-            },
-            "Planificación de aprovisionamiento": {
-              "apego": 0,
-              "n": 1
             }
           }
         },
@@ -43397,10 +42756,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -44057,10 +43412,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -44387,10 +43738,6 @@
         },
         {
           "label": "México",
-          "cells": {}
-        },
-        {
-          "label": "Otros",
           "cells": {}
         },
         {
@@ -45052,10 +44399,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -45586,10 +44929,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -45843,10 +45182,6 @@
         },
         {
           "label": "México",
-          "cells": {}
-        },
-        {
-          "label": "Otros",
           "cells": {}
         },
         {
@@ -46152,10 +45487,6 @@
           }
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -46429,10 +45760,6 @@
         },
         {
           "label": "México",
-          "cells": {}
-        },
-        {
-          "label": "Otros",
           "cells": {}
         },
         {
@@ -46880,10 +46207,6 @@
         },
         {
           "label": "México",
-          "cells": {}
-        },
-        {
-          "label": "Otros",
           "cells": {}
         },
         {
@@ -47422,10 +46745,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -47667,10 +46986,6 @@
           }
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -47873,10 +47188,6 @@
               "n": 1
             }
           }
-        },
-        {
-          "label": "Otros",
-          "cells": {}
         },
         {
           "label": "Panama",
@@ -48104,7 +47415,56 @@
         },
         {
           "label": "MAZ",
-          "cells": {}
+          "cells": {
+            "Gestión de interesados": {
+              "apego": 1,
+              "n": 1
+            },
+            "Gestión de inventarios": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Estándares de S&OP LCP + SNP LCP": {
+              "apego": 1.5,
+              "n": 1
+            },
+            "Colaboración": {
+              "apego": 1.45,
+              "n": 1
+            },
+            "Negociación": {
+              "apego": 1.33,
+              "n": 1
+            },
+            "Inglés": {
+              "apego": 0.94,
+              "n": 1
+            },
+            "Orientación a datos": {
+              "apego": 1.13,
+              "n": 1
+            },
+            "Gestión de riesgos": {
+              "apego": 1,
+              "n": 1
+            },
+            "Pensamiento Sistémico": {
+              "apego": 0.75,
+              "n": 1
+            },
+            "Mejora continua": {
+              "apego": 0.71,
+              "n": 1
+            },
+            "Finanzas empresariales": {
+              "apego": 0.5,
+              "n": 1
+            },
+            "Excel": {
+              "apego": 0,
+              "n": 1
+            }
+          }
         },
         {
           "label": "México",
@@ -48195,59 +47555,6 @@
             },
             "Estándares de planificación de SNP y S&OE y la red de suministro LCP": {
               "apego": 0.38,
-              "n": 1
-            }
-          }
-        },
-        {
-          "label": "Otros",
-          "cells": {
-            "Gestión de interesados": {
-              "apego": 1,
-              "n": 1
-            },
-            "Gestión de inventarios": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Estándares de S&OP LCP + SNP LCP": {
-              "apego": 1.5,
-              "n": 1
-            },
-            "Colaboración": {
-              "apego": 1.45,
-              "n": 1
-            },
-            "Negociación": {
-              "apego": 1.33,
-              "n": 1
-            },
-            "Inglés": {
-              "apego": 0.94,
-              "n": 1
-            },
-            "Orientación a datos": {
-              "apego": 1.13,
-              "n": 1
-            },
-            "Gestión de riesgos": {
-              "apego": 1,
-              "n": 1
-            },
-            "Pensamiento Sistémico": {
-              "apego": 0.75,
-              "n": 1
-            },
-            "Mejora continua": {
-              "apego": 0.71,
-              "n": 1
-            },
-            "Finanzas empresariales": {
-              "apego": 0.5,
-              "n": 1
-            },
-            "Excel": {
-              "apego": 0,
               "n": 1
             }
           }
@@ -48717,10 +48024,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {
             "Inglés": {
@@ -49072,10 +48375,6 @@
         },
         {
           "label": "México",
-          "cells": {}
-        },
-        {
-          "label": "Otros",
           "cells": {}
         },
         {
@@ -49725,10 +49024,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {
             "Técnicas de optimización": {
@@ -50007,10 +49302,6 @@
         },
         {
           "label": "México",
-          "cells": {}
-        },
-        {
-          "label": "Otros",
           "cells": {}
         },
         {
@@ -50560,10 +49851,6 @@
           "cells": {}
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -50874,10 +50161,6 @@
           }
         },
         {
-          "label": "Otros",
-          "cells": {}
-        },
-        {
           "label": "Panama",
           "cells": {}
         },
@@ -51112,10 +50395,6 @@
               "n": 6
             }
           }
-        },
-        {
-          "label": "Otros",
-          "cells": {}
         },
         {
           "label": "Panama",

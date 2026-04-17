@@ -54,7 +54,7 @@
       "strong_fit": 0.8,
       "good_fit": 0.7,
       "moderate_fit": 0.6,
-      "poor_fit": 0.0
+      "poor_fit": 0
     },
     "threshold_labels": {
       "strong_fit": "Alto apego (>80%)",

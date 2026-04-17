@@ -13,6 +13,7 @@
     "El Salvador",
     "Guatemala",
     "Honduras",
+    "MAZ",
     "México",
     "Otros",
     "Panama",
@@ -20,21 +21,29 @@
     "República Dominicana"
   ],
   "work_locations": [
+    "AGUASCALIENTES",
     "Aguascalientes",
     "CDMX",
+    "COLOMBIA",
     "Colombia",
+    "ECUADOR",
+    "EL SALVADOR",
     "Ecuador",
     "El Salvador",
-    "Guadalajara",
-    "Guatemala",
+    "GUADALAJARA",
+    "GUATEMALA",
+    "HONDURAS",
     "Honduras",
-    "Mazatlan",
-    "Merida",
+    "MAZATLAN",
+    "MERIDA",
     "México",
+    "PANAMA",
+    "PERÚ",
     "Panama",
     "Perú",
-    "República Dominicana",
-    "Tuxtepec",
+    "REPÚBLICA DOMINICANA",
+    "Republica Dominicana",
+    "TUXTEPEC",
     "West Hub"
   ],
   "areas": [
@@ -124,15 +133,16 @@
   ],
   "periodos": [
     1,
-    2
+    null,
+    null
   ],
   "años": [
     2025,
     2026
   ],
   "period_labels": [
-    "2025-P1",
-    "2025-P2",
+    "2025-P25H1",
+    "2025-P25H2",
     "2026-P1"
   ],
   "nivel_distribution": {
@@ -216,6 +226,19 @@
       }
     },
     {
+      "bu": "MAZ",
+      "n": 6,
+      "puntaje_promedio": 1.91,
+      "apego_promedio": 0.8797,
+      "niveles": {
+        "Novice": 0,
+        "Advanced Beginner": 1,
+        "Competent": 5,
+        "Proficient": 0,
+        "Expert": 0
+      }
+    },
+    {
       "bu": "El Salvador",
       "n": 18,
       "puntaje_promedio": 1.97,
@@ -282,13 +305,13 @@
     },
     {
       "bu": "Otros",
-      "n": 43,
-      "puntaje_promedio": 1.6707,
-      "apego_promedio": 0.7474,
+      "n": 37,
+      "puntaje_promedio": 1.6319,
+      "apego_promedio": 0.7259,
       "niveles": {
         "Novice": 6,
-        "Advanced Beginner": 13,
-        "Competent": 22,
+        "Advanced Beginner": 12,
+        "Competent": 17,
         "Proficient": 2,
         "Expert": 0
       }

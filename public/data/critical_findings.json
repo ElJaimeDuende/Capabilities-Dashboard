@@ -47,8 +47,8 @@
     {
       "severity": "media",
       "category": "Distribución de niveles",
-      "title": "Otros: 44% en niveles iniciales",
-      "detail": "Otros tiene 19 de 43 personas en Novice o Advanced Beginner (44%). Benchmark de org madura: máx 25-30% en estos niveles.",
+      "title": "Otros: 49% en niveles iniciales",
+      "detail": "Otros tiene 18 de 37 personas en Novice o Advanced Beginner (49%). Benchmark de org madura: máx 25-30% en estos niveles.",
       "benchmark": "Org madura: Novice+Adv.Beginner ≤ 25-30%",
       "bu": "Otros"
     },
@@ -56,13 +56,13 @@
       "severity": "media",
       "category": "Concentración de expertise",
       "title": "4 capabilities con riesgo de persona clave",
-      "detail": "Las siguientes capabilities tienen ≤2 personas con alto dominio: Estructuras complejas de datos, Finanzas, Gestión de Equipos, Mentalidad de crecimiento. Riesgo de dependencia crítica.",
+      "detail": "Las siguientes capabilities tienen ≤2 personas con alto dominio: Estructuras complejas de datos, Mentalidad de crecimiento, Finanzas, Gestión de Equipos. Riesgo de dependencia crítica.",
       "benchmark": "Recomendado: ≥3 personas con dominio alto por capability crítica",
       "capabilities": [
         "Estructuras complejas de datos",
+        "Mentalidad de crecimiento",
         "Finanzas",
-        "Gestión de Equipos",
-        "Mentalidad de crecimiento"
+        "Gestión de Equipos"
       ]
     },
     {
